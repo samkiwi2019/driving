@@ -13,11 +13,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        @if ($user)
-                            {{ $user->nickname }} are logged in!
-                        @else
-                            <div style="color: purple;">You are not logged in</div>
-                        @endif
+                            {{ Auth::user()->nickname }} are logged in!
                     </div>
                 </div>
             </div>
