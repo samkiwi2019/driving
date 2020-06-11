@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">My profile</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -13,11 +13,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        @if ($user)
-                            {{ $user->nickname }} are logged in!
-                        @else
-                            <div style="color: purple;">You are not logged in</div>
-                        @endif
+                        <div style="color: purple;">{{ Auth::user()->nickname }} are logged in</div>
                     </div>
                 </div>
             </div>
