@@ -21,3 +21,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home.index');
 Route::get('/profile', 'ProfileController@index')->name('profile.index');
+
+/*
+ * back-end manager pages.
+ */
+
+Route::prefix('admin')->group(function () {
+    Route::get('index', "AdminIndexController@index")->name("admin.index");
+    Route::get('quizzes', "AdminQuizzesController@index")->name("adminquizzes.show");
+    Route::get('addquiz', "AdminAddQuizController@index")->name("adminaddquiz.show");
+});
