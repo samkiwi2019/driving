@@ -7,32 +7,62 @@
             dark
             src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
         >
-            <v-list dense>
-                <v-list-item link>
-                    <v-list-item-action>
-                        <v-icon>mdi-view-dashboard</v-icon>
-                    </v-list-item-action>
+            <template v-slot:prepend>
+                <v-list-item two-line>
+                    <v-list-item-avatar>
+                        <img src="https://randomuser.me/api/portraits/women/81.jpg">
+                    </v-list-item-avatar>
+
                     <v-list-item-content>
-                        <v-list-item-title>Dashboard</v-list-item-title>
+                        <v-list-item-title>Jane Smith</v-list-item-title>
+                        <v-list-item-subtitle>Logged In</v-list-item-subtitle>
                     </v-list-item-content>
                 </v-list-item>
-                <v-list-item link>
+            </template>
+
+            <v-divider></v-divider>
+            <v-subheader>Main</v-subheader>
+            <v-list dense>
+                <v-list-item
+                    v-for="([icon, text], i) in items"
+                    :key="i"
+                    link
+                >
                     <v-list-item-action>
-                        <v-icon>mdi-cog</v-icon>
+                        <v-icon>{{icon}}</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>Settings</v-list-item-title>
+                        <v-list-item-title>{{text}}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
+            <template v-slot:append>
+                <div class="pa-2">
+                    <v-btn block dark>Logout</v-btn>
+                </div>
+            </template>
         </v-navigation-drawer>
 
         <v-app-bar
             app
             clipped-left
+            src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
         >
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>Driving Test Manage System</v-toolbar-title>
+            <v-spacer></v-spacer>
+
+            <v-btn icon>
+                <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>mdi-heart</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>mdi-dots-vertical</v-icon>
+            </v-btn>
         </v-app-bar>
 
         <v-main>
@@ -40,43 +70,27 @@
                 class="fill-height"
                 fluid
             >
-                <v-row
-                    align="center"
-                    justify="center"
-                >
-                    <v-col class="shrink">
-                        <v-tooltip right>
-                            <template v-slot:activator="{ on }">
-                                <v-btn
-                                    :href="source"
-                                    icon
-                                    large
-                                    target="_blank"
-                                    v-on="on"
-                                >
-                                    <v-icon large>mdi-code-tags</v-icon>
-                                </v-btn>
-                            </template>
-                            <span>Source</span>
-                        </v-tooltip>
-                    </v-col>
-                </v-row>
+                <router-view></router-view>
             </v-container>
         </v-main>
 
         <v-footer app>
-            <span>Driving Test &copy; 2020</span>
+                Driving Test &copy; {{ new Date().getFullYear() }}
         </v-footer>
     </v-app>
 </template>
 
 <script>
     export default {
-        props: {
-            source: String,
-        },
         data: () => ({
             drawer: null,
+            items: [
+                ['mdi-view-dashboard', 'Dashboard'],
+                ['mdi-view-list', 'Quiz List'],
+                ['mdi-earth-box-plus', 'Add Quiz'],
+                ['mdi-file-edit', 'Edit Quiz'],
+                ['mdi-help-box', 'About'],
+            ],
         }),
         created() {
             this.$vuetify.theme.dark = true

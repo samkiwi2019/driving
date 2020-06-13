@@ -9,14 +9,6 @@ const routes = [
                 component: () => import("../components/admin/Dashboard"),
             },
             {
-                path: 'add',
-                component: () => import("../components/admin/AddQuiz"),
-            },
-            {
-                path: 'edit',
-                component: () => import("../components/admin/EditQuiz"),
-            },
-            {
                 path: 'list',
                 component: () => import("../components/admin/ListQuiz"),
             },

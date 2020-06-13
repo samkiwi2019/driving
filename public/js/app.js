@@ -17206,11 +17206,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _Vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Vuex */ "./resources/js/Vuex/index.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes */ "./resources/js/routes/index.js");
+/* harmony import */ var _vuetify_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vuetify.config */ "./resources/js/vuetify.config.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+
 
 
 
@@ -17246,7 +17248,7 @@ setTimeout(function () {
     el: '#app',
     router: router,
     store: store,
-    vuetify: new Vuetify()
+    vuetify: new Vuetify(_vuetify_config__WEBPACK_IMPORTED_MODULE_4__["default"])
   });
 });
 
@@ -17410,17 +17412,7 @@ var routes = [{
   children: [{
     path: 'dashboard',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/admin/Dashboard */ "./resources/js/components/admin/Dashboard.vue"));
-    }
-  }, {
-    path: 'add',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/admin/AddQuiz */ "./resources/js/components/admin/AddQuiz.vue"));
-    }
-  }, {
-    path: 'edit',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../components/admin/EditQuiz */ "./resources/js/components/admin/EditQuiz.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ../components/admin/Dashboard */ "./resources/js/components/admin/Dashboard.vue"));
     }
   }, {
     path: 'list',
@@ -17435,6 +17427,33 @@ var routes = [{
   }]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (routes);
+
+/***/ }),
+
+/***/ "./resources/js/vuetify.config.js":
+/*!****************************************!*\
+  !*** ./resources/js/vuetify.config.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  icons: {
+    iconfont: 'mdi',
+    // default
+    values: {
+      product: 'mdi-dropbox',
+      support: 'mdi-lifebuoy',
+      steam: 'mdi-steam-box',
+      pc: 'mdi-desktop-classic',
+      xbox: 'mdi-xbox',
+      playstation: 'mdi-playstation',
+      "switch": 'mdi-nintendo-switch'
+    }
+  }
+});
 
 /***/ }),
 

@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import stores from './Vuex'
 import routes from './routes'
+import vuetifyConfig from './vuetify.config'
 
 
 
@@ -45,7 +46,7 @@ setTimeout(()=>{
         el: '#app',
         router,
         store,
-        vuetify: new Vuetify(),
+        vuetify: new Vuetify(vuetifyConfig),
     });
 })
 
