@@ -18,7 +18,8 @@ class CreateQuizzesTable extends Migration
             $table->string("question", 255);
             $table->string("language");
             $table->string("imageUrl")->nullable();
-            $table->string("explanation", 1000);
+            $table->text("explanation");
+            $table->string("type");
             $table->timestamps();
         });
     }

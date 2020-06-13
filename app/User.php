@@ -37,4 +37,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function records()
+    {
+        return $this->hasMany(record::class)->orderBy('created_at', 'DESC');
+    }
 }

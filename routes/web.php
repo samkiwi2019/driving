@@ -27,7 +27,9 @@ Route::get('/profile', 'ProfileController@index')->name('profile.index');
  */
 
 Route::prefix('admin')->group(function () {
-    Route::get('index', "AdminIndexController@index")->name("admin.index");
-    Route::get('quizzes', "AdminQuizzesController@index")->name("adminquizzes.show");
-    Route::get('addquiz', "AdminAddQuizController@index")->name("adminaddquiz.show");
+    Route::get('/', "AdminController@index")->name("admin.index");
+    Route::get('quizzes', "AdminController@quizzes")->name("admin.quizzes");
+    Route::get('addquiz', "AdminController@add")->name("admin.add");
+    Route::get('editquiz', "AdminController@edit")->name("admin.edit");
+    Route::get('about', "AdminController@about")->name("admin.about");
 });
