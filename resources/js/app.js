@@ -3,16 +3,24 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
-require('./bootstrap');
-import stores from './Vuex'
+import VueRouter from 'vue-router'
 import Vuex from 'vuex'
+import stores from './Vuex'
+import routes from './routes'
+
+
+
 
 window.Vue = require('vue');
 
 Vue.use(Vuex)
+Vue.use(VueRouter)
 
 const store = new Vuex.Store(stores)
+const router = new VueRouter({
+    routes,
+    mode: 'history'
+})
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -32,8 +40,14 @@ Vue.component('content-component', require('./components/ContentComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+setTimeout(()=>{
+    const app = new Vue({
+        el: '#app',
+        router,
+        store,
+        vuetify: new Vuetify(),
+    });
+})
 
-const app = new Vue({
-    el: '#app',
-    store,
-});
+
+
