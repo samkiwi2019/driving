@@ -29,11 +29,11 @@
           md="auto"
         >
           <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-            &copy; 2019, made with
+            &copy; 2020, made with
             <v-icon size="18">
               mdi-heart
             </v-icon>
-            by <a href="https://www.creative-tim.com">Creative Tim</a> for a better web.
+            by Sam for a job opportunity in NZ.
           </div>
         </v-col>
       </v-row>
@@ -48,20 +48,12 @@
     data: () => ({
       links: [
         {
-          href: '#',
-          text: 'Creative Tim',
+          href: '/',
+          text: 'Home',
         },
         {
-          href: '#',
+          href: '/admin/about',
           text: 'About Us',
-        },
-        {
-          href: '#',
-          text: 'Blog',
-        },
-        {
-          href: '#',
-          text: 'Licenses',
         },
       ],
     }),

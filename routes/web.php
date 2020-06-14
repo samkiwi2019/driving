@@ -27,6 +27,6 @@ Route::get('/profile', 'ProfileController@index')->name('profile.index');
  * To be proxy by vue router
  */
 Route::prefix('admin')->group(function () {
-    $routes = ['/', 'dashboard', 'list', 'about'];
+    $routes = ['/', 'dashboard', 'list', 'profile', 'about'];
     Route::combine( $routes, "AdminController@index");
 });

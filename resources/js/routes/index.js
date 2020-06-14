@@ -13,15 +13,23 @@ export default new VueRouter({
             children: [
                 {
                     path: 'dashboard',
+                    name: 'Dashboard',
                     component: () => import("../views/admin/Dashboard"),
                 },
                 {
                     path: 'list',
+                    name: 'Quiz List',
                     component: () => import("../views/admin/ListQuiz"),
                 },
                 {
                     path: 'about',
+                    name: 'About',
                     component: () => import("../views/admin/About"),
+                },
+                {
+                    path: 'profile',
+                    name: 'Profile',
+                    component: () => import("../views/admin/profile"),
                 }
             ]
         },

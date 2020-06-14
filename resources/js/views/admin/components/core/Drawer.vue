@@ -35,9 +35,7 @@
             </v-list-item>
             <v-divider class="mb-1"/>
             <v-subheader>User info</v-subheader>
-            <v-list-group
-                value="true"
-            >
+            <v-list-group>
                 <template v-slot:activator>
                     <v-list-item-avatar>
                         <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
@@ -45,14 +43,13 @@
                     <v-list-item-title>Jane Smith</v-list-item-title>
                 </template>
                 <v-list-item
-                    v-for="(admin, i) in admins"
-                    :key="i"
                     link
+                    to="/admin/profile"
                 >
                     <v-list-item-icon>
-                        <v-icon v-text="admin[1]"></v-icon>
+                        <v-icon v-text="'mdi-face-profile-woman'"></v-icon>
                     </v-list-item-icon>
-                    <v-list-item-title v-text="admin[0]"></v-list-item-title>
+                    <v-list-item-title v-text="'My Profile'"></v-list-item-title>
                 </v-list-item>
             </v-list-group>
         </v-list>
@@ -118,10 +115,6 @@
 
         data: () => ({
             model: false,
-            admins: [
-                ['My Profile', 'mdi-face-profile-woman'],
-                ['Settings', 'mdi-cog-outline'],
-            ],
             items: [
                 {
                     icon: 'mdi-view-dashboard',

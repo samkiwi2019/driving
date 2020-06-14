@@ -5,9 +5,9 @@ import '../../sass/app.scss'
 Vue.use(Vuetify)
 
 const theme = {
-    primary: '#4CAF50',
-    secondary: '#9C27b0',
-    accent: '#9C27b0',
+    primary: '#9C27b0',
+    secondary: "#9C27b0",
+    accent: '#4CAF50',
     info: '#00CAE3',
 }
 
