@@ -9,21 +9,25 @@
                 cols="12"
                 lg="11"
             >
-
                 <v-data-table
                     :headers="headers"
                     :items="desserts"
-                    sort-by="calories"
-                    class="elevation-1"
+                    sort-by="correct_rate"
+                    class="elevation-4"
                 >
                     <template v-slot:top>
                         <v-toolbar flat color="dark">
-                            <v-toolbar-title>My CRUD</v-toolbar-title>
-                            <v-divider
-                                class="mx-4"
-                                inset
-                                vertical
-                            ></v-divider>
+                            <v-sheet
+                                class="d-flex pa-7 v-card--material-heading"
+                                color="success"
+                                height="88"
+                                width="88"
+                                dark
+                                elevation="6"
+                            >
+                                <v-icon dark size="32">mdi-clipboard-text</v-icon>
+                            </v-sheet>
+                            <v-toolbar-title class="ml-4">Quiz table</v-toolbar-title>
                             <v-spacer></v-spacer>
                             <v-dialog v-model="dialog" max-width="500px">
                                 <template v-slot:activator="{ on, attrs }">
@@ -258,3 +262,9 @@
         },
     }
 </script>
+<style lang="scss" scoped>
+    .v-card--material-heading{
+        transform: translateY(-10px);
+        border-radius: 4px;
+    }
+</style>
