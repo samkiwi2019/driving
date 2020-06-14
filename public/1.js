@@ -150,59 +150,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // Mixins
 
 
@@ -339,8 +286,8 @@ var render = function() {
           }
         },
         [
-          _c("v-icon", { attrs: { large: "" } }, [
-            _vm._v("\n      mdi-settings\n    ")
+          _c("v-icon", { attrs: { large: "", dark: "", left: "" } }, [
+            _vm._v("mdi-theme-light-dark")
           ])
         ],
         1
@@ -354,7 +301,7 @@ var render = function() {
             activator: "#settings",
             bottom: "",
             "content-class": "v-settings",
-            left: "",
+            lefth: "",
             "nudge-left": "8",
             "offset-x": "",
             origin: "top right",
@@ -552,83 +499,7 @@ var render = function() {
                     1
                   ),
                   _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "mb-3",
-                      attrs: {
-                        block: "",
-                        color: "success",
-                        href:
-                          "https://www.creative-tim.com/product/vuetify-material-dashboard",
-                        default: "",
-                        rel: "noopener",
-                        target: "_blank"
-                      }
-                    },
-                    [_vm._v("\n          Free Download\n        ")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "mb-3",
-                      attrs: {
-                        block: "",
-                        color: "grey darken-1",
-                        dark: "",
-                        href: "https://vuetifyjs.com/components/api-explorer",
-                        default: "",
-                        rel: "noopener",
-                        target: "_blank"
-                      }
-                    },
-                    [_vm._v("\n          Documentation\n        ")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "my-12" }),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c("strong", { staticClass: "mb-3 d-inline-block" }, [
-                      _vm._v("THANK YOU FOR SHARING!")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "ma-1",
-                      attrs: {
-                        color: "#55acee",
-                        dark: "",
-                        default: "",
-                        rounded: ""
-                      }
-                    },
-                    [
-                      _c("v-icon", [_vm._v("mdi-twitter")]),
-                      _vm._v("\n          - 45\n        ")
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "ma-1",
-                      attrs: {
-                        color: "#3b5998",
-                        dark: "",
-                        default: "",
-                        rounded: ""
-                      }
-                    },
-                    [
-                      _c("v-icon", [_vm._v("mdi-facebook")]),
-                      _vm._v("\n          - 50\n        ")
-                    ],
-                    1
-                  )
+                  _c("div", { staticClass: "my-12" })
                 ],
                 1
               )

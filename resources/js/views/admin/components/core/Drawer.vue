@@ -24,35 +24,44 @@
             dense
             nav
         >
-            <v-list-item>
-                <v-list-item-avatar
-                    class="align-self-center"
-                    color="white"
-                    contain
-                >
-                    <v-img
-                        src="https://demos.creative-tim.com/vuetify-material-dashboard/favicon.ico"
-                        max-height="30"
-                    />
+            <v-list-item two-line>
+                <v-list-item-avatar>
+                    <v-img src="https://getvectorlogo.com/wp-content/uploads/2019/10/rsg-test-drive-vector-logo.png" aspect-ratio="1.4" cover></v-img>
                 </v-list-item-avatar>
-
                 <v-list-item-content>
-                    <v-list-item-title
-                        class="display-1"
-                        v-text="profile.title"
-                    />
+                    <v-list-item-title>Driving Test</v-list-item-title>
+                    <v-list-item-subtitle>Management System</v-list-item-subtitle>
                 </v-list-item-content>
             </v-list-item>
+            <v-divider class="mb-1"/>
+            <v-subheader>User info</v-subheader>
+            <v-list-group
+                value="true"
+            >
+                <template v-slot:activator>
+                    <v-list-item-avatar>
+                        <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
+                    </v-list-item-avatar>
+                    <v-list-item-title>Jane Smith</v-list-item-title>
+                </template>
+                <v-list-item
+                    v-for="(admin, i) in admins"
+                    :key="i"
+                    link
+                >
+                    <v-list-item-icon>
+                        <v-icon v-text="admin[1]"></v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title v-text="admin[0]"></v-list-item-title>
+                </v-list-item>
+            </v-list-group>
         </v-list>
-
         <v-divider class="mb-2"/>
-
+        <v-subheader>Menu</v-subheader>
         <v-list
             expand
             nav
         >
-            <!-- Style cascading bug  -->
-            <!-- https://github.com/vuetifyjs/vuetify/pull/8574 -->
             <div/>
 
             <template v-for="(item, i) in computedItems">
@@ -75,8 +84,16 @@
         </v-list>
 
         <template v-slot:append>
-            <div class="pa-2">
-                <v-btn color="error" dark block rounded>Logout</v-btn>
+            <div class="pa-3">
+                <v-btn
+                    color="error"
+                    class="white--text"
+                    block
+                    @click="logout"
+                >
+                    Logout
+                    <v-icon right dark>mdi-logout</v-icon>
+                </v-btn>
             </div>
         </template>
     </v-navigation-drawer>
@@ -100,6 +117,11 @@
         },
 
         data: () => ({
+            model: false,
+            admins: [
+                ['My Profile', 'mdi-face-profile-woman'],
+                ['Settings', 'mdi-cog-outline'],
+            ],
             items: [
                 {
                     icon: 'mdi-view-dashboard',
@@ -108,12 +130,12 @@
                 },
                 {
                     icon: 'mdi-clipboard-outline',
-                    title: 'Quiz list',
+                    title: 'quiz',
                     to: '/admin/list',
                 },
                 {
                     icon: 'mdi-account',
-                    title: 'Quiz about',
+                    title: 'about',
                     to: '/admin/about',
                 },
             ],
@@ -148,6 +170,9 @@
                     title: this.$t(item.title),
                 }
             },
+            logout(){
+                document.getElementById('logout-form').submit();
+            }
         },
     }
 </script>

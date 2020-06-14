@@ -100,6 +100,23 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // Utilities
 
 
@@ -116,17 +133,19 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createName
   },
   data: function data() {
     return {
+      model: false,
+      admins: [['My Profile', 'mdi-face-profile-woman'], ['Settings', 'mdi-cog-outline']],
       items: [{
         icon: 'mdi-view-dashboard',
         title: 'dashboard',
         to: '/admin/dashboard'
       }, {
         icon: 'mdi-clipboard-outline',
-        title: 'Quiz list',
+        title: 'quiz',
         to: '/admin/list'
       }, {
         icon: 'mdi-account',
-        title: 'Quiz about',
+        title: 'about',
         to: '/admin/about'
       }]
     };
@@ -156,6 +175,9 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createName
         children: item.children ? item.children.map(this.mapItem) : undefined,
         title: this.$t(item.title)
       });
+    },
+    logout: function logout() {
+      document.getElementById('logout-form').submit();
     }
   }
 });
@@ -263,19 +285,22 @@ var render = function() {
               return [
                 _c(
                   "div",
-                  { staticClass: "pa-2" },
+                  { staticClass: "pa-3" },
                   [
                     _c(
                       "v-btn",
                       {
-                        attrs: {
-                          color: "error",
-                          dark: "",
-                          block: "",
-                          rounded: ""
-                        }
+                        staticClass: "white--text",
+                        attrs: { color: "error", block: "" },
+                        on: { click: _vm.logout }
                       },
-                      [_vm._v("Logout")]
+                      [
+                        _vm._v("\n                Logout\n                "),
+                        _c("v-icon", { attrs: { right: "", dark: "" } }, [
+                          _vm._v("mdi-logout")
+                        ])
+                      ],
+                      1
                     )
                   ],
                   1
@@ -307,19 +332,17 @@ var render = function() {
         [
           _c(
             "v-list-item",
+            { attrs: { "two-line": "" } },
             [
               _c(
                 "v-list-item-avatar",
-                {
-                  staticClass: "align-self-center",
-                  attrs: { color: "white", contain: "" }
-                },
                 [
                   _c("v-img", {
                     attrs: {
                       src:
-                        "https://demos.creative-tim.com/vuetify-material-dashboard/favicon.ico",
-                      "max-height": "30"
+                        "https://getvectorlogo.com/wp-content/uploads/2019/10/rsg-test-drive-vector-logo.png",
+                      "aspect-ratio": "1.4",
+                      cover: ""
                     }
                   })
                 ],
@@ -329,21 +352,79 @@ var render = function() {
               _c(
                 "v-list-item-content",
                 [
-                  _c("v-list-item-title", {
-                    staticClass: "display-1",
-                    domProps: { textContent: _vm._s(_vm.profile.title) }
-                  })
+                  _c("v-list-item-title", [_vm._v("Driving Test")]),
+                  _vm._v(" "),
+                  _c("v-list-item-subtitle", [_vm._v("Management System")])
                 ],
                 1
               )
             ],
             1
+          ),
+          _vm._v(" "),
+          _c("v-divider", { staticClass: "mb-1" }),
+          _vm._v(" "),
+          _c("v-subheader", [_vm._v("User info")]),
+          _vm._v(" "),
+          _c(
+            "v-list-group",
+            {
+              attrs: { value: "true" },
+              scopedSlots: _vm._u([
+                {
+                  key: "activator",
+                  fn: function() {
+                    return [
+                      _c("v-list-item-avatar", [
+                        _c("img", {
+                          attrs: {
+                            src:
+                              "https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("v-list-item-title", [_vm._v("Jane Smith")])
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            },
+            [
+              _vm._v(" "),
+              _vm._l(_vm.admins, function(admin, i) {
+                return _c(
+                  "v-list-item",
+                  { key: i, attrs: { link: "" } },
+                  [
+                    _c(
+                      "v-list-item-icon",
+                      [
+                        _c("v-icon", {
+                          domProps: { textContent: _vm._s(admin[1]) }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("v-list-item-title", {
+                      domProps: { textContent: _vm._s(admin[0]) }
+                    })
+                  ],
+                  1
+                )
+              })
+            ],
+            2
           )
         ],
         1
       ),
       _vm._v(" "),
       _c("v-divider", { staticClass: "mb-2" }),
+      _vm._v(" "),
+      _c("v-subheader", [_vm._v("Menu")]),
       _vm._v(" "),
       _c(
         "v-list",

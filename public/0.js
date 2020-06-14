@@ -182,7 +182,7 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_1__["createName
   },
   data: function data() {
     return {
-      notifications: ['Mike John Responded to your email', 'You have 5 new tasks', 'You\'re now friends with Andrew', 'Another Notification', 'Another one']
+      notifications: ['Sorry.', 'This feature is not yet online.', 'I will add it soon.', 'See you next time.', '@_@!']
     };
   },
   computed: _objectSpread({}, mapState(['drawer'])),
@@ -287,7 +287,10 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-btn",
-        { staticClass: "ml-2", attrs: { "min-width": "0", text: "", to: "/" } },
+        {
+          staticClass: "ml-2",
+          attrs: { "min-width": "0", text: "", to: "/admin/dashboard" }
+        },
         [_c("v-icon", [_vm._v("mdi-view-dashboard")])],
         1
       ),

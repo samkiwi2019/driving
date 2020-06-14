@@ -57,7 +57,7 @@
             class="ml-2"
             min-width="0"
             text
-            to="/"
+            to="/admin/dashboard"
         >
             <v-icon>mdi-view-dashboard</v-icon>
         </v-btn>
@@ -163,11 +163,11 @@
 
         data: () => ({
             notifications: [
-                'Mike John Responded to your email',
-                'You have 5 new tasks',
-                'You\'re now friends with Andrew',
-                'Another Notification',
-                'Another one',
+                'Sorry.',
+                'This feature is not yet online.',
+                'I will add it soon.',
+                'See you next time.',
+                '@_@!',
             ],
         }),
 

@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home.index');
 Route::get('/profile', 'ProfileController@index')->name('profile.index');
 
 /*
- * back-end manager pages.
+ * back-end management pages.
  * To be proxy by vue router
  */
 Route::prefix('admin')->group(function () {
