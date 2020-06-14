@@ -54,26 +54,16 @@
                     v-text="text"
                 />
             </v-sheet>
-
-            <div
-                v-if="$slots['after-heading']"
-                class="ml-6"
-            >
+            <div v-if="$slots['after-heading']" class="ml6">
                 <slot name="after-heading"/>
             </div>
-
-            <div
-                v-else-if="icon && title"
-                class="ml-4"
-            >
-                <div
-
-                    class="card-title font-weight-light"
-                    v-text="title"
-                />
+            <div v-else-if="$slots['reveal-actions']" class="text-center py-0 mt-n10 col col-12">
+                <slot name="reveal-actions"/>
+            </div>
+            <div v-else-if="icon&&title" class="ml-4">
+                <div class="card-title font-weight-light" v-text="title"/>
             </div>
         </div>
-
         <slot/>
 
         <template v-if="$slots.actions">
@@ -121,6 +111,7 @@
             classes() {
                 return {
                     'v-card--material--has-heading': this.hasHeading,
+                    'v-card--material--hover-reveal': this.hasAltHeading,
                 }
             },
             hasHeading() {
@@ -145,4 +136,9 @@
             top: -40px
             transition: .3s ease
             z-index: 1
+        &--hover-reveal:hover
+            .v-card--material__heading
+                transform: translateY(-40px)
+
+
 </style>

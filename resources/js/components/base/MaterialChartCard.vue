@@ -16,17 +16,11 @@
             />
         </template>
 
-        <slot
-            slot="reveal-actions"
-            name="reveal-actions"
-        />
+        <slot slot="reveal-actions" name="reveal-actions"/>
 
         <slot/>
 
-        <slot
-            slot="actions"
-            name="actions"
-        />
+        <slot slot="actions" name="actions"/>
     </base-material-card>
 </template>
 
@@ -62,15 +56,6 @@
                 required: true,
                 validator: v => ['Bar', 'Line', 'Pie'].includes(v),
             },
-        },
-        updated() {
-            console.log(`rendering`)
-        },
-        created(){
-            console.log(`created`)
-        },
-        mounted(){
-            console.log(this.data)
         }
     }
 </script>
