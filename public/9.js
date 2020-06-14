@@ -55,6 +55,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Profile"
 });
@@ -86,7 +88,7 @@ var render = function() {
         [
           _c(
             "v-col",
-            { attrs: { cols: "12", md: "4" } },
+            { attrs: { cols: "12", lg: "6", md: "8", sm: "10" } },
             [
               _c(
                 "base-material-card",
@@ -132,9 +134,7 @@ var render = function() {
                           {
                             style:
                               "color:" +
-                              _vm.$vuetify.theme.themes[
-                                this.isDark ? "dark" : "light"
-                              ].primary
+                              _vm.$vuetify.theme.themes["light"].primary
                           },
                           [_vm._v("sam.kiwi2019@gmail.com")]
                         )

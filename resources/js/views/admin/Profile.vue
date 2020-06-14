@@ -7,7 +7,9 @@
         <v-row justify="center">
             <v-col
                 cols="12"
-                md="4"
+                lg="6"
+                md="8"
+                sm="10"
             >
                 <base-material-card
                     class="v-card-profile"
@@ -27,7 +29,7 @@
                             I like React in the front-end and Laravel technology stack in the back-end. I am finding for
                             a job opportunity in New zealand now.
                             <br>
-                            My Email: <strong :style="`color:${$vuetify.theme.themes[this.isDark ? 'dark' : 'light'].primary}`">sam.kiwi2019@gmail.com</strong>
+                            My Email: <strong :style="`color:${$vuetify.theme.themes['light'].primary}`">sam.kiwi2019@gmail.com</strong>
                         </p>
 
                         <v-btn

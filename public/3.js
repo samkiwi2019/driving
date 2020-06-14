@@ -176,6 +176,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About"
 });
@@ -199,346 +216,413 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-container",
-    { staticClass: "px-10", attrs: { fluid: "", tag: "section" } },
+    {
+      staticClass: "px-10",
+      attrs: { fluid: "", tag: "section", id: "about_me" }
+    },
     [
-      _c("section", { staticClass: "mb-12 text-center" }, [
-        _c("h1", { staticClass: "font-weight-light mb-2 headline" }, [
-          _vm._v("My work experiences")
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "font-weight-light subtitle-1" }, [
-          _vm._v(
-            "\n            I am finding for a job opportunity in New zealand now.\n            "
-          ),
-          _c("br"),
-          _vm._v("\n            My Email: sam.kiwi2019@gmail.com\n        ")
-        ])
-      ]),
-      _vm._v(" "),
       _c(
-        "v-timeline",
-        { attrs: { dense: _vm.$vuetify.breakpoint.smAndDown } },
+        "v-row",
+        { attrs: { justify: "center" } },
         [
           _c(
-            "v-timeline-item",
-            { attrs: { color: "purple lighten-2", "fill-dot": "", right: "" } },
+            "v-col",
+            { attrs: { cols: "12", lg: "8", md: "10", sm: "12" } },
             [
+              _c("section", { staticClass: "mb-12 text-center" }, [
+                _c("h1", { staticClass: "font-weight-light mb-2 headline" }, [
+                  _vm._v("My work experiences")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "font-weight-light subtitle-1" }, [
+                  _vm._v(
+                    "\n            I am finding for a job opportunity in New zealand now.\n            "
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "\n            My Email: sam.kiwi2019@gmail.com\n        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
               _c(
-                "v-card",
+                "v-timeline",
+                { attrs: { dense: _vm.$vuetify.breakpoint.smAndDown } },
                 [
                   _c(
-                    "v-card-title",
-                    { staticClass: "purple lighten-2" },
+                    "v-timeline-item",
+                    {
+                      attrs: {
+                        color: "purple lighten-2",
+                        "fill-dot": "",
+                        right: ""
+                      }
+                    },
                     [
                       _c(
-                        "v-icon",
-                        {
-                          staticClass: "mr-4",
-                          attrs: { dark: "", size: "42" }
-                        },
+                        "v-card",
                         [
-                          _vm._v(
-                            "\n                        mdi-magnify\n                    "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "h2",
-                        {
-                          staticClass: "display-1 white--text font-weight-light"
-                        },
-                        [_vm._v("Title 1")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-container",
-                    [
-                      _c(
-                        "v-row",
-                        [
-                          _c("v-col", { attrs: { cols: "12", md: "10" } }, [
-                            _vm._v(
-                              "\n                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,\n                            sed euismod convenire principes at. Est et nobis iisque percipit.\n                        "
-                            )
-                          ]),
-                          _vm._v(" "),
                           _c(
-                            "v-col",
-                            {
-                              staticClass: "hidden-sm-and-down text-right",
-                              attrs: { md: "2" }
-                            },
+                            "v-card-title",
+                            { staticClass: "purple lighten-2" },
                             [
-                              _c("v-icon", { attrs: { size: "24" } }, [
-                                _vm._v("mdi-calendar-text")
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-timeline-item",
-            {
-              attrs: {
-                color: "amber lighten-1",
-                "fill-dot": "",
-                left: "",
-                small: ""
-              }
-            },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-card-title",
-                    { staticClass: "amber lighten-1 justify-end" },
-                    [
-                      _c(
-                        "h2",
-                        {
-                          staticClass:
-                            "display-1 mr-4 white--text font-weight-light"
-                        },
-                        [_vm._v("Title 2")]
-                      ),
-                      _vm._v(" "),
-                      _c("v-icon", { attrs: { dark: "", size: "42" } }, [
-                        _vm._v("mdi-home-outline\n                    ")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-container",
-                    [
-                      _c(
-                        "v-row",
-                        [
-                          _c("v-col", { attrs: { cols: "12", md: "8" } }, [
-                            _vm._v(
-                              "\n                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,\n                            sed euismod convenire principes at. Est et nobis iisque percipit.\n                        "
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("v-col", { attrs: { cols: "12", md: "4" } }, [
-                            _vm._v(
-                              "\n                            Lorem ipsum dolor sit amet, no nam oblique veritus.\n                        "
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-timeline-item",
-            { attrs: { color: "cyan lighten-1", "fill-dot": "", right: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-card-title",
-                    { staticClass: "cyan lighten-1" },
-                    [
-                      _c(
-                        "v-icon",
-                        {
-                          staticClass: "mr-4",
-                          attrs: { dark: "", size: "42" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                        mdi-email-outline\n                    "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "h2",
-                        {
-                          staticClass: "display-1 white--text font-weight-light"
-                        },
-                        [_vm._v("Title 3")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-container",
-                    [
-                      _c(
-                        "v-row",
-                        _vm._l(3, function(n) {
-                          return _c(
-                            "v-col",
-                            { key: n, attrs: { cols: "12", md: "4" } },
-                            [
-                              _vm._v(
-                                "\n                            Lorem ipsum dolor sit amet, no nam oblique veritus no nam oblique.\n                        "
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-4",
+                                  attrs: { dark: "", size: "42" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                mdi-magnify\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "h2",
+                                {
+                                  staticClass:
+                                    "display-1 white--text font-weight-light"
+                                },
+                                [_vm._v("Title 1")]
                               )
-                            ]
-                          )
-                        }),
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-timeline-item",
-            {
-              attrs: {
-                color: "red lighten-1",
-                "fill-dot": "",
-                left: "",
-                small: ""
-              }
-            },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-card-title",
-                    { staticClass: "red lighten-1 justify-end" },
-                    [
-                      _c(
-                        "h2",
-                        {
-                          staticClass:
-                            "display-1 mr-4 white--text font-weight-light"
-                        },
-                        [_vm._v("Title 4")]
-                      ),
-                      _vm._v(" "),
-                      _c("v-icon", { attrs: { dark: "", size: "42" } }, [
-                        _vm._v(
-                          "\n                        mdi-account-multiple-outline\n                    "
-                        )
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-container",
-                    [
-                      _c(
-                        "v-row",
-                        [
-                          _c(
-                            "v-col",
-                            {
-                              staticClass: "hidden-sm-and-down",
-                              attrs: { md: "2" }
-                            },
-                            [
-                              _c("v-icon", { attrs: { size: "24" } }, [
-                                _vm._v("mdi-server-network")
-                              ])
                             ],
                             1
                           ),
                           _vm._v(" "),
-                          _c("v-col", { attrs: { cols: "12", md: "10" } }, [
-                            _vm._v(
-                              "\n                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,\n                            sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando\n                            voluptatibus.\n                        "
-                            )
-                          ])
+                          _c(
+                            "v-container",
+                            [
+                              _c(
+                                "v-row",
+                                [
+                                  _c(
+                                    "v-col",
+                                    { attrs: { cols: "12", md: "10" } },
+                                    [
+                                      _vm._v(
+                                        "\n                                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet\n                                    nec ut,\n                                    sed euismod convenire principes at. Est et nobis iisque percipit.\n                                "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-col",
+                                    {
+                                      staticClass:
+                                        "hidden-sm-and-down text-right",
+                                      attrs: { md: "2" }
+                                    },
+                                    [
+                                      _c("v-icon", { attrs: { size: "24" } }, [
+                                        _vm._v("mdi-calendar-text")
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
                         ],
                         1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-timeline-item",
-            { attrs: { color: "green lighten-1", "fill-dot": "", right: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-card-title",
-                    { staticClass: "green lighten-1" },
-                    [
-                      _c(
-                        "v-icon",
-                        {
-                          staticClass: "mr-4",
-                          attrs: { dark: "", size: "42" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                        mdi-phone-in-talk\n                    "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "h2",
-                        {
-                          staticClass: "display-1 white--text font-weight-light"
-                        },
-                        [_vm._v("Title 5")]
                       )
                     ],
                     1
                   ),
                   _vm._v(" "),
                   _c(
-                    "v-container",
+                    "v-timeline-item",
+                    {
+                      attrs: {
+                        color: "amber lighten-1",
+                        "fill-dot": "",
+                        left: "",
+                        small: ""
+                      }
+                    },
                     [
                       _c(
-                        "v-row",
+                        "v-card",
                         [
-                          _c("v-col", [
-                            _vm._v(
-                              "\n                            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,\n                            sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando\n                            voluptatibus, vix an salutandi sententiae.\n                        "
-                            )
-                          ])
+                          _c(
+                            "v-card-title",
+                            { staticClass: "amber lighten-1 justify-end" },
+                            [
+                              _c(
+                                "h2",
+                                {
+                                  staticClass:
+                                    "display-1 mr-4 white--text font-weight-light"
+                                },
+                                [_vm._v("Title 2")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-icon",
+                                { attrs: { dark: "", size: "42" } },
+                                [
+                                  _vm._v(
+                                    "mdi-home-outline\n                            "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-container",
+                            [
+                              _c(
+                                "v-row",
+                                [
+                                  _c(
+                                    "v-col",
+                                    { attrs: { cols: "12", md: "8" } },
+                                    [
+                                      _vm._v(
+                                        "\n                                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet\n                                    nec ut,\n                                    sed euismod convenire principes at. Est et nobis iisque percipit.\n                                "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-col",
+                                    { attrs: { cols: "12", md: "4" } },
+                                    [
+                                      _vm._v(
+                                        "\n                                    Lorem ipsum dolor sit amet, no nam oblique veritus.\n                                "
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-timeline-item",
+                    {
+                      attrs: {
+                        color: "cyan lighten-1",
+                        "fill-dot": "",
+                        right: ""
+                      }
+                    },
+                    [
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-card-title",
+                            { staticClass: "cyan lighten-1" },
+                            [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-4",
+                                  attrs: { dark: "", size: "42" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                mdi-email-outline\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "h2",
+                                {
+                                  staticClass:
+                                    "display-1 white--text font-weight-light"
+                                },
+                                [_vm._v("Title 3")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-container",
+                            [
+                              _c(
+                                "v-row",
+                                _vm._l(3, function(n) {
+                                  return _c(
+                                    "v-col",
+                                    { key: n, attrs: { cols: "12", md: "4" } },
+                                    [
+                                      _vm._v(
+                                        "\n                                    Lorem ipsum dolor sit amet, no nam oblique veritus no nam oblique.\n                                "
+                                      )
+                                    ]
+                                  )
+                                }),
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-timeline-item",
+                    {
+                      attrs: {
+                        color: "red lighten-1",
+                        "fill-dot": "",
+                        left: "",
+                        small: ""
+                      }
+                    },
+                    [
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-card-title",
+                            { staticClass: "red lighten-1 justify-end" },
+                            [
+                              _c(
+                                "h2",
+                                {
+                                  staticClass:
+                                    "display-1 mr-4 white--text font-weight-light"
+                                },
+                                [_vm._v("Title 4")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-icon",
+                                { attrs: { dark: "", size: "42" } },
+                                [
+                                  _vm._v(
+                                    "\n                                mdi-account-multiple-outline\n                            "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-container",
+                            [
+                              _c(
+                                "v-row",
+                                [
+                                  _c(
+                                    "v-col",
+                                    {
+                                      staticClass: "hidden-sm-and-down",
+                                      attrs: { md: "2" }
+                                    },
+                                    [
+                                      _c("v-icon", { attrs: { size: "24" } }, [
+                                        _vm._v("mdi-server-network")
+                                      ])
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-col",
+                                    { attrs: { cols: "12", md: "10" } },
+                                    [
+                                      _vm._v(
+                                        "\n                                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet\n                                    nec ut,\n                                    sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril\n                                    disputando\n                                    voluptatibus.\n                                "
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-timeline-item",
+                    {
+                      attrs: {
+                        color: "green lighten-1",
+                        "fill-dot": "",
+                        right: ""
+                      }
+                    },
+                    [
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-card-title",
+                            { staticClass: "green lighten-1" },
+                            [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-4",
+                                  attrs: { dark: "", size: "42" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                mdi-phone-in-talk\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "h2",
+                                {
+                                  staticClass:
+                                    "display-1 white--text font-weight-light"
+                                },
+                                [_vm._v("Title 5")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-container",
+                            [
+                              _c(
+                                "v-row",
+                                [
+                                  _c("v-col", [
+                                    _vm._v(
+                                      "\n                                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet\n                                    nec ut,\n                                    sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril\n                                    disputando\n                                    voluptatibus, vix an salutandi sententiae.\n                                "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
                         ],
                         1
                       )
