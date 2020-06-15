@@ -22,7 +22,6 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
-    public const MYHOME = '/profile';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -31,7 +30,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Route::macro('combine', function(array $uris, $action)
+        {
+            foreach ($uris as $uri) {
+                Route::any($uri, $action);
+            }
+        });
 
         parent::boot();
     }

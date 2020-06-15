@@ -13,26 +13,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        return view('admin.index');
-    }
-
-    public function add()
-    {
-        return view('admin.addQuiz');
-    }
-
-    public function edit()
-    {
-        return view('admin.editQuiz');
-    }
-
-    public function quizzes()
-    {
-        return view('admin.quizzes');
-    }
-    public function about()
-    {
-        return view('admin.about');
+        return view('layouts.admin');
     }
 
 }

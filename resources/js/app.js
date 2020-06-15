@@ -4,27 +4,22 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-import stores from './Vuex'
-import Vuex from 'vuex'
+import store from './vuex'
+import router from './routes'
+import vuetify from "./plugins/vuetify";
+import i18n from './plugins/i18n'
+import './plugins/base'
+import './plugins/chartist'
+import './plugins/vee-validate'
 
 window.Vue = require('vue');
 
-Vue.use(Vuex)
 
-const store = new Vuex.Store(stores)
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('menu-component', require('./components/MenuComponent.vue').default);
 Vue.component('content-component', require('./components/ContentComponent.vue').default);
 
 /**
@@ -32,8 +27,13 @@ Vue.component('content-component', require('./components/ContentComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
 const app = new Vue({
     el: '#app',
+    router,
     store,
+    vuetify,
+    i18n
 });
+
+
+

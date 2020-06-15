@@ -1,18 +1,2 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700');
-
-// Variables
 @import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-// admin
-@import "admin/_layout";
-@import "admin/_nav";
-@import "admin/_toolsbar";
-@import "admin/_notice";
-@import "admin/_content";
-@import "admin/_card";
-@import "admin/_main";
-@import "admin/_table";
+@import 'overrides';
