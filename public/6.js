@@ -28,10 +28,10 @@ __webpack_require__.r(__webpack_exports__);
       return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
     },
     DashboardCoreDrawer: function DashboardCoreDrawer() {
-      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
     },
     DashboardCoreSettings: function DashboardCoreSettings() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
     },
     DashboardCoreView: function DashboardCoreView() {
       return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./core/View */ "./resources/js/views/admin/components/core/View.vue"));

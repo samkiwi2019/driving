@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'DashboardCoreView',
   components: {
     DashboardCoreFooter: function DashboardCoreFooter() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./Footer */ "./resources/js/views/admin/components/core/Footer.vue"));
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./Footer */ "./resources/js/views/admin/components/core/Footer.vue"));
     }
   }
 });
