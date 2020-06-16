@@ -16,10 +16,12 @@ class CreateQuizzesTable extends Migration
         Schema::create('quizzes', function (Blueprint $table) {
             $table->id();
             $table->string("question", 255);
-            $table->string("language");
+            $table->string("i18n");
             $table->string("imageUrl")->nullable();
             $table->text("explanation");
             $table->string("type");
+            $table->integer("correct")->default(0);
+            $table->integer("incorrect")->default(0);
             $table->timestamps();
         });
     }
