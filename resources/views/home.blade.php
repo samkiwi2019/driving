@@ -16,8 +16,12 @@
                             {{ Auth::user()->nickname }} are logged in!
                     </div>
                     <a href="/admin/index">admin index</a>
-                    <example-component></example-component>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <passport-authorized-clients></passport-authorized-clients>
             </div>
         </div>
     </div>
