@@ -1205,7 +1205,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VAlert/index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VAlert/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VAlert/axios.js ***!
   \*************************************************************/
 /*! exports provided: VAlert, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1218,7 +1218,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VAlert__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -1529,7 +1529,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VAppBar/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VAppBar/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VAppBar/axios.js ***!
   \**************************************************************/
 /*! exports provided: VAppBar, VAppBarNavIcon, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1551,7 +1551,7 @@ __webpack_require__.r(__webpack_exports__);
     VAppBarNavIcon: _VAppBarNavIcon__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -1937,7 +1937,7 @@ const defaultMenuProps = { ..._VSelect_VSelect__WEBPACK_IMPORTED_MODULE_1__["def
 
 /***/ "./node_modules/vuetify/lib/components/VAutocomplete/index.js":
 /*!********************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VAutocomplete/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VAutocomplete/axios.js ***!
   \********************************************************************/
 /*! exports provided: VAutocomplete, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1950,7 +1950,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VAutocomplete__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -2165,7 +2165,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VBadge/index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VBadge/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VBadge/axios.js ***!
   \*************************************************************/
 /*! exports provided: VBadge, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2178,7 +2178,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VBadge__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -2351,7 +2351,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VBanner/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VBanner/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VBanner/axios.js ***!
   \**************************************************************/
 /*! exports provided: VBanner, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2364,7 +2364,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VBanner__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -2514,7 +2514,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VBottomNavigation/index.js":
 /*!************************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VBottomNavigation/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VBottomNavigation/axios.js ***!
   \************************************************************************/
 /*! exports provided: VBottomNavigation, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2527,7 +2527,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VBottomNavigation__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -2577,7 +2577,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VBottomSheet/index.js":
 /*!*******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VBottomSheet/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VBottomSheet/axios.js ***!
   \*******************************************************************/
 /*! exports provided: VBottomSheet, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2590,7 +2590,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VBottomSheet__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -2756,7 +2756,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VBreadcrumbs/index.js":
 /*!*******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VBreadcrumbs/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VBreadcrumbs/axios.js ***!
   \*******************************************************************/
 /*! exports provided: VBreadcrumbs, VBreadcrumbsItem, VBreadcrumbsDivider, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2783,7 +2783,7 @@ __webpack_require__.r(__webpack_exports__);
     VBreadcrumbsDivider: _VBreadcrumbsDivider__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -2852,7 +2852,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VBtnToggle/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VBtnToggle/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VBtnToggle/axios.js ***!
   \*****************************************************************/
 /*! exports provided: VBtnToggle, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2865,7 +2865,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VBtnToggle__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -3912,7 +3912,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VCalendar/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VCalendar/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VCalendar/axios.js ***!
   \****************************************************************/
 /*! exports provided: VCalendar, VCalendarCategory, VCalendarDaily, VCalendarWeekly, VCalendarMonthly, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -3949,7 +3949,7 @@ __webpack_require__.r(__webpack_exports__);
     VCalendarMonthly: _VCalendarMonthly__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -5096,7 +5096,7 @@ function getOverlapGroupHandler(firstWeekday) {
 
 /***/ "./node_modules/vuetify/lib/components/VCalendar/modes/index.js":
 /*!**********************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VCalendar/modes/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VCalendar/modes/axios.js ***!
   \**********************************************************************/
 /*! exports provided: CalendarEventOverlapModes */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -5112,7 +5112,7 @@ const CalendarEventOverlapModes = {
   stack: _stack__WEBPACK_IMPORTED_MODULE_0__["stack"],
   column: _column__WEBPACK_IMPORTED_MODULE_1__["column"]
 };
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -6509,7 +6509,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_2__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VCarousel/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VCarousel/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VCarousel/axios.js ***!
   \****************************************************************/
 /*! exports provided: VCarousel, VCarouselItem, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6531,7 +6531,7 @@ __webpack_require__.r(__webpack_exports__);
     VCarouselItem: _VCarouselItem__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -6659,7 +6659,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VCheckbox/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VCheckbox/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VCheckbox/axios.js ***!
   \****************************************************************/
 /*! exports provided: VCheckbox, VSimpleCheckbox, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6681,7 +6681,7 @@ __webpack_require__.r(__webpack_exports__);
     VSimpleCheckbox: _VSimpleCheckbox__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -6751,7 +6751,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VChipGroup/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VChipGroup/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VChipGroup/axios.js ***!
   \*****************************************************************/
 /*! exports provided: VChipGroup, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6764,7 +6764,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VChipGroup__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -7544,7 +7544,7 @@ const black = Object(_util__WEBPACK_IMPORTED_MODULE_3__["fromHex"])('#000000').r
 
 /***/ "./node_modules/vuetify/lib/components/VColorPicker/index.js":
 /*!*******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VColorPicker/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VColorPicker/axios.js ***!
   \*******************************************************************/
 /*! exports provided: VColorPicker, VColorPickerSwatches, VColorPickerCanvas, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -7565,13 +7565,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VColorPicker__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/components/VColorPicker/util/index.js":
 /*!************************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VColorPicker/util/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VColorPicker/util/axios.js ***!
   \************************************************************************/
 /*! exports provided: fromHSVA, fromHSLA, fromRGBA, fromHexa, fromHex, parseColor, extractColor, hasAlpha */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -7734,7 +7734,7 @@ function hasAlpha(color) {
 
   return false;
 }
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -7974,7 +7974,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VCombobox/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VCombobox/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VCombobox/axios.js ***!
   \****************************************************************/
 /*! exports provided: VCombobox, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -7987,7 +7987,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VCombobox__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -8021,7 +8021,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VContent/index.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VContent/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VContent/axios.js ***!
   \***************************************************************/
 /*! exports provided: VContent, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -8034,7 +8034,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VContent__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -9186,7 +9186,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VDatePicker/index.js":
 /*!******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VDatePicker/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VDatePicker/axios.js ***!
   \******************************************************************/
 /*! exports provided: VDatePicker, VDatePickerTitle, VDatePickerHeader, VDatePickerDateTable, VDatePickerMonthTable, VDatePickerYears, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -9228,7 +9228,7 @@ __webpack_require__.r(__webpack_exports__);
     VDatePickerYears: _VDatePickerYears__WEBPACK_IMPORTED_MODULE_5__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -9536,7 +9536,7 @@ function createItemTypeListeners(instance, itemTypeSuffix) {
 
 /***/ "./node_modules/vuetify/lib/components/VDatePicker/util/index.js":
 /*!***********************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VDatePicker/util/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VDatePicker/util/axios.js ***!
   \***********************************************************************/
 /*! exports provided: createItemTypeListeners, createItemTypeNativeListeners, createNativeLocaleFormatter, monthChange, pad */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -9562,7 +9562,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10020,7 +10020,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VExpansionPanel/index.js":
 /*!**********************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VExpansionPanel/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VExpansionPanel/axios.js ***!
   \**********************************************************************/
 /*! exports provided: VExpansionPanels, VExpansionPanel, VExpansionPanelHeader, VExpansionPanelContent, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10052,7 +10052,7 @@ __webpack_require__.r(__webpack_exports__);
     VExpansionPanelContent: _VExpansionPanelContent__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10349,7 +10349,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VFileInput/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VFileInput/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VFileInput/axios.js ***!
   \*****************************************************************/
 /*! exports provided: VFileInput, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10362,7 +10362,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VFileInput__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10472,7 +10472,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VFooter/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VFooter/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VFooter/axios.js ***!
   \**************************************************************/
 /*! exports provided: VFooter, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10485,7 +10485,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VFooter__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10640,7 +10640,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VForm/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VForm/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VForm/axios.js ***!
   \************************************************************/
 /*! exports provided: VForm, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10653,7 +10653,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VForm__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10744,7 +10744,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VHover/index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VHover/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VHover/axios.js ***!
   \*************************************************************/
 /*! exports provided: VHover, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10757,7 +10757,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VHover__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10860,7 +10860,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VLazy/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VLazy/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VLazy/axios.js ***!
   \************************************************************/
 /*! exports provided: VLazy, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10873,7 +10873,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VLazy__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -10942,7 +10942,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VMain/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VMain/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VMain/axios.js ***!
   \************************************************************/
 /*! exports provided: VMain, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10955,7 +10955,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VMain__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -11081,7 +11081,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VOverflowBtn/index.js":
 /*!*******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VOverflowBtn/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VOverflowBtn/axios.js ***!
   \*******************************************************************/
 /*! exports provided: VOverflowBtn, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -11094,7 +11094,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VOverflowBtn__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -11347,7 +11347,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VPagination/index.js":
 /*!******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VPagination/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VPagination/axios.js ***!
   \******************************************************************/
 /*! exports provided: VPagination, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -11360,7 +11360,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VPagination__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -11474,7 +11474,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_2__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VParallax/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VParallax/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VParallax/axios.js ***!
   \****************************************************************/
 /*! exports provided: VParallax, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -11487,7 +11487,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VParallax__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -11605,7 +11605,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VPicker/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VPicker/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VPicker/axios.js ***!
   \**************************************************************/
 /*! exports provided: VPicker, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -11618,7 +11618,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VPicker__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -11916,7 +11916,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VRadioGroup/index.js":
 /*!******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VRadioGroup/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VRadioGroup/axios.js ***!
   \******************************************************************/
 /*! exports provided: VRadioGroup, VRadio, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -11938,7 +11938,7 @@ __webpack_require__.r(__webpack_exports__);
     VRadio: _VRadio__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -12162,7 +12162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VRangeSlider/index.js":
 /*!*******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VRangeSlider/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VRangeSlider/axios.js ***!
   \*******************************************************************/
 /*! exports provided: VRangeSlider, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -12175,7 +12175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VRangeSlider__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -12431,7 +12431,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VRating/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VRating/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VRating/axios.js ***!
   \**************************************************************/
 /*! exports provided: VRating, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -12444,13 +12444,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VRating__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/components/VSelect/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSelect/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSelect/axios.js ***!
   \**************************************************************/
 /*! exports provided: VSelect, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -12463,7 +12463,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSelect__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -12676,7 +12676,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VSkeletonLoader/index.js":
 /*!**********************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSkeletonLoader/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSkeletonLoader/axios.js ***!
   \**********************************************************************/
 /*! exports provided: VSkeletonLoader, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -12689,7 +12689,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSkeletonLoader__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -13122,7 +13122,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VSlideGroup/index.js":
 /*!******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSlideGroup/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSlideGroup/axios.js ***!
   \******************************************************************/
 /*! exports provided: VSlideGroup, VSlideItem, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -13144,7 +13144,7 @@ __webpack_require__.r(__webpack_exports__);
     VSlideItem: _VSlideItem__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -13717,7 +13717,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VSlider/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSlider/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSlider/axios.js ***!
   \**************************************************************/
 /*! exports provided: VSlider, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -13730,7 +13730,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSlider__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -13945,7 +13945,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VSnackbar/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSnackbar/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSnackbar/axios.js ***!
   \****************************************************************/
 /*! exports provided: VSnackbar, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -13958,7 +13958,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSnackbar__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -14082,7 +14082,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VSpeedDial/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSpeedDial/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSpeedDial/axios.js ***!
   \*****************************************************************/
 /*! exports provided: VSpeedDial, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -14095,7 +14095,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSpeedDial__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -14543,7 +14543,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_4__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VStepper/index.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VStepper/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VStepper/axios.js ***!
   \***************************************************************/
 /*! exports provided: VStepper, VStepperContent, VStepperStep, VStepperHeader, VStepperItems, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -14578,7 +14578,7 @@ const VStepperItems = Object(_util_helpers__WEBPACK_IMPORTED_MODULE_0__["createS
     VStepperItems
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -14666,7 +14666,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VSystemBar/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSystemBar/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSystemBar/axios.js ***!
   \*****************************************************************/
 /*! exports provided: VSystemBar, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -14679,7 +14679,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSystemBar__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -15316,7 +15316,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VTabs/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VTabs/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VTabs/axios.js ***!
   \************************************************************/
 /*! exports provided: VTabs, VTab, VTabItem, VTabsItems, VTabsSlider, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -15353,7 +15353,7 @@ __webpack_require__.r(__webpack_exports__);
     VTabsSlider: _VTabsSlider__WEBPACK_IMPORTED_MODULE_4__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -15471,7 +15471,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_2__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VTextarea/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VTextarea/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VTextarea/axios.js ***!
   \****************************************************************/
 /*! exports provided: VTextarea, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -15484,7 +15484,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VTextarea__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -16255,7 +16255,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VTimePicker/index.js":
 /*!******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VTimePicker/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VTimePicker/axios.js ***!
   \******************************************************************/
 /*! exports provided: VTimePicker, VTimePickerClock, VTimePickerTitle, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -16282,7 +16282,7 @@ __webpack_require__.r(__webpack_exports__);
     VTimePickerTitle: _VTimePickerTitle__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -16465,7 +16465,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_0__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VTimeline/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VTimeline/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VTimeline/axios.js ***!
   \****************************************************************/
 /*! exports provided: VTimeline, VTimelineItem, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -16487,7 +16487,7 @@ __webpack_require__.r(__webpack_exports__);
     VTimelineItem: _VTimelineItem__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -16728,7 +16728,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VTooltip/index.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VTooltip/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VTooltip/axios.js ***!
   \***************************************************************/
 /*! exports provided: VTooltip, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -16741,7 +16741,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VTooltip__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -17521,7 +17521,7 @@ const VTreeviewNode = baseMixins.extend().extend({
 
 /***/ "./node_modules/vuetify/lib/components/VTreeview/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VTreeview/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VTreeview/axios.js ***!
   \****************************************************************/
 /*! exports provided: VTreeview, VTreeviewNode, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -17543,7 +17543,7 @@ __webpack_require__.r(__webpack_exports__);
     VTreeviewNode: _VTreeviewNode__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -17724,7 +17724,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VVirtualScroll/index.js":
 /*!*********************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VVirtualScroll/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VVirtualScroll/axios.js ***!
   \*********************************************************************/
 /*! exports provided: VVirtualScroll, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -17737,7 +17737,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VVirtualScroll__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -18178,7 +18178,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_4__["default"])(
 
 /***/ "./node_modules/vuetify/lib/components/VWindow/index.js":
 /*!**************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VWindow/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VWindow/axios.js ***!
   \**************************************************************/
 /*! exports provided: VWindow, VWindowItem, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -18200,13 +18200,13 @@ __webpack_require__.r(__webpack_exports__);
     VWindowItem: _VWindowItem__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/components/index.js":
 /*!******************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/axios.js ***!
   \******************************************************/
 /*! exports provided: VApp, VAppBar, VAppBarNavIcon, VAlert, VAutocomplete, VAvatar, VBadge, VBanner, VBottomNavigation, VBottomSheet, VBreadcrumbs, VBreadcrumbsItem, VBreadcrumbsDivider, VBtn, VBtnToggle, VCalendar, VCalendarCategory, VCalendarDaily, VCalendarWeekly, VCalendarMonthly, VCard, VCardActions, VCardSubtitle, VCardText, VCardTitle, VCarousel, VCarouselItem, VCheckbox, VSimpleCheckbox, VChip, VChipGroup, VColorPicker, VColorPickerSwatches, VColorPickerCanvas, VContent, VCombobox, VCounter, VData, VDataIterator, VDataFooter, VDataTable, VEditDialog, VTableOverflow, VDataTableHeader, VSimpleTable, VVirtualTable, VDatePicker, VDatePickerTitle, VDatePickerHeader, VDatePickerDateTable, VDatePickerMonthTable, VDatePickerYears, VDialog, VDivider, VExpansionPanels, VExpansionPanel, VExpansionPanelHeader, VExpansionPanelContent, VFileInput, VFooter, VForm, VContainer, VCol, VRow, VSpacer, VLayout, VFlex, VHover, VIcon, VImg, VInput, VItem, VItemGroup, VLabel, VLazy, VListItemActionText, VListItemContent, VListItemTitle, VListItemSubtitle, VList, VListGroup, VListItem, VListItemAction, VListItemAvatar, VListItemIcon, VListItemGroup, VMain, VMenu, VMessages, VNavigationDrawer, VOverflowBtn, VOverlay, VPagination, VSheet, VParallax, VPicker, VProgressCircular, VProgressLinear, VRadioGroup, VRadio, VRangeSlider, VRating, VResponsive, VSelect, VSkeletonLoader, VSlider, VSlideGroup, VSlideItem, VSnackbar, VSparkline, VSpeedDial, VStepper, VStepperContent, VStepperStep, VStepperHeader, VStepperItems, VSubheader, VSwitch, VSystemBar, VTabs, VTab, VTabItem, VTabsItems, VTabsSlider, VTextarea, VTextField, VThemeProvider, VTimeline, VTimelineItem, VTimePicker, VTimePickerClock, VTimePickerTitle, VToolbar, VToolbarItems, VToolbarTitle, VTooltip, VTreeview, VTreeviewNode, VVirtualScroll, VWindow, VWindowItem, VCarouselTransition, VCarouselReverseTransition, VTabTransition, VTabReverseTransition, VMenuTransition, VFabTransition, VDialogTransition, VDialogBottomTransition, VFadeTransition, VScaleTransition, VScrollXTransition, VScrollXReverseTransition, VScrollYTransition, VScrollYReverseTransition, VSlideXTransition, VSlideXReverseTransition, VSlideYTransition, VSlideYReverseTransition, VExpandTransition, VExpandXTransition */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -18695,13 +18695,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/directives/index.js":
 /*!******************************************************!*\
-  !*** ./node_modules/vuetify/lib/directives/index.js ***!
+  !*** ./node_modules/vuetify/lib/directives/axios.js ***!
   \******************************************************/
 /*! exports provided: ClickOutside, Intersect, Mutate, Resize, Ripple, Scroll, Touch */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -18736,13 +18736,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/directives/mutate/index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/vuetify/lib/directives/mutate/index.js ***!
+  !*** ./node_modules/vuetify/lib/directives/mutate/axios.js ***!
   \*************************************************************/
 /*! exports provided: Mutate, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -18801,13 +18801,13 @@ const Mutate = {
   unbind
 };
 /* harmony default export */ __webpack_exports__["default"] = (Mutate);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/directives/scroll/index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/vuetify/lib/directives/scroll/index.js ***!
+  !*** ./node_modules/vuetify/lib/directives/scroll/axios.js ***!
   \*************************************************************/
 /*! exports provided: Scroll, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -18851,13 +18851,13 @@ const Scroll = {
   unbind
 };
 /* harmony default export */ __webpack_exports__["default"] = (Scroll);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/index.js":
 /*!*******************************************!*\
-  !*** ./node_modules/vuetify/lib/index.js ***!
+  !*** ./node_modules/vuetify/lib/axios.js ***!
   \*******************************************/
 /*! exports provided: VApp, VAppBar, VAppBarNavIcon, VAlert, VAutocomplete, VAvatar, VBadge, VBanner, VBottomNavigation, VBottomSheet, VBreadcrumbs, VBreadcrumbsItem, VBreadcrumbsDivider, VBtn, VBtnToggle, VCalendar, VCalendarCategory, VCalendarDaily, VCalendarWeekly, VCalendarMonthly, VCard, VCardActions, VCardSubtitle, VCardText, VCardTitle, VCarousel, VCarouselItem, VCheckbox, VSimpleCheckbox, VChip, VChipGroup, VColorPicker, VColorPickerSwatches, VColorPickerCanvas, VContent, VCombobox, VCounter, VData, VDataIterator, VDataFooter, VDataTable, VEditDialog, VTableOverflow, VDataTableHeader, VSimpleTable, VVirtualTable, VDatePicker, VDatePickerTitle, VDatePickerHeader, VDatePickerDateTable, VDatePickerMonthTable, VDatePickerYears, VDialog, VDivider, VExpansionPanels, VExpansionPanel, VExpansionPanelHeader, VExpansionPanelContent, VFileInput, VFooter, VForm, VContainer, VCol, VRow, VSpacer, VLayout, VFlex, VHover, VIcon, VImg, VInput, VItem, VItemGroup, VLabel, VLazy, VListItemActionText, VListItemContent, VListItemTitle, VListItemSubtitle, VList, VListGroup, VListItem, VListItemAction, VListItemAvatar, VListItemIcon, VListItemGroup, VMain, VMenu, VMessages, VNavigationDrawer, VOverflowBtn, VOverlay, VPagination, VSheet, VParallax, VPicker, VProgressCircular, VProgressLinear, VRadioGroup, VRadio, VRangeSlider, VRating, VResponsive, VSelect, VSkeletonLoader, VSlider, VSlideGroup, VSlideItem, VSnackbar, VSparkline, VSpeedDial, VStepper, VStepperContent, VStepperStep, VStepperHeader, VStepperItems, VSubheader, VSwitch, VSystemBar, VTabs, VTab, VTabItem, VTabsItems, VTabsSlider, VTextarea, VTextField, VThemeProvider, VTimeline, VTimelineItem, VTimePicker, VTimePickerClock, VTimePickerTitle, VToolbar, VToolbarItems, VToolbarTitle, VTooltip, VTreeview, VTreeviewNode, VVirtualScroll, VWindow, VWindowItem, VCarouselTransition, VCarouselReverseTransition, VTabTransition, VTabReverseTransition, VMenuTransition, VFabTransition, VDialogTransition, VDialogBottomTransition, VFadeTransition, VScaleTransition, VScrollXTransition, VScrollXReverseTransition, VScrollYTransition, VScrollYReverseTransition, VSlideXTransition, VSlideXReverseTransition, VSlideYTransition, VSlideYReverseTransition, VExpandTransition, VExpandXTransition, ClickOutside, Intersect, Mutate, Resize, Ripple, Scroll, Touch, colors, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19212,13 +19212,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/button-group/index.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/button-group/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/button-group/axios.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19250,13 +19250,13 @@ __webpack_require__.r(__webpack_exports__);
     genData: _components_VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_0__["BaseItemGroup"].options.methods.genData
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/localable/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/localable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/localable/axios.js ***!
   \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19278,13 +19278,13 @@ __webpack_require__.r(__webpack_exports__);
 
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/picker-button/index.js":
 /*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/picker-button/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/picker-button/axios.js ***!
   \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19325,13 +19325,13 @@ __webpack_require__.r(__webpack_exports__);
 
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/picker/index.js":
 /*!*********************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/picker/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/picker/axios.js ***!
   \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19413,13 +19413,13 @@ __webpack_require__.r(__webpack_exports__);
 
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/scrollable/index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/scrollable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/scrollable/axios.js ***!
   \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19526,13 +19526,13 @@ __webpack_require__.r(__webpack_exports__);
 
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/transitionable/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/transitionable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/transitionable/axios.js ***!
   \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19550,13 +19550,13 @@ __webpack_require__.r(__webpack_exports__);
     transition: String
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/translatable/index.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/translatable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/translatable/axios.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19620,7 +19620,7 @@ __webpack_require__.r(__webpack_exports__);
 
   }
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 

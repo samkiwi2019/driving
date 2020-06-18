@@ -452,7 +452,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_13__["default"])
 
 /***/ "./node_modules/vuetify/lib/components/VNavigationDrawer/index.js":
 /*!************************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VNavigationDrawer/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VNavigationDrawer/axios.js ***!
   \************************************************************************/
 /*! exports provided: VNavigationDrawer, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -465,13 +465,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/applicationable/index.js":
 /*!******************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/applicationable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/applicationable/axios.js ***!
   \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -549,13 +549,13 @@ function applicationable(value, events = []) {
     }
   });
 }
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/ssr-bootable/index.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/ssr-bootable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/ssr-bootable/axios.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -591,7 +591,7 @@ __webpack_require__.r(__webpack_exports__);
   }
 
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 

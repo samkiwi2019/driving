@@ -519,7 +519,7 @@ function genPath(points, radius, fill = false, height = 75) {
 
 /***/ "./node_modules/vuetify/lib/components/VSparkline/index.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VSparkline/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VSparkline/axios.js ***!
   \*****************************************************************/
 /*! exports provided: VSparkline, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -532,7 +532,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VSparkline__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ })
 

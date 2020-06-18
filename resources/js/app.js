@@ -11,7 +11,7 @@ import './plugins/base'
 import './plugins/chartist'
 import './plugins/vee-validate'
 
-import './axios'
+import './axios/axios'
 
 window.Vue = require('vue');
 
@@ -22,13 +22,6 @@ Vue.component(
     'content-component',
     require('./components/ContentComponent.vue').default
 );
-
-
-Vue.component(
-    'test',
-    require('./components/passport/Test.vue').default
-);
-
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

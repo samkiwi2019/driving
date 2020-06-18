@@ -32,9 +32,8 @@ class AuthServiceProvider extends ServiceProvider
 
         Passport::routes();
 
-//        Passport::loadKeysFrom('/secret-keys/oauth');
 
-        Passport::tokensExpireIn(Carbon::now()->addHours(3));   //令牌有效期3小时
+        Passport::tokensExpireIn(Carbon::now()->addHours(48));
         Passport::refreshTokensExpireIn(Carbon::now()->addDays(30));
     }
 }

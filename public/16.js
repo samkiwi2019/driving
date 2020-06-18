@@ -874,7 +874,7 @@ module.exports = function installComponents (component, components) {
 
 /***/ "./node_modules/vuetify/lib/mixins/themeable/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/themeable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/themeable/axios.js ***!
   \************************************************************/
 /*! exports provided: functionalThemeClasses, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -991,7 +991,7 @@ const Themeable = vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend().extend({
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (Themeable);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
@@ -1056,7 +1056,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   null,
   null,
   null
-  
+
 )
 
 /* vuetify-loader */
@@ -1097,7 +1097,7 @@ component.options.__file = "resources/js/views/admin/ListQuiz.vue"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListQuiz_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vuetify-loader/lib/loader.js??ref--12-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./ListQuiz.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/admin/ListQuiz.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListQuiz_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListQuiz_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 

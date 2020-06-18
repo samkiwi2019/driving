@@ -403,7 +403,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vuetify/lib/components/VApp/index.js":
 /*!***********************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VApp/index.js ***!
+  !*** ./node_modules/vuetify/lib/components/VApp/axios.js ***!
   \***********************************************************/
 /*! exports provided: VApp, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -416,13 +416,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_VApp__WEBPACK_IMPORTED_MODULE_0__["default"]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
 /***/ "./node_modules/vuetify/lib/mixins/themeable/index.js":
 /*!************************************************************!*\
-  !*** ./node_modules/vuetify/lib/mixins/themeable/index.js ***!
+  !*** ./node_modules/vuetify/lib/mixins/themeable/axios.js ***!
   \************************************************************/
 /*! exports provided: functionalThemeClasses, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -539,7 +539,7 @@ const Themeable = vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend().extend({
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (Themeable);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=axios.js.map
 
 /***/ }),
 
