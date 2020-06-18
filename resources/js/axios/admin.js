@@ -1,15 +1,29 @@
-import axios from '@/libs/api.request'
+import axios from './api.request'
+
 
 /**
- * Get all quizzes (Authorization)
- * @param {object} data => {pages:int (default : 1), size: int (default : 10) }
- * @return Quiz[]
- *
- * */
-export const getQuizList = (data) => {
+ *  Login
+ *  @param string email
+ *  @param string password
+ */
+export const login = ({email,password}) => {
     return axios.request({
-        url: '/api/admin/quizzes',
-        data: data,
+        url: '/api/login',
+        data: {email,password},
+        method: 'post'
+    })
+}
+
+/**
+ * Get all quizzes (require: Authorization)
+ * @param int pages
+ * @param int size
+ * @return Quiz[]
+ * */
+export const getQuizList = ({pages = 1,size = 1}) => {
+    return axios.request({
+        url: '/api/v1/quizzes',
+        data: {pages, size},
         method: 'post'
     })
 };

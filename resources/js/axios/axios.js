@@ -9,8 +9,9 @@ class HttpRequest {
         const config = {
             baseURL: this.baseUrl,
             headers: {
+                'X-CSRF-TOKEN': document.getElementsByName('csrf-token')[0].content,
                 'X-Requested-With': 'XMLHttpRequest',
-                'Authorization': `${localStorage.token_type} ${localStorage.access_token}`, // passport
+                'Authorization': `Bearer ${localStorage.access_token}`, // passport
             },
             withCredentials: true // take up cookies
         }

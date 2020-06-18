@@ -9,18 +9,21 @@ import vuetify from "./plugins/vuetify";
 import i18n from './plugins/i18n'
 import './plugins/base'
 import './plugins/chartist'
-import './plugins/vee-validate'
+import "./plugins/vee-validate";
 
-import './axios/axios'
+'./plugins/vee-validate'
+
 
 window.Vue = require('vue');
+Vue.config.productionTip = false
+
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component(
-    'content-component',
-    require('./components/ContentComponent.vue').default
+    'login',
+    require('./components/login/Login.vue').default
 );
 
 /**
