@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//
+//Route::middleware('client.credentials')->group(function () {
+//    Route::get('/user', 'AdminApiController@query');
+//});
 
-Route::middleware('client.credentials')->group(function () {
-    Route::get('/user', 'AdminApiController@query');
+Route::prefix('user')->group(function(){
+    Route::post('login', 'api\LoginController@login');
+    Route::middleware("auth:api")->get('/all', 'api\admin\AdminController@index');
 });

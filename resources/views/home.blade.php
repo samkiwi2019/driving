@@ -21,7 +21,7 @@
                 <br>
                 <br>
                 <br>
-                <passport-authorized-clients></passport-authorized-clients>
+                <test></test>
             </div>
         </div>
     </div>

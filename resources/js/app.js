@@ -25,8 +25,8 @@ Vue.component(
 
 
 Vue.component(
-    'passport-authorized-clients',
-    require('./components/passport/AuthorizedClients.vue').default
+    'test',
+    require('./components/passport/Test.vue').default
 );
 
 

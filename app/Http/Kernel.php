@@ -40,9 +40,6 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            \App\Http\Middleware\EncryptCookies::class,         // using token
-            \Illuminate\Session\Middleware\StartSession::class, //using session
-            \App\Http\Middleware\VerifyCsrfToken::class,        //using csrf
             'throttle:60,1',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
@@ -66,7 +63,5 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'client.credentials' => \Laravel\Passport\Http\Middleware\CheckClientCredentials::class,
-
     ];
 }
