@@ -1,4 +1,4 @@
-import {login, apiLogin, logout} from "_a/admin";
+import {login, apiLogin, logout, getUser} from "_a/admin";
 
 const state = {
     user: {}
@@ -30,15 +30,18 @@ const actions = {
             }
         })
     },
-    logout({dispatch,commit}, payload) {
+    logoutAction({dispatch,commit}, payload) {
         commit('CLEAR_USER');
         localStorage.removeItem('access_token')
         logout();
         dispatch('redirect');
-
     },
     redirect(){
         window.location.replace('/')
+    },
+    async getUserAction({commit}){
+        const {data} = await getUser();
+        commit("SET_USER", data)
     }
 }
 

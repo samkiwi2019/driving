@@ -29,6 +29,14 @@ export const logout = () => {
     })
 }
 
+export const getUser = () => {
+    return axios.request({
+        url: '/api/v1/user',
+        method: 'post'
+    })
+}
+
+
 
 /**
  * Get all quizzes (require: Authorization)

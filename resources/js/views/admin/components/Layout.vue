@@ -24,5 +24,8 @@
         data: () => ({
             expandOnHover: false,
         }),
+        created() {
+            this.$store.dispatch('user/getUserAction')
+        }
     }
 </script>

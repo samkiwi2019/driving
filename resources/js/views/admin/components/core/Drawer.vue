@@ -158,7 +158,7 @@
 
         methods: {
             ...mapActions({
-                logoutAction: 'logout'
+                logoutAction: 'logoutAction'
             }),
             mapItem(item) {
                 return {

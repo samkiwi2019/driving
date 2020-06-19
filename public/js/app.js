@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"d89b2e328b2bb8284aeb","1":"26ad66a0f9478b44732f","2":"93c5ab7f528bdbad0288","3":"18ed2473429486c5b8ce","4":"bf619f05b3e76f0e560e","5":"407fef35e59d83ffa019","6":"f53ee38c8c0e369961c3","7":"594f25cf4eb451b04d58","8":"e3edd0489ce4609638f3","9":"d3ad1f4ec37e6910d42d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"d89b2e328b2bb8284aeb","1":"1196a5d61b8896e87659","2":"93c5ab7f528bdbad0288","3":"18ed2473429486c5b8ce","4":"bf619f05b3e76f0e560e","5":"407fef35e59d83ffa019","6":"df5efcedb285eaed718a","7":"594f25cf4eb451b04d58","8":"e3edd0489ce4609638f3","9":"d3ad1f4ec37e6910d42d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -77410,7 +77410,7 @@ var app = new Vue({
 /*!*************************************!*\
   !*** ./resources/js/axios/admin.js ***!
   \*************************************/
-/*! exports provided: apiLogin, login, logout, getQuizList */
+/*! exports provided: apiLogin, login, logout, getUser, getQuizList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77418,6 +77418,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "apiLogin", function() { return apiLogin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getQuizList", function() { return getQuizList; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/axios/api.request.js");
 
@@ -77456,6 +77457,12 @@ var login = function login(_ref2) {
 var logout = function logout() {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
     url: '/logout',
+    method: 'post'
+  });
+};
+var getUser = function getUser() {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/user',
     method: 'post'
   });
 };
@@ -79261,18 +79268,41 @@ var actions = {
       };
     }());
   },
-  logout: function logout(_ref3, payload) {
+  logoutAction: function logoutAction(_ref3, payload) {
     var dispatch = _ref3.dispatch,
         commit = _ref3.commit;
     commit('CLEAR_USER');
     localStorage.removeItem('access_token');
-
     Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["logout"])();
-
     dispatch('redirect');
   },
   redirect: function redirect() {
     window.location.replace('/');
+  },
+  getUserAction: function getUserAction(_ref4) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+      var commit, _yield$getUser, data;
+
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              commit = _ref4.commit;
+              _context2.next = 3;
+              return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getUser"])();
+
+            case 3:
+              _yield$getUser = _context2.sent;
+              data = _yield$getUser.data;
+              commit("SET_USER", data);
+
+            case 6:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }))();
   }
 }; // mutations
 
