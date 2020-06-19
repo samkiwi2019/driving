@@ -102,6 +102,7 @@
     import {createNamespacedHelpers} from 'vuex'
 
     const {mapState} = createNamespacedHelpers('config');
+    const {mapActions} = createNamespacedHelpers('user');
 
     export default {
         name: 'DashboardCoreDrawer',
@@ -156,6 +157,9 @@
         },
 
         methods: {
+            ...mapActions({
+                logoutAction: 'logout'
+            }),
             mapItem(item) {
                 return {
                     ...item,
@@ -164,7 +168,8 @@
                 }
             },
             logout(){
-                document.getElementById('logout-form').submit();
+                this.logoutAction();
+                // document.getElementById('logout-form').submit();
             }
         },
     }

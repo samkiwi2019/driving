@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"d89b2e328b2bb8284aeb","1":"33db220f8fa5b1ade0cf","2":"93c5ab7f528bdbad0288","3":"18ed2473429486c5b8ce","4":"bf619f05b3e76f0e560e","5":"407fef35e59d83ffa019","6":"f53ee38c8c0e369961c3","7":"594f25cf4eb451b04d58","8":"e3edd0489ce4609638f3","9":"d3ad1f4ec37e6910d42d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"d89b2e328b2bb8284aeb","1":"26ad66a0f9478b44732f","2":"93c5ab7f528bdbad0288","3":"18ed2473429486c5b8ce","4":"bf619f05b3e76f0e560e","5":"407fef35e59d83ffa019","6":"f53ee38c8c0e369961c3","7":"594f25cf4eb451b04d58","8":"e3edd0489ce4609638f3","9":"d3ad1f4ec37e6910d42d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -2935,14 +2935,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _a_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! _a/admin */ "./resources/js/axios/admin.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 //
 //
@@ -3002,6 +3000,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// Utilities
+
+
+var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createNamespacedHelpers"])('user'),
+    mapActions = _createNamespacedHelp.mapActions;
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'login',
@@ -3010,45 +3036,37 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       access: {
         email: '',
         password: '',
-        checkbox: false
-      }
+        remember: false
+      },
+      loading: false,
+      timeout: 3000,
+      snackbar: false,
+      text: 'I\'m a multi-line snackbar.'
     };
   },
-  methods: {
-    login: function login() {
-      this.setAccessToken();
+  methods: _objectSpread(_objectSpread({}, mapActions({
+    login: 'loginAction'
+  })), {}, {
+    message: function message(text) {
+      this.text = text;
+      this.snackbar = true;
     },
-    setAccessToken: function setAccessToken() {
+    signIn: function signIn() {
       var _this = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var res, access_token;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["login"])(_this.access);
+      this.loading = true;
+      var params = this.access;
+      !params.remember && delete params.remember;
+      this.login(params).then(function (text) {
+        _this.message(text);
 
-              case 2:
-                res = _context.sent;
-
-                if (res.status === 200) {
-                  access_token = res.data.access_token;
-                  localStorage.setItem("access_token", access_token); //TODO:  emit web login
-                } else {//TODO:  alert the message of email or password incorrect!
-                  }
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }))();
+        _this.loading = false;
+      });
     }
-  },
-  created: function created() {}
+  }),
+  created: function created() {
+    console.log(this.$store);
+  }
 });
 
 /***/ }),
@@ -18891,20 +18909,20 @@ var render = function() {
                                           return [
                                             _c("v-checkbox", {
                                               attrs: {
-                                                value: "1",
+                                                value: "on",
                                                 label: "Remember Me",
                                                 type: "checkbox"
                                               },
                                               model: {
-                                                value: _vm.access.checkbox,
+                                                value: _vm.access.remember,
                                                 callback: function($$v) {
                                                   _vm.$set(
                                                     _vm.access,
-                                                    "checkbox",
+                                                    "remember",
                                                     $$v
                                                   )
                                                 },
-                                                expression: "access.checkbox"
+                                                expression: "access.remember"
                                               }
                                             })
                                           ]
@@ -18920,9 +18938,13 @@ var render = function() {
                                   "v-btn",
                                   {
                                     class: "mr-4 " + (!valid || "success"),
+                                    attrs: {
+                                      loading: _vm.loading,
+                                      disabled: _vm.loading
+                                    },
                                     on: {
                                       click: function($event) {
-                                        return handleSubmit(_vm.login)
+                                        return handleSubmit(_vm.signIn)
                                       }
                                     }
                                   },
@@ -18944,6 +18966,48 @@ var render = function() {
           )
         ],
         1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-snackbar",
+        {
+          attrs: { timeout: _vm.timeout, top: "" },
+          scopedSlots: _vm._u([
+            {
+              key: "action",
+              fn: function(ref) {
+                var attrs = ref.attrs
+                return [
+                  _c(
+                    "v-btn",
+                    _vm._b(
+                      {
+                        attrs: { color: "red", text: "" },
+                        on: {
+                          click: function($event) {
+                            _vm.snackbar = false
+                          }
+                        }
+                      },
+                      "v-btn",
+                      attrs,
+                      false
+                    ),
+                    [_vm._v("\n                Close\n            ")]
+                  )
+                ]
+              }
+            }
+          ]),
+          model: {
+            value: _vm.snackbar,
+            callback: function($$v) {
+              _vm.snackbar = $$v
+            },
+            expression: "snackbar"
+          }
+        },
+        [_vm._v("\n        " + _vm._s(_vm.text) + "\n\n        ")]
       )
     ],
     1
@@ -77346,12 +77410,14 @@ var app = new Vue({
 /*!*************************************!*\
   !*** ./resources/js/axios/admin.js ***!
   \*************************************/
-/*! exports provided: login, getQuizList */
+/*! exports provided: apiLogin, login, logout, getQuizList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "apiLogin", function() { return apiLogin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getQuizList", function() { return getQuizList; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/axios/api.request.js");
 
@@ -77361,7 +77427,7 @@ __webpack_require__.r(__webpack_exports__);
  *  @param string password
  */
 
-var login = function login(_ref) {
+var apiLogin = function apiLogin(_ref) {
   var email = _ref.email,
       password = _ref.password;
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
@@ -77373,6 +77439,26 @@ var login = function login(_ref) {
     method: 'post'
   });
 };
+var login = function login(_ref2) {
+  var email = _ref2.email,
+      password = _ref2.password,
+      remember = _ref2.remember;
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/login',
+    data: {
+      email: email,
+      password: password,
+      remember: remember
+    },
+    method: 'post'
+  });
+};
+var logout = function logout() {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/logout',
+    method: 'post'
+  });
+};
 /**
  * Get all quizzes (require: Authorization)
  * @param int pages
@@ -77380,11 +77466,11 @@ var login = function login(_ref) {
  * @return Quiz[]
  * */
 
-var getQuizList = function getQuizList(_ref2) {
-  var _ref2$pages = _ref2.pages,
-      pages = _ref2$pages === void 0 ? 1 : _ref2$pages,
-      _ref2$size = _ref2.size,
-      size = _ref2$size === void 0 ? 1 : _ref2$size;
+var getQuizList = function getQuizList(_ref3) {
+  var _ref3$pages = _ref3.pages,
+      pages = _ref3$pages === void 0 ? 1 : _ref3$pages,
+      _ref3$size = _ref3.size,
+      size = _ref3$size === void 0 ? 1 : _ref3$size;
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
     url: '/api/v1/quizzes',
     data: {
@@ -78727,7 +78813,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VCheckbox */ "./node_modules/vuetify/lib/components/VCheckbox/index.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VSnackbar */ "./node_modules/vuetify/lib/components/VSnackbar/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -78754,7 +78841,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__["VBtn"],VCheckbox: vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_5__["VCheckbox"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_7__["VTextField"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__["VBtn"],VCheckbox: vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_5__["VCheckbox"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"],VSnackbar: vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__["VSnackbar"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__["VTextField"]})
 
 
 /* hot reload */
@@ -79045,12 +79133,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _modules_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/config */ "./resources/js/vuex/modules/config.js");
+/* harmony import */ var _modules_user__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/user */ "./resources/js/vuex/modules/user.js");
+
 
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   modules: {
+    user: _modules_user__WEBPACK_IMPORTED_MODULE_3__["default"],
     config: _modules_config__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   state: {},
@@ -79085,6 +79176,112 @@ var mutations = {
   },
   SET_DRAWER: function SET_DRAWER(state, payload) {
     state.drawer = payload;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/js/vuex/modules/user.js":
+/*!*******************************************!*\
+  !*** ./resources/js/vuex/modules/user.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _a_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! _a/admin */ "./resources/js/axios/admin.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+var state = {
+  user: {}
+}; // getters
+
+var getters = {}; // actions
+
+var actions = {
+  loginAction: function loginAction(_ref, payload) {
+    var dispatch = _ref.dispatch,
+        commit = _ref.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve) {
+        var responses, is_login_succeed, is_api_login_succeed, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return Promise.all([Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["login"])(payload), Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["apiLogin"])(payload)]);
+
+              case 3:
+                responses = _context.sent;
+                is_login_succeed = responses[0].status === 204;
+                is_api_login_succeed = responses[1].status === 200;
+
+                if (is_login_succeed && is_api_login_succeed) {
+                  data = responses[1].data;
+                  localStorage.setItem("access_token", data.access_token);
+                  commit('SET_USER', data.user);
+                  dispatch('redirect');
+                }
+
+                _context.next = 12;
+                break;
+
+              case 9:
+                _context.prev = 9;
+                _context.t0 = _context["catch"](0);
+                resolve('E-mail or Password is incorrect.');
+
+              case 12:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 9]]);
+      }));
+
+      return function (_x) {
+        return _ref2.apply(this, arguments);
+      };
+    }());
+  },
+  logout: function logout(_ref3, payload) {
+    var dispatch = _ref3.dispatch,
+        commit = _ref3.commit;
+    commit('CLEAR_USER');
+    localStorage.removeItem('access_token');
+
+    Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["logout"])();
+
+    dispatch('redirect');
+  },
+  redirect: function redirect() {
+    window.location.replace('/');
+  }
+}; // mutations
+
+var mutations = {
+  SET_USER: function SET_USER(state, payload) {
+    state.user = payload;
+  },
+  CLEAR_USER: function CLEAR_USER(state, payload) {
+    state.user = {};
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({

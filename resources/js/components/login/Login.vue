@@ -41,50 +41,82 @@
                                 </ValidationProvider>
                                 <ValidationProvider v-slot="{ errors, valid }" name="checkbox">
                                     <v-checkbox
-                                        v-model="access.checkbox"
-                                        value="1"
+                                        v-model="access.remember"
+                                        value="on"
                                         label="Remember Me"
                                         type="checkbox"
                                     ></v-checkbox>
                                 </ValidationProvider>
-                                <v-btn :class="`mr-4 ${!valid || 'success'}`" @click="handleSubmit(login)">Login</v-btn>
+                                <v-btn
+                                    :class="`mr-4 ${!valid || 'success'}`"
+                                    @click="handleSubmit(signIn)"
+                                    :loading="loading"
+                                    :disabled="loading"
+                                >Login</v-btn>
                             </form>
                         </ValidationObserver>
                     </base-material-card>
                 </v-col>
             </v-row>
+            <v-snackbar
+                v-model="snackbar"
+                :timeout="timeout"
+                top
+            >
+                {{ text }}
+
+                <template v-slot:action="{ attrs }">
+                    <v-btn
+                        color="red"
+                        text
+                        v-bind="attrs"
+                        @click="snackbar = false"
+                    >
+                        Close
+                    </v-btn>
+                </template>
+            </v-snackbar>
         </v-container>
 </template>
 
 <script>
-    import { login } from '_a/admin'
+    // Utilities
+    import {createNamespacedHelpers} from 'vuex'
+    const {mapActions} = createNamespacedHelpers('user');
+
     export default {
         name: 'login',
         data: () => ({
             access: {
                 email:'',
                 password: '',
-                checkbox: false
-            }
+                remember: false
+            },
+            loading: false,
+            timeout: 3000,
+            snackbar: false,
+            text: 'I\'m a multi-line snackbar.',
         }),
         methods:{
-            login(){
-                this.setAccessToken()
+            ...mapActions({
+                login: 'loginAction'
+            }),
+            message(text){
+                this.text = text
+                this.snackbar = true
             },
-            async setAccessToken(){
-                const res = await login(this.access);
-                if(res.status === 200){
-                    const {access_token} = res.data;
-                    localStorage.setItem("access_token", access_token)
-                    //TODO:  emit web login
-
-                }else{
-                    //TODO:  alert the message of email or password incorrect!
-                }
-
+            signIn(){
+                this.loading = true;
+                const params = this.access;
+                !params.remember && delete params.remember;
+                this.login(params).then(text => {
+                    this.message(text)
+                    this.loading = false;
+                });
             },
         },
         created() {
+            console.log(this.$store)
         }
     }
 </script>

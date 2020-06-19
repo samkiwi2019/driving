@@ -6,13 +6,29 @@ import axios from './api.request'
  *  @param string email
  *  @param string password
  */
-export const login = ({email,password}) => {
+export const apiLogin = ({email,password}) => {
     return axios.request({
         url: '/api/login',
         data: {email,password},
         method: 'post'
     })
 }
+
+export const login = ({email,password,remember}) => {
+    return axios.request({
+        url: '/login',
+        data: {email,password,remember},
+        method: 'post'
+    })
+}
+
+export const logout = () => {
+    return axios.request({
+        url: '/logout',
+        method: 'post'
+    })
+}
+
 
 /**
  * Get all quizzes (require: Authorization)
