@@ -33,7 +33,7 @@
             <v-icon size="18">
               mdi-heart
             </v-icon>
-            by Sam for a job opportunity in NZ.
+            by Sam in NZ.
           </div>
         </v-col>
       </v-row>
@@ -52,7 +52,7 @@
           text: 'Home',
         },
         {
-          href: '/admin/about',
+          href: '/about',
           text: 'About Us',
         },
       ],

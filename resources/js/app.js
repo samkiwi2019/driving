@@ -7,6 +7,7 @@ import store from './vuex'
 import router from './routes'
 import vuetify from "./plugins/vuetify";
 import i18n from './plugins/i18n'
+import App from './views/App'
 import './plugins/base'
 import './plugins/chartist'
 import "./plugins/vee-validate";
@@ -23,12 +24,16 @@ Vue.config.productionTip = false
 
 Vue.component(
     'login',
-    require('./components/login/Login.vue').default
+    require('./views/Login.vue').default
 );
 
 Vue.component(
+    'back-layout',
+    require('./components/layout/BackLayout.vue').default
+);
+Vue.component(
     'front-layout',
-    require('./components/frond/Layout.vue').default
+    require('./components/layout/FrontLayout.vue').default
 );
 
 /**
@@ -36,13 +41,14 @@ Vue.component(
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-const app = new Vue({
-    el: '#app',
+new Vue({
     router,
     store,
     vuetify,
-    i18n
-});
+    i18n,
+    render: h => h(App),
+}).$mount('#app');
+
 
 
 

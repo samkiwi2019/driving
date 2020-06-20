@@ -60,7 +60,7 @@ __webpack_require__.r(__webpack_exports__);
         href: '/',
         text: 'Home'
       }, {
-        href: '/admin/about',
+        href: '/about',
         text: 'About Us'
       }]
     };
@@ -179,9 +179,7 @@ var render = function() {
                     _c("v-icon", { attrs: { size: "18" } }, [
                       _vm._v("\n            mdi-heart\n          ")
                     ]),
-                    _vm._v(
-                      "\n          by Sam for a job opportunity in NZ.\n        "
-                    )
+                    _vm._v("\n          by Sam in NZ.\n        ")
                   ],
                   1
                 )
