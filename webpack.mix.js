@@ -7,7 +7,7 @@ const resolve = dir => path.resolve(__dirname, dir);
 mix
     .webpackConfig({
         output: {
-            chunkFilename: 'js/[name].[contenthash].js',
+            chunkFilename: mix.inProduction() ? 'js/[name].[contenthash].js' : 'js/[name].js',
         },
         resolve: {
             alias: {
@@ -15,8 +15,4 @@ mix
             }
         }
     })
-    .js('resources/js/app.js', 'public/js').vuetify(
-    'vuetify-loader',
-    'resource/sass/app.scss'
-);
-
+    .js('resources/js/app.js', 'public/js').vuetify('vuetify-loader');
