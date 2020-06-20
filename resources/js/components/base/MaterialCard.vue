@@ -140,6 +140,6 @@
         &--hover-reveal:hover
             .v-card--material__heading
                 transform: translateY(-40px)
-
-
+    .v-sheet
+        border-radius: 4px
 </style>

@@ -26,6 +26,11 @@ Vue.component(
     require('./components/login/Login.vue').default
 );
 
+Vue.component(
+    'front-layout',
+    require('./components/frond/Layout.vue').default
+);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
