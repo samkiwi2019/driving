@@ -116,13 +116,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 // Utilities
 
-
-var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createNamespacedHelpers"])('config'),
-    mapState = _createNamespacedHelp.mapState;
-
-var _createNamespacedHelp2 = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createNamespacedHelpers"])('user'),
-    mapActions = _createNamespacedHelp2.mapActions;
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'DashboardCoreDrawer',
   props: {
@@ -149,7 +142,17 @@ var _createNamespacedHelp2 = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createNam
       }]
     };
   },
-  computed: _objectSpread(_objectSpread({}, mapState(['barColor', 'barImage'])), {}, {
+  computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+    barColor: function barColor(state) {
+      return state.config.barColor;
+    },
+    barImage: function barImage(state) {
+      return state.config.barImage;
+    },
+    user: function user(state) {
+      return state.user.user;
+    }
+  })), {}, {
     drawer: {
       get: function get() {
         return this.$store.state.config.drawer;
@@ -168,8 +171,8 @@ var _createNamespacedHelp2 = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createNam
       };
     }
   }),
-  methods: _objectSpread(_objectSpread({}, mapActions({
-    logoutAction: 'logoutAction'
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])({
+    logoutAction: 'user/logoutAction'
   })), {}, {
     mapItem: function mapItem(item) {
       return _objectSpread(_objectSpread({}, item), {}, {
@@ -365,7 +368,7 @@ var render = function() {
           _vm._v(" "),
           _c("v-divider", { staticClass: "mb-1" }),
           _vm._v(" "),
-          _c("v-subheader", [_vm._v("User info")]),
+          _c("v-subheader", [_vm._v("Administrator")]),
           _vm._v(" "),
           _c(
             "v-list-group",
@@ -384,7 +387,9 @@ var render = function() {
                         })
                       ]),
                       _vm._v(" "),
-                      _c("v-list-item-title", [_vm._v("Jane Smith")])
+                      _c("v-list-item-title", [
+                        _vm._v(_vm._s(_vm.user.nickname))
+                      ])
                     ]
                   },
                   proxy: true

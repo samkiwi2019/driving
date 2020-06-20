@@ -34,13 +34,13 @@
                 </v-list-item-content>
             </v-list-item>
             <v-divider class="mb-1"/>
-            <v-subheader>User info</v-subheader>
+            <v-subheader>Administrator</v-subheader>
             <v-list-group>
                 <template v-slot:activator>
                     <v-list-item-avatar>
                         <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
                     </v-list-item-avatar>
-                    <v-list-item-title>Jane Smith</v-list-item-title>
+                    <v-list-item-title>{{ user.nickname }}</v-list-item-title>
                 </template>
                 <v-list-item
                     link
@@ -99,10 +99,7 @@
 <script>
     // Utilities
 
-    import {createNamespacedHelpers} from 'vuex'
-
-    const {mapState} = createNamespacedHelpers('config');
-    const {mapActions} = createNamespacedHelpers('user');
+    import {mapState,mapActions} from 'vuex'
 
     export default {
         name: 'DashboardCoreDrawer',
@@ -136,7 +133,11 @@
         }),
 
         computed: {
-            ...mapState(['barColor', 'barImage']),
+            ...mapState({
+                barColor: state => state.config.barColor,
+                barImage: state => state.config.barImage,
+                user: state => state.user.user
+            }),
             drawer: {
                 get() {
                     return this.$store.state.config.drawer
@@ -158,7 +159,7 @@
 
         methods: {
             ...mapActions({
-                logoutAction: 'logoutAction'
+                logoutAction: 'user/logoutAction'
             }),
             mapItem(item) {
                 return {
