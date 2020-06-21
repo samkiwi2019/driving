@@ -95,7 +95,7 @@
             loading: false,
             timeout: 3000,
             snackbar: false,
-            text: 'I\'m a multi-line snackbar.',
+            text: 'I\'m a snackbar.',
         }),
         methods:{
             ...mapActions({

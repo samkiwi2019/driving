@@ -11,7 +11,9 @@ mix
         },
         resolve: {
             alias: {
-                '_a': resolve('resources/js/axios')// 这样配置后 @ 可以指向 src 目录
+                '_a': resolve('resources/js/axios'),
+                '_c': resolve('resources/js/components'),
+                '_v': resolve('resources/js/views'),
             }
         }
     })

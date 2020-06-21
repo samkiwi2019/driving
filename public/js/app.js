@@ -2951,16 +2951,16 @@ __webpack_require__.r(__webpack_exports__);
   name: 'DashboardIndex',
   components: {
     DashboardCoreAppBar: function DashboardCoreAppBar() {
-      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
+      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
     },
     DashboardCoreDrawer: function DashboardCoreDrawer() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
     },
     DashboardCoreSettings: function DashboardCoreSettings() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
     },
     DashboardCoreView: function DashboardCoreView() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/View */ "./resources/js/views/admin/components/core/View.vue"));
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/View */ "./resources/js/views/admin/components/core/View.vue"));
     }
   },
   data: function data() {
@@ -3081,10 +3081,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     DashboardCoreFooter: function DashboardCoreFooter() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Footer */ "./resources/js/views/admin/components/core/Footer.vue"));
+      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Footer */ "./resources/js/views/admin/components/core/Footer.vue"));
     }
   },
   data: function data() {
@@ -3152,7 +3171,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     breakPoint: function breakPoint() {
-      return this.$vuetify.breakpoint.smAndDown;
+      return this.$vuetify.breakpoint.mdAndDown;
     }
   },
   created: function created() {}
@@ -3300,7 +3319,7 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_0__["createName
       loading: false,
       timeout: 3000,
       snackbar: false,
-      text: 'I\'m a multi-line snackbar.'
+      text: 'I\'m a snackbar.'
     };
   },
   methods: _objectSpread(_objectSpread({}, mapActions({
@@ -19105,7 +19124,7 @@ var render = function() {
           attrs: {
             app: "",
             absolute: "",
-            color: _vm.isTop ? "transparent" : "rgba(100,100,100,0.6)",
+            color: _vm.isTop ? "transparent" : "rgba(200,200,200,0.8)",
             "elevate-on-scroll": "",
             "scroll-target": "#scrolling-techniques-7"
           }
@@ -19127,6 +19146,38 @@ var render = function() {
                   }
                 },
                 [_vm._v("\n                Driving Test\n            ")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-toolbar-title",
+            [
+              _c(
+                "v-btn",
+                {
+                  attrs: {
+                    color: "primary",
+                    elevation: "0",
+                    text: "",
+                    to: "/login"
+                  }
+                },
+                [_vm._v("\n                Log in\n            ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-btn",
+                {
+                  attrs: {
+                    color: "primary",
+                    elevation: "0",
+                    text: "",
+                    to: "/register"
+                  }
+                },
+                [_vm._v("\n                sign up\n            ")]
               )
             ],
             1
@@ -19161,7 +19212,8 @@ var render = function() {
                                       staticClass: "gap",
                                       attrs: {
                                         color: "primary",
-                                        dark: "",
+                                        elevation: "0",
+                                        outlined: "",
                                         to: menu.to
                                       }
                                     },
@@ -19311,11 +19363,7 @@ var render = function() {
           attrs: { id: "scrolling-techniques-7", "max-height": "100vh" },
           on: { scroll: _vm.toggle }
         },
-        [
-          _c("router-view", { attrs: { height: _vm.breakPoint ? 320 : 640 } }),
-          _vm._v(" "),
-          _c("dashboard-core-footer")
-        ],
+        [_c("router-view"), _vm._v(" "), _c("dashboard-core-footer")],
         1
       )
     ],
@@ -79823,7 +79871,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: '/',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../views/Home */ "./resources/js/views/Home.vue"));
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../views/Home */ "./resources/js/views/Home.vue"));
     }
   }, {
     path: '/login',
@@ -79833,7 +79881,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   }, {
     path: '/register',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../views/Register */ "./resources/js/views/Register.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../views/Register */ "./resources/js/views/Register.vue"));
     }
   }, {
     path: '/admin',
@@ -79845,25 +79893,25 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     path: '/admin/dashboard',
     name: 'Dashboard',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../views/admin/Dashboard */ "./resources/js/views/admin/Dashboard.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../views/admin/Dashboard */ "./resources/js/views/admin/Dashboard.vue"));
     }
   }, {
     path: '/admin/list',
     name: 'Quiz List',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../views/admin/ListQuiz */ "./resources/js/views/admin/ListQuiz.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../views/admin/ListQuiz */ "./resources/js/views/admin/ListQuiz.vue"));
     }
   }, {
     path: '/admin/about',
     name: 'About',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../views/admin/About */ "./resources/js/views/admin/About.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../views/admin/About */ "./resources/js/views/admin/About.vue"));
     }
   }, {
     path: '/admin/profile',
     name: 'Profile',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../views/admin/profile */ "./resources/js/views/admin/profile.vue"));
+      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../views/admin/profile */ "./resources/js/views/admin/profile.vue"));
     }
   }]
 }));

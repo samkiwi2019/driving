@@ -3,13 +3,31 @@
         <v-app-bar
             app
             absolute
-            :color="isTop ? 'transparent' : 'rgba(100,100,100,0.6)'"
+            :color="isTop ? 'transparent' : 'rgba(200,200,200,0.8)'"
             elevate-on-scroll
             scroll-target="#scrolling-techniques-7"
         >
             <v-toolbar-title>
                 <v-btn class="mx-2" dark large rounded color="purple" elevation="0">
                     Driving Test
+                </v-btn>
+            </v-toolbar-title>
+            <v-toolbar-title>
+                <v-btn
+                    color="primary"
+                    elevation="0"
+                    text
+                    to="/login"
+                >
+                    Log in
+                </v-btn>
+                <v-btn
+                    color="primary"
+                    elevation="0"
+                    text
+                    to="/register"
+                >
+                    sign up
                 </v-btn>
             </v-toolbar-title>
             <v-spacer></v-spacer>
@@ -24,7 +42,8 @@
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn
                         color="primary"
-                        dark
+                        elevation="0"
+                        outlined
                         v-bind="attrs"
                         v-on="on"
                         class="gap"
@@ -89,7 +108,7 @@
             max-height="100vh"
             @scroll="toggle"
         >
-            <router-view :height="breakPoint ? 320 : 640"></router-view>
+            <router-view></router-view>
             <dashboard-core-footer></dashboard-core-footer>
         </v-sheet>
     </v-app>
@@ -140,7 +159,7 @@
         },
         computed: {
             breakPoint: function () {
-                return this.$vuetify.breakpoint.smAndDown;
+                return this.$vuetify.breakpoint.mdAndDown;
             }
         },
         created() {
