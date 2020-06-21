@@ -116,7 +116,6 @@
             },
         },
         created() {
-            console.log(this.$store)
         }
     }
 </script>

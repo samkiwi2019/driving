@@ -1,47 +1,53 @@
 import {login, apiLogin, logout, getUser} from "_a/admin";
+import router from '../../routes'
 
 const state = {
     user: {}
 }
 
 // getters
-const getters = {};
+const getters = {
+    isLogin: state => Object.keys(state.user).length > 0
+};
 
 // actions
 const actions = {
     loginAction({dispatch, commit}, payload) {
         return new Promise(async (resolve) => {
             try {
-                const responses = await Promise.all([
-                    login(payload),
-                    apiLogin(payload),
-                ]);
-                const is_login_succeed = responses[0].status === 204;
-                const is_api_login_succeed = responses[1].status === 200;
-                if (is_login_succeed && is_api_login_succeed) {
-                    const {data} = responses[1];
+                const res = await login(payload);
+
+                if (res.status === 200) {
+                    const {data} = res;
                     localStorage.setItem("access_token", data.access_token)
                     commit('SET_USER', data.user)
-                    dispatch('redirect');
+                    router.push({path: '/'})
+                } else {
+                    resolve(data.message)
                 }
-
             } catch (err) {
-                resolve('E-mail or Password is incorrect.')
+                resolve(err.data.message)
             }
         })
     },
-    logoutAction({dispatch,commit}, payload) {
+    logoutAction({dispatch, commit}, payload) {
         commit('CLEAR_USER');
         localStorage.removeItem('access_token')
         logout();
-        dispatch('redirect');
+        if (window.location.pathname !== '/') {
+            router.push({path: '/'})
+        }
     },
-    redirect(){
-        window.location.replace('/')
-    },
-    async getUserAction({commit}){
-        const {data} = await getUser();
-        commit("SET_USER", data)
+    async getUserAction({commit}, route) {
+        if (route.meta.requiresAuth && !localStorage.getItem('access_token')) {
+            return router.push({path: '/login'})
+        }
+
+        if (localStorage.getItem('access_token')) {
+            const {data} = await getUser();
+            commit("SET_USER", data)
+        }
+
     }
 }
 

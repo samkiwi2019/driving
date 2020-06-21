@@ -1,10 +1,9 @@
 <template>
     <v-navigation-drawer
         id="core-navigation-drawer"
-        v-model="drawer"
+        v-model="frontDrawer"
         :dark="barColor !== 'rgba(228, 226, 226, 1), rgba(255, 255, 255, 0.7)'"
-        :expand-on-hover="expandOnHover"
-        :right="$vuetify.rtl"
+        right
         :src="barImage"
         mobile-breakpoint="960"
         app
@@ -18,56 +17,19 @@
             />
         </template>
 
-        <v-divider class="mb-1"/>
-
-        <v-list
-            dense
-            nav
-        >
-            <v-list-item two-line>
-                <v-list-item-avatar>
-                    <v-img src="https://getvectorlogo.com/wp-content/uploads/2019/10/rsg-test-drive-vector-logo.png" aspect-ratio="1.4" cover></v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                    <v-list-item-title>Driving Test</v-list-item-title>
-                    <v-list-item-subtitle>Management System</v-list-item-subtitle>
-                </v-list-item-content>
-            </v-list-item>
-            <v-divider class="mb-1"/>
-            <v-subheader>Administrator</v-subheader>
-            <v-list-group>
-                <template v-slot:activator>
-                    <v-list-item-avatar>
-                        <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
-                    </v-list-item-avatar>
-                    <v-list-item-title>{{ user.nickname }}</v-list-item-title>
-                </template>
-                <v-list-item
-                    link
-                    to="/admin/profile"
-                >
-                    <v-list-item-icon>
-                        <v-icon v-text="'mdi-face-profile-woman'"></v-icon>
-                    </v-list-item-icon>
-                    <v-list-item-title v-text="'My Profile'"></v-list-item-title>
-                </v-list-item>
-            </v-list-group>
-        </v-list>
-        <v-divider class="mb-2"/>
-        <v-subheader>Menu</v-subheader>
+        <v-subheader>Navigation</v-subheader>
         <v-list
             expand
             nav
         >
             <div/>
 
-            <template v-for="(item, i) in computedItems">
+            <template v-for="(item, i) in computedItems" v-if="!item.auth || (item.auth && isLogin)">
                 <base-item-group
                     v-if="item.children"
                     :key="`group-${i}`"
                     :item="item"
                 >
-                    <!--  -->
                 </base-item-group>
 
                 <base-item
@@ -79,30 +41,16 @@
 
             <div/>
         </v-list>
-
-        <template v-slot:append>
-            <div class="pa-3">
-                <v-btn
-                    color="error"
-                    class="white--text"
-                    block
-                    @click="logout"
-                >
-                    Logout
-                    <v-icon right dark>mdi-logout</v-icon>
-                </v-btn>
-            </div>
-        </template>
     </v-navigation-drawer>
 </template>
 
 <script>
     // Utilities
 
-    import {mapState,mapActions} from 'vuex'
+    import {mapState, mapActions, mapGetters} from 'vuex'
 
     export default {
-        name: 'DashboardCoreDrawer',
+        name: 'FrontDrawer',
 
         props: {
             expandOnHover: {
@@ -116,8 +64,14 @@
             items: [
                 {
                     icon: 'mdi-view-dashboard',
-                    title: 'dashboard',
+                    title: 'visit',
                     to: '/admin/dashboard',
+                    auth: true
+                },
+                {
+                    icon: 'mdi-home',
+                    title: 'home',
+                    to: '/',
                 },
                 {
                     icon: 'mdi-clipboard-outline',
@@ -133,17 +87,20 @@
         }),
 
         computed: {
+            ...mapGetters({
+                isLogin: 'user/isLogin'
+            }),
             ...mapState({
                 barColor: state => state.config.barColor,
                 barImage: state => state.config.barImage,
                 user: state => state.user.user
             }),
-            drawer: {
+            frontDrawer: {
                 get() {
-                    return this.$store.state.config.drawer
+                    return this.$store.state.config.frontDrawer
                 },
                 set(val) {
-                    this.$store.commit('config/SET_DRAWER', val)
+                    this.$store.commit('config/SET_FRONT_DRAWER', val)
                 },
             },
             computedItems() {
@@ -168,16 +125,12 @@
                     title: this.$t(item.title),
                 }
             },
-            logout(){
-                this.logoutAction();
-                // document.getElementById('logout-form').submit();
-            }
         },
     }
 </script>
 
 <style lang="sass" scoped>
-    @import '../../../../../../node_modules/vuetify/src/styles/tools/rtl'
+    @import '../../../../node_modules/vuetify/src/styles/tools/rtl'
 
     #core-navigation-drawer
         .v-list-group__header.v-list-item--active:before

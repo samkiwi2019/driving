@@ -14,7 +14,7 @@
             small
             @click="setDrawer(!drawer)"
         >
-            <v-icon v-if="value">
+            <v-icon v-if="!drawer">
                 mdi-view-quilt
             </v-icon>
 
@@ -52,6 +52,14 @@
         </v-text-field>
 
         <div class="mx-3"/>
+        <v-btn
+            class="ml-2"
+            min-width="0"
+            text
+            to="/"
+        >
+            <v-icon>mdi-home</v-icon>
+        </v-btn>
 
         <v-btn
             class="ml-2"
@@ -178,13 +186,6 @@
                         },
                     })
                 },
-            },
-        },
-
-        props: {
-            value: {
-                type: Boolean,
-                default: false,
             },
         },
 

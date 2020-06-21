@@ -162,6 +162,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 // Components
  // Utilities
 
@@ -201,12 +209,6 @@ var _createNamespacedHelp2 = Object(vuex__WEBPACK_IMPORTED_MODULE_1__["createNam
           }
         });
       }
-    }
-  },
-  props: {
-    value: {
-      type: Boolean,
-      "default": false
     }
   },
   data: function data() {
@@ -264,7 +266,7 @@ var render = function() {
           }
         },
         [
-          _vm.value
+          !_vm.drawer
             ? _c("v-icon", [_vm._v("\n            mdi-view-quilt\n        ")])
             : _c("v-icon", [
                 _vm._v("\n            mdi-dots-vertical\n        ")
@@ -315,6 +317,13 @@ var render = function() {
       }),
       _vm._v(" "),
       _c("div", { staticClass: "mx-3" }),
+      _vm._v(" "),
+      _c(
+        "v-btn",
+        { staticClass: "ml-2", attrs: { "min-width": "0", text: "", to: "/" } },
+        [_c("v-icon", [_vm._v("mdi-home")])],
+        1
+      ),
       _vm._v(" "),
       _c(
         "v-btn",

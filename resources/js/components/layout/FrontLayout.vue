@@ -1,128 +1,23 @@
 <template>
     <v-app>
-        <v-app-bar
-            app
-            absolute
-            :color="isTop ? 'transparent' : 'rgba(200,200,200,0.8)'"
-            elevate-on-scroll
-            scroll-target="#scrolling-techniques-7"
-        >
-            <v-toolbar-title>
-                <v-btn class="mx-2" dark large rounded color="purple" elevation="0">
-                    Driving Test
-                </v-btn>
-            </v-toolbar-title>
-            <v-toolbar-title>
-                <v-btn
-                    color="primary"
-                    elevation="0"
-                    text
-                    to="/login"
-                >
-                    Log in
-                </v-btn>
-                <v-btn
-                    color="primary"
-                    elevation="0"
-                    text
-                    to="/register"
-                >
-                    sign up
-                </v-btn>
-            </v-toolbar-title>
-            <v-spacer></v-spacer>
-            <v-menu
-                bottom
-                origin="center center"
-                transition="scale-transition"
-                v-if="!breakPoint"
-                v-for="(menu, index) in menuItems"
-                :key="index"
-            >
-                <template v-slot:activator="{ on, attrs }">
-                    <v-btn
-                        color="primary"
-                        elevation="0"
-                        outlined
-                        v-bind="attrs"
-                        v-on="on"
-                        class="gap"
-                        :to="menu.to"
-                    >
-                        {{ menu.text }}
-                    </v-btn>
-                </template>
+        <front-app-bar />
 
-                <v-list v-if="menu.children">
-                    <v-list-item
-                        v-for="(item, i) in menu.children"
-                        :key="i"
-                        @click=""
-                    >
-                        <v-list-item-icon>
-                            <v-icon v-text="item.icon" style="margin-top: 3px"></v-icon>
-                        </v-list-item-icon>
-                        <v-list-item-content>
-                            <v-list-item-title v-text="item.text"></v-list-item-title>
-                        </v-list-item-content>
-                    </v-list-item>
-                </v-list>
-            </v-menu>
-            <v-app-bar-nav-icon @click="drawer = true" v-if="breakPoint"></v-app-bar-nav-icon>
-        </v-app-bar>
+        <front-drawer />
 
-        <v-navigation-drawer
-            app
-            v-model="drawer"
-            absolute
-            temporary
-            right
-        >
-            <v-list
-                nav
-                dense
-            >
-                <v-list-item-group
-                >
-                    <v-list-item>
-                        <v-list-item-icon>
-                            <v-icon>mdi-home</v-icon>
-                        </v-list-item-icon>
-                        <v-list-item-title>Home</v-list-item-title>
-                    </v-list-item>
-
-                    <v-list-item>
-                        <v-list-item-icon>
-                            <v-icon>mdi-account</v-icon>
-                        </v-list-item-icon>
-                        <v-list-item-title>Account</v-list-item-title>
-                    </v-list-item>
-
-                </v-list-item-group>
-            </v-list>
-        </v-navigation-drawer>
-
-        <v-sheet
-            id="scrolling-techniques-7"
-            class="overflow-y-auto"
-            max-height="100vh"
-            @scroll="toggle"
-        >
-            <router-view></router-view>
-            <dashboard-core-footer></dashboard-core-footer>
-        </v-sheet>
+        <front-view />
     </v-app>
 </template>
+
 
 <script>
     export default {
         components: {
-            DashboardCoreFooter: () => import('../../views/admin/components/core/Footer'),
+            FrontAppBar: () => import('_c/front/AppBar'),
+            FrontDrawer: () => import('_c/front/Drawer'),
+            FrontView: () => import('_c/front/View'),
         },
         data: () => ({
-            isTop: true,
-            drawer: false,
-            group: true,
+            expandOnHover: false,
             menuItems: [
                 {text: "home", to: '/'},
                 {
@@ -150,25 +45,8 @@
                 {text: "visit system", to: '/admin'},
             ],
         }),
-        methods: {
-            toggle() {
-                const elmnt = document.getElementById("scrolling-techniques-7");
-                const y = elmnt.scrollTop;
-                this.isTop = !y > 0
-            }
-        },
-        computed: {
-            breakPoint: function () {
-                return this.$vuetify.breakpoint.mdAndDown;
-            }
-        },
-        created() {
+        created(){
+            this.$store.dispatch('user/getUserAction', this.$route)
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    .gap {
-        margin-right: 6px;
-    }
-</style>

@@ -36,6 +36,22 @@ Vue.component(
     require('./components/layout/FrontLayout.vue').default
 );
 
+
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(record => record.meta.requiresAuth)) {
+        if (!localStorage.getItem('access_token')) {
+            next({
+                name: 'login',
+            })
+        } else {
+            next()
+        }
+    } else {
+        next() // 确保一定要调用 next()
+    }
+});
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

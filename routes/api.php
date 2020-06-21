@@ -19,8 +19,6 @@ use Illuminate\Support\Facades\Route;
 //    Route::get('/user', 'AdminApiController@query');
 //});
 
-Route::post('login', 'api\LoginController@login');
-
 Route::prefix('v1')->group(function(){
     Route::middleware("auth:api")->post('/user', 'api\v1\AdminController@index');
 });
