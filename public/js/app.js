@@ -2951,16 +2951,16 @@ __webpack_require__.r(__webpack_exports__);
   name: 'DashboardIndex',
   components: {
     DashboardCoreAppBar: function DashboardCoreAppBar() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
+      return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
     },
     DashboardCoreDrawer: function DashboardCoreDrawer() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
     },
     DashboardCoreSettings: function DashboardCoreSettings() {
-      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
     },
     DashboardCoreView: function DashboardCoreView() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/View */ "./resources/js/views/admin/components/core/View.vue"));
+      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/View */ "./resources/js/views/admin/components/core/View.vue"));
     }
   },
   data: function data() {
@@ -2998,13 +2998,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     FrontAppBar: function FrontAppBar() {
-      return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! _c/front/AppBar */ "./resources/js/components/front/AppBar.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! _c/front/AppBar */ "./resources/js/components/front/AppBar.vue"));
     },
     FrontDrawer: function FrontDrawer() {
-      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! _c/front/Drawer */ "./resources/js/components/front/Drawer.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! _c/front/Drawer */ "./resources/js/components/front/Drawer.vue"));
     },
     FrontView: function FrontView() {
-      return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! _c/front/View */ "./resources/js/components/front/View.vue"));
+      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! _c/front/View */ "./resources/js/components/front/View.vue"));
     }
   },
   data: function data() {
@@ -79447,7 +79447,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: [{
     path: '/',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../views/Home */ "./resources/js/views/Home.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../views/Home */ "./resources/js/views/Home.vue"));
     }
   }, {
     path: '/login',
@@ -79458,7 +79458,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/register',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../views/Register */ "./resources/js/views/Register.vue"));
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../views/Register */ "./resources/js/views/Register.vue"));
     }
   }, {
     path: '/admin',
@@ -79476,7 +79476,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       requiresAuth: true
     },
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../views/admin/Dashboard */ "./resources/js/views/admin/Dashboard.vue"));
+      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../views/admin/Dashboard */ "./resources/js/views/admin/Dashboard.vue"));
     }
   }, {
     path: '/admin/list',
@@ -79485,7 +79485,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       requiresAuth: true
     },
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../views/admin/ListQuiz */ "./resources/js/views/admin/ListQuiz.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../views/admin/ListQuiz */ "./resources/js/views/admin/ListQuiz.vue"));
     }
   }, {
     path: '/admin/about',
@@ -79494,7 +79494,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       requiresAuth: true
     },
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../views/admin/About */ "./resources/js/views/admin/About.vue"));
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../views/admin/About */ "./resources/js/views/admin/About.vue"));
     }
   }, {
     path: '/admin/profile',
@@ -79503,7 +79503,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       requiresAuth: true
     },
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../views/admin/profile */ "./resources/js/views/admin/profile.vue"));
+      return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../views/admin/profile */ "./resources/js/views/admin/profile.vue"));
     }
   }]
 });
