@@ -18,7 +18,7 @@
                     <base-material-card>
                         <template v-slot:heading>
                             <div class="display-2 font-weight-light">
-                                Login
+                                Register
                             </div>
 
                             <div class="subtitle-1 font-weight-light">
@@ -28,6 +28,14 @@
 
                         <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
                             <form>
+                                <ValidationProvider v-slot="{ errors }" name="name" rules="required">
+                                    <v-text-field
+                                        v-model="access.name"
+                                        :error-messages="errors"
+                                        label="Name"
+                                        required
+                                    ></v-text-field>
+                                </ValidationProvider>
                                 <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
                                     <v-text-field
                                         v-model="access.email"
@@ -36,7 +44,15 @@
                                         required
                                     ></v-text-field>
                                 </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors }" name="Password" rules="required|max:10">
+                                <ValidationProvider v-slot="{ errors }" name="nickname" rules="required">
+                                    <v-text-field
+                                        v-model="access.nickname"
+                                        :error-messages="errors"
+                                        label="Nickname"
+                                        required
+                                    ></v-text-field>
+                                </ValidationProvider>
+                                <ValidationProvider v-slot="{ errors }" name="password" rules="required|min:8">
                                     <v-text-field
                                         v-model="access.password"
                                         :error-messages="errors"
@@ -44,9 +60,17 @@
                                         required
                                     ></v-text-field>
                                 </ValidationProvider>
+                                <ValidationProvider v-slot="{ errors }" name="password_confirmation" rules="required|min:8">
+                                    <v-text-field
+                                        v-model="access.password_confirmation"
+                                        :error-messages="errors"
+                                        label="Password confirmation"
+                                        required
+                                    ></v-text-field>
+                                </ValidationProvider>
                                 <v-btn
                                     :class="`mr-4 ${!valid || 'success'}`"
-                                    @click="handleSubmit(signIn)"
+                                    @click="handleSubmit(register)"
                                     :loading="loading"
                                     :disabled="loading"
                                 >Submit</v-btn>
@@ -82,19 +106,34 @@
     import HeaderImg from "_c/HeaderImg";
 
     export default {
-        name: "Home",
+        name: "Register",
         components: {HeaderImg},
         data: () =>({
             access: {
+                name:'',
                 email:'',
+                nickname:'',
                 password: '',
-                remember: false
+                password_confirmation: '',
             },
             loading: false,
             timeout: 3000,
             snackbar: false,
             text: 'I\'m a snackbar.',
-        })
+        }),
+        methods:{
+            message(text){
+                this.text = text;
+                this.snackbar = true
+            },
+            register(){
+                this.loading = true;
+                this.$store.dispatch('user/registerAction', this.access).then(text => {
+                    this.message(text);
+                    this.loading = false;
+                })
+            }
+        }
     }
 </script>
 

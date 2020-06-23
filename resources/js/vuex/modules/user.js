@@ -1,4 +1,4 @@
-import {login, apiLogin, logout, getUser} from "_a/admin";
+import {login, register, logout, getUser} from "_a/admin";
 import router from '../../routes'
 
 const state = {
@@ -19,7 +19,7 @@ const actions = {
 
                 if (res.status === 200) {
                     const {data} = res;
-                    localStorage.setItem("access_token", data.access_token)
+                    localStorage.setItem("access_token", data.access_token);
                     commit('SET_USER', data.user)
                     router.push({path: '/'})
                 } else {
@@ -48,6 +48,22 @@ const actions = {
             commit("SET_USER", data)
         }
 
+    },
+    registerAction({commit}, payload) {
+        return new Promise((async resolve => {
+            try {
+                const {data, status} = await register(payload);
+                if (status === 200) {
+                    commit('SET_USER', data.user);
+                    localStorage.setItem("access_token", data.access_token)
+                    router.push({path: '/'})
+                } else {
+                    resolve(data.message)
+                }
+            } catch (err) {
+                resolve(err.data.message)
+            }
+        }))
     }
 }
 

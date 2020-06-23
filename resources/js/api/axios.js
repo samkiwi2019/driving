@@ -1,5 +1,4 @@
 import axios from 'axios';
-import {getCookie} from '../utils'
 class HttpRequest {
     constructor (baseUrl = baseURL) {
         this.baseUrl = baseUrl
@@ -48,6 +47,7 @@ class HttpRequest {
             if (!errorInfo) {
                 const { request: { statusText, status }, config } = JSON.parse(JSON.stringify(error));
                 errorInfo = {
+                    data : {message: statusText},
                     statusText,
                     status,
                     request: { responseURL: config.url }

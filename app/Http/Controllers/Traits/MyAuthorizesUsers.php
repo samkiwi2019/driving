@@ -100,7 +100,7 @@ trait MyAuthorizesUsers
 
         $accessToken = Auth::user()->createToken('authToken')->accessToken;
 
-        return response(["csrf_token" => csrf_token(), 'access_token' => $accessToken, 'user' => Auth::user()], 200);
+        return response(['csrf_token' => csrf_token(),'access_token' => $accessToken, 'user' => Auth::user()], 200);
     }
 
     /**

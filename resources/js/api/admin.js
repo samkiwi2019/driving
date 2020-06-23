@@ -1,12 +1,22 @@
 import axios from './api.request'
 
-
+/**
+ * @param {object} data
+ * @return {Promise}
+ * */
+export const register = (data) => {
+    return axios.request({
+        url: '/api/register',
+        data: data,
+        method: 'post'
+    })
+}
 /**
  *  Login
  *  @param string email
  *  @param string password
  */
-export const apiLogin = ({email,password}) => {
+export const login = ({email,password}) => {
     return axios.request({
         url: '/api/login',
         data: {email,password},
@@ -14,17 +24,9 @@ export const apiLogin = ({email,password}) => {
     })
 }
 
-export const login = ({email,password,remember}) => {
-    return axios.request({
-        url: '/login',
-        data: {email,password,remember},
-        method: 'post'
-    })
-}
-
 export const logout = () => {
     return axios.request({
-        url: '/logout',
+        url: '/api/logout',
         method: 'post'
     })
 }

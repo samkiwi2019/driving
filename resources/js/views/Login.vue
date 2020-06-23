@@ -1,4 +1,9 @@
 <template>
+    <div>
+        <header-img
+            content="Do something new"
+            focus="top center"
+            img="https://www.newzealand.com/assets/Tourism-NZ/Queenstown/e6291cf145/img-1541656087-7959-24721-p-0BCBACDF-ED33-F02B-50E4E69CF1723BE5-2544003__aWxvdmVrZWxseQo_FocalPointCropWzY2MCwxOTIwLDUwLDUwLDc1LCJqcGciLDY1LDIuNV0.jpg"></header-img>
         <v-container
             id="user-profile"
             fluid
@@ -8,7 +13,7 @@
             <v-row justify="center">
                 <v-col
                     cols="12"
-                    md="8"
+                    md="4"
                 >
                     <base-material-card>
                         <template v-slot:heading>
@@ -52,7 +57,8 @@
                                     @click="handleSubmit(signIn)"
                                     :loading="loading"
                                     :disabled="loading"
-                                >Login</v-btn>
+                                >Login
+                                </v-btn>
                             </form>
                         </ValidationObserver>
                     </base-material-card>
@@ -77,18 +83,22 @@
                 </template>
             </v-snackbar>
         </v-container>
+    </div>
 </template>
 
 <script>
+    import HeaderImg from "_c/HeaderImg";
     // Utilities
     import {createNamespacedHelpers} from 'vuex'
+
     const {mapActions} = createNamespacedHelpers('user');
 
     export default {
         name: 'login',
+        components: {HeaderImg},
         data: () => ({
             access: {
-                email:'',
+                email: '',
                 password: '',
                 remember: false
             },
@@ -97,15 +107,15 @@
             snackbar: false,
             text: 'I\'m a snackbar.',
         }),
-        methods:{
+        methods: {
             ...mapActions({
                 login: 'loginAction'
             }),
-            message(text){
+            message(text) {
                 this.text = text
                 this.snackbar = true
             },
-            signIn(){
+            signIn() {
                 this.loading = true;
                 const params = this.access;
                 !params.remember && delete params.remember;
