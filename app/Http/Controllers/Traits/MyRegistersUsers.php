@@ -5,14 +5,11 @@ namespace App\Http\Controllers\Traits;
 
 
 use Illuminate\Auth\Events\Registered;
-use Illuminate\Foundation\Auth\RedirectsUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 trait MyRegistersUsers
 {
-    use RedirectsUsers;
-
     /**
      * Handle a registration request for the application.
      *

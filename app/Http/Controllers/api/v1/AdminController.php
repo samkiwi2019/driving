@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
+use App\Quiz;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
 {
@@ -17,6 +19,26 @@ class AdminController extends Controller
     protected function isSuperAdmin()
     {
         return auth('api')->user()->role === 'SuperAdmin'; // 1 or ""
+    }
+
+    public function paginate($pagination)
+    {
+        return [
+            'items' => $pagination->items(),
+            'total' => $pagination->total(),
+            'page' => $pagination->currentPage()
+        ];
+    }
+
+    public function quizzes(Request $request)
+    {
+        $this->validate($request, [
+            'type' => 'required|integer',
+            'page' => 'required|integer',
+            'size' => 'required|integer'
+        ]);
+        $items = Quiz::Paginate($request->size);
+        return response(["data" => $this->paginate($items)], 200);
     }
 
     /**

@@ -42,12 +42,14 @@ const actions = {
         if (route.meta.requiresAuth && !localStorage.getItem('access_token')) {
             return router.push({path: '/login'})
         }
-
         if (localStorage.getItem('access_token')) {
-            const {data} = await getUser();
-            commit("SET_USER", data)
+            const {data,status} = await getUser();
+            if(status === 200){
+                commit("SET_USER", data)
+            }else{
+                router.push({path: '/login'})
+            }
         }
-
     },
     registerAction({commit}, payload) {
         return new Promise((async resolve => {

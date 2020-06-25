@@ -15,7 +15,7 @@ class CreateOptionsTable extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('quiz_id');
+            $table->foreignId('quiz_id')->constrained();
             $table->string("description", 255);
             $table->string("language");
             $table->integer("is_true");

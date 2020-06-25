@@ -9,6 +9,13 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -116,27 +123,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       dialog: false,
       headers: [{
-        text: 'Dessert (100g serving)',
+        text: 'ID',
         align: 'start',
         sortable: false,
-        value: 'name'
+        value: 'id'
       }, {
-        text: 'Calories',
-        value: 'calories'
+        text: 'Question',
+        value: 'question'
       }, {
-        text: 'Fat (g)',
-        value: 'fat'
+        text: 'Language',
+        value: 'language'
       }, {
-        text: 'Carbs (g)',
-        value: 'carbs'
+        text: 'Image',
+        value: 'imageUrl'
       }, {
-        text: 'Protein (g)',
-        value: 'protein'
+        text: 'Explanation',
+        value: 'explanation'
+      }, {
+        text: 'Type',
+        value: 'type'
+      }, {
+        text: 'Correct',
+        value: 'correct'
+      }, {
+        text: 'Incorrect',
+        value: 'incorrect'
       }, {
         text: 'Actions',
         value: 'actions',
@@ -145,26 +169,39 @@ __webpack_require__.r(__webpack_exports__);
       desserts: [],
       editedIndex: -1,
       editedItem: {
-        name: '',
-        calories: 0,
-        fat: 0,
-        carbs: 0,
-        protein: 0
+        question: '',
+        language: '',
+        imageUrl: '',
+        explanation: '',
+        type: ''
       },
       defaultItem: {
-        name: '',
-        calories: 0,
-        fat: 0,
-        carbs: 0,
-        protein: 0
+        question: '',
+        language: '',
+        imageUrl: '',
+        explanation: '',
+        type: ''
       }
     };
   },
-  computed: {
+  computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+    page: function page(state) {
+      return state.quiz.page;
+    },
+    size: function size(state) {
+      return state.quiz.size;
+    },
+    type: function type(state) {
+      return state.quiz.type;
+    },
+    quizItems: function quizItems(state) {
+      return state.quiz.quizItems;
+    }
+  })), {}, {
     formTitle: function formTitle() {
       return this.editedIndex === -1 ? 'New Item' : 'Edit Item';
     }
-  },
+  }),
   watch: {
     dialog: function dialog(val) {
       val || this.close();
@@ -175,67 +212,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     initialize: function initialize() {
-      this.desserts = [{
-        name: 'Frozen Yogurt',
-        calories: 159,
-        fat: 6.0,
-        carbs: 24,
-        protein: 4.0
-      }, {
-        name: 'Ice cream sandwich',
-        calories: 237,
-        fat: 9.0,
-        carbs: 37,
-        protein: 4.3
-      }, {
-        name: 'Eclair',
-        calories: 262,
-        fat: 16.0,
-        carbs: 23,
-        protein: 6.0
-      }, {
-        name: 'Cupcake',
-        calories: 305,
-        fat: 3.7,
-        carbs: 67,
-        protein: 4.3
-      }, {
-        name: 'Gingerbread',
-        calories: 356,
-        fat: 16.0,
-        carbs: 49,
-        protein: 3.9
-      }, {
-        name: 'Jelly bean',
-        calories: 375,
-        fat: 0.0,
-        carbs: 94,
-        protein: 0.0
-      }, {
-        name: 'Lollipop',
-        calories: 392,
-        fat: 0.2,
-        carbs: 98,
-        protein: 0
-      }, {
-        name: 'Honeycomb',
-        calories: 408,
-        fat: 3.2,
-        carbs: 87,
-        protein: 6.5
-      }, {
-        name: 'Donut',
-        calories: 452,
-        fat: 25.0,
-        carbs: 51,
-        protein: 4.9
-      }, {
-        name: 'KitKat',
-        calories: 518,
-        fat: 26.0,
-        carbs: 65,
-        protein: 7
-      }];
+      this.$store.dispatch('quiz/getQuizList', {
+        page: this.page + 1,
+        size: this.size,
+        type: this.type
+      });
     },
     editItem: function editItem(item) {
       this.editedIndex = this.desserts.indexOf(item);
@@ -348,7 +329,7 @@ var render = function() {
                 staticClass: "elevation-4",
                 attrs: {
                   headers: _vm.headers,
-                  items: _vm.desserts,
+                  items: _vm.quizItems,
                   "sort-by": "correct_rate"
                 },
                 scopedSlots: _vm._u([
@@ -467,57 +448,23 @@ var render = function() {
                                                   [
                                                     _c("v-text-field", {
                                                       attrs: {
-                                                        label: "Dessert name"
-                                                      },
-                                                      model: {
-                                                        value:
-                                                          _vm.editedItem.name,
-                                                        callback: function(
-                                                          $$v
-                                                        ) {
-                                                          _vm.$set(
-                                                            _vm.editedItem,
-                                                            "name",
-                                                            $$v
-                                                          )
-                                                        },
-                                                        expression:
-                                                          "editedItem.name"
-                                                      }
-                                                    })
-                                                  ],
-                                                  1
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-col",
-                                                  {
-                                                    attrs: {
-                                                      cols: "12",
-                                                      sm: "6",
-                                                      md: "4"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("v-text-field", {
-                                                      attrs: {
-                                                        label: "Calories"
+                                                        label: "Question"
                                                       },
                                                       model: {
                                                         value:
                                                           _vm.editedItem
-                                                            .calories,
+                                                            .question,
                                                         callback: function(
                                                           $$v
                                                         ) {
                                                           _vm.$set(
                                                             _vm.editedItem,
-                                                            "calories",
+                                                            "question",
                                                             $$v
                                                           )
                                                         },
                                                         expression:
-                                                          "editedItem.calories"
+                                                          "editedItem.question"
                                                       }
                                                     })
                                                   ],
@@ -536,91 +483,125 @@ var render = function() {
                                                   [
                                                     _c("v-text-field", {
                                                       attrs: {
-                                                        label: "Fat (g)"
-                                                      },
-                                                      model: {
-                                                        value:
-                                                          _vm.editedItem.fat,
-                                                        callback: function(
-                                                          $$v
-                                                        ) {
-                                                          _vm.$set(
-                                                            _vm.editedItem,
-                                                            "fat",
-                                                            $$v
-                                                          )
-                                                        },
-                                                        expression:
-                                                          "editedItem.fat"
-                                                      }
-                                                    })
-                                                  ],
-                                                  1
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-col",
-                                                  {
-                                                    attrs: {
-                                                      cols: "12",
-                                                      sm: "6",
-                                                      md: "4"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("v-text-field", {
-                                                      attrs: {
-                                                        label: "Carbs (g)"
-                                                      },
-                                                      model: {
-                                                        value:
-                                                          _vm.editedItem.carbs,
-                                                        callback: function(
-                                                          $$v
-                                                        ) {
-                                                          _vm.$set(
-                                                            _vm.editedItem,
-                                                            "carbs",
-                                                            $$v
-                                                          )
-                                                        },
-                                                        expression:
-                                                          "editedItem.carbs"
-                                                      }
-                                                    })
-                                                  ],
-                                                  1
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-col",
-                                                  {
-                                                    attrs: {
-                                                      cols: "12",
-                                                      sm: "6",
-                                                      md: "4"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("v-text-field", {
-                                                      attrs: {
-                                                        label: "Protein (g)"
+                                                        label: "Language"
                                                       },
                                                       model: {
                                                         value:
                                                           _vm.editedItem
-                                                            .protein,
+                                                            .language,
                                                         callback: function(
                                                           $$v
                                                         ) {
                                                           _vm.$set(
                                                             _vm.editedItem,
-                                                            "protein",
+                                                            "language",
                                                             $$v
                                                           )
                                                         },
                                                         expression:
-                                                          "editedItem.protein"
+                                                          "editedItem.language"
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    attrs: {
+                                                      cols: "12",
+                                                      sm: "6",
+                                                      md: "4"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-text-field", {
+                                                      attrs: {
+                                                        label: "ImageUrl"
+                                                      },
+                                                      model: {
+                                                        value:
+                                                          _vm.editedItem
+                                                            .imageUrl,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.$set(
+                                                            _vm.editedItem,
+                                                            "imageUrl",
+                                                            $$v
+                                                          )
+                                                        },
+                                                        expression:
+                                                          "editedItem.imageUrl"
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    attrs: {
+                                                      cols: "12",
+                                                      sm: "6",
+                                                      md: "4"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-text-field", {
+                                                      attrs: {
+                                                        label: "Explanation"
+                                                      },
+                                                      model: {
+                                                        value:
+                                                          _vm.editedItem
+                                                            .explanation,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.$set(
+                                                            _vm.editedItem,
+                                                            "explanation",
+                                                            $$v
+                                                          )
+                                                        },
+                                                        expression:
+                                                          "editedItem.explanation"
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    attrs: {
+                                                      cols: "12",
+                                                      sm: "6",
+                                                      md: "4"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-text-field", {
+                                                      attrs: { label: "Type" },
+                                                      model: {
+                                                        value:
+                                                          _vm.editedItem.type,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.$set(
+                                                            _vm.editedItem,
+                                                            "type",
+                                                            $$v
+                                                          )
+                                                        },
+                                                        expression:
+                                                          "editedItem.type"
                                                       }
                                                     })
                                                   ],
@@ -685,6 +666,24 @@ var render = function() {
                     fn: function(ref) {
                       var item = ref.item
                       return [
+                        _c(
+                          "v-icon",
+                          {
+                            staticClass: "mr-2",
+                            attrs: { small: "" },
+                            on: {
+                              click: function($event) {
+                                return _vm.editItem(item)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                        mdi-pencil\n                    "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
                         _c(
                           "v-icon",
                           {

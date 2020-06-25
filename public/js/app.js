@@ -77776,7 +77776,7 @@ module.exports = g;
 /*!***********************************!*\
   !*** ./resources/js/api/admin.js ***!
   \***********************************/
-/*! exports provided: register, login, logout, getUser, getQuizList */
+/*! exports provided: register, login, logout, getUser, postQuizList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77785,7 +77785,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getQuizList", function() { return getQuizList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postQuizList", function() { return postQuizList; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/api/api.request.js");
 
 /**
@@ -77834,21 +77834,25 @@ var getUser = function getUser() {
  * Get all quizzes (require: Authorization)
  * @param int pages
  * @param int size
- * @return Quiz[]
+ * @param int type
+ * @return {Promise}
  * */
 
-var getQuizList = function getQuizList(_ref2) {
-  var _ref2$pages = _ref2.pages,
-      pages = _ref2$pages === void 0 ? 1 : _ref2$pages,
+var postQuizList = function postQuizList(_ref2) {
+  var _ref2$page = _ref2.page,
+      page = _ref2$page === void 0 ? 1 : _ref2$page,
       _ref2$size = _ref2.size,
-      size = _ref2$size === void 0 ? 1 : _ref2$size;
+      size = _ref2$size === void 0 ? 10 : _ref2$size,
+      _ref2$type = _ref2.type,
+      type = _ref2$type === void 0 ? 0 : _ref2$type;
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: '/api/v1/quizzes',
-    data: {
-      pages: pages,
-      size: size
+    url: "/api/v1/quizzes",
+    params: {
+      page: page,
+      size: size,
+      type: type
     },
-    method: 'post'
+    method: 'get'
   });
 };
 
@@ -79962,6 +79966,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _modules_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/config */ "./resources/js/vuex/modules/config.js");
 /* harmony import */ var _modules_user__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/user */ "./resources/js/vuex/modules/user.js");
+/* harmony import */ var _modules_quiz__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/quiz */ "./resources/js/vuex/modules/quiz.js");
+
 
 
 
@@ -79970,7 +79976,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   modules: {
     user: _modules_user__WEBPACK_IMPORTED_MODULE_3__["default"],
-    config: _modules_config__WEBPACK_IMPORTED_MODULE_2__["default"]
+    config: _modules_config__WEBPACK_IMPORTED_MODULE_2__["default"],
+    quiz: _modules_quiz__WEBPACK_IMPORTED_MODULE_4__["default"]
   },
   state: {},
   mutations: {},
@@ -80008,6 +80015,90 @@ var mutations = {
   },
   SET_FRONT_DRAWER: function SET_FRONT_DRAWER(state, payload) {
     state.frontDrawer = payload;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/js/vuex/modules/quiz.js":
+/*!*******************************************!*\
+  !*** ./resources/js/vuex/modules/quiz.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _a_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! _a/admin */ "./resources/js/api/admin.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+var state = {
+  quizItems: [],
+  size: 10,
+  page: 0,
+  type: 0,
+  // 所有类型：0,  1-8 对应8种题库类型
+  total: 0
+}; // getters
+
+var getters = {}; // actions
+
+var actions = {
+  getQuizList: function getQuizList(_ref, payload) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var commit, _yield$postQuizList, data, status;
+
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              commit = _ref.commit;
+              _context.next = 3;
+              return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["postQuizList"])(payload);
+
+            case 3:
+              _yield$postQuizList = _context.sent;
+              data = _yield$postQuizList.data;
+              status = _yield$postQuizList.status;
+
+              if (status === 200) {
+                commit('SET_QUIZ_ITEMS', data.data.items);
+                commit('SET_PAGE', data.data.page);
+              }
+
+            case 7:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  }
+}; // mutations
+
+var mutations = {
+  SET_QUIZ_ITEMS: function SET_QUIZ_ITEMS(state, payload) {
+    state.quizItems = payload;
+  },
+  SET_PAGE: function SET_PAGE(state, payload) {
+    state.page = payload;
+  },
+  SET_SIZE: function SET_SIZE(state, payload) {
+    state.size = payload;
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -80117,7 +80208,7 @@ var actions = {
   },
   getUserAction: function getUserAction(_ref4, route) {
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-      var commit, _yield$getUser, _data2;
+      var commit, _yield$getUser, _data2, status;
 
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
         while (1) {
@@ -80136,7 +80227,7 @@ var actions = {
 
             case 3:
               if (!localStorage.getItem('access_token')) {
-                _context2.next = 9;
+                _context2.next = 10;
                 break;
               }
 
@@ -80146,9 +80237,17 @@ var actions = {
             case 6:
               _yield$getUser = _context2.sent;
               _data2 = _yield$getUser.data;
-              commit("SET_USER", _data2);
+              status = _yield$getUser.status;
 
-            case 9:
+              if (status === 200) {
+                commit("SET_USER", _data2);
+              } else {
+                _routes__WEBPACK_IMPORTED_MODULE_2__["default"].push({
+                  path: '/login'
+                });
+              }
+
+            case 10:
             case "end":
               return _context2.stop();
           }

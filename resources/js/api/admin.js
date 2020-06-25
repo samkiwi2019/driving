@@ -44,12 +44,13 @@ export const getUser = () => {
  * Get all quizzes (require: Authorization)
  * @param int pages
  * @param int size
- * @return Quiz[]
+ * @param int type
+ * @return {Promise}
  * */
-export const getQuizList = ({pages = 1,size = 1}) => {
+export const postQuizList = ({page = 1, size = 10, type = 0}) => {
     return axios.request({
-        url: '/api/v1/quizzes',
-        data: {pages, size},
-        method: 'post'
+        url: `/api/v1/quizzes`,
+        params: {page, size, type},
+        method: 'get'
     })
 };

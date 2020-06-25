@@ -15,7 +15,7 @@ class CreateRecordsTable extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("user_id");
+            $table->foreignId('user_id')->constrained();
             $table->integer("total");
             $table->integer("correct");
             $table->string("type");
