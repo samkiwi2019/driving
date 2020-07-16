@@ -7,7 +7,7 @@
             height="450"
             color="grey lighten-1"
             dark
-            :href="value.to"
+            :to="value.to"
         >
             <v-img
                 :src="require(`_assets/articles/${value.img}`)"
@@ -51,10 +51,8 @@
     </v-col>
 </template>
 <script>
-    import { VChip,VImg } from 'vuetify/lib'
     export default {
         name: 'FeedCard',
-        components: { VChip,VImg },
         props: {
             value: {
                 type: Object,

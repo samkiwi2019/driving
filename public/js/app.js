@@ -79987,19 +79987,38 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/login',
     name: 'login',
-    meta: {
-      scrollToTop: true
-    },
     component: function component() {
       return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../views/Login */ "./resources/js/views/Login.vue"));
     }
   }, {
     path: '/register',
-    meta: {
-      scrollToTop: true
-    },
+    name: 'register',
     component: function component() {
       return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../views/Register */ "./resources/js/views/Register.vue"));
+    }
+  }, {
+    path: '/records',
+    name: 'records',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ../views/Records */ "./resources/js/views/Records.vue"));
+    }
+  }, {
+    path: '/learn/:id',
+    name: 'learn',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ../views/Learn */ "./resources/js/views/Learn.vue"));
+    }
+  }, {
+    path: '/mock/:id',
+    name: "mock",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ../views/Mock */ "./resources/js/views/Mock.vue"));
+    }
+  }, {
+    path: '/about',
+    name: "about",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ../views/About */ "./resources/js/views/About.vue"));
     }
   }, {
     path: '/admin',
@@ -80007,7 +80026,6 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       path: '/admin/dashboard'
     },
     meta: {
-      scrollToTop: true,
       requiresAuth: true
     },
     name: 'Admin'
@@ -80015,8 +80033,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/admin/dashboard',
     name: 'Dashboard',
     meta: {
-      requiresAuth: true,
-      scrollToTop: true
+      requiresAuth: true
     },
     component: function component() {
       return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../views/admin/Dashboard */ "./resources/js/views/admin/Dashboard.vue"));
@@ -80025,8 +80042,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/admin/list',
     name: 'Quiz List',
     meta: {
-      requiresAuth: true,
-      scrollToTop: true
+      requiresAuth: true
     },
     component: function component() {
       return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../views/admin/ListQuiz */ "./resources/js/views/admin/ListQuiz.vue"));
@@ -80035,8 +80051,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/admin/about',
     name: 'About',
     meta: {
-      requiresAuth: true,
-      scrollToTop: true
+      requiresAuth: true
     },
     component: function component() {
       return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../views/admin/About */ "./resources/js/views/admin/About.vue"));
@@ -80045,8 +80060,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/admin/profile',
     name: 'Profile',
     meta: {
-      requiresAuth: true,
-      scrollToTop: true
+      requiresAuth: true
     },
     component: function component() {
       return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../views/admin/profile */ "./resources/js/views/admin/profile.vue"));

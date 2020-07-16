@@ -9,7 +9,6 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vuetify_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuetify/lib */ "./node_modules/vuetify/lib/index.js");
 //
 //
 //
@@ -62,13 +61,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'FeedCard',
-  components: {
-    VChip: vuetify_lib__WEBPACK_IMPORTED_MODULE_0__["VChip"],
-    VImg: vuetify_lib__WEBPACK_IMPORTED_MODULE_0__["VImg"]
-  },
   props: {
     value: {
       type: Object,
@@ -280,7 +274,7 @@ var render = function() {
             height: "450",
             color: "grey lighten-1",
             dark: "",
-            href: _vm.value.to
+            to: _vm.value.to
           }
         },
         [

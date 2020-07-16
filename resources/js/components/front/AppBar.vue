@@ -19,7 +19,7 @@
 
         <div class="mx-3"/>
 
-        <v-tooltip bottom  v-if="isLogin && !breakpoint">
+        <v-tooltip bottom v-if="isLogin && !breakpoint">
             <template v-slot:activator="{ on, attrs }">
                 <v-btn
                     class="ml-2"
@@ -72,12 +72,14 @@
             <v-list
                 :tile="false"
                 nav
+                min-width="220"
             >
                 <v-subheader>Traffic rules category</v-subheader>
                 <div>
                     <app-bar-item
                         v-for="(item, i) in trafficCategory"
                         :key="`item-${i}`"
+                        :to="item.to"
                     >
                         <v-list-item-icon>
                             <v-icon v-text="item.icon"></v-icon>
@@ -117,16 +119,25 @@
             >
                 <v-subheader>Mock test at random</v-subheader>
                 <div>
-                    <app-bar-item to="/mock?i=30">
+                    <app-bar-item to="/mock/30">
                         <v-list-item-title v-text="'30 questions'"/>
                     </app-bar-item>
                     <v-divider></v-divider>
-                    <app-bar-item to="/mock?i=50">
+                    <app-bar-item to="/mock/50">
                         <v-list-item-title v-text="'50 questions'"/>
                     </app-bar-item>
                 </div>
             </v-list>
         </v-menu>
+        <v-btn
+            class="ml-2"
+            min-width="0"
+            text
+            to="/about"
+            v-if="!breakpoint"
+        >
+            <v-icon color="primary">mdi-information</v-icon>
+        </v-btn>
         <v-menu
             bottom
             left
@@ -146,7 +157,7 @@
                     v-on="on"
                 >
                     <v-list-item-avatar v-if="isLogin" style="margin-right: 0 !important;">
-                        <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
+                        <v-img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg" />
                     </v-list-item-avatar>
                     <v-icon color="primary" v-else>mdi-account</v-icon>
                 </v-btn>
@@ -161,12 +172,12 @@
                     <app-bar-item to="/login" v-if="!isLogin">
                         <v-list-item-title v-text="'Log in'"/>
                     </app-bar-item>
-                    <v-divider v-if="!isLogin"></v-divider >
+                    <v-divider v-if="!isLogin"></v-divider>
                     <app-bar-item to="/register" v-if="!isLogin">
                         <v-list-item-title v-text="'Sign up'"/>
                     </app-bar-item>
-                    <app-bar-item to="/profile" v-if="isLogin">
-                        <v-list-item-title v-text="'Profile'"/>
+                    <app-bar-item to="/records" v-if="isLogin">
+                        <v-list-item-title v-text="'Records'"/>
                     </app-bar-item>
                     <v-divider v-if="isLogin"></v-divider>
                     <app-bar-item @click.native="logoutAction" v-if="isLogin">
@@ -200,7 +211,7 @@
     import {VHover, VListItem} from 'vuetify/lib'
 
     // Utilities
-    import {mapState, mapGetters ,mapMutations,mapActions} from 'vuex'
+    import {mapState, mapGetters, mapMutations, mapActions} from 'vuex'
 
     export default {
         name: 'FrontAppBar',
@@ -234,14 +245,14 @@
         data: () => ({
             isTop: true,
             trafficCategory: [
-                {text: 'Core', icon: 'mdi-ansible'},
-                {text: 'Behavior', icon: 'mdi-cursor-move'},
-                {text: 'Parking', icon: 'mdi-car-brake-parking'},
-                {text: 'Emergencies', icon: 'mdi-car-traction-control'},
-                {text: 'Road Position', icon: 'mdi-road'},
-                {text: 'Intersection', icon: 'mdi-vector-intersection'},
-                {text: 'Theory', icon: 'mdi-crosshairs-question'},
-                {text: 'Signs', icon: 'mdi-traffic-light'},
+                {text: 'Core', icon: 'mdi-ansible', to: '/learn/1'},
+                {text: 'Behavior', icon: 'mdi-cursor-move', to: '/learn/2'},
+                {text: 'Parking', icon: 'mdi-car-brake-parking', to: '/learn/3'},
+                {text: 'Emergencies', icon: 'mdi-car-traction-control', to: '/learn/4'},
+                {text: 'Road Position', icon: 'mdi-road', to: '/learn/5'},
+                {text: 'Intersection', icon: 'mdi-vector-intersection', to: '/learn/6'},
+                {text: 'Theory', icon: 'mdi-crosshairs-question', to: '/learn/7'},
+                {text: 'Signs', icon: 'mdi-traffic-light', to: '/learn/8'},
             ]
         }),
 
@@ -253,8 +264,8 @@
             ...mapGetters({
                 isLogin: 'user/isLogin'
             }),
-            breakpoint: function (){
-                return  this.$vuetify.breakpoint.smAndDown
+            breakpoint: function () {
+                return this.$vuetify.breakpoint.smAndDown
             }
         },
 
@@ -284,6 +295,6 @@
         top: 0;
         left: 0;
         transition: background .5s;
-        background: rgba(255, 255, 255, .8)!important;
+        background: rgba(255, 255, 255, .8) !important;
     }
 </style>

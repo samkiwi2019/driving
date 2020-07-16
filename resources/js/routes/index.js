@@ -5,14 +5,12 @@ import goTo from 'vuetify/es5/services/goto'
 Vue.use(VueRouter);
 
 const scrollBehavior = (to, from, savedPosition) => {
-    let scrollTo = 0
-
+    let scrollTo = 0;
     if (to.hash) {
         scrollTo = to.hash
     } else if (savedPosition) {
         scrollTo = savedPosition.y
     }
-
     return goTo(scrollTo, {
         duration: 300,
         offset: 0,
@@ -32,42 +30,61 @@ const router = new VueRouter({
         {
             path: '/login',
             name: 'login',
-            meta: {scrollToTop: true},
             component: () => import("../views/Login"),
         },
         {
             path: '/register',
-            meta: {scrollToTop: true},
+            name: 'register',
             component: () => import("../views/Register"),
+        },
+        {
+            path: '/records',
+            name: 'records',
+            component: () => import("../views/Records"),
+        },
+        {
+            path: '/learn/:id',
+            name: 'learn',
+            component: () => import("../views/Learn"),
+        },
+        {
+            path: '/mock/:id',
+            name:"mock",
+            component: () => import("../views/Mock"),
+        },
+        {
+            path: '/about',
+            name:"about",
+            component: () => import("../views/About"),
         },
         {
             path: '/admin',
             redirect: {path: '/admin/dashboard'},
-            meta: {scrollToTop: true, requiresAuth: true},
+            meta: {requiresAuth: true},
             name: 'Admin',
         },
         {
             path: '/admin/dashboard',
             name: 'Dashboard',
-            meta: {requiresAuth: true, scrollToTop: true},
+            meta: {requiresAuth: true},
             component: () => import("../views/admin/Dashboard"),
         },
         {
             path: '/admin/list',
             name: 'Quiz List',
-            meta: {requiresAuth: true, scrollToTop: true},
+            meta: {requiresAuth: true},
             component: () => import("../views/admin/ListQuiz"),
         },
         {
             path: '/admin/about',
             name: 'About',
-            meta: {requiresAuth: true, scrollToTop: true},
+            meta: {requiresAuth: true},
             component: () => import("../views/admin/About"),
         },
         {
             path: '/admin/profile',
             name: 'Profile',
-            meta: {requiresAuth: true, scrollToTop: true},
+            meta: {requiresAuth: true},
             component: () => import("../views/admin/profile"),
         }
     ]

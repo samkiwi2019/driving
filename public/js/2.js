@@ -214,6 +214,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // Components
  // Utilities
 
@@ -252,28 +263,36 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       isTop: true,
       trafficCategory: [{
         text: 'Core',
-        icon: 'mdi-ansible'
+        icon: 'mdi-ansible',
+        to: '/learn/1'
       }, {
         text: 'Behavior',
-        icon: 'mdi-cursor-move'
+        icon: 'mdi-cursor-move',
+        to: '/learn/2'
       }, {
         text: 'Parking',
-        icon: 'mdi-car-brake-parking'
+        icon: 'mdi-car-brake-parking',
+        to: '/learn/3'
       }, {
         text: 'Emergencies',
-        icon: 'mdi-car-traction-control'
+        icon: 'mdi-car-traction-control',
+        to: '/learn/4'
       }, {
         text: 'Road Position',
-        icon: 'mdi-road'
+        icon: 'mdi-road',
+        to: '/learn/5'
       }, {
         text: 'Intersection',
-        icon: 'mdi-vector-intersection'
+        icon: 'mdi-vector-intersection',
+        to: '/learn/6'
       }, {
         text: 'Theory',
-        icon: 'mdi-crosshairs-question'
+        icon: 'mdi-crosshairs-question',
+        to: '/learn/7'
       }, {
         text: 'Signs',
-        icon: 'mdi-traffic-light'
+        icon: 'mdi-traffic-light',
+        to: '/learn/8'
       }]
     };
   },
@@ -515,7 +534,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-list",
-                { attrs: { tile: false, nav: "" } },
+                { attrs: { tile: false, nav: "", "min-width": "220" } },
                 [
                   _c("v-subheader", [_vm._v("Traffic rules category")]),
                   _vm._v(" "),
@@ -524,7 +543,7 @@ var render = function() {
                     _vm._l(_vm.trafficCategory, function(item, i) {
                       return _c(
                         "app-bar-item",
-                        { key: "item-" + i },
+                        { key: "item-" + i, attrs: { to: item.to } },
                         [
                           _c(
                             "v-list-item-icon",
@@ -621,7 +640,7 @@ var render = function() {
                     [
                       _c(
                         "app-bar-item",
-                        { attrs: { to: "/mock?i=30" } },
+                        { attrs: { to: "/mock/30" } },
                         [
                           _c("v-list-item-title", {
                             domProps: { textContent: _vm._s("30 questions") }
@@ -634,7 +653,7 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "app-bar-item",
-                        { attrs: { to: "/mock?i=50" } },
+                        { attrs: { to: "/mock/50" } },
                         [
                           _c("v-list-item-title", {
                             domProps: { textContent: _vm._s("50 questions") }
@@ -648,6 +667,22 @@ var render = function() {
                 ],
                 1
               )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      !_vm.breakpoint
+        ? _c(
+            "v-btn",
+            {
+              staticClass: "ml-2",
+              attrs: { "min-width": "0", text: "", to: "/about" }
+            },
+            [
+              _c("v-icon", { attrs: { color: "primary" } }, [
+                _vm._v("mdi-information")
+              ])
             ],
             1
           )
@@ -701,13 +736,14 @@ var render = function() {
                                     }
                                   },
                                   [
-                                    _c("img", {
+                                    _c("v-img", {
                                       attrs: {
                                         src:
                                           "https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg"
                                       }
                                     })
-                                  ]
+                                  ],
+                                  1
                                 )
                               : _c("v-icon", { attrs: { color: "primary" } }, [
                                   _vm._v("mdi-account")
@@ -721,7 +757,7 @@ var render = function() {
                 ],
                 null,
                 false,
-                3451909367
+                2599624049
               )
             },
             [
@@ -764,10 +800,10 @@ var render = function() {
                       _vm.isLogin
                         ? _c(
                             "app-bar-item",
-                            { attrs: { to: "/profile" } },
+                            { attrs: { to: "/records" } },
                             [
                               _c("v-list-item-title", {
-                                domProps: { textContent: _vm._s("Profile") }
+                                domProps: { textContent: _vm._s("Records") }
                               })
                             ],
                             1
@@ -863,11 +899,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
 /* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
-/* harmony import */ var vuetify_lib_components_VMenu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VMenu */ "./node_modules/vuetify/lib/components/VMenu/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VSubheader */ "./node_modules/vuetify/lib/components/VSubheader/index.js");
-/* harmony import */ var vuetify_lib_components_VTooltip__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VTooltip */ "./node_modules/vuetify/lib/components/VTooltip/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
+/* harmony import */ var vuetify_lib_components_VMenu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VMenu */ "./node_modules/vuetify/lib/components/VMenu/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VSubheader */ "./node_modules/vuetify/lib/components/VSubheader/index.js");
+/* harmony import */ var vuetify_lib_components_VTooltip__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VTooltip */ "./node_modules/vuetify/lib/components/VTooltip/index.js");
 
 
 
@@ -902,7 +939,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__["VBtn"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_7__["VDivider"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_8__["VIcon"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__["VList"],VListItemAvatar: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__["VListItemAvatar"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__["VListItemContent"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__["VListItemTitle"],VMenu: vuetify_lib_components_VMenu__WEBPACK_IMPORTED_MODULE_10__["VMenu"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_11__["VSpacer"],VSubheader: vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_12__["VSubheader"],VTooltip: vuetify_lib_components_VTooltip__WEBPACK_IMPORTED_MODULE_13__["VTooltip"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__["VBtn"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_7__["VDivider"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_8__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_9__["VImg"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VList"],VListItemAvatar: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItemAvatar"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItemContent"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItemTitle"],VMenu: vuetify_lib_components_VMenu__WEBPACK_IMPORTED_MODULE_11__["VMenu"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_12__["VSpacer"],VSubheader: vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_13__["VSubheader"],VTooltip: vuetify_lib_components_VTooltip__WEBPACK_IMPORTED_MODULE_14__["VTooltip"]})
 
 
 /* hot reload */
