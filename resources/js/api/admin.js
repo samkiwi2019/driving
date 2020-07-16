@@ -1,8 +1,14 @@
 import axios from './api.request'
 
 /**
- * @param {object} data
- * @return {Promise}
+ * register
+ * @param {Object} data
+ * @param {string} data.name
+ * @param {string} data.email
+ * @param {string} data.nickname
+ * @param {string} data.password
+ * @param {string} data.password_confirmation
+ * @returns {Promise}
  * */
 export const register = (data) => {
     return axios.request({
@@ -12,14 +18,16 @@ export const register = (data) => {
     })
 }
 /**
- *  Login
- *  @param string email
- *  @param string password
+ * login
+ * @param {Object} data
+ * @param {string} data.email
+ * @param {string} data.password
+ * @returns {Promise}
  */
-export const login = ({email,password}) => {
+export const login = (data) => {
     return axios.request({
         url: '/api/login',
-        data: {email,password},
+        data: data,
         method: 'post'
     })
 }
@@ -30,6 +38,9 @@ export const logout = () => {
         method: 'post'
     })
 }
+/**
+ * require: Authorization
+ * */
 
 export const getUser = () => {
     return axios.request({
@@ -42,15 +53,16 @@ export const getUser = () => {
 
 /**
  * Get all quizzes (require: Authorization)
- * @param int pages
- * @param int size
- * @param int type
- * @return {Promise}
+ * @param {object} data
+ * @param {int} data.page
+ * @param {int} data.size
+ * @param {int} data.type
+ * @returns {Promise}
  * */
-export const postQuizList = ({page = 1, size = 10, type = 0}) => {
+export const postQuizList = (data) => {
     return axios.request({
         url: `/api/v1/quizzes`,
-        params: {page, size, type},
+        params: data,
         method: 'get'
     })
 };

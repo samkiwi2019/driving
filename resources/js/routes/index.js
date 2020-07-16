@@ -1,26 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import goTo from 'vuetify/es5/services/goto'
 
 Vue.use(VueRouter);
 
 const scrollBehavior = (to, from, savedPosition) => {
-    if (savedPosition) {
-        return savedPosition;
-    } else {
-        const position = {};
-        if (to.hash) {
-            position.selector = to.hash
-        }
-        if (to.matched.some(m => m.meta.scrollToTop)) {
-            position.x = 0;
-            position.y = 0;
-        }
-        return position;
+    let scrollTo = 0
+
+    if (to.hash) {
+        scrollTo = to.hash
+    } else if (savedPosition) {
+        scrollTo = savedPosition.y
     }
+
+    return goTo(scrollTo, {
+        duration: 300,
+        offset: 0,
+        easing: 'easeInOutCubic',
+    })
 }
 
-
-const router =  new VueRouter({
+const router = new VueRouter({
     mode: 'history',
     scrollBehavior,
     routes: [

@@ -1,0 +1,1530 @@
+{
+    "data": {
+        "log_id": 17471809,
+        "questions": [
+            {
+                "id": 91,
+                "title": "What does a blue reflector (cat\u0027s eye) placed on the road mean?",
+                "description": "\u003Ch1\u003EA blue road stud or cat\u0027s eye marks\u0026nbsp;a fire hydrant\u003C\/h1\u003E\r\n\u003Cp\u003EThese blue reflectors are installed on, or just to the left of the centreline of the roadway. They were first introduced in 2004. They are called retroreflective raised pavement markers or RRPMs. In other countries they are called road studs.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2017\/04\/blue-cats-eye.jpg\u0022 alt=\u0022\u0022 width=\u0022600\u0022 height=\u0022338\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThe blue reflector shown above is right next to a yellow triangle which points to the fire hydrant.\u003C\/p\u003E\r\n\u003Cp\u003EWhile you might not notice them while you are driving around, they are useful for vehicles attending a fire because they can quickly locate a source of water.\u003C\/p\u003E\r\n\u003Cp\u003ERead \u003Ca href=\u0022..\/..\/..\/..\/..\/..\/..\/roadcode-questions\/car\/parking\/when-may-you-park-your-vehicle-over-a-fi\/\u0022\u003Emore about fire hydrants here\u003C\/a\u003E.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "reflector-blue.gif",
+                "audioName": "91.mp3",
+                "video": null,
+                "permalink": "what-does-a-blue-reflector-cats-eye-plac",
+                "canonical": "roadcode-questions\/car\/road-position\/what-does-a-blue-reflector-cats-eye-plac\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 334,
+                        "title": "No passing",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:47:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 335,
+                        "isCorrect": true,
+                        "title": "Fire hydrant",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:47:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 336,
+                        "title": "Blue marks the left side of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:47:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 337,
+                        "title": "Blue marks the middle line",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:47:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 338,
+                        "title": "It\u0027s safe to pass here",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:47:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 91,
+                    "correct_text": "Correct. There is a fire hydrant nearby, so be careful where you park.",
+                    "incorrect_text": "A blue reflector marks the location of a fire hydrant.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:47:59.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 95,
+                "title": "What do these road markings mean?",
+                "description": "\u003Ch1\u003EWhat is a right turn bay on a road?\u003C\/h1\u003E\r\n\u003Cp\u003EA right turn bay is an area where vehicles can wait to turn right without risking being hit from behind by moving vehicles, or holding up the traffic flow.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYou must not use a right turn bay to overtake a vehicle going straight ahead.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThe approach of a right-turn bay will be painted with a white triangle containing diagonal lines. You are permitted to drive over this to enter the turning bay and it gives you room to slow down.\u003C\/p\u003E\r\n\u003Cp\u003ERight turn bays reduce the risk of nose-to-tail accidents because turning traffic doesn\u0027t hold up the main traffic flow. It\u0027s especially useful on rural roads where traffic speeds are higher.\u003C\/p\u003E\r\n\u003Cp\u003EThe area where vehicles wait is called the storage bay. In rural areas this is longer to accommodate more and longer vehicles, and to give a longer area for slowing down - usually 20m minimum as opposed to 10m minimum for urban areas. The storage bay is between 3-3.5m wide on rural roads and 2.5-3.5m wide on urban roads with a 3.5m being the desired width for all bays.\u003C\/p\u003E\r\n\u003Cp\u003EThey are marked with white reflectorised lines of 200mm width in rural areas or 150mm width in urban areas, with a white turn arrow in the bay.\u003C\/p\u003E\r\n\u003Cp\u003ERight turning bays are not provided for every single turn off a rural road, just turns where there will be enough traffic to warrant it, or where a turn could be obscured by a corner such as at this intersection on the Coatesville-Riverhead Highway with Sunnyside Rd, north-west of Auckland.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/coatesville-riverhead-turning-bay.jpg\u0022 alt=\u0022turning bay on hidden corner\u0022 width=\u0022640\u0022 height=\u0022459\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EImage is from Google Maps\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "road-markings.jpg",
+                "audioName": "95.mp3",
+                "video": null,
+                "permalink": "what-do-these-road-markings-mean",
+                "canonical": "roadcode-questions\/car\/road-position\/can-you-use-a-right-turn-bay-to-overtake\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 351,
+                        "title": "You can overtake another vehicle here",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 352,
+                        "isCorrect": true,
+                        "title": "You can turn right at any time here",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 353,
+                        "title": "You can turn right from the left hand lane into the intersection",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 95,
+                    "correct_text": "Correct. This is a right-turn box or bay and it can only be used for turning right, not overtaking. However, you will need to give way to vehicles coming straight through.",
+                    "incorrect_text": "You can turn right from this right-turn box or bay without holding up cars going straight through. However, you will need to give way to vehicles coming straight through.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 479,
+                "title": "When are you likely to see a slow vehicle bay?",
+                "description": "\u003Ch1\u003EPassing lanes and slow vehicle bays\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ESlow vehicle bays\u003C\/strong\u003E are short stretches of road where an extra lane usually splits off to the left. Traffic moving into the slow vehicle bay should indicate left.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPassing lanes\u003C\/strong\u003E are longer stretches of road where an extra lane usually splits off to the right. Traffic overtaking in the passing lane should indicate right.\u003C\/p\u003E\r\n\u003Cp\u003EPassing lanes can be short, but they are usually at least 200m and a signpost will be given at the 200m mark advising drivers that the passing lane is ending.\u003C\/p\u003E\r\n\u003Ch2\u003EWhat is the difference between passing and overtaking?\u003C\/h2\u003E\r\n\u003Cp\u003EIn New Zealand law, passing is where you move past a vehicle without entering an oncoming lane. Overtaking is where you move past a vehicle in an oncoming lane. This is different to the definition in some other countries, for example Australia.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "slow-vehicle-bay.png",
+                "audioName": "479.mp3",
+                "video": null,
+                "permalink": "passing-bays",
+                "canonical": "roadcode-questions\/car\/road-position\/passing-bays\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 1718,
+                        "title": "Approaching a roundabout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1719,
+                        "title": "On a motorway",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1720,
+                        "isCorrect": true,
+                        "title": "On a hill",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1721,
+                        "title": "In the central city",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 479,
+                    "correct_text": "Correct. Large vehicles such as trucks and buses often can\u0027t maintain their speed on a long uphill stretch of road, so passing bays are provided where there\u0027s not enough room to have a passing lane. Passing bays can sometimes be found on winding roads where there are few natural passing opportunities.",
+                    "incorrect_text": "Large vehicles such as trucks and buses often can\u0027t maintain their speed on a long uphill stretch of road, so passing bays are provided where there\u0027s not enough room to have a passing lane. Passing bays can sometimes be found on winding roads where there are few natural passing opportunities.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:20.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 100,
+                "title": "What does a yellow reflector (cat\u0027s eye) placed on the road mean?",
+                "description": "\u003Ch1\u003EYellow cat\u0027s eyes (road studs)\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYellow cat\u0027s eyes, \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/road-position\/what-does-a-white-reflector-cats-eye-pla\/\u0022 target=\u0022_blank\u0022\u003Eroad studs\u003C\/a\u003E\u0026nbsp;or retroreflective raised pavement markers (RRPMs) are used to visually reinforce a yellow no-passing line.\u003C\/strong\u003E The painted passing line can be less visible when the road is wet.\u003C\/p\u003E\r\n\u003Cp\u003EUsually a white cat\u0027s eye is used in the centre of the road if overtaking is permitted. If yellow cat\u0027s eyes are present they are bi-directional if the line is applicable in both directions, or mono-directional if it\u0027s only applicable in one direction and spaced every 10m.\u003C\/p\u003E\r\n\u003Cp\u003EOn unlit rural roads the road studs\u0026nbsp;are in groups of four, one metre apart, with 10m between each group. Only one of the group of four road studs is required to be reflective.\u003C\/p\u003E\r\n\u003Cp\u003EOn no overtaking advance warning lines they are spaced 20m apart.\u003C\/p\u003E\r\n\u003Cp\u003EThe yellow cats eyes are the same kind as used in the UK or Australia and they are used in the same manner.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EAs well as marking no overtaking lines,\u0026nbsp;they\u0026nbsp;mark the right hand edge of a motorway. Therefore if you are driving in a lane with white studs on the left and yellow on the right you know you are in the right-hand lane; if you are driving in a lane with white studs on either side you know you are in the middle lane.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "reflector-yellow.gif",
+                "audioName": "100.mp3",
+                "video": null,
+                "permalink": "what-does-a-yellow-reflector-cats-eye-pl",
+                "canonical": "roadcode-questions\/car\/road-position\/what-does-a-yellow-reflector-cats-eye-pl\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 368,
+                        "isCorrect": true,
+                        "title": "No passing",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:48:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 369,
+                        "title": "Fire hydrant",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:48:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 370,
+                        "title": "Yellow marks the left side of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:48:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 371,
+                        "title": "It\u0027s safe to pass here",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:48:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 100,
+                    "correct_text": "Correct. If you see these yellow cat\u0027s eyes then you know you are not allowed to overtake.",
+                    "incorrect_text": "Yellow cat\u0027s eyes mean passing is not allowed.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:48:56.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 110,
+                "title": "What must you do when turning right at a roundabout?",
+                "description": "\u003Ch1\u003ERules for using roundabouts in New Zealand\u003C\/h1\u003E\r\n\u003Cp\u003ERoundabouts have very simple rules that many people find difficulty grasping.\u003C\/p\u003E\r\n\u003Ch3\u003ETurning left\u003C\/h3\u003E\r\n\u003Cp\u003EApproach the roundabout in the left lane, indicating left, and turn left.\u003C\/p\u003E\r\n\u003Ch3\u003EGoing straight ahead\u003C\/h3\u003E\r\n\u003Cp\u003EApproach the roundabout in any lane that has an arrow straight ahead. Don\u0027t signal as you enter the roundabout.\u003C\/p\u003E\r\n\u003Cp\u003EAs you pass the exit just before the one you want to take, indicate left, and leave the roundabout in the same lane as you entered it.\u003C\/p\u003E\r\n\u003Ch3\u003ETurning right\u003C\/h3\u003E\r\n\u003Cp\u003EApproach the roundabout in any lane that has a right arrow (usually only the right-hand lane if there is\u0026nbsp;more than one lane). Indicate right as you approach the roundabout. Keep indicating right until you pass the exit just before the one you want to take, then indicate left. Exit the roundabout in the appropriate lane (this will sometimes be defined by road markings; other times you will exit into the right lane if it\u0027s a dual carriageway).\u0026nbsp;\u003C\/p\u003E\r\n\u003Ch2\u003EHow do complex roundabouts work?\u003C\/h2\u003E\r\n\u003Cp\u003EIn the image below you can see the roundabout at the Greenlane motorway on-ramps and off-ramps. On the west entrance (bottom left) there is a feeder lane onto the motorway on-ramp, and two other lanes. There are two lanes at the exit to the east (top right). At the entrance to the roundabout from the east (top right) there are three lanes of which the right hand one turns right and the other two go straight ahead. There\u0027s also a feeder lane on to the motorway going south.\u003C\/p\u003E\r\n\u003Cp\u003EThe motorway off-ramp heading north has two lanes: one has an arrow to the right and the other an arrow to the left. There\u0027s no arrow straight on because that will take you back onto the motorway and it would be highly unusual to do that (i.e. only if you\u0027d made a mistake, in which case you wouldn\u0027t want to confuse other drivers on the roundabout. The same applies at the off-ramp heading south at the top of the picture. Because of these off-ramps, the roundabout is only one lane wide on the east and west, but two lanes wide on the north and three lanes wide on the south.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EAt position 1 there is a dashed line showing that the inside lane of the two lanes can split into either a third lane which will continue turning right, or the middle lane which will exit onto Greenlane towards the west.\u003C\/p\u003E\r\n\u003Cp\u003EAt point 2 you can see that those two lanes exit onto Greenlane to the west and vehicles stay in the respective lanes on the roundabout.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/greenlane-motorway-roundabout.jpg\u0022 alt=\u0022Roundabout at Greenlane, Auckland\u0022 width=\u0022630\u0022 height=\u0022429\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "110.mp3",
+                "video": null,
+                "permalink": "what-must-you-do-when-turning-right-at-a",
+                "canonical": "roadcode-questions\/car\/road-position\/what-must-you-do-when-turning-right-at-a\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 402,
+                        "isCorrect": true,
+                        "title": "Indicate right as you approach the roundabout then left before the exit you want to take",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-04-10 11:15:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 403,
+                        "title": "Indicate right the whole way around the roundabout",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-04-10 11:15:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 404,
+                        "title": "Don\u0027t indicate right as you approach, but indicate right once on the roundabout",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-04-10 11:15:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 405,
+                        "title": "Stay left as you enter the roundabout",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-04-10 11:15:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 110,
+                    "correct_text": "Indicate as you approach the roundabout, then signal left just before your exit to let other vehicles know you are leaving the roundabout",
+                    "incorrect_text": "When turning right at a roundabout you should indicate right coming up to the roundabout, stay right, and as you pass the exit before the one you want to take, indicate left.",
+                    "correct_image_name": "multi-roundabout-right-turn.jpg",
+                    "incorrect_image_name": "multi-roundabout-right-turn.jpg",
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-04-10 11:15:59.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 108,
+                "title": "When turning right from a two-laned road into a one-way street that has two lanes, which lane must you turn into?",
+                "description": "\u003Ch1\u003ETurning from a two-way road into a one-way road\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EWhen turning right from a two-laned road into a one-way street that has two lanes, turn into the right-hand lane.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThe right hand lane will be the lane closest to you. It also means that drivers turning left can\u0026nbsp;turn left while you turn right at the same time without risking an accident.\u003C\/p\u003E\r\n\u003Cp\u003ERemember that cars can park on the right of a one-way street, so be careful as you turn into the road, especially if you have a long vehicle which might cut the corner.\u003C\/p\u003E\r\n\u003Cp\u003EWhen you reach the end of the street you will need to position your vehicle in the correct lane for the direction you are turning: right lane if you are turning right, or left lane if you are turning left. Remember that if you turn right onto a two-way road not to turn onto the wrong side of the road!\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "108.mp3",
+                "video": null,
+                "permalink": "when-turning-right-from-a-two-laned-road",
+                "canonical": "roadcode-questions\/car\/road-position\/when-turning-right-from-a-two-laned-road\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 396,
+                        "title": "The left lane",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:20.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 397,
+                        "isCorrect": true,
+                        "title": "The right lane",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:20.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 398,
+                        "title": "It doesn\u0027t matter - either lane",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:20.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 108,
+                    "correct_text": "Correct. Stay in the right hand lane.",
+                    "incorrect_text": "When turning right into a one-way street you should turn into the right hand lane.",
+                    "correct_image_name": "right-turn-into-one-way.jpg",
+                    "incorrect_image_name": "right-turn-into-one-way.jpg",
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 99,
+                "title": "What does a white reflector (cat\u0027s eye) placed on the road mean?",
+                "description": "\u003Ch1\u003EInternational standards in reflective road studs\u003C\/h1\u003E\r\n\u003Cp\u003ENew Zealand conforms to the same standards as the UK and Australia on the positioning of road studs by using white studs to mark the centre line of a single carriageway, or to delineate lanes on a dual carriageway or motorway.\u003C\/p\u003E\r\n\u003Ch2\u003EWhy do we use cat\u0027s eyes on the road?\u003C\/h2\u003E\r\n\u003Cp\u003ECat\u0027s eyes are also called road studs or retroreflective raised pavement markers (RRPMs). There are several types of cat\u0027s eyes used on the roads in New Zealand and they serve three\u0026nbsp;purposes.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EVisual lane marking\u003C\/strong\u003E - using white in the middle and red on the left edge means that road users can follow these to stay in the lane. Using yellow where there are yellow no overtaking lines add visual reinforcement to the rule.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ETactile lane marking\u003C\/strong\u003E - if you drive over the road studs, you can feel it through your vehicle\u0027s suspension and steering, therefore it\u0027s a tactile reminder that you are straying from your lane\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ESpecial feature marking\u003C\/strong\u003E - \u003Ca href=\u0022..\/..\/..\/..\/..\/..\/..\/roadcode-questions\/car\/road-position\/what-does-a-blue-reflector-cats-eye-plac\/\u0022 target=\u0022_blank\u0022\u003Efire hydrants are marked with blue road studs\u003C\/a\u003E\u0026nbsp;and, in some areas, culverts and drains are marked with green road studs.\u003C\/p\u003E\r\n\u003Cp\u003EThe following photo shows a yellow road stud between double yellow no overtaking lines.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/yellow-road-stud-cats-eye.jpg\u0022 alt=\u0022Yellow cat\u0027s eye on the road\u0022 width=\u0022300\u0022 height=\u0022232\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "reflector-white.gif",
+                "audioName": "99.mp3",
+                "video": null,
+                "permalink": "what-does-a-white-reflector-cats-eye-pla",
+                "canonical": "roadcode-questions\/car\/road-position\/what-does-a-white-reflector-cats-eye-pla\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 364,
+                        "title": "No passing",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:42.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 365,
+                        "title": "Fire hydrant",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:42.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 366,
+                        "title": "White marks the left side of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:42.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 367,
+                        "isCorrect": true,
+                        "title": "White marks the centre line",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:50:42.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 99,
+                    "correct_text": "Correct. A white reflective stud marks the centre line. You can use it to judge your position on the road and keep left.",
+                    "incorrect_text": "White cat\u0027s eyes mark the centre line of the road.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-03-06 08:50:42.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 111,
+                "title": "You wish to make a right turn on a narrow country road. There is a vehicle coming towards you and traffic behind you. What is the safest option?",
+                "description": "\u003Ch1\u003ETurning right safely on narrow rural roads\u003C\/h1\u003E\r\n\u003Cp\u003EIt\u0027s sometimes safer to move to the left of the road and wait before you turn right, especially on narrow roads if there\u0027s a lot of traffic. It might not be the vehicles immediately behind you that are surprised by you stopping, but vehicles that arrive behind them. This is especially pertinent in the dark where it\u0027s slightly more difficult to judge distances.\u003C\/p\u003E\r\n\u003Cp\u003EIt does mean that you will need to anticipate where you are going to turn well in advance of the intersection because you will need time to come to a complete stop in a safe place on the left hand side of the road. Try to avoid driving on the verge if you can\u0027t see that it is solid. Long grass can hide steep slopes, and if it is wet you could find yourself stuck in mud. Wet grass also has much less friction than tarmac at around 0.2 (\u003Ca href=\u0022http:\/\/hypertextbook.com\/facts\/2007\/TabraizRasul.shtml\u0022 target=\u0022_blank\u0022\u003Ea bit less than snow\u003C\/a\u003E).\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EIf you do decide to turn right and there is traffic behind you, keep an eye on it in your mirror. If traffic doesn\u0027t look like it\u0027s slowing down, pump your brakes to make the driver behind you aware.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "111.mp3",
+                "video": null,
+                "permalink": "you-wish-to-make-a-right-turn-on-a-narro",
+                "canonical": "roadcode-questions\/car\/road-position\/you-wish-to-make-a-right-turn-on-a-narro\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:10.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 406,
+                        "title": "Put your hazard lights on before you turn",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 407,
+                        "title": "Pump the brakes to let the person behind know that you will be slowing down",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 408,
+                        "isCorrect": true,
+                        "title": "Move to the left and wait until the vehicles behind have overtaken you before turning right",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 409,
+                        "title": "Indicate right, but stay as far left as you can",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 111,
+                    "correct_text": "Correct. Waiting in the middle of the road to turn right on a narrow country road means your car could be an unexpected obstacle to other cars coming up behind you.",
+                    "incorrect_text": "It\u0027s sometimes safer to move to the left of the road before you turn right, especially on narrow roads if there\u0027s a lot of traffic.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 109,
+                "title": "What must you do if you intend to move your vehicle from the right-hand lane to the left-hand lane? Select all that apply.",
+                "description": "\u003Ch1\u003EHow to change lanes to the left\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EIf you intend to move your vehicle from the right-hand lane to the left-hand lane check your mirrors, indicate for 3 seconds, then check over your left shoulder in your blind spot before you move.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EOnly change lanes if you need to.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EYou should also be aware of what the traffic is doing in the left-hand lane. If you are driving in heavy traffic, vehicles in the left lane might suddenly stop and, due to the position of your steering wheel on the right-hand side of your vehicle, you might have less view of what\u0027s up ahead if there\u0027s also heavy traffic in your lane. Firstly, you will need to ensure you can stop safely, therefore you should start dropping back to a safe distance when you\u0027ve pulled into the left lane.\u003C\/p\u003E\r\n\u003Cp\u003ESecondly, any vehicle that is now behind you will have less room to stop, so if traffic ahead suddenly brakes, the vehicle behind you may be unable to stop if you have only just moved into its path. It will need time to drop back, too.\u003C\/p\u003E\r\n\u003Cp\u003EBe careful if you are driving a longer vehicle or towing a trailer as you will need more room in the left-hand lane to change lanes.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "109.mp3",
+                "video": null,
+                "permalink": "what-must-you-do-if-you-intend-to-move-y",
+                "canonical": "roadcode-questions\/car\/road-position\/what-must-you-do-if-you-intend-to-move-y\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 399,
+                        "isCorrect": true,
+                        "title": "Indicate left for three seconds",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:51:02.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 400,
+                        "isCorrect": true,
+                        "title": "Check over your left shoulder for your blind spot",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:51:02.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 401,
+                        "isCorrect": true,
+                        "title": "Check your rear view mirror",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:51:02.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 109,
+                    "correct_text": "Correct. All three are important. The signal lets other vehicles know your intention, checking your rear view mirror lets you see if another vehicle is approaching faster than you on your left, and checking over your left shoulder checks your blindspot for other vehicles",
+                    "incorrect_text": "You should do all three of these.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-02-03 19:58:41.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 107,
+                "title": "When driving on an unlaned road, where should your vehicle be positioned?",
+                "description": "\u003Ch1\u003EWhat is an unlaned road?\u003C\/h1\u003E\r\n\u003Cp\u003EAn unlaned road is a road where there is no centre line marking the lanes. It might be that the road is too narrow to form two lanes of sufficient width, the road is metal\/gravel, or it\u0027s a secondary rural road with light traffic. \u003Cstrong\u003EWhen driving on an unlaned road, stay left.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003ETake extra care around blind corners as vehicles could be partially over your side of the road.\u003C\/p\u003E\r\n\u003Cp\u003EThis photo shows an example of an unlaned road that is on the way to \u003Ca href=\u0022http:\/\/regionalparks.aucklandcouncil.govt.nz\/whatipu\u0022 target=\u0022_blank\u0022\u003EWhatipu\u003C\/a\u003E, west of Auckland. The road is reasonably wide, but the traffic levels are low. A white line is marked down one edge of the road whereas the wall serves to delineate the other side of the road.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/08\/rural-coast-road-unlaned-wall-huia.jpg\u0022 alt=\u0022single-lane road in Huia\u0022 width=\u0022600\u0022 height=\u0022309\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003ECare should be taken on unlaned roads with a gravel shoulder as these will be slippery. They can also have sharp objects in them which could puncture your tyre.\u003C\/p\u003E\r\n\u003Cp\u003EOn gravel roads, the edge of the road will often have much thicker gravel or shingle which will have less grip. Intersections on gravel roads will not have lines to mark them.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "107.mp3",
+                "video": null,
+                "permalink": "when-driving-on-an-unlaned-road-where-sh",
+                "canonical": "roadcode-questions\/car\/road-position\/when-driving-on-an-unlaned-road-where-sh\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:10.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 392,
+                        "title": "In the middle of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:49:33.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 393,
+                        "isCorrect": true,
+                        "title": "As far to the left of the road as is safe",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:49:33.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 394,
+                        "title": "One metre from the left of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:49:33.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 395,
+                        "title": "Anywhere you can see what\u0027s coming",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:49:33.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 107,
+                    "correct_text": "Correct. Driving on the left gives other vehicles more room to pass",
+                    "incorrect_text": "You should keep as far left as possible on an unlaned road.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:49:33.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 92,
+                "title": "What is the meaning of a broken yellow line painted on the road near the kerb?",
+                "description": "\u003Ch1\u003EWhat do broken yellow lines on the road mean?\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EA broken yellow line means no stopping or parking.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EBroken yellow lines are placed in areas where parking would cause an obstruction or danger to other road users, and around bus stops, taxi stands, motorcycle parking and loading zones.\u003C\/p\u003E\r\n\u003Cp\u003EThe lines are 100mm wide and reflectorised. They have a 1m stripe then a 1m gap between them, but there are situations where the gap can be widened to up to 2m.\u003C\/p\u003E\r\n\u003Cp\u003EThe lines are sometimes placed around corners on intersections where the public may think that the curve is OK to park on.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EYellow lines can often be found near busier intersections\u0026nbsp;preventing people from parking too close.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/junction-traffic-calming-measures-road-table.jpg\u0022 alt=\u0022yellow lines around an intersection\u0022 width=\u0022550\u0022 height=\u0022364\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYellow lines can be found on the approach to \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/pedestrian-crossings-and-refuges-sharing-the-roads-with-pedestrians\/\u0022 target=\u0022_blank\u0022\u003Epedestrian crossings\u003C\/a\u003E, or where parking ends and there\u0027s a choker or other road width restriction.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/choker.jpg\u0022 alt=\u0022Parking choker with yellow lines\u0022 width=\u0022550\u0022 height=\u0022369\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYellow no parking lines can be found on sections of busy single-lane arterial road like here on Rosebank Road in Avondale\u0027s industrial area where many large trucks use the road. A white line is painted in slightly to give room for cyclists who don\u0027t (as yet) have a dedicated cycle lane.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/broken-yellow-lines.jpg\u0022 alt=\u0022broken yellow line on the side of the road\u0022 width=\u0022550\u0022 height=\u0022744\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "92.mp3",
+                "video": null,
+                "permalink": "what-is-the-meaning-of-a-yellow-broken-l",
+                "canonical": "roadcode-questions\/car\/parking\/a-broken-yellow-line-painted-close-to-th\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:10.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 339,
+                        "title": "No overtaking",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 340,
+                        "isCorrect": true,
+                        "title": "No parking",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 341,
+                        "title": "Fire hydrant",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 342,
+                        "title": "Bus stop",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 343,
+                        "title": "You may stop here for less than five minutes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 92,
+                    "correct_text": "Correct. You are not allowed to park on a broken yellow line",
+                    "incorrect_text": "A broken yellow line means no parking or stopping.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 94,
+                "title": "When can flush medians be used?",
+                "description": "\u003Ch1\u003EWhat are flush medians?\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EFlush medians can be used to wait to move into a gap in the traffic flow after you\u0027ve turned right onto the road, and to slow down and wait before turning right from the road.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThey are painted \u0027flush\u0027 to the road rather than being raised, hence the name. There are sometimes right turning bays within flush medians called \u0027right turn pockets\u0027. They differ from that of an isolated right turn bay. They will only be marked if the side road has high turning volumes. If not, then the flush median will be marked all the way through the intersection.\u003C\/p\u003E\r\n\u003Cp\u003EIf there is a right turn pocket, the terminal of the pocket is marked with a white line at right angles to the median where the vehicle should stop, and a single white arrow signals the direction of the turn.\u003C\/p\u003E\r\n\u003Cp\u003EThe following diagrams show T-intersections where a flush median can be used to turn into the side road (the bottom of the T). In the first diagram the flush median indicates that there\u0027s likely to be light traffic flow turning into the road.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/t-insersection-flush-median-low-flow.gif\u0022 alt=\u0022T-intersection flush median low flow\u0022 width=\u0022639\u0022 height=\u0022342\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EIn this image there is more of a moderate traffic flow into the side road and the median strip and right turn pocket have\u0026nbsp;more explicit markings.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/t-insersection-flush-median-moderate-flow.gif\u0022 alt=\u0022T-intersection flush median moderate flow\u0022 width=\u0022640\u0022 height=\u0022364\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThere are other variations of this for staggered intersections and crossroads. Images are from NZTA.\u003C\/p\u003E\r\n\u003Ch2\u003EWho can use flush medians?\u003C\/h2\u003E\r\n\u003Cp\u003EAny road user can use a flush median for the purpose of either:\u003C\/p\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EWaiting to turn into a road\u003C\/li\u003E\r\n\u003Cli\u003EWaiting to join the flow of traffic\u003C\/li\u003E\r\n\u003Cli\u003EWaiting to cross the road (in the case of a cyclist or pedestrian)\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\u003Cp\u003EFlush medians vary in width. The minimum width is about the width of a car, or two metres, but on busy dual carriageways, the flush median could be much wider.\u003C\/p\u003E\r\n\u003Ch2\u003EHow far can you drive in a flush median?\u003C\/h2\u003E\r\n\u003Cp\u003EYou can only drive onto the flush median to:\u003C\/p\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003Ewait to move into a gap in the traffic flow after you have turned right\u0026nbsp;\u003C\/li\u003E\r\n\u003Cli\u003Eslow down and wait before turning right (from the flush median).\u0026nbsp;\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\u003Cp\u003ETechnically this means that you should not be driving along the flush median to reach a turning bay, although this is not specifically prohibited in legislation.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "94.mp3",
+                "video": null,
+                "permalink": "when-can-flush-medians-be-used-check-all",
+                "canonical": "roadcode-questions\/car\/road-position\/when-can-flush-medians-be-used-check-all\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 347,
+                        "title": "To overtake a slower vehicle",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 348,
+                        "title": "To park while loading and unloading goods",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 349,
+                        "isCorrect": true,
+                        "title": "To wait for a gap in the traffic while turning",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 350,
+                        "title": "To reverse back up the road if you missed your turn",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 94,
+                    "correct_text": "You can use a flush median to wait to move into a gap in the traffic flow after you\u0027ve turned right onto the road, or to slow down and wait before turning right from the road. You can also use them when overtaking cyclists, but not other motorists.",
+                    "incorrect_text": "You can use a flush median to wait to move into a gap in the traffic flow after you\u0027ve turned right onto the road, or to slow down and wait before turning right from the road. You can also use them when overtaking cyclists, but not other motorists.",
+                    "correct_image_name": "flush-median.jpg",
+                    "incorrect_image_name": "flush-median.jpg",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 478,
+                "title": "Does this diagram show all the blind spots that a truck driver has?",
+                "description": "\u003Ch1\u003EOvercoming blind spots in trucks\u003C\/h1\u003E\r\n\u003Cp\u003ETrucks can have multiple mirrors set up to help eliminate blind spots.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2016\/09\/truck-offside-mirrors.jpg\u0022 alt=\u0022truck mirrors to avoid blind spots\u0022 width=\u0022600\u0022 height=\u0022768\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EExtra mirrors work well for seeing down the side of the doors, immediately in front of the cab and down the side of long trailers, but they still don\u0027t allow the driver to see immediately behind the trailer. For this, there are camera systems available.\u003C\/p\u003E\r\n\u003Cp\u003EAlso, the \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/how-to-adjust-your-wing-mirrors-correctly\/\u0022\u003Emirrors must be adjusted\u0026nbsp;correctly\u003C\/a\u003E\u0026nbsp;for each driver.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "truck-driver-blind-spots.jpg",
+                "audioName": "478.mp3",
+                "video": null,
+                "permalink": "truck-blind-spots",
+                "canonical": "roadcode-questions\/car\/road-position\/truck-blind-spots\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 1716,
+                        "isCorrect": true,
+                        "title": "Yes - all blind spots are shown",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1717,
+                        "title": "No - there are more blind spots",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 478,
+                    "correct_text": "Correct. The blind spots are where the driver can\u0027t see or would find it difficult to see. They are the most dangerous places to drive or ride in. There is no rear view mirror on a truck therefore the driver can\u0027t see immediately behind the vehicle. On the passenger side the blind spot is the area not covered by the passenger side mirror. It\u0027s bigger than the driver\u0027s side blind spot. Immediately in front of the cab there\u0027s a blind spot where the driver can\u0027t see short objects such as pedestrians crossing in front of the truck. \r\nBlind spots can be reduced by proper mirror placement, and having convex mirrors.",
+                    "incorrect_text": "The blind spots are where the driver can\u0027t see or would find it difficult to see. They are the most dangerous places to drive or ride in. There is no rear view mirror on a truck therefore the driver can\u0027t see immediately behind the vehicle. On the passenger side the blind spot is the area not covered by the passenger side mirror. It\u0027s bigger than the driver\u0027s side blind spot. Immediately in front of the cab there\u0027s a blind spot where the driver can\u0027t see short objects such as pedestrians crossing in front of the truck. \r\nBlind spots can be reduced by proper mirror placement, and having convex mirrors.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:20.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 432,
+                "title": "What must you do when turning left into a driveway. Select all that apply",
+                "description": "\u003Ch1\u003EDangers and obstacles when turning left into a driveway\u003C\/h1\u003E\r\n\u003Cp\u003ETurning left into a driveway is a straightforward manoeuvre, but one that requires care in some circumstances. The first consideration is whether the driveway is wide enough for two vehicles, and whether it\u0027s marked that way. If it\u0027s only wide enough for one vehicle then is it one-way? If it\u0027s not one-way and it is narrow then you might meet a vehicle coming out of the driveway. If the driveway is obscured by a wall then you will need to adjust your entry speed so that you can stop if you need to. You may need to wait to enter the driveway and that means you might need to stop in the lane. Have you provided enough warning and indication to vehicles following you?\u003C\/p\u003E\r\n\u003Cp\u003EKerbs can cause an obstacle for motorcyclists and cars with low suspension.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003ENarrow driveways can be hazardous for long vehicles which may need to pull out to the right first in order to turn in to the driveway without hitting the trailer on a fence post or wall.\u003C\/p\u003E\r\n\u003Cp\u003EIf traffic is slow-moving, be aware that cyclists could be overtaking you on the left.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "432.mp3",
+                "video": null,
+                "permalink": "turning-left-driveway",
+                "canonical": "roadcode-questions\/car\/road-position\/turning-left-driveway\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:10.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 1555,
+                        "isCorrect": true,
+                        "title": "Stay in the left turn lane, or keep to the left side of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:28:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1556,
+                        "isCorrect": true,
+                        "title": "Check your mirrors and your blind spot",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:28:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1557,
+                        "title": "Signal for at least two seconds",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:28:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1558,
+                        "isCorrect": true,
+                        "title": "Slow down before you turn",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:28:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1559,
+                        "isCorrect": true,
+                        "title": "Give way to pedestrians already crossing",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:28:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 432,
+                    "correct_text": "Correct. You should also signal for at least three seconds",
+                    "incorrect_text": "You must signal for at least three seconds as well as staying left, slowing down, checking your mirrors and blind spot, and giving way to pedestrians that are already crossing",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 09:28:53.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 93,
+                "title": "Can you use a right turn bay to overtake a vehicle travelling straight ahead?",
+                "description": "\u003Ch1\u003EWhat is a right turn bay on a road?\u003C\/h1\u003E\r\n\u003Cp\u003EA right turn bay is an area where vehicles can wait to turn right without risking being hit from behind by moving vehicles, or holding up the traffic flow.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYou must not use a right turn bay to overtake a vehicle going straight ahead.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThe approach of a right-turn bay will be painted with a white triangle containing diagonal lines. You are permitted to drive over this to enter the turning bay and it gives you room to slow down.\u003C\/p\u003E\r\n\u003Cp\u003ERight turn bays reduce the risk of nose-to-tail accidents because turning traffic doesn\u0027t hold up the main traffic flow. It\u0027s especially useful on rural roads where traffic speeds are higher.\u003C\/p\u003E\r\n\u003Cp\u003EThe area where vehicles wait is called the storage bay. In rural areas this is longer to accommodate more and longer vehicles, and to give a longer area for slowing down - usually 20m minimum as opposed to 10m minimum for urban areas. The storage bay is between 3-3.5m wide on rural roads and 2.5-3.5m wide on urban roads with a 3.5m being the desired width for all bays.\u003C\/p\u003E\r\n\u003Cp\u003EThey are marked with white reflectorised lines of 200mm width in rural areas or 150mm width in urban areas, with a white turn arrow in the bay.\u003C\/p\u003E\r\n\u003Cp\u003ERight turning bays are not provided for every single turn off a rural road, just turns where there will be enough traffic to warrant it, or where a turn could be obscured by a corner such as at this intersection on the Coatesville-Riverhead Highway with Sunnyside Rd, north-west of Auckland.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/coatesville-riverhead-turning-bay.jpg\u0022 alt=\u0022turning bay on hidden corner\u0022 width=\u0022640\u0022 height=\u0022459\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EImage is from Google Maps\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "93.mp3",
+                "video": null,
+                "permalink": "can-you-use-a-right-turn-bay-to-overtake",
+                "canonical": "roadcode-questions\/car\/road-position\/can-you-use-a-right-turn-bay-to-overtake\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:10.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 344,
+                        "title": "Yes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 345,
+                        "isCorrect": true,
+                        "title": "No",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 346,
+                        "title": "Only if the road is clear ahead",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 93,
+                    "correct_text": "Correct. Right turn bays are only for vehicles turning right",
+                    "incorrect_text": "You can only use a right turning bay to turn right, not to overtake.",
+                    "correct_image_name": "right-turn-turning-bay.jpg",
+                    "incorrect_image_name": "right-turn-turning-bay.jpg",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            }
+        ]
+    },
+    "shouldDisplayAds": true,
+    "userCanPlayAudioQuestion": false,
+    "userIsProspect": false
+}

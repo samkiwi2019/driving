@@ -11,6 +11,7 @@ mix
         },
         resolve: {
             alias: {
+                '_assets': resolve('resources/assets'),
                 '_a': resolve('resources/js/api'),
                 '_c': resolve('resources/js/components'),
                 '_v': resolve('resources/js/views'),

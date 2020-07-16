@@ -8,6 +8,7 @@
         height="64"
         :class="`${isTop ? '' : 'app-bar-fix'}`"
         :elevation="isTop ? 0 : 4"
+        style="z-index: 5"
     >
 
         <v-btn rounded color="primary" dark>Driving Test</v-btn>
@@ -27,6 +28,7 @@
                     v-bind="attrs"
                     v-on="on"
                     to="/admin/dashboard"
+                    color="primary"
                 >
                     <v-icon>mdi-view-dashboard</v-icon>
                 </v-btn>
@@ -42,7 +44,7 @@
             to="/"
             v-if="!breakpoint"
         >
-            <v-icon>mdi-home</v-icon>
+            <v-icon color="primary">mdi-home</v-icon>
         </v-btn>
 
 
@@ -61,6 +63,7 @@
                     text
                     v-bind="attrs"
                     v-on="on"
+                    color="primary"
                 >
                     <v-icon>mdi-ruler-square-compass</v-icon>
                 </v-btn>
@@ -101,6 +104,7 @@
                     text
                     v-bind="attrs"
                     v-on="on"
+                    color="primary"
                 >
                     <v-icon>mdi-test-tube</v-icon>
                 </v-btn>
@@ -144,7 +148,7 @@
                     <v-list-item-avatar v-if="isLogin" style="margin-right: 0 !important;">
                         <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
                     </v-list-item-avatar>
-                    <v-icon v-else>mdi-account</v-icon>
+                    <v-icon color="primary" v-else>mdi-account</v-icon>
                 </v-btn>
             </template>
 
@@ -230,14 +234,14 @@
         data: () => ({
             isTop: true,
             trafficCategory: [
-                {text: 'Core Rules (62)', icon: 'mdi-ansible'},
-                {text: 'Driving Behavior (77)', icon: 'mdi-cursor-move'},
-                {text: 'Parking Signs (18)', icon: 'mdi-car-brake-parking'},
-                {text: 'Accidents (17)', icon: 'mdi-car-traction-control'},
-                {text: 'Road Location (13)', icon: 'mdi-road'},
-                {text: 'Traffic intersection (47)', icon: 'mdi-vector-intersection'},
-                {text: 'Theoretical knowledge (28)', icon: 'mdi-crosshairs-question'},
-                {text: 'Road signs (51)', icon: 'mdi-traffic-light'},
+                {text: 'Core', icon: 'mdi-ansible'},
+                {text: 'Behavior', icon: 'mdi-cursor-move'},
+                {text: 'Parking', icon: 'mdi-car-brake-parking'},
+                {text: 'Emergencies', icon: 'mdi-car-traction-control'},
+                {text: 'Road Position', icon: 'mdi-road'},
+                {text: 'Intersection', icon: 'mdi-vector-intersection'},
+                {text: 'Theory', icon: 'mdi-crosshairs-question'},
+                {text: 'Signs', icon: 'mdi-traffic-light'},
             ]
         }),
 

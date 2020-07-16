@@ -1,0 +1,1726 @@
+{
+    "data": {
+        "log_id": 17471137,
+        "questions": [
+            {
+                "id": 64,
+                "title": "When should you use your hazard lights? Select all that apply.",
+                "description": "\u003Ch1\u003EWhat are hazard warning lights?\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EHazard warning lights are a pair of intermittent flashing indicator lights that flash in unison to warn other drivers that the vehicle is a temporary obstruction.\u003C\/strong\u003E They are also called \u003Cstrong\u003Ehazard flashers\u003C\/strong\u003E and \u003Cstrong\u003Ehazard lights\u003C\/strong\u003E. Different countries use hazard warning lights in different ways. In New Zealand we wouldn\u0027t use them on a motorway to warn other drivers that we\u0027re slowing down, but in the UK this is recommended.\u003C\/p\u003E\r\n\u003Cp\u003EThey are usually activated by pressing a button on the dashboard that looks like a red triangle, as shown. Some vehicles (usually European ones) will \u003Ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Collision_avoidance_system#Audi\u0022 target=\u0022_blank\u0022\u003Eautomatically activate the hazard warning lights\u003C\/a\u003E\u0026nbsp;under heavy braking or if the vehicle is involved in an accident.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/hazard-warning-lights-button.jpg\u0022 alt=\u0022Hazard warning light button\u0022 width=\u0022550\u0022 height=\u0022327\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Ch2\u003EWhen should you use hazard warning lights?\u003C\/h2\u003E\r\n\u003Cp\u003EThey are to warn other road users that you ar a temporary hazard. For example, if you have broken down on the side of the road, or you are changing a tyre. If you are being towed, you should use your hazard warning lights.\u003C\/p\u003E\r\n\u003Cp\u003EIf you are being towed and you are using your hazard lights, you will need to use hand signals to indicate direction because the hazard lights override the indicators.\u003C\/p\u003E\r\n\u003Ch2\u003EWhen shouldn\u0027t you use hazard warning lights?\u003C\/h2\u003E\r\n\u003Cp\u003EThey shouldn\u0027t be used if you are driving in traffic. You should not use them to warn other drivers if you parked illegally (you shouldn\u0027t be parking illegally). If your hazard warning lights are left on while you are driving, any signalling with your indicators will not be able to be seen.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "64.mp3",
+                "video": null,
+                "permalink": "when-should-you-use-your-hazard-lights-c",
+                "canonical": "roadcode-questions\/car\/emergencies\/when-should-you-use-your-hazard-lights-c\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 235,
+                        "title": "You\u0027ve had to stop quickly because you\u0027ve come upon slow moving traffic and there\u0027s a chance another vehicle might not see you and run into the back of you",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:44:26.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 236,
+                        "isCorrect": true,
+                        "title": "You\u0027re changing a tyre on the side of the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:44:26.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 237,
+                        "isCorrect": true,
+                        "title": "Your vehicle has broken down and is being towed",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:44:26.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 238,
+                        "title": "You\u0027ve parked on a broken yellow line to pick something up",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:44:26.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 64,
+                    "correct_text": "You should only use your hazard lights when your vehicle becomes a temporary hazard for other road users. You can tap the brake pedal to warn other drivers if you are in a queue of slow moving traffic or have had to stop suddenly.",
+                    "incorrect_text": "You shouldn\u0027t park on a yellow line, and if you\u0027re in slow moving traffic, tapping the brake pedal will flash the stop lights to warn other drivers.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:44:26.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 208,
+                "title": "What will happen if you have a front tyre blowout?",
+                "description": "\u003Ch1\u003EWhat should you do if you have a front tyre blowout?\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/08\/flat-tyre.jpg\u0022 alt=\u0022flat tyre\u0022 width=\u0022600\u0022 height=\u0022324\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYour car will pull strongly in the direction of the side of the blowout if the front tyre goes flat.\u003C\/strong\u003E Don\u0027t hit the brakes hard or you could spin. Hold the steering wheel tightly and compensate for the pulling to one side.\u003C\/p\u003E\r\n\u003Cp\u003ETake your foot off the accelerator and the vehicle will slow down automatically - more so than usual because of the extra rolling resistance of the flat tyre.\u003C\/p\u003E\r\n\u003Cp\u003EOnce you\u0027ve got the speed down enough, use light braking as you bring the car to a halt on the side of the road. Make sure you leave yourself enough room to change the tyre - i.e. if your blowout is on the left, don\u0027t pull up hard against a wall or fence (unless that\u0027s the only safe place to do so). Similarly, if it\u0027s on the right, pull further off the road so that you\u0027re not in danger of being hit by other traffic.\u003C\/p\u003E\r\n\u003Cp\u003EIf you manage to stop quickly enough the tyre might be able to be repaired, unless there\u0027s been a catastrophic failure e.g. the sidewall has blown out.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003ESome cars come with a foam repair kit designed to inflate your tyre and seal it with foam, which is enough to get you to a tyre repair shop. If you don\u0027t have that, fit your \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/theory\/if-you-have-had-a-flat-tyre-and-have-fit\/\u0022\u003Espace saver wheel\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003EThis video has some great advice and examples about what to do if you have a front tyre blowout.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ciframe src=\u0022\/\/www.youtube.com\/embed\/bkMYiV0xD00\u0022 width=\u0022640\u0022 height=\u0022350\u0022\u003E\u003C\/iframe\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "208.mp3",
+                "video": null,
+                "permalink": "what-will-happen-if-you-have-a-front-tyr",
+                "canonical": "roadcode-questions\/car\/emergencies\/what-will-happen-if-you-have-a-front-tyr\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 706,
+                        "title": "The back end will sway towards the side of the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 707,
+                        "title": "The back end will sway away from the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 708,
+                        "isCorrect": true,
+                        "title": "The front end will pull towards the side of the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 709,
+                        "title": "The front end will pull to the opposite side of the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 208,
+                    "correct_text": "Correct. When the wheel has a blowout it suddenly becomes more difficult for the wheel to rotate, and also it is a smaller radius so this makes the car pull in direction of the blowout",
+                    "incorrect_text": "When the wheel has a blowout it suddenly becomes more difficult for the wheel to rotate, and also it is a smaller radius so this makes the car pull in direction of the blowout",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:18.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 67,
+                "title": "What does a reflectorised triangle placed on the side of the road mean?",
+                "description": "\u003Ch1\u003EWhat is a warning triangle?\u003C\/h1\u003E\r\n\u003Cp\u003EA warning triangle is an equilateral (equal-sided) triangle of around 600mm in size made of red reflective material. It can be put on the side of the road by anyone to warn other drivers of a breakdown or crash ahead.\u003C\/p\u003E\r\n\u003Cp\u003EThis photo shows an example of a warning triangle with the red reflective triangle supplemented by an orange interior triangle for greater visibility during\u0026nbsp;the day.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/08\/reflectorised-warning-triangle.jpg\u0022 alt=\u0022reflectorised warning triangle\u0022 width=\u0022600\u0022 height=\u0022423\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EWarning triangles should be placed approximately 200m before an accident on either side of the accident to warn other drivers. Place them on the side of the road where they are visible to motorists.\u003C\/p\u003E\r\n\u003Cp\u003ESome vehicles come with warning triangles as part of their emergency kit - usually imported European cars. It is not compulsory to carry a warning triangle in New Zealand unlike countries such as Austria, Spain, \u003Ca href=\u0022http:\/\/www.vendee-guide.co.uk\/driving-in-france.htm\u0022 target=\u0022_blank\u0022\u003EFrance\u003C\/a\u003E, Belgium and Italy.\u003C\/p\u003E\r\n\u003Cp\u003EThis is one option for how a warning triangle is stored in the back of a BMW.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/08\/BMW-M4-Coupe-2014-warning-triangle.jpg\u0022 alt=\u0022warning triangle in case\u0022 width=\u0022600\u0022 height=\u0022441\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/emergencies\/who-can-put-a-blue-accident-sign-up\/\u0022 target=\u0022_blank\u0022\u003EPolice will use ACCIDENT signs\u003C\/a\u003E\u0026nbsp;to warn of an accident.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "warning-triangle.jpg",
+                "audioName": "67.mp3",
+                "video": null,
+                "permalink": "what-does-a-reflectorised-triangle-place",
+                "canonical": "roadcode-questions\/car\/emergencies\/what-does-a-reflectorised-triangle-place\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 248,
+                        "isCorrect": true,
+                        "title": "There\u0027s a breakdown or crash ahead",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:28.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 249,
+                        "title": "There are roadworks ahead",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:28.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 250,
+                        "title": "There\u0027s a special event ahead",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:28.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 251,
+                        "title": "There\u0027s a one-way bridge ahead and you don\u0027t have the right of way",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:28.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 67,
+                    "correct_text": "Correct. It will have been carried by the vehicle that has broken down or had an accident, or be from a vehicle assisting",
+                    "incorrect_text": "A warning triangle can be put on the side of the road by anyone to warn other drivers of a breakdown or crash ahead.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:45:28.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 211,
+                "title": "What should you do if your vehicle breaks down on a motorway? Select all that apply.",
+                "description": "\u003Ch1\u003EBreaking down on the motorway\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EIf your vehicle breaks down while you are in the overtaking lane, try to coast to the hard shoulder on the left. Parking on the right-hand side of the motorway is the most dangerous place.\u0026nbsp;\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003ESometimes you can be forewarned of engine failure, particularly on a motorbike where you are closer to the engine. You might notice a change in tone of the engine or that it seems down on power. Warning lights might start to appear on the dashboard, for example this check engine light in yellow or (worse) red.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2015\/09\/engine-warning-light.jpg\u0022 alt=\u0022check engine light\u0022 width=\u0022200\u0022 height=\u0022145\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYou might also notice steam rising from the bonnet, metallic noises coming from the engine or transmission, difficulty changing gear, or the acceleration is no longer smooth.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EIt might not be the engine that\u0027s the problem: if you have brake failure you will need to stop, too, as well as if your windscreen is smashed, you have one or more flat tyres or you run out of fuel. If you run out of fuel on somewhere like the Harbour Bridge in Auckland, where there are no hard shoulders and your vehicle will cause a significant disruption,\u0026nbsp;police might fine you.\u003C\/p\u003E\r\n\u003Cp\u003EKeep your vehicle serviced regularly to help minimise the risk of breakdowns, and always put more fuel in as soon as the fuel warning light comes on.\u003C\/p\u003E\r\n\u003Ch2\u003EEmergency phones\u003C\/h2\u003E\r\n\u003Cp\u003EYou can either use your cellphone or an emergency phone to call for help. An emergency phone will give emergency services the exact location as each phone has a number. If you call from a cellphone you might be more vague about your position.\u003C\/p\u003E\r\n\u003Cp\u003EEmergency phones are located every 700-1200m\u0026nbsp;on the motorway.\u0026nbsp;Occasionally they will be closer than that if you are approaching a motorway on-ramp or off-ramp, so that you don\u0027t have to cross it. They are installed in pairs opposite one another so that a person needing one doesn\u0027t need to cross the carriageway.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EThey are dark blue with a red reflective phone icon, and alpha-numeric white reflective stickers giving the ID of the phone. The phones are often located behind barriers to give you protection, but you should always make the call facing traffic.\u003C\/p\u003E\r\n\u003Cp\u003EPhones are never placed where there is no hard shoulder, or if the hard shoulder narrows to less than 2.5m wide.\u003C\/p\u003E\r\n\u003Cp\u003EThe phone microphone is 1400mm from ground level and there\u0027s one button to press that\u0027s 1200mm from the ground - you can\u0027t go wrong.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/08\/motorway-emergency-phone.jpg\u0022 alt=\u0022motorway emergency phone\u0022 width=\u0022550\u0022 height=\u0022690\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "211.mp3",
+                "video": null,
+                "permalink": "what-should-you-do-if-your-vehicle-break",
+                "canonical": "roadcode-questions\/car\/emergencies\/what-should-you-do-if-your-vehicle-break\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 719,
+                        "title": "Stand on the motorway and flag down a passing driver to help",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 720,
+                        "isCorrect": true,
+                        "title": "Open your boot and bonnet (if you have one)",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 721,
+                        "isCorrect": true,
+                        "title": "Put your hazard warning lights on",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 722,
+                        "isCorrect": true,
+                        "title": "Call for help using a cellphone or a motorway phone",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 723,
+                        "isCorrect": true,
+                        "title": "Park as far to the left as possible",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 211,
+                    "correct_text": "Correct. If your vehicle breaks down on a motorway you should open your boot and bonnet, and hang something white on your car door handle if possible to indicate you need help. Call for assistance, put on your hazard warning lights, and keep well away from the motorway.",
+                    "incorrect_text": "You should open your boot and bonnet, and hang something white on your car door handle if possible to indicate you need help. Call for assistance, put on your hazard warning lights, and keep well away from the motorway.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:18.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 210,
+                "title": "The bonnet of your vehicle lifts up while you are driving and you cannot see. What should you do? Select all that apply.",
+                "description": "\u003Ch1\u003EWhat happens if your bonnet latch fails?\u003C\/h1\u003E\r\n\u003Cp\u003EIt\u0027s extremely unlikely that your bonnet latch or catch will fail. Almost all bonnet catches have a two-stage release so that if the first stage fails it catches on the second stage.\u003C\/p\u003E\r\n\u003Cp\u003EHowever, it\u0027s not unheard of as you can see in this video which shows just how much damage it can do to your bonnet and windscreen at 60mph (100kph)\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ciframe src=\u0022https:\/\/www.youtube.com\/embed\/kanlrQDVwNk?rel=0\u0022 width=\u0022640\u0022 height=\u0022360\u0022 frameborder=\u00220\u0022 allowfullscreen=\u0022allowfullscreen\u0022\u003E\u003C\/iframe\u003E\u003C\/p\u003E\r\n\u003Cp\u003EIf you have some existing damage to your bonnet or the front end of your car from a crash then it is more likely that your bonnet catch will fail. It could be that the bonnet won\u0027t secure in place, or the catch won\u0027t clip all the way in. In this case, heavy buffeting by wind on the bonnet can flex it enough that it pops the catch open.\u003C\/p\u003E\r\n\u003Cp\u003EAnother reason is if the bonnet catch or the surrounding metal has rusted and therefore become weak. Driving into a headwind will increase the load on the bonnet catch and might cause failure.\u003C\/p\u003E\r\n\u003Cp\u003EOr, it might be that you (or someone else who accessed your engine bay), didn\u0027t secure the bonnet catch firmly.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "210.mp3",
+                "video": null,
+                "permalink": "the-bonnet-of-your-vehicle-lifts-up-whil",
+                "canonical": "roadcode-questions\/car\/emergencies\/the-bonnet-of-your-vehicle-lifts-up-whil\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 715,
+                        "title": "Brake suddenly so you don\u0027t leave the road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:00:04.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 716,
+                        "isCorrect": true,
+                        "title": "Look through the gap underneath the bonnet or out of the side window",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:00:04.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 717,
+                        "isCorrect": true,
+                        "title": "Pull to the side of the road and refasten the bonnet",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:00:04.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 718,
+                        "title": "Turn on your headlights and look out of the side window",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 09:00:04.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 210,
+                    "correct_text": "Correct. If you\u0027ve been observing the 12 second rule (looking around six cars ahead) you\u0027ll have a good idea of what the road is like up ahead, giving you enough time to anticipate any obstacles. Using the gap under the bonnet, and your vision through the side window, brake gently and pull over to the left.",
+                    "incorrect_text": "If you\u0027ve been observing the 12 second rule (looking around six cars ahead) you\u0027ll have a good idea of what the road is like up ahead, giving you enough time to anticipate any obstacles. Using the gap under the bonnet, and your vision through the side window, brake gently and pull over to the left.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 09:00:04.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 62,
+                "title": "If you are a driver involved in a crash, what is the FIRST action you should take?",
+                "description": "\u003Ch1\u003EFirst actions after a car crash\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EIf you are involved in a crash and not badly hurt, the first thing to do is check for other people\u0027s injuries.\u003C\/strong\u003E Then see if your vehicle can be moved out of danger once you have checked on other vehicle occupants and called emergency services.\u003C\/p\u003E\r\n\u003Cp\u003EEmergency services will need information such as the number of injured people, the type of injuries, whether an ambulance, fire engine or both are required, and your location. You can use a vehicle GPS or smartphone-based GPS to give fairly accurate coordinates. If neither of these are working and you don\u0027t know where you are, try to describe your surroundings, giving significant landmarks and features of the surrounding area. For example, \u0022\u003Cem\u003EI\u0027m in Mt Albert, I don\u0027t know what street, but I\u0027m outside the dairy near the railway lines.\u003C\/em\u003E\u0022\u003C\/p\u003E\r\n\u003Cp\u003EHelp move uninjured and lightly injured people away from the scene. Don\u0027t move anyone who is trapped unless they need life-saving intervention such as CPR or to stop severe bleeding. You shouldn\u0027t move a motorcyclist\u0027s helmet unless the rider is vomiting.\u003C\/p\u003E\r\n\u003Cp\u003EIf you have a \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/emergencies\/what-does-a-reflectorised-triangle-place\/\u0022 target=\u0022_blank\u0022\u003Ewarning triangle\u003C\/a\u003E\u0026nbsp;place it 200m up the road to alert road users.\u0026nbsp;\u003C\/p\u003E\r\n\u003Ch2\u003EGiving information\u003C\/h2\u003E\r\n\u003Cp\u003EIf someone was hurt in the accident you must tell police within 24 hours.\u003C\/p\u003E\r\n\u003Cp\u003EIf no one is hurt then you must provide your name, address and vehicle registration, plus the name and address of the owner of the vehicle you are driving if it\u0027s not you, to the owner or driver of any vehicle damaged and the owner of any property that was damaged within 48 hours.\u003C\/p\u003E\r\n\u003Cp\u003EIf you can\u0027t find these people, you must tell a police officer within 60 hours.\u003C\/p\u003E\r\n\u003Cp\u003EThere is more information in our guide to \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/what-should-you-do-if-you-have-a-crash-or-accident\/\u0022\u003Edealing with vehicle accidents\u003C\/a\u003E.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "62.mp3",
+                "video": null,
+                "permalink": "if-you-are-a-driver-involved-in-a-crash-",
+                "canonical": "roadcode-questions\/car\/emergencies\/if-you-are-a-driver-involved-in-a-crash-\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 225,
+                        "title": "Call the police",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 226,
+                        "isCorrect": true,
+                        "title": "Check there are no injuries",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 227,
+                        "title": "Call for an ambulance",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 228,
+                        "title": "Leave the scene to tell someone",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 229,
+                        "title": "Call a family member or friend",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 62,
+                    "correct_text": "Checking for injuries is important as it will allow you to seek medical help quickly if required.",
+                    "incorrect_text": "The most important thing is to check for injuries first so that you can organise medical attention for anyone who requires it.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 209,
+                "title": "What will happen if you have a rear tyre blowout?",
+                "description": "\u003Ch1\u003EWhat happens if you have a rear tyre blowout?\u003C\/h1\u003E\r\n\u003Cp\u003ETyre blowouts can be caused by hitting some sharp object on the road, for example glass; by hitting a larger object on the road such as a brick; by overheating if you have underinflated them; by the tyre rolling off the rim on a corner if you have underinflated them; or by driving on tyres that are worn out, i.e. you haven\u0027t replaced them in time.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/08\/flat-tyre.jpg\u0022 alt=\u0022\u0022 width=\u0022600\u0022 height=\u0022324\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EA blowout means the tyre deflates instantly rather than goes flat slowly. The instant loss of pressure is the first thing that unbalances the vehicle.\u003C\/p\u003E\r\n\u003Cp\u003EBecause there is less rolling resistance on the side of the blowout at the rear of the vehicle, it will first swing that way. But it can\u0027t continue to swing that way forever and eventually it will grip and the forward momentum will swing the back end back the other way, leading to a fishtailing effect. An overcorrection at this point will mean a spin.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EAs the majority of the braking force is transmitted through the front wheels, braking performance won\u0027t be compromised much, but braking heavily could still unbalance the vehicle.\u003C\/p\u003E\r\n\u003Cp\u003EIf your car is fitted with electronic stability control (ESC), you should be able to apply moderate braking force because the electronics in the car will stabilise the skid and keep you heading straight faster than you can react. There\u0027s more information about \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/advice-for-correct-skids-is-now-outdated-and-dangerous\/\u0022\u003Ebraking using ESC here\u003C\/a\u003E.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EThere may be a possibility of having the tyre repaired, so put the \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/theory\/if-you-have-had-a-flat-tyre-and-have-fit\/\u0022\u003Espace saver wheel\u003C\/a\u003E\u0026nbsp;on as soon as possible to avoid further damage to the tyre. If you continue to drive on it your tyre will shred and that can cause bits of it to hit and damage the body work.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EIf your vehicle comes with a foam aerosol you might be able to effect a temporary repair as long as the hole in the tyre isn\u0027t too big. These usually give you enough distance to get to a tyre repair centre.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "209.mp3",
+                "video": null,
+                "permalink": "what-will-happen-if-you-have-a-rear-tyre",
+                "canonical": "roadcode-questions\/car\/emergencies\/what-will-happen-if-you-have-a-rear-tyre\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 710,
+                        "title": "The back end will sway towards the side of the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 711,
+                        "title": "The back end will sway away from the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 712,
+                        "title": "The front end will pull towards the side of the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 713,
+                        "title": "The front end will pull to the opposite side of the blowout",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 714,
+                        "isCorrect": true,
+                        "title": "The back end will sway from side to side",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 209,
+                    "correct_text": "Correct. The back end is likely to first swing out the same side as the blowout, but will sway from side to side.",
+                    "incorrect_text": "The back end is likely to first swing out the same side as the blowout, but will sway from side to side.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:18.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 63,
+                "title": "If you are the driver and you hurt somebody in a crash, who must you report it to?",
+                "description": "\u003Ch1\u003EThe process after a car crash with injuries\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EIf you have a crash your first priority is to check whether other people need medical assistance - check airways, breathing and circulation - and you must report it to a police officer within 24 hours.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003ECall 111 for an ambulance if required. If you know first aid, such as \u003Ca href=\u0022http:\/\/www.stjohn.org.nz\/First-Aid\/First-Aid-Library\/Resuscitation\/Adult\/\u0022 target=\u0022_blank\u0022\u003ECPR\u003C\/a\u003E, you can administer it if it will help. Stop heavy bleeding by elevating the wound and using pressure with thick, folded cloth.\u003C\/p\u003E\r\n\u003Cp\u003EIf the injured person is a motorcyclist and they are laying in the middle of the road your first priority is to ensure they are not hit by another vehicle. Turn your hazard warning lights on and position your vehicle to protect the injured rider if possible.\u003C\/p\u003E\r\n\u003Cp\u003EMove other people away from the crash scene, especially if they are disorientated or could be suffering a concussion.\u003C\/p\u003E\r\n\u003Cp\u003EFor a full list of things to do if you are either \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/what-should-you-do-if-you-have-a-crash-or-accident\/\u0022\u003Einvolved in or come across an accident is here\u003C\/a\u003E.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "63.mp3",
+                "video": null,
+                "permalink": "if-you-are-the-driver-and-you-hurt-someb",
+                "canonical": "roadcode-questions\/car\/emergencies\/if-you-are-the-driver-and-you-hurt-someb\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 230,
+                        "title": "An ambulance officer",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 231,
+                        "isCorrect": true,
+                        "title": "A police officer",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 232,
+                        "title": "The next of kin of the person you injured",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 233,
+                        "title": "A lawyer",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 234,
+                        "title": "A clerk of the court",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 63,
+                    "correct_text": "You must tell a police officer as soon as possible, and within 24 hours.",
+                    "incorrect_text": "You must tell a police officer as soon as possible, and within 24 hours.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 104,
+                "title": "What must you do when you see two red lights flashing outside a fire station?",
+                "description": "\u003Ch1\u003ERed lights outside a fire station\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EIf you see two red lights operating outside a fire station then you must stop.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EIf there are red lights flashing then it\u0027s likely that a fire engine will be exiting the station on the way to an emergency.\u003C\/p\u003E\r\n\u003Cp\u003EIf the lights continue to flash after the fire engine has gone, another fire engine might be coming, so you must wait until the lights have stopped.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/fire-engine-4-e1405992955518.jpg\u0022 alt=\u0022Fire engine\u0022 width=\u0022640\u0022 height=\u0022336\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "flashing-red-signals.gif",
+                "audioName": "104.mp3",
+                "video": null,
+                "permalink": "what-must-you-do-when-you-see-two-red-li",
+                "canonical": "roadcode-questions\/car\/emergencies\/what-must-you-do-when-you-see-two-red-li\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 383,
+                        "title": "Slow down and prepare to stop in case a vehicle exits the fire station",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 384,
+                        "isCorrect": true,
+                        "title": "Stop until the lights stop flashing",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 385,
+                        "title": "Slow down to 20kph, then proceed if it is safe to do so",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 104,
+                    "correct_text": "Red lights may operate outside airports and fire stations and you must stop until they have stopped flashing.",
+                    "incorrect_text": "Red lights may operate outside airports and fire stations and you must stop until they have stopped flashing.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:18.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 429,
+                "title": "What should you do if an ambulance comes up behind you flashing red lights or sounding its siren?",
+                "description": "\u003Cp\u003E\u003Cstrong\u003EWhen you hear a siren or see red flashing lights from an ambulance or fire engine, if they are following you, you must slow down and pull over.\u003C\/strong\u003E Stop if necessary. If a police car is following you with its lights flashing (which will be red and blue), then you must stop unless it passes you and continues on its way.\u003C\/p\u003E\r\n\u003Ch1\u003EImproving your awareness of emergency vehicles when driving\u003C\/h1\u003E\r\n\u003Cp\u003ELoud music can obscure the sound of sirens, as can ear plugs and a loud exhaust if you are riding a motorbike.\u003C\/p\u003E\r\n\u003Cp\u003EIf you don\u0027t check your rear view mirror frequently you could miss an emergency vehicle trying to get past you.\u003C\/p\u003E\r\n\u003Cp\u003EA siren is an oscillating tone usually in a range within 1-3kHz. Our ears are at their most sensitive at around 2kHz, therefore the least\u0026nbsp;energy is required by the siren to generate a sound that is the most audible to humans. As well as the oscillating siren which goes up and down in pitch, some emergency vehicles can use short bursts of sound with a broader frequency range. These interrupt the siren and are also better for helping you to spatially locate the siren. This is because sounds between 1-3kHz are quite \u003Ca href=\u0022http:\/\/www.physics.org\/featuredetail.asp?id=75\u0022 target=\u0022_blank\u0022\u003Edifficult to locate spatially\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003EDifferent countries use different siren sounds. If you are new to driving in New Zealand, our sirens are fairly similar to American sirens. Read more about \u003Ca href=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/emergency-vehicle-sirens-how-loud-are-they-and-what-type-of-sirens-are-there\/\u0022\u003ENew Zealand emergency vehicle sirens\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch2\u003EShould you go through a red light to get out of the way of an ambulance or fire engine?\u003C\/h2\u003E\r\n\u003Cp\u003EIf you are waiting at an intersection and an ambulance or fire engine is behind you must not go through a red stop light. You may be fined for doing so because you put other road users in danger. The onus is on the emergency vehicle to find a way through. If you can move to the side of the lane without entering the intersection, then do that. Emergency vehicle drivers are trained not to pressurise other drivers where it might cause them to do something illegal or dangerous. On a motorway in stop-start rush hour traffic, they will be far more aggressive at getting vehicles to move than they will be at traffic lights where other vehicles are entering the intersection.\u003C\/p\u003E\r\n\u003Cp\u003EYou should also not drive up on a footpath. If you are moving to the left to let an emergency vehicle past, check in your blind spots for cyclists.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "429.mp3",
+                "video": null,
+                "permalink": "ambulance-approaches",
+                "canonical": "roadcode-questions\/car\/core\/if-an-ambulance-or-fire-engine-is-behind\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 1544,
+                        "title": "Stop quickly",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-06-17 22:57:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1545,
+                        "title": "Maintain your speed - the ambulance driver will find a way around you",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-06-17 22:57:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1546,
+                        "title": "Speed up so that you don\u0027t hold the ambulance up",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-06-17 22:57:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1547,
+                        "isCorrect": true,
+                        "title": "Pull over to the left and slow down or stop if necessary",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-06-17 22:57:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 429,
+                    "correct_text": "Correct. Do all you can to allow it to pass. Pulling to the left gives the ambulance more room and slowing down shortens the \u0027time exposed to danger\u0027, i.e. the time it takes to overtake you",
+                    "incorrect_text": "Do all you can to allow the ambulance to pass. Pulling to the left gives the ambulance more room and slowing down shortens the \u0027time exposed to danger\u0027, i.e. the time it takes to overtake you",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-06-17 22:57:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 70,
+                "title": "Who can put a blue accident sign up?",
+                "description": "\u003Ch1\u003EWho can place an Accident sign on the road?\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EOnly a police officer can place an accident sign on the road.\u003C\/strong\u003E Other road users can place a \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/emergencies\/what-does-a-reflectorised-triangle-place\/\u0022\u003Ewarning triangle\u003C\/a\u003E\u0026nbsp;on the road to inform people that there\u0027s an accident.\u003C\/p\u003E\r\n\u003Cp\u003EIf there is an accident sign it could be that there is debris on the road and you would risk a puncture if you drive over it too fast. Or there may be emergency services workers on the scene dealing with injured people. Or a tow truck could be removing damaged vehicles.\u003C\/p\u003E\r\n\u003Cp\u003EThe speed limit from when you see this sign until when you have passed the sign is 20kph.\u003C\/p\u003E\r\n\u003Cp\u003EIf emergency services are attending to the crash, they won\u0027t need your help unless, perhaps, you are a doctor.\u003C\/p\u003E\r\n\u003Cp\u003EIf you come across an accident that emergency service aren\u0027t attending to, \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/what-should-you-do-if-you-have-a-crash-or-accident\/\u0022\u003Ethis\u0026nbsp;comprehensive guide will help you deal with accidents and emergencies\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003EIf possible, make a note of all details. If you don\u0027t have a pen and paper, use your phone. If you saw the accident, detail what happened. If you came across the accident, detail the scene.\u003C\/p\u003E\r\n\u003Cp\u003EYou\u0027ll need to write the date and time you came across the accident, what are the weather conditions and light like, what\u0027s the condition of the road, where did the accident happen (be as specific as possible), what are the details of the vehicles involved, and what damage has occurred. Draw a sketch of the scene if you think it will be useful. There are online software solutions for drawing accident scenes such as \u003Ca href=\u0022http:\/\/draw.accidentsketch.com\/\u0022 target=\u0022_blank\u0022\u003EAccidentSketch\u003C\/a\u003E.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "accident-blue.gif",
+                "audioName": "70.mp3",
+                "video": null,
+                "permalink": "who-can-put-a-blue-accident-sign-up",
+                "canonical": "roadcode-questions\/car\/emergencies\/who-can-put-a-blue-accident-sign-up\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 259,
+                        "title": "An ambulance officer",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 260,
+                        "isCorrect" : true,
+                        "title": "A police officer",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 261,
+                        "title": "A council officer",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 262,
+                        "title": "A member of the public",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 70,
+                    "correct_text": "Correct. So, if you see one, you know police are attending an accident",
+                    "incorrect_text": "Only the police can place an accident sign like this one close to a crash site.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:18.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 66,
+                "title": "When must you pull over and allow an ambulance or fire engine to pass?",
+                "description": "\u003Ch1\u003EWhat\u0027s the maximum speed an ambulance can drive?\u003C\/h1\u003E\r\n\u003Cp\u003EThe New Zealand Ambulance Board states that ambulances are allowed to travel at up to 30kph over the posted speed limit, unless it\u0027s a temporary speed limit such as roadworks where they have to stick to that limit.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/08\/ambulance.jpg\u0022 alt=\u0022ambulance\u0022 width=\u0022600\u0022 height=\u0022374\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EWhen their lights are flashing because they\u0027re attending to an emergency they are also allowed to travel through stop signs, traffic lights and give way signs at no more than 20kph through the intersection. Emergency services drivers won\u0027t do anything to encourage other drivers to drive through red traffic lights.\u003C\/p\u003E\r\n\u003Cp\u003EIf you hold an ambulance or fire engine up on the road then you could potentially cause loss of life.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/fire-engine-4-e1405992955518.jpg\u0022 alt=\u0022fire engine\u0022 width=\u0022640\u0022 height=\u0022336\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "66.mp3",
+                "video": null,
+                "permalink": "when-must-you-pull-over-and-allow-an-amb",
+                "canonical": "roadcode-questions\/car\/emergencies\/when-must-you-pull-over-and-allow-an-amb\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 244,
+                        "title": "If it is travelling faster than you want to",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 245,
+                        "title": "You don\u0027t need to let it past - you can speed up so you\u0027re not holding it up",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 246,
+                        "isCorrect" : true,
+                        "title": "If its siren and\/or red flashing lights are on",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 247,
+                        "title": "At all times",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 66,
+                    "correct_text": "Correct. The lights and siren indicate it is attending an emergency",
+                    "incorrect_text": "A fire engine or ambulance with its red flashing lights and\/or siren on is on its way to an emergency. You will need to pull over safely and let it past.",
+                    "correct_image_name": "fire-flash-lights.gif",
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:45:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 69,
+                "title": "What must you do if glass falls on to the road from your vehicle? Select all that apply.",
+                "description": "\u003Cp\u003E\u003Cstrong\u003EIf glass falls on to the road from your vehicle you must stop and remove the glass yourself if it can be done quickly and safely, or tell the police if you can\u0027t remove it because you are physically incapacitated.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Ch1\u003EWhat is automotive glass?\u003C\/h1\u003E\r\n\u003Cp\u003EEven though automotive glass looks similar to regular glass, it\u0026rsquo;s quite different. It\u0026rsquo;s manufactured to work within the vehicle\u0026rsquo;s construction to provide protection and added rigidity. If you look closely, you can see some differences. For example, the glass in your rear window will have wires running through it through which a current is passed that heats the glass to evaporate condensation. On some vehicles, the front window has an antenna embedded in it for the radio.\u003C\/p\u003E\r\n\u003Ch2\u003EWhat are the types of automotive glass?\u003C\/h2\u003E\r\n\u003Cp\u003EThere are three main areas where different types of glass might be used on your vehicle.\u003C\/p\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EWindscreen\/windshield and sunroof: this uses laminated glass which is very strong\u003C\/li\u003E\r\n\u003Cli\u003ESide and rear windows: these use tempered glass\u003C\/li\u003E\r\n\u003Cli\u003ELights: glass was used on older vehicles but has been replaced by plastics\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\u003Ch2\u003ELaminated glass\u003C\/h2\u003E\r\n\u003Cp\u003EBy law a windscreen must be made of laminated glass and this is usually a sandwich of two 2.1mm layers of glass with a 0.8mm sheet polyvinyl butyral (PVB) in the middle. They are fused together to form a strong, curved sheet which won\u0026rsquo;t shatter into pieces on impact. The film holds the glass together in one sheet, helping prevent shards of glass enter the cabin as they stick to the film. As the plastic sheet is stretchy, it helps absorb any impact, e.g. a deer hitting the windscreen.\u003C\/p\u003E\r\n\u003Cp\u003EThe PVB filters out the majority of the sun\u0026rsquo;s UV A and UV B rays (95% or more), helping protect occupants from sunburn as it\u0027s the equivalent of wearing factor 50 sun screen. As the glass is so strong, it helps with structural rigidity. In a rollover crash it will help prevent the roof from buckling downwards.\u003C\/p\u003E\r\n\u003Ch2\u003ETempered glass\u003C\/h2\u003E\r\n\u003Cp\u003ETempered glass is rapidly heated and cooled several times. If broken, it shatters into lots of small pieces that aren\u0026rsquo;t as sharp or likely to cause damage to vehicle occupants in an accident. Tempered glass is strong enough to withstand fairly strong impacts and closing the door hard. It\u0026rsquo;s also safer to have tempered glass on side windows if you end up in a situation such as the vehicle being underwater or in an accident where the doors can\u0026rsquo;t be opened, because the glass can be broken by kicking it.\u003C\/p\u003E\r\n\u003Cp\u003ETempered glass does not block UV rays as well as laminated glass unless it\u0027s been specifically UV-treated. \u003Ca href=\u0022http:\/\/www.medicaldaily.com\/glass-car-windows-doesnt-fully-protect-suns-uv-rays-could-explain-left-side-skin-255398\u0022 target=\u0022_blank\u0022\u003ETypical SPF protection is around 20\u003C\/a\u003E\u0026nbsp;in glass that is not specifically treated, and around 45 in glass that is. Tinting a vehicle\u0027s windows increases the SPF.\u003C\/p\u003E\r\n\u003Cp\u003ESome fleet vehicle operators request laminated glass all around for vehicles that contain high-value equipment.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "69.mp3",
+                "video": null,
+                "permalink": "what-must-you-do-if-glass-falls-on-to-th",
+                "canonical": "roadcode-questions\/car\/emergencies\/what-must-you-do-if-glass-falls-on-to-th\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 256,
+                        "title": "Nothing is required - council road workers will remove it in due course",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:47.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 257,
+                        "isCorrect" : true,
+                        "title": "Stop and remove the glass yourself if it can be done quickly and safely",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:47.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 258,
+                        "isCorrect" : true,
+                        "title": "Tell the police if you can\u0027t remove it because you are physically incapacitated",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:47.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 69,
+                    "correct_text": "Correct. Broken glass can puncture tyres, which is particularly dangerous for cyclists and motorcyclists. It\u0027s your responsibility to see it\u0027s removed.",
+                    "incorrect_text": "You must always report glass on the road if you can\u0027t remove it yourself.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:45:47.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 485,
+                "title": "Which one of the following is most likely to cause an emergency situation?",
+                "description": "\u003Ch1\u003EReckless driving\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/06\/car-crash-bmw-wrecked-parked.jpg\u0022 alt=\u0022aftermath of a car crash\u0022 width=\u0022600\u0022 height=\u0022415\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EReckless driving is\u0026nbsp;driving without consideration for other road users or yourself\u003C\/strong\u003E. A number of driving practices can be considered reckless driving:\u003C\/p\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003ERoad rage\u003C\/li\u003E\r\n\u003Cli\u003EInappropriate speed\u003C\/li\u003E\r\n\u003Cli\u003EDriving after drinking or taking drugs\u003C\/li\u003E\r\n\u003Cli\u003EDangerous overtaking\u003C\/li\u003E\r\n\u003Cli\u003ENot paying attention to the road (e.g. using a phone, lighting a cigarette)\u003C\/li\u003E\r\n\u003Cli\u003EErratic lane changes\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\u003Cp\u003EReckless driving and endangering other road users is a serious traffic offence. It is often punishable by fines and licence suspension. In some cases, if it causes an accident or injury, a prison sentence is mandatory.\u003C\/p\u003E\r\n\u003Cp\u003EA conviction for reckless driving can affect a driver\u0027s ability to get insurance and get certain types of work.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "485.mp3",
+                "video": null,
+                "permalink": "causing-driving-emergencies",
+                "canonical": "roadcode-questions\/car\/emergencies\/causing-driving-emergencies\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 1741,
+                        "isCorrect" : true,
+                        "title": "Practicing skids on a quiet road",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:45:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1742,
+                        "title": "Towing a trailer",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:45:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1743,
+                        "title": "Driving defensively",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:45:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1744,
+                        "title": "Not using your full beam headlights when driving in rural areas at night",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:45:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 485,
+                    "correct_text": "Correct. If you want to learn car control when drifting or skidding, this should only be done on a track. While towing a trailer and only using dipped headlights where there are no street lights does increase risk, it\u0027s not inherently risky, and you can drive to the conditions by slowing down.",
+                    "incorrect_text": "If you want to learn car control when drifting or skidding, this should only be done on a track. While towing a trailer and only using dipped headlights where there are no street lights does increase risk, it\u0027s not inherently risky, and you can drive to the conditions by slowing down.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-03-06 08:45:51.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 68,
+                "title": "You are driving past a line of parked cars. You notice a ball bouncing out into the road ahead. What should you do?",
+                "description": "\u003Ch1\u003EDriving carefully around children playing\u003C\/h1\u003E\r\n\u003Cp\u003EAlways be careful when driving around where children play, for example playgrounds and sports fields, and around schools between 8-9am and 3-4pm on week days outside school holidays.\u003C\/p\u003E\r\n\u003Cp\u003EWhen passing a line of parked cars look for signs of children playing. Give yourself as much of a buffer as possible by travelling closer to the centre line, unless there are large vehicles coming the other way. This will give you slightly better visibility between the cars and gives anyone stepping out from between them better visibility of you.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg style=\u0022float: left;\u0022 src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/120px-New_Zealand_PW-31.svg_.png\u0022 alt=\u0022beware children crossing the road\u0022 width=\u0022120\u0022 height=\u0022120\u0022 \/\u003EIn areas where children play regularly, plus around schools, playcentres and sports facilities, you might see this sign in yellow or fluoro green.\u003C\/p\u003E\r\n\u003Cp\u003ESometimes local communities will create their own signs, or they can be purchased from private companies, like this one:\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/home-made-sign-children.jpg\u0022 alt=\u0022child warning sign\u0022 width=\u0022550\u0022 height=\u0022282\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003ESmaller children can\u0027t judge distances and speeds and don\u0027t understand the implications of stepping out into the road. Older children can be distracted by their friends. Teenagers could be \u003Ca href=\u0022http:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022437511000107\u0022 target=\u0022_blank\u0022\u003Elooking at a cellphone\u003C\/a\u003E\u0026nbsp;and be distracted from the road.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "68.mp3",
+                "video": null,
+                "permalink": "you-are-driving-past-a-line-of-parked-ca",
+                "canonical": "roadcode-questions\/car\/emergencies\/you-are-driving-past-a-line-of-parked-ca\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 252,
+                        "title": "Stay on your side of the road and drive through the ball - it won\u0027t matter if it hits your car",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:36.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 253,
+                        "isCorrect" : true,
+                        "title": "Stay on your side of the road and stop safely",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:36.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 254,
+                        "title": "Swerve around the ball",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:36.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 255,
+                        "title": "Flash your headlights",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:45:36.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 68,
+                    "correct_text": "Correct. If a ball has bounced out, a child might run after it, so it\u0027s safest to stop until you\u0027ve ascertained it\u0027s safe",
+                    "incorrect_text": "Hitting the ball might send it into the path of another vehicle; swerving to the other side of the road creates another hazard.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:45:36.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 61,
+                "title": "You are driving on a country road at night when your vehicle headlights suddenly go out. What is the safest thing to do? Select all that apply.",
+                "description": "\u003Ch1\u003EWhat to do if your vehicle headlights go out at night\u003C\/h1\u003E\r\n\u003Cp\u003EIt\u0027s extremely unlikely that all your lights will fail at the same time when driving at night. However, if they do:\u003C\/p\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003ESlow down and prepare to stop somewhere safe\u003C\/li\u003E\r\n\u003Cli\u003EPut your hazard warning lights on (if they still work).\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\u003Cp\u003EYou should never park on the right facing traffic as there are no reflectors on the front of your vehicle - you can only \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/parking\/when-can-you-park-on-the-right-hand-side\/\u0022\u003Epark on the right on a one way street\u003C\/a\u003E. Vehicles usually have reflectors either built into the rear lights, or on the rear bumper.\u003C\/p\u003E\r\n\u003Cp\u003EIf your lights are out you will not be visible to other drivers and won\u0027t be able to see clearly where you are going.\u003C\/p\u003E\r\n\u003Cp\u003EBe careful when you park on the left that you don\u0027t run down a grassy bank. It\u0027s best to see if you can quickly locate a driveway or the entrance to a field. A bank\u0027s steepness can be hidden by long grass. There could also be a culvert or other obstacle hidden in the grass that could damage your vehicle further.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EYou must wait until daylight before you move your vehicle, or you can have a tow truck come and collect it.\u0026nbsp;\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "61.mp3",
+                "video": null,
+                "permalink": "you-are-driving-on-a-country-road-at-nig",
+                "canonical": "roadcode-questions\/car\/emergencies\/you-are-driving-on-a-country-road-at-nig\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 220,
+                        "isCorrect" : true,
+                        "title": "Slow down and prepare to stop somewhere safe",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 221,
+                        "title": "Stop on the right so you can attract the attention of cars coming towards you",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 222,
+                        "isCorrect" : true,
+                        "title": "Turn your hazard lights on",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 223,
+                        "title": "Carry on driving slowly with your hazard lights on until you reach your destination",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 224,
+                        "title": "Carry on driving with your interior lights on",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 61,
+                    "correct_text": "Correct. Without lights you won\u0027t be able to see dangers ahead, and you are much less visible to other vehicles. You should put your hazard lights on and park as far left as possible in a safe place.",
+                    "incorrect_text": "You should never park on the right facing traffic, and if your lights are out you will not be visible to other drivers and won\u0027t be able to see clearly where you are going.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            }
+        ]
+    },
+    "shouldDisplayAds": true,
+    "userCanPlayAudioQuestion": false,
+    "userIsProspect": false
+}

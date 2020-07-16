@@ -1,30 +1,20 @@
 <template>
     <div class="container-main">
-        <header-img
-            content="Do something new"
-            focus="top center"
-            img="https://www.newzealand.com/assets/Tourism-NZ/Queenstown/e6291cf145/img-1541656087-7959-24721-p-0BCBACDF-ED33-F02B-50E4E69CF1723BE5-2544003__aWxvdmVrZWxseQo_FocalPointCropWzY2MCwxOTIwLDUwLDUwLDc1LCJqcGciLDY1LDIuNV0.jpg"></header-img>
         <v-container
-            id="user-profile"
             fluid
             tag="section"
-            justify="center"
         >
             <v-row justify="center">
                 <v-col
                     cols="12"
                     md="4"
                 >
-                    <base-material-card>
-                        <template v-slot:heading>
-                            <div class="display-2 font-weight-light">
-                                Register
-                            </div>
-
-                            <div class="subtitle-1 font-weight-light">
-                                Driving Test
-                            </div>
-                        </template>
+                    <base-material-card
+                        color="success"
+                        dark
+                        icon="mdi-car"
+                        style="opacity: 0.8"
+                        title="Registration">
 
                         <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
                             <form>
@@ -57,6 +47,7 @@
                                         v-model="access.password"
                                         :error-messages="errors"
                                         label="Password"
+                                        type="password"
                                         required
                                     ></v-text-field>
                                 </ValidationProvider>
@@ -65,9 +56,11 @@
                                         v-model="access.password_confirmation"
                                         :error-messages="errors"
                                         label="Password confirmation"
+                                        type="password"
                                         required
                                     ></v-text-field>
                                 </ValidationProvider>
+                                <br>
                                 <v-btn
                                     :class="`mr-4 ${!valid || 'success'}`"
                                     @click="handleSubmit(register)"
@@ -98,7 +91,6 @@
                 </template>
             </v-snackbar>
         </v-container>
-
     </div>
 </template>
 
@@ -139,6 +131,10 @@
 
 <style lang="scss" scoped>
     .container-main {
-
+        padding-top:  200px;
+        background-image: url("https://www.racq.com.au/-/media/racqgroupmvc/feature/article/featuredimages/road-trip/woman-smiling-while-driving-a-female-passenger.jpg?h=609&w=1000&hash=50F3A448B13F0DD9719A36C04AEA1F826A4C30C2");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: calc(100vh - 93px);
     }
 </style>

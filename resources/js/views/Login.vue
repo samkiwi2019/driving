@@ -1,9 +1,5 @@
 <template>
-    <div>
-        <header-img
-            content="Do something new"
-            focus="top center"
-            img="https://www.newzealand.com/assets/Tourism-NZ/Queenstown/e6291cf145/img-1541656087-7959-24721-p-0BCBACDF-ED33-F02B-50E4E69CF1723BE5-2544003__aWxvdmVrZWxseQo_FocalPointCropWzY2MCwxOTIwLDUwLDUwLDc1LCJqcGciLDY1LDIuNV0.jpg"></header-img>
+    <div class="container-main">
         <v-container
             id="user-profile"
             fluid
@@ -15,16 +11,12 @@
                     cols="12"
                     md="4"
                 >
-                    <base-material-card>
-                        <template v-slot:heading>
-                            <div class="display-2 font-weight-light">
-                                Login
-                            </div>
-
-                            <div class="subtitle-1 font-weight-light">
-                                Driving Test
-                            </div>
-                        </template>
+                    <base-material-card
+                        color="success"
+                        dark
+                        icon="mdi-login"
+                        style="opacity: 0.8"
+                        title="Welcome, Driving Test">
 
                         <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
                             <form>
@@ -41,17 +33,11 @@
                                         v-model="access.password"
                                         :error-messages="errors"
                                         label="Password"
+                                        type="password"
                                         required
                                     ></v-text-field>
                                 </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors, valid }" name="checkbox">
-                                    <v-checkbox
-                                        v-model="access.remember"
-                                        value="on"
-                                        label="Remember Me"
-                                        type="checkbox"
-                                    ></v-checkbox>
-                                </ValidationProvider>
+                                <br>
                                 <v-btn
                                     :class="`mr-4 ${!valid || 'success'}`"
                                     @click="handleSubmit(signIn)"
@@ -129,3 +115,14 @@
         }
     }
 </script>
+<style lang="scss" scoped>
+    .container-main {
+        padding-top: 200px;
+        background-image: url("https://www.wearemarmalade.co.uk/driver-hub/app/uploads/2019/09/driving-ready.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -100px center;
+        min-height: calc(100vh - 93px);
+    }
+
+</style>
