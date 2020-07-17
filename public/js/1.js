@@ -195,6 +195,9 @@ __webpack_require__.r(__webpack_exports__);
         to: "/mock/50"
       }]
     };
+  },
+  created: function created() {
+    console.log('home');
   }
 });
 

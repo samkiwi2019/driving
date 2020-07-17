@@ -43,11 +43,18 @@ const actions = {
             return router.push({path: '/login'})
         }
         if (localStorage.getItem('access_token')) {
-            const {data,status} = await getUser();
-            if(status === 200){
-                commit("SET_USER", data)
-            }else{
-                router.push({path: '/login'})
+            try{
+                const {data,status} = await getUser();
+                if(status === 200){
+                    commit("SET_USER", data)
+                }else{
+                    router.push({path: '/login'})
+                }
+            }catch(err){
+                const {status} = err
+                if(status === 401){
+                    localStorage.removeItem('access_token')
+                }
             }
         }
     },

@@ -77,5 +77,8 @@
                 }
             ]
         }),
+        created(){
+            console.log('home');
+        }
     }
 </script>

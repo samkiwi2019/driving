@@ -17,11 +17,11 @@ class CreateQuizzesTable extends Migration
             $table->id();
             $table->string("question", 255);
             $table->string("i18n");
-            $table->string("imageUrl")->nullable();
-            $table->text("explanation");
+            $table->string("image")->nullable();
+            $table->string("audio")->nullable();
+            $table->text("description");
+            $table->string("input");
             $table->string("type");
-            $table->integer("correct")->default(0);
-            $table->integer("incorrect")->default(0);
             $table->timestamps();
         });
     }

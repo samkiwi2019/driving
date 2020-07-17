@@ -17,8 +17,9 @@ class CreateOptionsTable extends Migration
             $table->id();
             $table->foreignId('quiz_id')->constrained();
             $table->string("description", 255);
-            $table->string("language");
-            $table->integer("is_true");
+            $table->string("image")->nullable();
+            $table->string("i18n");
+            $table->integer("is_correct");
             $table->timestamps();
 
             $table->index('quiz_id');
