@@ -14,15 +14,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//
-//Route::middleware('client.credentials')->group(function () {
-//    Route::get('/user', 'AdminApiController@query');
-//});
-Route::post('/login', 'Auth\LoginController@login');
-Route::middleware("auth:api")-> post('/logout', 'Auth\LoginController@logout');
-Route::post('/register', 'Auth\RegisterController@register');
 
-Route::prefix('v1')->group(function(){
-    Route::middleware("auth:api")->post('/user', 'api\v1\AdminController@index')->name('show');
-    Route::middleware("auth:api")->get('/quizzes', 'api\v1\AdminController@quizzes')->name('show');
+Route::group([
+
+    'middleware' => 'api',
+    'prefix' => 'v1'
+
+], function () {
+
+    Route::post('register', 'AuthController@register');
+    Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+    Route::post('refresh', 'AuthController@refresh');
+
+});
+
+Route::group([
+
+    'middleware' => 'auth:api',
+    'prefix' => 'v1'
+
+], function () {
+
+    Route::post('user', 'AuthController@me');
+    //Route::post('user', 'api\v1\AdminController@index');
+    Route::get('quizzes', 'api\v1\AdminController@quizzes');
+
 });

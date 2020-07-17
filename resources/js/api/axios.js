@@ -8,9 +8,9 @@ class HttpRequest {
         const config = {
             baseURL: this.baseUrl,
             headers: {
-                'X-CSRF-TOKEN': document.getElementsByName('csrf-token')[0].content,
+                // 'X-CSRF-TOKEN': document.getElementsByName('csrf-token')[0].content, //
                 'X-Requested-With': 'XMLHttpRequest',
-                'Authorization': `Bearer ${localStorage.getItem('access_token')}`, // passport
+                'Authorization': `Bearer ${localStorage.getItem('access_token')}`, // jwt
             },
             withCredentials: true // take up cookies
         }
@@ -36,10 +36,7 @@ class HttpRequest {
             this.destroy(url)
             // do something after getting responses
             const { data, status } = res;
-            // update csrf_token
-            if(data['csrf_token']){
-                document.getElementsByName('csrf-token')[0].content = data['csrf_token'];
-            }
+
             return { data, status }
         }, error => {
             this.destroy(url);

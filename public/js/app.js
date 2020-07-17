@@ -3163,6 +3163,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
  // Utilities
 
 
@@ -19245,6 +19253,44 @@ var render = function() {
                                                     },
                                                     expression:
                                                       "access.password"
+                                                  }
+                                                })
+                                              ]
+                                            }
+                                          }
+                                        ],
+                                        null,
+                                        true
+                                      )
+                                    }),
+                                    _vm._v(" "),
+                                    _c("ValidationProvider", {
+                                      attrs: { name: "checkbox" },
+                                      scopedSlots: _vm._u(
+                                        [
+                                          {
+                                            key: "default",
+                                            fn: function(ref) {
+                                              var errors = ref.errors
+                                              var valid = ref.valid
+                                              return [
+                                                _c("v-checkbox", {
+                                                  attrs: {
+                                                    value: "on",
+                                                    label: "Remember Me",
+                                                    type: "checkbox"
+                                                  },
+                                                  model: {
+                                                    value: _vm.access.remember,
+                                                    callback: function($$v) {
+                                                      _vm.$set(
+                                                        _vm.access,
+                                                        "remember",
+                                                        $$v
+                                                      )
+                                                    },
+                                                    expression:
+                                                      "access.remember"
                                                   }
                                                 })
                                               ]
@@ -78067,7 +78113,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var register = function register(data) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: '/api/register',
+    url: '/api/v1/register',
     data: data,
     method: 'post'
   });
@@ -78082,14 +78128,14 @@ var register = function register(data) {
 
 var login = function login(data) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: '/api/login',
+    url: '/api/v1/login',
     data: data,
     method: 'post'
   });
 };
 var logout = function logout() {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: '/api/logout',
+    url: '/api/v1/logout',
     method: 'post'
   });
 };
@@ -78176,9 +78222,9 @@ var HttpRequest = /*#__PURE__*/function () {
       var config = {
         baseURL: this.baseUrl,
         headers: {
-          'X-CSRF-TOKEN': document.getElementsByName('csrf-token')[0].content,
+          // 'X-CSRF-TOKEN': document.getElementsByName('csrf-token')[0].content, //
           'X-Requested-With': 'XMLHttpRequest',
-          'Authorization': "Bearer ".concat(localStorage.getItem('access_token')) // passport
+          'Authorization': "Bearer ".concat(localStorage.getItem('access_token')) // jwt
 
         },
         withCredentials: true // take up cookies
@@ -78212,12 +78258,7 @@ var HttpRequest = /*#__PURE__*/function () {
 
 
         var data = res.data,
-            status = res.status; // update csrf_token
-
-        if (data['csrf_token']) {
-          document.getElementsByName('csrf-token')[0].content = data['csrf_token'];
-        }
-
+            status = res.status;
         return {
           data: data,
           status: status
@@ -80156,9 +80197,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VSnackbar */ "./node_modules/vuetify/lib/components/VSnackbar/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCheckbox */ "./node_modules/vuetify/lib/components/VCheckbox/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VSnackbar */ "./node_modules/vuetify/lib/components/VSnackbar/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -80186,7 +80228,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"],VSnackbar: vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__["VSnackbar"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__["VTextField"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCheckbox: vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_6__["VCheckbox"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"],VSnackbar: vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_8__["VSnackbar"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_9__["VTextField"]})
 
 
 /* hot reload */

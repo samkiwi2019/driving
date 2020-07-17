@@ -12,7 +12,7 @@ import axios from './api.request'
  * */
 export const register = (data) => {
     return axios.request({
-        url: '/api/register',
+        url: '/api/v1/register',
         data: data,
         method: 'post'
     })
@@ -26,7 +26,7 @@ export const register = (data) => {
  */
 export const login = (data) => {
     return axios.request({
-        url: '/api/login',
+        url: '/api/v1/login',
         data: data,
         method: 'post'
     })
@@ -34,7 +34,7 @@ export const login = (data) => {
 
 export const logout = () => {
     return axios.request({
-        url: '/api/logout',
+        url: '/api/v1/logout',
         method: 'post'
     })
 }

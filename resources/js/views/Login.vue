@@ -37,6 +37,14 @@
                                         required
                                     ></v-text-field>
                                 </ValidationProvider>
+                                <ValidationProvider v-slot="{ errors, valid }" name="checkbox">
+                                    <v-checkbox
+                                        v-model="access.remember"
+                                        value="on"
+                                        label="Remember Me"
+                                        type="checkbox"
+                                    ></v-checkbox>
+                                </ValidationProvider>
                                 <br>
                                 <v-btn
                                     :class="`mr-4 ${!valid || 'success'}`"
