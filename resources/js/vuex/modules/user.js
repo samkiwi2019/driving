@@ -54,6 +54,7 @@ const actions = {
                 const {status} = err
                 if(status === 401){
                     localStorage.removeItem('access_token')
+                    commit("CLEAR_USER")
                 }
             }
         }

@@ -1,4 +1,4 @@
-import {postQuizList} from "_a/admin";
+import {getQuizList} from "_a/admin";
 
 const state = {
     quizItems: [],
@@ -15,7 +15,7 @@ const getters = {
 // actions
 const actions = {
     async getQuizList({commit}, payload){
-        const {data, status} = await postQuizList(payload);
+        const {data, status} = await getQuizList(payload);
         if(status === 200){
             commit('SET_QUIZ_ITEMS', data.data.items)
             commit('SET_PAGE', data.data.page)

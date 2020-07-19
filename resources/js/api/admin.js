@@ -59,10 +59,18 @@ export const getUser = () => {
  * @param {int} data.type
  * @returns {Promise}
  * */
-export const postQuizList = (data) => {
+export const getQuizList = (data) => {
     return axios.request({
         url: `/api/v1/quizzes`,
         params: data,
         method: 'get'
     })
 };
+
+export const createQuizzes = (data) => {
+    return axios.request({
+        url: '/api/v1/addQuizzes',
+        data: data,
+        method: 'post'
+    })
+}

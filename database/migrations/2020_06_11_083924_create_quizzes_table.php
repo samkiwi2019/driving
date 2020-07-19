@@ -19,7 +19,7 @@ class CreateQuizzesTable extends Migration
             $table->string("i18n");
             $table->string("image")->nullable();
             $table->string("audio")->nullable();
-            $table->text("description");
+            $table->text("description")->nullable();
             $table->string("input");
             $table->string("type");
             $table->timestamps();

@@ -47,6 +47,15 @@
 <script>
     import HeaderImg from "_c/HeaderImg";
     import FeedCard from "_c/FeedCard";
+    import core from "../data/core"
+    import behaviour from "../data/behaviour"
+    import parking from "../data/parking"
+    import emergencies from "../data/emergencies"
+    import roadPosition from "../data/roadPosition"
+    import intersection from "../data/intersection"
+    import theory from "../data/theory"
+    import signs from "../data/signs"
+    import { createQuizzes } from '_a/admin'
 
     export default {
         name: "Home",
@@ -76,9 +85,6 @@
                     to: "/mock/50",
                 }
             ]
-        }),
-        created(){
-            console.log('home');
-        }
+        })
     }
 </script>

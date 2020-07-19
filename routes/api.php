@@ -39,5 +39,6 @@ Route::group([
     Route::post('user', 'AuthController@me');
     //Route::post('user', 'api\v1\AdminController@index');
     Route::get('quizzes', 'api\v1\AdminController@quizzes');
+    Route::post('addQuizzes', 'api\v1\AdminController@addQuizzes');
 
 });

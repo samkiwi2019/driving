@@ -19,7 +19,7 @@ class CreateOptionsTable extends Migration
             $table->string("description", 255);
             $table->string("image")->nullable();
             $table->string("i18n");
-            $table->integer("is_correct");
+            $table->boolean("is_correct");
             $table->timestamps();
 
             $table->index('quiz_id');

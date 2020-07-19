@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
+use App\Option;
 use App\Quiz;
 use App\User;
 use Illuminate\Http\Request;
@@ -41,25 +42,43 @@ class AdminController extends Controller
         return response(["data" => $this->paginate($items)], 200);
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Auth\Authenticatable
-     */
-    public function index()
-    {
-        return Auth::user();
-    }
 
+    public function addQuizzes(Request $request)
+    {
+        $items = $request->all();
+        foreach ($items as $item) {
+            $quiz = $this -> create($item);
+            $options = [];
+            foreach ($item["answers"] as $em) {
+                array_push($options, new Option([
+                    "quiz_id" => $quiz->id,
+                    "description" => $em["description"],
+                    "image" => $em["image"],
+                    "i18n" => $em["i18n"],
+                    "is_correct" => $em["is_correct"]
+                ]));
+            }
+            $quiz->options()->saveMany($options);
+
+        }
+        return response(["message" => "insert successfully"],200);
+    }
 
     /**
      * Show the form for creating a new resource.
-     *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(array $data)
     {
-        //
+        return Quiz::updateOrCreate([
+            "question" => $data["question"],
+            "i18n" => $data["i18n"],
+            "image" => $data["image"],
+            "audio" => $data["audio"],
+            "description" => $data["description"],
+            "input" => $data["input"],
+            "type" => $data["type"],
+        ]);
     }
 
     /**

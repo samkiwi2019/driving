@@ -3163,14 +3163,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
  // Utilities
 
 
@@ -3187,8 +3179,7 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_1__["createName
     return {
       access: {
         email: '',
-        password: '',
-        remember: false
+        password: ''
       },
       loading: false,
       timeout: 3000,
@@ -19253,44 +19244,6 @@ var render = function() {
                                                     },
                                                     expression:
                                                       "access.password"
-                                                  }
-                                                })
-                                              ]
-                                            }
-                                          }
-                                        ],
-                                        null,
-                                        true
-                                      )
-                                    }),
-                                    _vm._v(" "),
-                                    _c("ValidationProvider", {
-                                      attrs: { name: "checkbox" },
-                                      scopedSlots: _vm._u(
-                                        [
-                                          {
-                                            key: "default",
-                                            fn: function(ref) {
-                                              var errors = ref.errors
-                                              var valid = ref.valid
-                                              return [
-                                                _c("v-checkbox", {
-                                                  attrs: {
-                                                    value: "on",
-                                                    label: "Remember Me",
-                                                    type: "checkbox"
-                                                  },
-                                                  model: {
-                                                    value: _vm.access.remember,
-                                                    callback: function($$v) {
-                                                      _vm.$set(
-                                                        _vm.access,
-                                                        "remember",
-                                                        $$v
-                                                      )
-                                                    },
-                                                    expression:
-                                                      "access.remember"
                                                   }
                                                 })
                                               ]
@@ -78088,7 +78041,7 @@ module.exports = g;
 /*!***********************************!*\
   !*** ./resources/js/api/admin.js ***!
   \***********************************/
-/*! exports provided: register, login, logout, getUser, postQuizList */
+/*! exports provided: register, login, logout, getUser, getQuizList, createQuizzes */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78097,7 +78050,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postQuizList", function() { return postQuizList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getQuizList", function() { return getQuizList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createQuizzes", function() { return createQuizzes; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/api/api.request.js");
 
 /**
@@ -78158,11 +78112,18 @@ var getUser = function getUser() {
  * @returns {Promise}
  * */
 
-var postQuizList = function postQuizList(data) {
+var getQuizList = function getQuizList(data) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
     url: "/api/v1/quizzes",
     params: data,
     method: 'get'
+  });
+};
+var createQuizzes = function createQuizzes(data) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/addQuizzes',
+    data: data,
+    method: 'post'
   });
 };
 
@@ -80197,10 +80158,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCheckbox */ "./node_modules/vuetify/lib/components/VCheckbox/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VSnackbar */ "./node_modules/vuetify/lib/components/VSnackbar/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VSnackbar */ "./node_modules/vuetify/lib/components/VSnackbar/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -80228,8 +80188,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCheckbox: vuetify_lib_components_VCheckbox__WEBPACK_IMPORTED_MODULE_6__["VCheckbox"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"],VSnackbar: vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_8__["VSnackbar"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_9__["VTextField"]})
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"],VSnackbar: vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__["VSnackbar"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__["VTextField"]})
 
 
 /* hot reload */
@@ -80395,7 +80354,7 @@ var getters = {}; // actions
 var actions = {
   getQuizList: function getQuizList(_ref, payload) {
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-      var commit, _yield$postQuizList, data, status;
+      var commit, _yield$_getQuizList, data, status;
 
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
@@ -80403,12 +80362,12 @@ var actions = {
             case 0:
               commit = _ref.commit;
               _context.next = 3;
-              return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["postQuizList"])(payload);
+              return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getQuizList"])(payload);
 
             case 3:
-              _yield$postQuizList = _context.sent;
-              data = _yield$postQuizList.data;
-              status = _yield$postQuizList.status;
+              _yield$_getQuizList = _context.sent;
+              data = _yield$_getQuizList.data;
+              status = _yield$_getQuizList.status;
 
               if (status === 200) {
                 commit('SET_QUIZ_ITEMS', data.data.items);
@@ -80593,6 +80552,7 @@ var actions = {
 
               if (_status === 401) {
                 localStorage.removeItem('access_token');
+                commit("CLEAR_USER");
               }
 
             case 17:
