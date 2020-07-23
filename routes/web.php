@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-$routes = ['/','/login','/register','/learn/{id}','/mock/{id}', '/about', '/admin','/admin/dashboard', '/admin/list', '/admin/profile', '/admin/about'];
+$routes = ['/','/login','/register','/learn/{id}','/mock/{id}', '/about', '/admin','/admin/dashboard', '/admin/list','/admin/users', '/admin/profile', '/admin/about'];
 Route::combine($routes, 'HomeController@index');

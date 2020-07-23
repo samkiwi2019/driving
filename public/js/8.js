@@ -128,13 +128,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       dialog: false,
+      options: {},
+      loading: false,
       headers: [{
         text: 'ID',
         align: 'start',
@@ -142,25 +142,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         value: 'id'
       }, {
         text: 'Question',
+        sortable: false,
         value: 'question'
       }, {
-        text: 'Language',
-        value: 'language'
+        text: 'i18n',
+        sortable: false,
+        value: 'i18n'
       }, {
         text: 'Image',
-        value: 'imageUrl'
-      }, {
-        text: 'Explanation',
-        value: 'explanation'
+        sortable: false,
+        value: 'image'
       }, {
         text: 'Type',
+        sortable: false,
         value: 'type'
       }, {
-        text: 'Correct',
-        value: 'correct'
-      }, {
-        text: 'Incorrect',
-        value: 'incorrect'
+        text: 'Input',
+        sortable: false,
+        value: 'input'
       }, {
         text: 'Actions',
         value: 'actions',
@@ -170,17 +169,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       editedIndex: -1,
       editedItem: {
         question: '',
-        language: '',
-        imageUrl: '',
-        explanation: '',
-        type: ''
+        i18n: '',
+        image: '',
+        type: '',
+        input: ''
       },
       defaultItem: {
         question: '',
-        language: '',
-        imageUrl: '',
-        explanation: '',
-        type: ''
+        i18n: '',
+        image: '',
+        type: '',
+        input: ''
       }
     };
   },
@@ -194,6 +193,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     type: function type(state) {
       return state.quiz.type;
     },
+    total: function total(state) {
+      return state.quiz.total;
+    },
     quizItems: function quizItems(state) {
       return state.quiz.quizItems;
     }
@@ -205,18 +207,37 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   watch: {
     dialog: function dialog(val) {
       val || this.close();
+    },
+    options: {
+      deep: true,
+      handler: function handler() {
+        var _this = this;
+
+        var page = this.options.page;
+        var itemsPerPage = this.options.itemsPerPage;
+
+        if (this.options.itemsPerPage === -1) {
+          itemsPerPage = this.total;
+        }
+
+        this.loading = true;
+        this.$store.dispatch('quiz/getQuizList', {
+          page: page,
+          size: itemsPerPage,
+          type: this.type
+        }).then(function () {
+          _this.loading = false;
+        });
+      }
     }
   },
-  created: function created() {
-    this.initialize();
-  },
   methods: {
-    initialize: function initialize() {
-      this.$store.dispatch('quiz/getQuizList', {
-        page: this.page + 1,
-        size: this.size,
-        type: this.type
-      });
+    getTypeOfQuiz: function getTypeOfQuiz(index) {
+      var items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"];
+      return items[index - 1];
+    },
+    getImageOfQuiz: function getImageOfQuiz(image) {
+      return image ? image.replace('module-images', 'question-images') : '';
     },
     editItem: function editItem(item) {
       this.editedIndex = this.desserts.indexOf(item);
@@ -228,12 +249,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1);
     },
     close: function close() {
-      var _this = this;
+      var _this2 = this;
 
       this.dialog = false;
       this.$nextTick(function () {
-        _this.editedItem = Object.assign({}, _this.defaultItem);
-        _this.editedIndex = -1;
+        _this2.editedItem = Object.assign({}, _this2.defaultItem);
+        _this2.editedIndex = -1;
       });
     },
     save: function save() {
@@ -323,14 +344,22 @@ var render = function() {
         [
           _c(
             "v-col",
-            { attrs: { cols: "12", lg: "11" } },
+            { attrs: { cols: "12" } },
             [
               _c("v-data-table", {
                 staticClass: "elevation-4",
                 attrs: {
                   headers: _vm.headers,
                   items: _vm.quizItems,
-                  "sort-by": "correct_rate"
+                  "sort-by": "correct_rate",
+                  "server-items-length": _vm.total,
+                  options: _vm.options,
+                  loading: _vm.loading
+                },
+                on: {
+                  "update:options": function($event) {
+                    _vm.options = $event
+                  }
                 },
                 scopedSlots: _vm._u([
                   {
@@ -482,24 +511,21 @@ var render = function() {
                                                   },
                                                   [
                                                     _c("v-text-field", {
-                                                      attrs: {
-                                                        label: "Language"
-                                                      },
+                                                      attrs: { label: "i18n" },
                                                       model: {
                                                         value:
-                                                          _vm.editedItem
-                                                            .language,
+                                                          _vm.editedItem.i18n,
                                                         callback: function(
                                                           $$v
                                                         ) {
                                                           _vm.$set(
                                                             _vm.editedItem,
-                                                            "language",
+                                                            "i18n",
                                                             $$v
                                                           )
                                                         },
                                                         expression:
-                                                          "editedItem.language"
+                                                          "editedItem.i18n"
                                                       }
                                                     })
                                                   ],
@@ -517,59 +543,21 @@ var render = function() {
                                                   },
                                                   [
                                                     _c("v-text-field", {
-                                                      attrs: {
-                                                        label: "ImageUrl"
-                                                      },
+                                                      attrs: { label: "Image" },
                                                       model: {
                                                         value:
-                                                          _vm.editedItem
-                                                            .imageUrl,
+                                                          _vm.editedItem.image,
                                                         callback: function(
                                                           $$v
                                                         ) {
                                                           _vm.$set(
                                                             _vm.editedItem,
-                                                            "imageUrl",
+                                                            "image",
                                                             $$v
                                                           )
                                                         },
                                                         expression:
-                                                          "editedItem.imageUrl"
-                                                      }
-                                                    })
-                                                  ],
-                                                  1
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-col",
-                                                  {
-                                                    attrs: {
-                                                      cols: "12",
-                                                      sm: "6",
-                                                      md: "4"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("v-text-field", {
-                                                      attrs: {
-                                                        label: "Explanation"
-                                                      },
-                                                      model: {
-                                                        value:
-                                                          _vm.editedItem
-                                                            .explanation,
-                                                        callback: function(
-                                                          $$v
-                                                        ) {
-                                                          _vm.$set(
-                                                            _vm.editedItem,
-                                                            "explanation",
-                                                            $$v
-                                                          )
-                                                        },
-                                                        expression:
-                                                          "editedItem.explanation"
+                                                          "editedItem.image"
                                                       }
                                                     })
                                                   ],
@@ -602,6 +590,38 @@ var render = function() {
                                                         },
                                                         expression:
                                                           "editedItem.type"
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    attrs: {
+                                                      cols: "12",
+                                                      sm: "6",
+                                                      md: "4"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-text-field", {
+                                                      attrs: { label: "input" },
+                                                      model: {
+                                                        value:
+                                                          _vm.editedItem.input,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.$set(
+                                                            _vm.editedItem,
+                                                            "input",
+                                                            $$v
+                                                          )
+                                                        },
+                                                        expression:
+                                                          "editedItem.input"
                                                       }
                                                     })
                                                   ],
@@ -687,24 +707,6 @@ var render = function() {
                         _c(
                           "v-icon",
                           {
-                            staticClass: "mr-2",
-                            attrs: { small: "" },
-                            on: {
-                              click: function($event) {
-                                return _vm.editItem(item)
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                        mdi-pencil\n                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-icon",
-                          {
                             attrs: { small: "" },
                             on: {
                               click: function($event) {
@@ -722,20 +724,29 @@ var render = function() {
                     }
                   },
                   {
-                    key: "no-data",
-                    fn: function() {
+                    key: "item.image",
+                    fn: function(ref) {
+                      var item = ref.item
                       return [
-                        _c(
-                          "v-btn",
-                          {
-                            attrs: { color: "primary" },
-                            on: { click: _vm.initialize }
-                          },
-                          [_vm._v("Reset")]
-                        )
+                        _c("v-img", {
+                          attrs: {
+                            "aspect-ratio": "1",
+                            src: _vm.getImageOfQuiz(item.image)
+                          }
+                        })
                       ]
-                    },
-                    proxy: true
+                    }
+                  },
+                  {
+                    key: "item.type",
+                    fn: function(ref) {
+                      var item = ref.item
+                      return [
+                        _c("v-chip", { attrs: { dark: "" } }, [
+                          _vm._v(_vm._s(_vm.getTypeOfQuiz(item.type)))
+                        ])
+                      ]
+                    }
                   }
                 ])
               })
@@ -773,13 +784,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDataTable */ "./node_modules/vuetify/lib/components/VDataTable/index.js");
-/* harmony import */ var vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VDialog */ "./node_modules/vuetify/lib/components/VDialog/index.js");
-/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
-/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
-/* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
+/* harmony import */ var vuetify_lib_components_VChip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VChip */ "./node_modules/vuetify/lib/components/VChip/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VDataTable */ "./node_modules/vuetify/lib/components/VDataTable/index.js");
+/* harmony import */ var vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VDialog */ "./node_modules/vuetify/lib/components/VDialog/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
 
 
 
@@ -817,7 +830,9 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCardTitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardTitle"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VDataTable: vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_8__["VDataTable"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_9__["VDialog"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__["VIcon"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_11__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VSpacer"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_12__["VTextField"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_13__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_13__["VToolbarTitle"]})
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCardTitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardTitle"],VChip: vuetify_lib_components_VChip__WEBPACK_IMPORTED_MODULE_7__["VChip"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VDataTable: vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_9__["VDataTable"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_10__["VDialog"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_13__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_14__["VTextField"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_15__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_15__["VToolbarTitle"]})
 
 
 /* hot reload */

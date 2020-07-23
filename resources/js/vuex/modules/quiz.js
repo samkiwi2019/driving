@@ -14,12 +14,17 @@ const getters = {
 
 // actions
 const actions = {
-    async getQuizList({commit}, payload){
-        const {data, status} = await getQuizList(payload);
-        if(status === 200){
-            commit('SET_QUIZ_ITEMS', data.data.items)
-            commit('SET_PAGE', data.data.page)
-        }
+    getQuizList({commit}, payload){
+        return new Promise(async (resolve) => {
+            const {data, status} = await getQuizList(payload);
+            if(status === 200){
+                commit('SET_QUIZ_ITEMS', data.data.items)
+                commit('SET_PAGE', data.data.page)
+                commit('SET_TOTAL', data.data.total)
+            }
+            resolve("finished")
+        })
+
     }
 }
 
@@ -33,6 +38,9 @@ const mutations = {
     },
     SET_SIZE(state, payload) {
         state.size = payload;
+    },
+    SET_TOTAL(state, payload) {
+        state.total = payload;
     },
 }
 

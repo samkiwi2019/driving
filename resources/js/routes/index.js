@@ -76,6 +76,12 @@ const router = new VueRouter({
             component: () => import("../views/admin/ListQuiz"),
         },
         {
+            path: '/admin/users',
+            name: 'User List',
+            meta: {requiresAuth: true},
+            component: () => import("../views/admin/UserList"),
+        },
+        {
             path: '/admin/about',
             name: 'About',
             meta: {requiresAuth: true},

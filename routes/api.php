@@ -35,9 +35,10 @@ Route::group([
     'prefix' => 'v1'
 
 ], function () {
-
-    Route::post('user', 'AuthController@me');
-    //Route::post('user', 'api\v1\AdminController@index');
+    Route::post('me', 'AuthController@me');
+    Route::post('update/{id}', 'AuthController@update')->middleware('security:11');
+    Route::post('delete/{id}', 'AuthController@delete')->middleware('security:11');
+    Route::post('users', 'api\v1\AdminController@users');
     Route::get('quizzes', 'api\v1\AdminController@quizzes');
     Route::post('addQuizzes', 'api\v1\AdminController@addQuizzes');
 

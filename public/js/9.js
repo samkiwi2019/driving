@@ -136,6 +136,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         title: 'quiz',
         to: '/admin/list'
       }, {
+        icon: 'mdi-account-group',
+        title: 'users',
+        to: '/admin/users'
+      }, {
         icon: 'mdi-account',
         title: 'about',
         to: '/admin/about'

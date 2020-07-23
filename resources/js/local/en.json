@@ -1,6 +1,7 @@
 {
     "avatar": "Driving Test",
     "quiz": "Quiz List",
+    "users": "User List",
     "about": "About Me",
     "home": "Home",
     "profile": "Profile",
@@ -9,7 +10,7 @@
     "charts": "Charts",
     "components": "Components",
     "ct": "CT",
-    "dashboard": "Dashboard (coding...)",
+    "dashboard": "Dashboard",
     "visit": "Visit Management System",
     "dtables": "Data Tables",
     "eforms": "Extended Forms",

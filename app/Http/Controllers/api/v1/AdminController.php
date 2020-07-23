@@ -13,15 +13,6 @@ use Illuminate\Support\Facades\Validator;
 class AdminController extends Controller
 {
 
-    /*
-     * Only SuperAdmin can create, edit or delete items
-     * @return
-     * */
-    protected function isSuperAdmin()
-    {
-        return auth('api')->user()->role === 'SuperAdmin'; // 1 or ""
-    }
-
     public function paginate($pagination)
     {
         return [
@@ -47,7 +38,7 @@ class AdminController extends Controller
     {
         $items = $request->all();
         foreach ($items as $item) {
-            $quiz = $this -> create($item);
+            $quiz = $this->create($item);
             $options = [];
             foreach ($item["answers"] as $em) {
                 array_push($options, new Option([
@@ -61,7 +52,7 @@ class AdminController extends Controller
             $quiz->options()->saveMany($options);
 
         }
-        return response(["message" => "insert successfully"],200);
+        return response(["message" => "insert successfully"], 200);
     }
 
     /**
@@ -70,7 +61,7 @@ class AdminController extends Controller
      */
     public function create(array $data)
     {
-        return Quiz::updateOrCreate([
+        return Quiz::firstOrCreate([
             "question" => $data["question"],
             "i18n" => $data["i18n"],
             "image" => $data["image"],
@@ -79,6 +70,16 @@ class AdminController extends Controller
             "input" => $data["input"],
             "type" => $data["type"],
         ]);
+    }
+
+    public function users(Request $request)
+    {
+        $this->validate($request, [
+            'page' => 'required|integer',
+            'size' => 'required|integer'
+        ]);
+        $items = User::Paginate($request->size);
+        return response(["data" => $this->paginate($items)], 200);
     }
 
     /**
@@ -111,7 +112,7 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**

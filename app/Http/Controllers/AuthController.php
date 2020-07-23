@@ -15,13 +15,12 @@ class AuthController extends Controller
     /**
      * Create a new AuthController instance.
      *
-     * @return void
+     * @return bool
      */
 //    public function __construct()
 //    {
 //        $this->middleware('auth:api', ['except' => ['login']]);
 //    }
-
 
     /**
      * Get a validator for an incoming registration request.
@@ -36,6 +35,21 @@ class AuthController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'nickname' => ['required', 'string', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+    }
+
+    /**
+     * Get a validator for an updating user request.
+     *
+     * @param array $data
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    protected function updateValidator(array $data)
+    {
+        return Validator::make($data, [
+            'id' => ['required', 'int', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'nickname' => ['required', 'string', 'max:255'],
         ]);
     }
 
@@ -70,6 +84,28 @@ class AuthController extends Controller
         $token = auth('api')->login($user);
 
         return response(['access_token' => $token, 'user' => auth('api')->user()], 200);
+    }
+
+    public function update(Request $request, $id)
+    {
+
+        $params = $request->all();
+        $this->updateValidator($params)->validate();
+        User::where('id', $id)
+            ->update([
+                'name' => $params['name'],
+                'nickname' => $params['nickname'],
+                'email' => $params['email'],
+            ]);
+        return response(["message" => "successful"], 200);
+
+    }
+
+    public function delete($id)
+    {
+        User::find($id)
+            ->delete();
+        return response(["message" => "successful"], 200);
     }
 
     /**

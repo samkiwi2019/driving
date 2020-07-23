@@ -44,10 +44,35 @@ export const logout = () => {
 
 export const getUser = () => {
     return axios.request({
-        url: '/api/v1/user',
+        url: '/api/v1/me',
         method: 'post'
     })
 }
+
+
+export const getCustomers = (params) => {
+    return axios.request({
+        url: '/api/v1/users',
+        params: params,
+        method: 'post'
+    })
+}
+
+export const updateUser = (data) => {
+    return axios.request({
+        url: `/api/v1/update/${data.id}`,
+        data: data,
+        method: 'post'
+    })
+}
+
+export const deleteUserById = (id) => {
+    return axios.request({
+        url: `/api/v1/delete/${id}`,
+        method: 'post'
+    })
+}
+
 
 
 

@@ -125,6 +125,11 @@
                     to: '/admin/list',
                 },
                 {
+                    icon: 'mdi-account-group',
+                    title: 'users',
+                    to: '/admin/users',
+                },
+                {
                     icon: 'mdi-account',
                     title: 'about',
                     to: '/admin/about',

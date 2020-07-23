@@ -7,13 +7,15 @@
         <v-row justify="center">
             <v-col
                 cols="12"
-                lg="11"
             >
                 <v-data-table
                     :headers="headers"
                     :items="quizItems"
                     sort-by="correct_rate"
                     class="elevation-4"
+                    :server-items-length="total"
+                    :options.sync="options"
+                    :loading="loading"
                 >
                     <template v-slot:top>
                         <v-toolbar flat color="dark">
@@ -53,20 +55,20 @@
                                                                   label="Question"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.language"
-                                                                  label="Language"></v-text-field>
+                                                    <v-text-field v-model="editedItem.i18n"
+                                                                  label="i18n"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.imageUrl"
-                                                                  label="ImageUrl"></v-text-field>
-                                                </v-col>
-                                                <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.explanation"
-                                                                  label="Explanation"></v-text-field>
+                                                    <v-text-field v-model="editedItem.image"
+                                                                  label="Image"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
                                                     <v-text-field v-model="editedItem.type"
                                                                   label="Type"></v-text-field>
+                                                </v-col>
+                                                <v-col cols="12" sm="6" md="4">
+                                                    <v-text-field v-model="editedItem.input"
+                                                                  label="input"></v-text-field>
                                                 </v-col>
                                             </v-row>
                                         </v-container>
@@ -91,20 +93,16 @@
                         </v-icon>
                         <v-icon
                             small
-                            class="mr-2"
-                            @click="editItem(item)"
-                        >
-                            mdi-pencil
-                        </v-icon>
-                        <v-icon
-                            small
                             @click="deleteItem(item)"
                         >
                             mdi-delete
                         </v-icon>
                     </template>
-                    <template v-slot:no-data>
-                        <v-btn color="primary" @click="initialize">Reset</v-btn>
+                    <template v-slot:item.image="{ item }">
+                        <v-img aspect-ratio="1" :src="getImageOfQuiz(item.image)"></v-img>
+                    </template>
+                    <template v-slot:item.type="{ item }">
+                        <v-chip dark>{{getTypeOfQuiz(item.type)}}</v-chip>
                     </template>
                 </v-data-table>
             </v-col>
@@ -114,9 +112,12 @@
 
 <script>
     import {mapState} from 'vuex'
+
     export default {
         data: () => ({
             dialog: false,
+            options:{},
+            loading:false,
             headers: [
                 {
                     text: 'ID',
@@ -124,30 +125,28 @@
                     sortable: false,
                     value: 'id',
                 },
-                {text: 'Question', value: 'question'},
-                {text: 'Language', value: 'language'},
-                {text: 'Image', value: 'imageUrl'},
-                {text: 'Explanation', value: 'explanation'},
-                {text: 'Type', value: 'type'},
-                {text: 'Correct', value: 'correct'},
-                {text: 'Incorrect', value: 'incorrect'},
+                {text: 'Question', sortable: false, value: 'question'},
+                {text: 'i18n', sortable: false, value: 'i18n'},
+                {text: 'Image', sortable: false, value: 'image'},
+                {text: 'Type', sortable: false, value: 'type'},
+                {text: 'Input', sortable: false, value: 'input'},
                 {text: 'Actions', value: 'actions', sortable: false},
             ],
             desserts: [],
             editedIndex: -1,
             editedItem: {
                 question: '',
-                language: '',
-                imageUrl: '',
-                explanation: '',
+                i18n: '',
+                image: '',
                 type: '',
+                input: '',
             },
             defaultItem: {
                 question: '',
-                language: '',
-                imageUrl: '',
-                explanation: '',
+                i18n: '',
+                image: '',
                 type: '',
+                input: '',
             },
         }),
 
@@ -156,6 +155,7 @@
                 page: state => state.quiz.page,
                 size: state => state.quiz.size,
                 type: state => state.quiz.type,
+                total: state => state.quiz.total,
                 quizItems: state => state.quiz.quizItems,
             }),
             formTitle() {
@@ -167,17 +167,30 @@
             dialog(val) {
                 val || this.close()
             },
-        },
-
-        created() {
-            this.initialize()
+            options:{
+                deep: true,
+                handler () {
+                    let page = this.options.page;
+                    let itemsPerPage = this.options.itemsPerPage;
+                    if(this.options.itemsPerPage === -1){
+                        itemsPerPage = this.total
+                    }
+                    this.loading = true;
+                    this.$store.dispatch('quiz/getQuizList', {page: page, size: itemsPerPage, type: this.type}).then(() => {
+                        this.loading = false;
+                    })
+                },
+            }
         },
 
         methods: {
-            initialize() {
-                this.$store.dispatch('quiz/getQuizList', {page:this.page + 1, size:this.size, type:this.type})
+            getTypeOfQuiz(index) {
+                const items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"]
+                return items[index -1]
             },
-
+            getImageOfQuiz(image){
+                return image ? image.replace('module-images', 'question-images') : '';
+            },
             editItem(item) {
                 this.editedIndex = this.desserts.indexOf(item)
                 this.editedItem = Object.assign({}, item)

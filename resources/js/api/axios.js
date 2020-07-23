@@ -36,7 +36,6 @@ class HttpRequest {
             this.destroy(url)
             // do something after getting responses
             const { data, status } = res;
-
             return { data, status }
         }, error => {
             this.destroy(url);
@@ -49,6 +48,10 @@ class HttpRequest {
                     status,
                     request: { responseURL: config.url }
                 }
+            }
+            if(errorInfo.status === 401){
+                localStorage.removeItem('access_token');
+                window.location.reload();
             }
             return Promise.reject(errorInfo)
         })
