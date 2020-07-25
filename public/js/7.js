@@ -406,7 +406,7 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 {
-                                  class: "mr-4 " + (!valid || "success"),
+                                  staticClass: "mr-4",
                                   attrs: {
                                     loading: _vm.loading,
                                     disabled: _vm.loading,

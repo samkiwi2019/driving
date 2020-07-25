@@ -60,7 +60,7 @@
                         <br>
                         <div class="d-flex justify-center">
                             <v-btn
-                                :class="`mr-4 ${!valid || 'success'}`"
+                                class="mr-4"
                                 @click="handleSubmit(register)"
                                 :loading="loading"
                                 :disabled="loading"

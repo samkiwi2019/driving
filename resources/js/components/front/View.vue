@@ -14,7 +14,7 @@
         },
         computed:{
             showFooter(){
-                return !(['login','register'].includes(this.$route.name))
+                return !(['login','register', 'about'].includes(this.$route.name))
             }
         },
     }

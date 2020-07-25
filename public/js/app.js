@@ -19216,7 +19216,7 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 {
-                                  class: "mr-4 " + (!valid || "success"),
+                                  staticClass: "mr-4",
                                   attrs: {
                                     loading: _vm.loading,
                                     disabled: _vm.loading,
@@ -19230,7 +19230,7 @@ var render = function() {
                                     }
                                   }
                                 },
-                                [_vm._v("Let's go\n                    ")]
+                                [_vm._v("Let's go\n                        ")]
                               )
                             ],
                             1

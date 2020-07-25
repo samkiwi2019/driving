@@ -29,6 +29,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About"
 });
@@ -46,7 +67,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container-main[data-v-2995bb7e] {\n  padding-top: 64px;\n  background-size: cover;\n}", ""]);
+exports.push([module.i, ".container-main[data-v-2995bb7e] {\n  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg\");\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -100,45 +121,60 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "container-main" },
     [
-      _c("div", {
-        staticClass: "container-main",
-        style:
-          "background-image: url(" +
-          __webpack_require__(/*! _assets/articles/snowcup.jpg */ "./resources/assets/articles/snowcup.jpg") +
-          ")"
-      }),
-      _vm._v(" "),
       _c(
         "v-container",
+        { attrs: { id: "user-profile", fluid: "", tag: "section" } },
         [
           _c(
             "v-row",
+            { attrs: { justify: "center" } },
             [
-              _c("v-col", { attrs: { cols: "12" } }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "font-weight-light mt-1",
-                    staticStyle: { "font-size": "25px" }
-                  },
-                  [_vm._v("About")]
-                ),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                    This website contains 2 main modes:\n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    "\n                    1. Learning mode: 8 traffic rules modules, including 331 questions\n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    "\n                    2. Mock mode: 30 or 50 questions are randomly selected to form a quiz. The user needs to answer within 30 minutes. The user’s answer record after login will be on their records page.\n                "
+              _c(
+                "v-col",
+                { attrs: { cols: "12", lg: "6", md: "8", sm: "10" } },
+                [
+                  _c(
+                    "base-material-card",
+                    {
+                      staticClass: "px-5",
+                      attrs: {
+                        color: "success",
+                        icon: "mdi-information",
+                        title: "About"
+                      }
+                    },
+                    [
+                      _c("v-card-text", { staticClass: "text-started" }, [
+                        _c("p", { staticClass: "font-weight-light" }, [
+                          _vm._v(
+                            "\n                            This website contains 2 main modes:\n                            "
+                          ),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(
+                            "\n                            1. Learning mode: 8 traffic rules modules, including 330 questions\n                            "
+                          ),
+                          _c("br"),
+                          _vm._v(
+                            "\n                            2. Mock mode: 30 or 50 questions are randomly selected to form a quiz.\n                            "
+                          ),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(
+                            "\n                            For logged users, their answers will be recorded on their record pages.\n                        "
+                          )
+                        ])
+                      ])
+                    ],
+                    1
                   )
-                ])
-              ])
+                ],
+                1
+              )
             ],
             1
           )
@@ -153,17 +189,6 @@ var staticRenderFns = []
 render._withStripped = true
 
 
-
-/***/ }),
-
-/***/ "./resources/assets/articles/snowcup.jpg":
-/*!***********************************************!*\
-  !*** ./resources/assets/articles/snowcup.jpg ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/snowcup.jpg?a42567f1b9970cfc4b11f48a5a6a55ee";
 
 /***/ }),
 
@@ -182,7 +207,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
 
 
 
@@ -207,7 +233,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VRow"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_5__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"]})
 
 
 /* hot reload */

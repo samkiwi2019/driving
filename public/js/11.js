@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     showFooter: function showFooter() {
-      return !['login', 'register'].includes(this.$route.name);
+      return !['login', 'register', 'about'].includes(this.$route.name);
     }
   }
 });
