@@ -78054,7 +78054,7 @@ module.exports = g;
 /*!***********************************!*\
   !*** ./resources/js/api/admin.js ***!
   \***********************************/
-/*! exports provided: register, login, logout, getUser, getCustomers, updateUser, deleteUserById, getQuizList, createQuizzes */
+/*! exports provided: register, login, logout, getUser, getCustomers, createUser, updateUser, deleteUserById, getQuizList, addQuiz, updateQuiz, deleteQuiz */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78064,10 +78064,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCustomers", function() { return getCustomers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUser", function() { return createUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteUserById", function() { return deleteUserById; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getQuizList", function() { return getQuizList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createQuizzes", function() { return createQuizzes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addQuiz", function() { return addQuiz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateQuiz", function() { return updateQuiz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteQuiz", function() { return deleteQuiz; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/api/api.request.js");
 
 /**
@@ -78111,6 +78114,7 @@ var logout = function logout() {
 };
 /**
  * require: Authorization
+ * Get user self
  * */
 
 var getUser = function getUser() {
@@ -78119,24 +78123,40 @@ var getUser = function getUser() {
     method: 'post'
   });
 };
+/**
+ * Get all quizzes (require: Authorization)
+ * @param {object} params
+ * @param {int} params.page
+ * @param {int} params.size
+ * @param {int} params.type
+ * @returns {Promise}
+ * */
+
 var getCustomers = function getCustomers(params) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: '/api/v1/users',
+    url: '/api/v1/user',
     params: params,
+    method: 'get'
+  });
+};
+var createUser = function createUser(data) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/user',
+    data: data,
     method: 'post'
   });
 };
 var updateUser = function updateUser(data) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: "/api/v1/update/".concat(data.id),
+    url: "/api/v1/user/".concat(data.id),
     data: data,
-    method: 'post'
+    method: 'put'
   });
 };
 var deleteUserById = function deleteUserById(id) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: "/api/v1/delete/".concat(id),
-    method: 'post'
+    url: "/api/v1/user/".concat(id),
+    method: 'delete'
   });
 };
 /**
@@ -78150,16 +78170,61 @@ var deleteUserById = function deleteUserById(id) {
 
 var getQuizList = function getQuizList(data) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: "/api/v1/quizzes",
+    url: "/api/v1/quiz",
     params: data,
     method: 'get'
   });
 };
-var createQuizzes = function createQuizzes(data) {
+/**
+ * Create a quiz (require: Authorization and security level 11)
+ * @param {object} data
+ * @param {string} data.question required
+ * @param {string} data.type required  1-8
+ * @param {string} data.input required Checkbox or Radio
+ * @param {string} data.i18n required en
+ * @param {string} data.image
+ * @param {string} data.audio
+ * @param {string} data.description
+ * @returns {Promise}
+ * */
+
+var addQuiz = function addQuiz(data) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
-    url: '/api/v1/addQuizzes',
+    url: '/api/v1/quiz',
     data: data,
     method: 'post'
+  });
+};
+/**
+ * Update a quiz (require: Authorization and security level 11)
+ * @param {object} data
+ * @param {int} data.id required
+ * @param {string} data.question required
+ * @param {string} data.type required  1-8
+ * @param {string} data.input required Checkbox or Radio
+ * @param {string} data.i18n required en
+ * @param {string} data.image
+ * @param {string} data.audio
+ * @param {string} data.description
+ * @returns {Promise}
+ * */
+
+var updateQuiz = function updateQuiz(data) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: "/api/v1/quiz/".concat(data.id),
+    data: data,
+    method: 'put'
+  });
+};
+/**
+ * Delete a quiz (require: Authorization and security level 11)
+ * @param {int} id required
+ */
+
+var deleteQuiz = function deleteQuiz(id) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: "/api/v1/quiz/".concat(id),
+    method: 'delete'
   });
 };
 
@@ -80411,34 +80476,43 @@ var actions = {
         commit = _ref.commit,
         dispatch = _ref.dispatch;
     return new Promise( /*#__PURE__*/function () {
-      var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve) {
-        var _yield$register, data, status;
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve, reject) {
+        var _yield$createUser, data, status;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
-                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["register"])(payload);
+                _context.prev = 0;
+                _context.next = 3;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["createUser"])(payload);
 
-              case 2:
-                _yield$register = _context.sent;
-                data = _yield$register.data;
-                status = _yield$register.status;
+              case 3:
+                _yield$createUser = _context.sent;
+                data = _yield$createUser.data;
+                status = _yield$createUser.status;
 
                 if (status === 200) {
-                  resolve('succeed');
+                  resolve(data);
                 }
 
-              case 6:
+                _context.next = 12;
+                break;
+
+              case 9:
+                _context.prev = 9;
+                _context.t0 = _context["catch"](0);
+                reject(_context.t0);
+
+              case 12:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee);
+        }, _callee, null, [[0, 9]]);
       }));
 
-      return function (_x) {
+      return function (_x, _x2) {
         return _ref2.apply(this, arguments);
       };
     }());
@@ -80477,7 +80551,7 @@ var actions = {
         }, _callee2);
       }));
 
-      return function (_x2) {
+      return function (_x3) {
         return _ref4.apply(this, arguments);
       };
     }());
@@ -80512,7 +80586,7 @@ var actions = {
         }, _callee3);
       }));
 
-      return function (_x3) {
+      return function (_x4) {
         return _ref6.apply(this, arguments);
       };
     }());
@@ -80547,7 +80621,7 @@ var actions = {
         }, _callee4);
       }));
 
-      return function (_x4) {
+      return function (_x5) {
         return _ref8.apply(this, arguments);
       };
     }());
@@ -80664,21 +80738,56 @@ var state = {
 var getters = {}; // actions
 
 var actions = {
-  getQuizList: function getQuizList(_ref, payload) {
+  addQuiz: function addQuiz(_ref, payload) {
     var commit = _ref.commit;
     return new Promise( /*#__PURE__*/function () {
       var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve) {
-        var _yield$_getQuizList, data, status;
+        var _yield$_addQuiz, data, status;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["addQuiz"])(payload);
+
+              case 2:
+                _yield$_addQuiz = _context.sent;
+                data = _yield$_addQuiz.data;
+                status = _yield$_addQuiz.status;
+
+                if (status === 200) {
+                  resolve(data);
+                }
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref2.apply(this, arguments);
+      };
+    }());
+  },
+  getQuizList: function getQuizList(_ref3, payload) {
+    var commit = _ref3.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref4 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(resolve) {
+        var _yield$_getQuizList, data, status;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
                 return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getQuizList"])(payload);
 
               case 2:
-                _yield$_getQuizList = _context.sent;
+                _yield$_getQuizList = _context2.sent;
                 data = _yield$_getQuizList.data;
                 status = _yield$_getQuizList.status;
 
@@ -80692,14 +80801,84 @@ var actions = {
 
               case 7:
               case "end":
-                return _context.stop();
+                return _context2.stop();
             }
           }
-        }, _callee);
+        }, _callee2);
       }));
 
-      return function (_x) {
-        return _ref2.apply(this, arguments);
+      return function (_x2) {
+        return _ref4.apply(this, arguments);
+      };
+    }());
+  },
+  updateQuizById: function updateQuizById(_ref5, payload) {
+    var commit = _ref5.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref6 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(resolve) {
+        var _yield$updateQuiz, data, status;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["updateQuiz"])(payload);
+
+              case 2:
+                _yield$updateQuiz = _context3.sent;
+                data = _yield$updateQuiz.data;
+                status = _yield$updateQuiz.status;
+
+                if (status === 200) {
+                  resolve(data);
+                }
+
+              case 6:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x3) {
+        return _ref6.apply(this, arguments);
+      };
+    }());
+  },
+  deleteQuizById: function deleteQuizById(_ref7, id) {
+    var commit = _ref7.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref8 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(resolve) {
+        var _yield$deleteQuiz, data, status;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _context4.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["deleteQuiz"])(id);
+
+              case 2:
+                _yield$deleteQuiz = _context4.sent;
+                data = _yield$deleteQuiz.data;
+                status = _yield$deleteQuiz.status;
+
+                if (status === 200) {
+                  resolve(data);
+                }
+
+              case 6:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }));
+
+      return function (_x4) {
+        return _ref8.apply(this, arguments);
       };
     }());
   }

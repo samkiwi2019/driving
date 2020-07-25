@@ -1,4 +1,4 @@
-import {getQuizList} from "_a/admin";
+import {getQuizList, addQuiz, updateQuiz, deleteQuiz} from "_a/admin";
 
 const state = {
     quizItems: [],
@@ -14,6 +14,14 @@ const getters = {
 
 // actions
 const actions = {
+    addQuiz({commit}, payload){
+        return new Promise(async (resolve) => {
+            const {data, status} =  await addQuiz(payload);
+            if(status === 200){
+                resolve(data)
+            }
+        })
+    },
     getQuizList({commit}, payload){
         return new Promise(async (resolve) => {
             const {data, status} = await getQuizList(payload);
@@ -24,7 +32,22 @@ const actions = {
             }
             resolve("finished")
         })
-
+    },
+    updateQuizById({commit}, payload){
+        return new Promise(async (resolve) => {
+            const {data, status} = await updateQuiz(payload);
+            if(status === 200){
+                resolve(data)
+            }
+        })
+    },
+    deleteQuizById({commit}, id){
+        return new Promise(async (resolve) => {
+            const {data, status} = await deleteQuiz(id);
+            if(status === 200){
+                resolve(data)
+            }
+        })
     }
 }
 

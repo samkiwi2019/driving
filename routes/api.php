@@ -22,7 +22,7 @@ Route::group([
 
 ], function () {
 
-    Route::post('register', 'AuthController@register');
+    Route::post('/register', 'api\v1\UserController@register');
     Route::post('login', 'AuthController@login');
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
@@ -35,11 +35,18 @@ Route::group([
     'prefix' => 'v1'
 
 ], function () {
-    Route::post('me', 'AuthController@me');
-    Route::post('update/{id}', 'AuthController@update')->middleware('security:11');
-    Route::post('delete/{id}', 'AuthController@delete')->middleware('security:11');
-    Route::post('users', 'api\v1\AdminController@users');
-    Route::get('quizzes', 'api\v1\AdminController@quizzes');
-    Route::post('addQuizzes', 'api\v1\AdminController@addQuizzes');
 
+    Route::post('/me', 'AuthController@me');
+
+    // user-related
+    Route::get('/user', 'api\v1\UserController@index')->name("user.index");
+    Route::post('/user', 'api\v1\UserController@create')->name("user.create")->middleware('security:11');
+    Route::put('/user/{id}', 'api\v1\UserController@update')->name("user.update")->middleware('security:11');
+    Route::delete('/user/{id}', 'api\v1\UserController@destroy')->name('user.destroy')->middleware('security:11');
+
+    // quiz-related
+    Route::get('/quiz', 'api\v1\QuizController@index')->name("quiz.index");
+    Route::post('/quiz', 'api\v1\QuizController@create')->name("quiz.create")->middleware('security:11');
+    Route::put('/quiz/{id}', 'api\v1\QuizController@update')->name("quiz.update")->middleware('security:11');
+    Route::delete('/quiz/{id}', 'api\v1\QuizController@destroy')->name("quiz.destroy")->middleware('security:11');
 });

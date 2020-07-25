@@ -14,6 +14,7 @@ class SecurityLevel extends BaseMiddleware
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
+     * @param int $role  11 => Super administrator  0 - 10 => business operators security level
      * @return mixed
      */
     public function handle($request, Closure $next, $role)

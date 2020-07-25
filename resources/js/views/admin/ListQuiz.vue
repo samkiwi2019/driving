@@ -16,6 +16,9 @@
                     :server-items-length="total"
                     :options.sync="options"
                     :loading="loading"
+                    hide-default-footer
+                    :page.sync="page"
+                    @page-count="pageCount = $event"
                 >
                     <template v-slot:top>
                         <v-toolbar flat color="dark">
@@ -55,20 +58,40 @@
                                                                   label="Question"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.i18n"
-                                                                  label="i18n"></v-text-field>
+                                                    <v-text-field v-model="editedItem.audio"
+                                                                  label="Audio"></v-text-field>
+                                                </v-col>
+                                                <v-col cols="12" sm="6" md="4">
+                                                    <v-select
+                                                        v-model="editedItem.i18n"
+                                                        :items="i18ns"
+                                                        label="i18n"
+                                                    ></v-select>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
                                                     <v-text-field v-model="editedItem.image"
                                                                   label="Image"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.type"
-                                                                  label="Type"></v-text-field>
+                                                    <v-select
+                                                        v-model="editedItem.type"
+                                                        :items="types"
+                                                        label="Type"
+                                                    ></v-select>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.input"
-                                                                  label="input"></v-text-field>
+                                                    <v-select
+                                                        v-model="editedItem.input"
+                                                        :items="inputs"
+                                                        label="Role"
+                                                    ></v-select>
+                                                </v-col>
+                                                <v-col cols="12">
+                                                    <v-textarea
+                                                        v-model="editedItem.description"
+                                                        label="Description"
+                                                        hint="Description"
+                                                    ></v-textarea>
                                                 </v-col>
                                             </v-row>
                                         </v-container>
@@ -104,20 +127,30 @@
                     <template v-slot:item.type="{ item }">
                         <v-chip dark>{{getTypeOfQuiz(item.type)}}</v-chip>
                     </template>
+                    <template v-slot:footer>
+                           <p class="pl-4 pt-4 pb-4">Total records: {{total}} </p>
+                    </template>
                 </v-data-table>
+            </v-col>
+            <v-col cols="12" v-if="pageCount">
+                <v-pagination v-model="page" :length="pageCount" :total-visible="7"></v-pagination>
             </v-col>
         </v-row>
     </v-container>
 </template>
 
 <script>
-    import {mapState} from 'vuex'
+    import {mapState, mapActions} from 'vuex'
 
     export default {
         data: () => ({
             dialog: false,
+            pageCount:0,
             options:{},
             loading:false,
+            i18ns:['en'],
+            inputs:['Radio', 'Checkbox'],
+            types:['1','2','3','4','5','6','7','8'],
             headers: [
                 {
                     text: 'ID',
@@ -136,14 +169,18 @@
             editedIndex: -1,
             editedItem: {
                 question: '',
-                i18n: '',
+                audio:'',
+                description: '',
+                i18n: 'en',
                 image: '',
                 type: '',
                 input: '',
             },
             defaultItem: {
                 question: '',
-                i18n: '',
+                audio:'',
+                description: '',
+                i18n: 'en',
                 image: '',
                 type: '',
                 input: '',
@@ -152,7 +189,6 @@
 
         computed: {
             ...mapState({
-                page: state => state.quiz.page,
                 size: state => state.quiz.size,
                 type: state => state.quiz.type,
                 total: state => state.quiz.total,
@@ -160,6 +196,14 @@
             }),
             formTitle() {
                 return this.editedIndex === -1 ? 'New Item' : 'Edit Item'
+            },
+            page: {
+                get() {
+                    return this.$store.state.quiz.page;
+                },
+                set(val) {
+                    return this.$store.commit("quiz/SET_PAGE", val);
+                }
             },
         },
 
@@ -169,21 +213,30 @@
             },
             options:{
                 deep: true,
-                handler () {
+                handler (val) {
                     let page = this.options.page;
                     let itemsPerPage = this.options.itemsPerPage;
                     if(this.options.itemsPerPage === -1){
                         itemsPerPage = this.total
                     }
-                    this.loading = true;
-                    this.$store.dispatch('quiz/getQuizList', {page: page, size: itemsPerPage, type: this.type}).then(() => {
-                        this.loading = false;
-                    })
+                    this.getQuizItems(page, itemsPerPage)
                 },
             }
         },
 
         methods: {
+            ...mapActions({
+                addQuiz : 'quiz/addQuiz',
+                getQuizList : 'quiz/getQuizList',
+                updateQuizById : 'quiz/updateQuizById',
+                deleteQuizById : 'quiz/deleteQuizById',
+            }),
+            getQuizItems(page = this.page, size = this.size){
+                this.loading = true;
+                this.getQuizList({page: page, size: size, type: this.type}).then(() => {
+                    this.loading = false;
+                })
+            },
             getTypeOfQuiz(index) {
                 const items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"]
                 return items[index -1]
@@ -192,14 +245,18 @@
                 return image ? image.replace('module-images', 'question-images') : '';
             },
             editItem(item) {
-                this.editedIndex = this.desserts.indexOf(item)
+                this.editedIndex = this.quizItems.indexOf(item)
                 this.editedItem = Object.assign({}, item)
                 this.dialog = true
             },
 
             deleteItem(item) {
-                const index = this.desserts.indexOf(item)
-                confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1)
+                if (confirm('Are you sure you want to delete this item?')) {
+                    this.deleteQuizById(item.id).then((data) => {
+                        this.getQuizItems()
+                        this.$store.dispatch('notice/show', data.message)
+                    })
+                }
             },
 
             close() {
@@ -212,9 +269,16 @@
 
             save() {
                 if (this.editedIndex > -1) {
-                    Object.assign(this.desserts[this.editedIndex], this.editedItem)
+                    this.updateQuizById(this.editedItem).then((data) => {
+                        this.getQuizItems()
+                        this.$store.dispatch('notice/show', data.message)
+                    });
                 } else {
-                    this.desserts.push(this.editedItem)
+                    // New a quiz
+                    this.addQuiz(this.editedItem).then((data) => {
+                        this.getQuizItems()
+                        this.$store.dispatch('notice/show', data.message)
+                    });
                 }
                 this.close()
             },

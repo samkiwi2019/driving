@@ -128,13 +128,46 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       dialog: false,
+      pageCount: 0,
       options: {},
       loading: false,
+      i18ns: ['en'],
+      inputs: ['Radio', 'Checkbox'],
+      types: ['1', '2', '3', '4', '5', '6', '7', '8'],
       headers: [{
         text: 'ID',
         align: 'start',
@@ -169,14 +202,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       editedIndex: -1,
       editedItem: {
         question: '',
-        i18n: '',
+        audio: '',
+        description: '',
+        i18n: 'en',
         image: '',
         type: '',
         input: ''
       },
       defaultItem: {
         question: '',
-        i18n: '',
+        audio: '',
+        description: '',
+        i18n: 'en',
         image: '',
         type: '',
         input: ''
@@ -184,9 +221,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
   },
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
-    page: function page(state) {
-      return state.quiz.page;
-    },
     size: function size(state) {
       return state.quiz.size;
     },
@@ -202,6 +236,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   })), {}, {
     formTitle: function formTitle() {
       return this.editedIndex === -1 ? 'New Item' : 'Edit Item';
+    },
+    page: {
+      get: function get() {
+        return this.$store.state.quiz.page;
+      },
+      set: function set(val) {
+        return this.$store.commit("quiz/SET_PAGE", val);
+      }
     }
   }),
   watch: {
@@ -210,9 +252,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     options: {
       deep: true,
-      handler: function handler() {
-        var _this = this;
-
+      handler: function handler(val) {
         var page = this.options.page;
         var itemsPerPage = this.options.itemsPerPage;
 
@@ -220,18 +260,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           itemsPerPage = this.total;
         }
 
-        this.loading = true;
-        this.$store.dispatch('quiz/getQuizList', {
-          page: page,
-          size: itemsPerPage,
-          type: this.type
-        }).then(function () {
-          _this.loading = false;
-        });
+        this.getQuizItems(page, itemsPerPage);
       }
     }
   },
-  methods: {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])({
+    addQuiz: 'quiz/addQuiz',
+    getQuizList: 'quiz/getQuizList',
+    updateQuizById: 'quiz/updateQuizById',
+    deleteQuizById: 'quiz/deleteQuizById'
+  })), {}, {
+    getQuizItems: function getQuizItems() {
+      var _this = this;
+
+      var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.page;
+      var size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.size;
+      this.loading = true;
+      this.getQuizList({
+        page: page,
+        size: size,
+        type: this.type
+      }).then(function () {
+        _this.loading = false;
+      });
+    },
     getTypeOfQuiz: function getTypeOfQuiz(index) {
       var items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"];
       return items[index - 1];
@@ -240,33 +292,51 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       return image ? image.replace('module-images', 'question-images') : '';
     },
     editItem: function editItem(item) {
-      this.editedIndex = this.desserts.indexOf(item);
+      this.editedIndex = this.quizItems.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
     },
     deleteItem: function deleteItem(item) {
-      var index = this.desserts.indexOf(item);
-      confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1);
+      var _this2 = this;
+
+      if (confirm('Are you sure you want to delete this item?')) {
+        this.deleteQuizById(item.id).then(function (data) {
+          _this2.getQuizItems();
+
+          _this2.$store.dispatch('notice/show', data.message);
+        });
+      }
     },
     close: function close() {
-      var _this2 = this;
+      var _this3 = this;
 
       this.dialog = false;
       this.$nextTick(function () {
-        _this2.editedItem = Object.assign({}, _this2.defaultItem);
-        _this2.editedIndex = -1;
+        _this3.editedItem = Object.assign({}, _this3.defaultItem);
+        _this3.editedIndex = -1;
       });
     },
     save: function save() {
+      var _this4 = this;
+
       if (this.editedIndex > -1) {
-        Object.assign(this.desserts[this.editedIndex], this.editedItem);
+        this.updateQuizById(this.editedItem).then(function (data) {
+          _this4.getQuizItems();
+
+          _this4.$store.dispatch('notice/show', data.message);
+        });
       } else {
-        this.desserts.push(this.editedItem);
+        // New a quiz
+        this.addQuiz(this.editedItem).then(function (data) {
+          _this4.getQuizItems();
+
+          _this4.$store.dispatch('notice/show', data.message);
+        });
       }
 
       this.close();
     }
-  }
+  })
 });
 
 /***/ }),
@@ -354,11 +424,19 @@ var render = function() {
                   "sort-by": "correct_rate",
                   "server-items-length": _vm.total,
                   options: _vm.options,
-                  loading: _vm.loading
+                  loading: _vm.loading,
+                  "hide-default-footer": "",
+                  page: _vm.page
                 },
                 on: {
                   "update:options": function($event) {
                     _vm.options = $event
+                  },
+                  "update:page": function($event) {
+                    _vm.page = $event
+                  },
+                  "page-count": function($event) {
+                    _vm.pageCount = $event
                   }
                 },
                 scopedSlots: _vm._u([
@@ -511,7 +589,42 @@ var render = function() {
                                                   },
                                                   [
                                                     _c("v-text-field", {
-                                                      attrs: { label: "i18n" },
+                                                      attrs: { label: "Audio" },
+                                                      model: {
+                                                        value:
+                                                          _vm.editedItem.audio,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.$set(
+                                                            _vm.editedItem,
+                                                            "audio",
+                                                            $$v
+                                                          )
+                                                        },
+                                                        expression:
+                                                          "editedItem.audio"
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    attrs: {
+                                                      cols: "12",
+                                                      sm: "6",
+                                                      md: "4"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-select", {
+                                                      attrs: {
+                                                        items: _vm.i18ns,
+                                                        label: "i18n"
+                                                      },
                                                       model: {
                                                         value:
                                                           _vm.editedItem.i18n,
@@ -574,8 +687,11 @@ var render = function() {
                                                     }
                                                   },
                                                   [
-                                                    _c("v-text-field", {
-                                                      attrs: { label: "Type" },
+                                                    _c("v-select", {
+                                                      attrs: {
+                                                        items: _vm.types,
+                                                        label: "Type"
+                                                      },
                                                       model: {
                                                         value:
                                                           _vm.editedItem.type,
@@ -606,8 +722,11 @@ var render = function() {
                                                     }
                                                   },
                                                   [
-                                                    _c("v-text-field", {
-                                                      attrs: { label: "input" },
+                                                    _c("v-select", {
+                                                      attrs: {
+                                                        items: _vm.inputs,
+                                                        label: "Role"
+                                                      },
                                                       model: {
                                                         value:
                                                           _vm.editedItem.input,
@@ -622,6 +741,36 @@ var render = function() {
                                                         },
                                                         expression:
                                                           "editedItem.input"
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  { attrs: { cols: "12" } },
+                                                  [
+                                                    _c("v-textarea", {
+                                                      attrs: {
+                                                        label: "Description",
+                                                        hint: "Description"
+                                                      },
+                                                      model: {
+                                                        value:
+                                                          _vm.editedItem
+                                                            .description,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.$set(
+                                                            _vm.editedItem,
+                                                            "description",
+                                                            $$v
+                                                          )
+                                                        },
+                                                        expression:
+                                                          "editedItem.description"
                                                       }
                                                     })
                                                   ],
@@ -747,12 +896,43 @@ var render = function() {
                         ])
                       ]
                     }
+                  },
+                  {
+                    key: "footer",
+                    fn: function() {
+                      return [
+                        _c("p", { staticClass: "pl-4 pt-4 pb-4" }, [
+                          _vm._v("Total records: " + _vm._s(_vm.total) + " ")
+                        ])
+                      ]
+                    },
+                    proxy: true
                   }
                 ])
               })
             ],
             1
-          )
+          ),
+          _vm._v(" "),
+          _vm.pageCount
+            ? _c(
+                "v-col",
+                { attrs: { cols: "12" } },
+                [
+                  _c("v-pagination", {
+                    attrs: { length: _vm.pageCount, "total-visible": 7 },
+                    model: {
+                      value: _vm.page,
+                      callback: function($$v) {
+                        _vm.page = $$v
+                      },
+                      expression: "page"
+                    }
+                  })
+                ],
+                1
+              )
+            : _vm._e()
         ],
         1
       )
@@ -790,9 +970,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VDialog */ "./node_modules/vuetify/lib/components/VDialog/index.js");
 /* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
 /* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
-/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
-/* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
+/* harmony import */ var vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VPagination */ "./node_modules/vuetify/lib/components/VPagination/index.js");
+/* harmony import */ var vuetify_lib_components_VSelect__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VSelect */ "./node_modules/vuetify/lib/components/VSelect/index.js");
+/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VTextarea__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! vuetify/lib/components/VTextarea */ "./node_modules/vuetify/lib/components/VTextarea/index.js");
+/* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
 
 
 
@@ -832,7 +1015,10 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCardTitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardTitle"],VChip: vuetify_lib_components_VChip__WEBPACK_IMPORTED_MODULE_7__["VChip"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VDataTable: vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_9__["VDataTable"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_10__["VDialog"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_13__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_14__["VTextField"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_15__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_15__["VToolbarTitle"]})
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCardTitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardTitle"],VChip: vuetify_lib_components_VChip__WEBPACK_IMPORTED_MODULE_7__["VChip"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VDataTable: vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_9__["VDataTable"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_10__["VDialog"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__["VImg"],VPagination: vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_13__["VPagination"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VRow"],VSelect: vuetify_lib_components_VSelect__WEBPACK_IMPORTED_MODULE_14__["VSelect"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_15__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_16__["VTextField"],VTextarea: vuetify_lib_components_VTextarea__WEBPACK_IMPORTED_MODULE_17__["VTextarea"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_18__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_18__["VToolbarTitle"]})
 
 
 /* hot reload */

@@ -1,4 +1,4 @@
-import {getCustomers, register, updateUser, deleteUserById} from "_a/admin";
+import {getCustomers, createUser, updateUser, deleteUserById} from "_a/admin";
 
 const state = {
     customerItems: [],
@@ -14,13 +14,16 @@ const getters = {
 // actions
 const actions = {
     addCustomer({state,commit, dispatch}, payload){
-        return new Promise(async (resolve) => {
-            const {data, status} =  await register(payload);
-            if(status === 200){
-                resolve('succeed')
+        return new Promise(async (resolve,reject) => {
+            try{
+                const {data, status} =  await createUser(payload);
+                if(status === 200){
+                    resolve(data)
+                }
+            }catch(err){
+                reject(err)
             }
         })
-
     },
     getCustomerList({commit}, payload){
         return new Promise(async (resolve) => {
