@@ -17,6 +17,55 @@
             />
         </template>
 
+        <v-subheader>User</v-subheader>
+        <v-list-group>
+            <template v-slot:activator>
+                <v-list-item-avatar>
+                    <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
+                </v-list-item-avatar>
+                <v-list-item-title>{{ user.nickname || 'Not logged in' }}</v-list-item-title>
+            </template>
+            <v-list-item
+                link
+                to="/login"
+                v-if="!isLogin"
+            >
+                <v-list-item-icon>
+                    <v-icon v-text="'mdi-login'"></v-icon>
+                </v-list-item-icon>
+                <v-list-item-title v-text="'Login'"></v-list-item-title>
+            </v-list-item>
+            <v-list-item
+                link
+                to="/register"
+                v-if="!isLogin"
+            >
+                <v-list-item-icon>
+                    <v-icon v-text="'mdi-registered-trademark'"></v-icon>
+                </v-list-item-icon>
+                <v-list-item-title v-text="'register'"></v-list-item-title>
+            </v-list-item>
+            <v-list-item
+                link
+                to="/records"
+                v-if="isLogin"
+            >
+                <v-list-item-icon>
+                    <v-icon v-text="'mdi-album'"></v-icon>
+                </v-list-item-icon>
+                <v-list-item-title v-text="'My records'"></v-list-item-title>
+            </v-list-item>
+            <v-list-item
+                link
+                @click="logout"
+                v-if="isLogin"
+            >
+                <v-list-item-icon>
+                    <v-icon v-text="'mdi-logout'"></v-icon>
+                </v-list-item-icon>
+                <v-list-item-title v-text="'Logout'"></v-list-item-title>
+            </v-list-item>
+        </v-list-group>
         <v-subheader>Navigation</v-subheader>
         <v-list
             expand
@@ -75,14 +124,31 @@
                 },
                 {
                     icon: 'mdi-clipboard-outline',
-                    title: 'quiz',
-                    to: '/admin/list',
+                    title: 'learn',
+                    children: [
+                        {title: 'core', icon: 'mdi-ansible', to: '/learn/1'},
+                        {title: 'behavior', icon: 'mdi-cursor-move', to: '/learn/2'},
+                        {title: 'parking', icon: 'mdi-car-brake-parking', to: '/learn/3'},
+                        {title: 'emergencies', icon: 'mdi-car-traction-control', to: '/learn/4'},
+                        {title: 'position', icon: 'mdi-road', to: '/learn/5'},
+                        {title: 'intersection', icon: 'mdi-vector-intersection', to: '/learn/6'},
+                        {title: 'theory', icon: 'mdi-crosshairs-question', to: '/learn/7'},
+                        {title: 'signs', icon: 'mdi-traffic-light', to: '/learn/8'},
+                    ]
                 },
                 {
-                    icon: 'mdi-account',
-                    title: 'about',
-                    to: '/admin/about',
+                    icon: 'mdi-test-tube',
+                    title: 'mock',
+                    children: [
+                        {title: 'mock-30', icon: 'mdi-theory', to: '/mock/30'},
+                        {title: 'mock-50', icon: 'mdi-signs', to: '/mock/50'},
+                    ]
                 },
+                {
+                    icon: 'mdi-information',
+                    title: 'about',
+                    to: '/about',
+                }
             ],
         }),
 
@@ -125,6 +191,9 @@
                     title: this.$t(item.title),
                 }
             },
+            logout(){
+                this.logoutAction();
+            }
         },
     }
 </script>

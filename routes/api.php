@@ -27,6 +27,9 @@ Route::group([
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
 
+    // quiz-related
+    Route::get('/mock', 'api\v1\MockController@index')->name("mock.index");
+
 });
 
 Route::group([
@@ -49,4 +52,5 @@ Route::group([
     Route::post('/quiz', 'api\v1\QuizController@create')->name("quiz.create")->middleware('security:11');
     Route::put('/quiz/{id}', 'api\v1\QuizController@update')->name("quiz.update")->middleware('security:11');
     Route::delete('/quiz/{id}', 'api\v1\QuizController@destroy')->name("quiz.destroy")->middleware('security:11');
+
 });

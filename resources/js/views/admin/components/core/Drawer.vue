@@ -51,6 +51,15 @@
                     </v-list-item-icon>
                     <v-list-item-title v-text="'My Profile'"></v-list-item-title>
                 </v-list-item>
+                <v-list-item
+                    link
+                    @click="logout"
+                >
+                    <v-list-item-icon>
+                        <v-icon v-text="'mdi-logout'"></v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title v-text="'Logout'"></v-list-item-title>
+                </v-list-item>
             </v-list-group>
         </v-list>
         <v-divider class="mb-2"/>
@@ -80,19 +89,6 @@
             <div/>
         </v-list>
 
-        <template v-slot:append>
-            <div class="pa-3">
-                <v-btn
-                    color="error"
-                    class="white--text"
-                    block
-                    @click="logout"
-                >
-                    Logout
-                    <v-icon right dark>mdi-logout</v-icon>
-                </v-btn>
-            </div>
-        </template>
     </v-navigation-drawer>
 </template>
 

@@ -62,6 +62,55 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // Utilities
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -86,12 +135,56 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         to: '/'
       }, {
         icon: 'mdi-clipboard-outline',
-        title: 'quiz',
-        to: '/admin/list'
+        title: 'learn',
+        children: [{
+          title: 'core',
+          icon: 'mdi-ansible',
+          to: '/learn/1'
+        }, {
+          title: 'behavior',
+          icon: 'mdi-cursor-move',
+          to: '/learn/2'
+        }, {
+          title: 'parking',
+          icon: 'mdi-car-brake-parking',
+          to: '/learn/3'
+        }, {
+          title: 'emergencies',
+          icon: 'mdi-car-traction-control',
+          to: '/learn/4'
+        }, {
+          title: 'position',
+          icon: 'mdi-road',
+          to: '/learn/5'
+        }, {
+          title: 'intersection',
+          icon: 'mdi-vector-intersection',
+          to: '/learn/6'
+        }, {
+          title: 'theory',
+          icon: 'mdi-crosshairs-question',
+          to: '/learn/7'
+        }, {
+          title: 'signs',
+          icon: 'mdi-traffic-light',
+          to: '/learn/8'
+        }]
       }, {
-        icon: 'mdi-account',
+        icon: 'mdi-test-tube',
+        title: 'mock',
+        children: [{
+          title: 'mock-30',
+          icon: 'mdi-theory',
+          to: '/mock/30'
+        }, {
+          title: 'mock-50',
+          icon: 'mdi-signs',
+          to: '/mock/50'
+        }]
+      }, {
+        icon: 'mdi-information',
         title: 'about',
-        to: '/admin/about'
+        to: '/about'
       }]
     };
   },
@@ -134,6 +227,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         children: item.children ? item.children.map(this.mapItem) : undefined,
         title: this.$t(item.title)
       });
+    },
+    logout: function logout() {
+      this.logoutAction();
     }
   })
 });
@@ -249,6 +345,133 @@ var render = function() {
     ),
     [
       _vm._v(" "),
+      _c("v-subheader", [_vm._v("User")]),
+      _vm._v(" "),
+      _c(
+        "v-list-group",
+        {
+          scopedSlots: _vm._u([
+            {
+              key: "activator",
+              fn: function() {
+                return [
+                  _c("v-list-item-avatar", [
+                    _c("img", {
+                      attrs: {
+                        src:
+                          "https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("v-list-item-title", [
+                    _vm._v(_vm._s(_vm.user.nickname || "Not logged in"))
+                  ])
+                ]
+              },
+              proxy: true
+            }
+          ])
+        },
+        [
+          _vm._v(" "),
+          !_vm.isLogin
+            ? _c(
+                "v-list-item",
+                { attrs: { link: "", to: "/login" } },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [
+                      _c("v-icon", {
+                        domProps: { textContent: _vm._s("mdi-login") }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-list-item-title", {
+                    domProps: { textContent: _vm._s("Login") }
+                  })
+                ],
+                1
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          !_vm.isLogin
+            ? _c(
+                "v-list-item",
+                { attrs: { link: "", to: "/register" } },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [
+                      _c("v-icon", {
+                        domProps: {
+                          textContent: _vm._s("mdi-registered-trademark")
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-list-item-title", {
+                    domProps: { textContent: _vm._s("register") }
+                  })
+                ],
+                1
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.isLogin
+            ? _c(
+                "v-list-item",
+                { attrs: { link: "", to: "/records" } },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [
+                      _c("v-icon", {
+                        domProps: { textContent: _vm._s("mdi-album") }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-list-item-title", {
+                    domProps: { textContent: _vm._s("My records") }
+                  })
+                ],
+                1
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.isLogin
+            ? _c(
+                "v-list-item",
+                { attrs: { link: "" }, on: { click: _vm.logout } },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [
+                      _c("v-icon", {
+                        domProps: { textContent: _vm._s("mdi-logout") }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-list-item-title", {
+                    domProps: { textContent: _vm._s("Logout") }
+                  })
+                ],
+                1
+              )
+            : _vm._e()
+        ],
+        1
+      ),
+      _vm._v(" "),
       _c("v-subheader", [_vm._v("Navigation")]),
       _vm._v(" "),
       _c(
@@ -303,10 +526,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
-/* harmony import */ var vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VNavigationDrawer */ "./node_modules/vuetify/lib/components/VNavigationDrawer/index.js");
-/* harmony import */ var vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VSubheader */ "./node_modules/vuetify/lib/components/VSubheader/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
+/* harmony import */ var vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VNavigationDrawer */ "./node_modules/vuetify/lib/components/VNavigationDrawer/index.js");
+/* harmony import */ var vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VSubheader */ "./node_modules/vuetify/lib/components/VSubheader/index.js");
 
 
 
@@ -332,7 +556,13 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_5__["VImg"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VList"],VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_7__["VNavigationDrawer"],VSubheader: vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_8__["VSubheader"]})
+
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_5__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_6__["VImg"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VList"],VListGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListGroup"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItem"],VListItemAvatar: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemAvatar"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemTitle"],VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_8__["VNavigationDrawer"],VSubheader: vuetify_lib_components_VSubheader__WEBPACK_IMPORTED_MODULE_9__["VSubheader"]})
 
 
 /* hot reload */

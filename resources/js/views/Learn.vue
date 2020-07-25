@@ -1,10 +1,15 @@
 <template>
-    <div class="container-main">learn</div>
+    <div class="container-main">
+        <mock />
+    </div>
 </template>
 
 <script>
+    import Mock from '_c/Mock'
     export default {
-        name: "learn"
+        name: "learn",
+        components:{Mock},
+
     }
 </script>
 

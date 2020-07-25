@@ -2240,11 +2240,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   },
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])(['barColor'])), {}, {
     children: function children() {
-      var _this = this;
-
       return this.item.children.map(function (item) {
         return _objectSpread(_objectSpread({}, item), {}, {
-          to: !item.to ? undefined : "".concat(_this.item.group, "/").concat(item.to)
+          // to: !item.to ? undefined : `${this.item.group}/${item.to}`,
+          to: !item.to ? undefined : item.to
         });
       });
     },
@@ -2262,16 +2261,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   }),
   methods: {
     genGroup: function genGroup(children) {
-      var _this2 = this;
+      var _this = this;
 
       return children.filter(function (item) {
         return item.to;
       }).map(function (item) {
-        var parent = item.group || _this2.item.group;
+        var parent = item.group || _this.item.group;
         var group = "".concat(parent, "/").concat(lodash_kebabCase__WEBPACK_IMPORTED_MODULE_0___default()(item.to));
 
         if (item.children) {
-          group = "".concat(group, "|").concat(_this2.genGroup(item.children));
+          group = "".concat(group, "|").concat(_this.genGroup(item.children));
         }
 
         return group;
@@ -78054,7 +78053,7 @@ module.exports = g;
 /*!***********************************!*\
   !*** ./resources/js/api/admin.js ***!
   \***********************************/
-/*! exports provided: register, login, logout, getUser, getCustomers, createUser, updateUser, deleteUserById, getQuizList, addQuiz, updateQuiz, deleteQuiz */
+/*! exports provided: register, login, logout, getUser, getCustomers, createUser, updateUser, deleteUserById, getQuizList, addQuiz, updateQuiz, deleteQuiz, getMockList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78071,6 +78070,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addQuiz", function() { return addQuiz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateQuiz", function() { return updateQuiz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteQuiz", function() { return deleteQuiz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMockList", function() { return getMockList; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/api/api.request.js");
 
 /**
@@ -78225,6 +78225,20 @@ var deleteQuiz = function deleteQuiz(id) {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
     url: "/api/v1/quiz/".concat(id),
     method: 'delete'
+  });
+};
+/*
+* Get mock list
+* @param {object} data
+* @param {string} data.type   mock = {type:'all', length: 30 or 50} learn = {type: '1-8'}
+* @param {int} data.length
+* */
+
+var getMockList = function getMockList(data) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/mock',
+    params: data,
+    method: 'get'
   });
 };
 
@@ -79890,10 +79904,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************!*\
   !*** ./resources/js/local/en.json ***!
   \************************************/
-/*! exports provided: avatar, quiz, users, about, home, profile, buttons, calendar, charts, components, ct, dashboard, visit, dtables, eforms, error, etables, example, forms, fullscreen, google, grid, icons, lock, login, maps, multi, notifications, pages, plan, pricing, my-profile, edit-profile, register, rforms, rtables, rtl, search, settings, tables, tabs, tim, timeline, typography, upgrade, user, vforms, widgets, wizard, default */
+/*! exports provided: avatar, quiz, users, about, home, learn, core, mock, mock-30, mock-50, behavior, parking, emergencies, position, intersection, theory, signs, profile, buttons, calendar, charts, components, ct, dashboard, visit, dtables, eforms, error, etables, example, forms, fullscreen, google, grid, icons, lock, login, maps, multi, notifications, pages, plan, pricing, my-profile, edit-profile, register, rforms, rtables, rtl, search, settings, tables, tabs, tim, timeline, typography, upgrade, user, vforms, widgets, wizard, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"avatar\":\"Driving Test\",\"quiz\":\"Quiz List\",\"users\":\"User List\",\"about\":\"About Me\",\"home\":\"Home\",\"profile\":\"Profile\",\"buttons\":\"Buttons\",\"calendar\":\"Calendar\",\"charts\":\"Charts\",\"components\":\"Components\",\"ct\":\"CT\",\"dashboard\":\"Dashboard\",\"visit\":\"Visit Management System\",\"dtables\":\"Data Tables\",\"eforms\":\"Extended Forms\",\"error\":\"Error Page\",\"etables\":\"Extended Tables\",\"example\":\"Example\",\"forms\":\"Forms\",\"fullscreen\":\"Full Screen Map\",\"google\":\"Google Maps\",\"grid\":\"Grid System\",\"icons\":\"Icons\",\"lock\":\"Lock Screen Page\",\"login\":\"Login Page\",\"maps\":\"Maps\",\"multi\":\"Multi Level Collapse\",\"notifications\":\"Notifications\",\"pages\":\"Pages\",\"plan\":\"Choose Plan\",\"pricing\":\"Pricing\",\"my-profile\":\"My Profile\",\"edit-profile\":\"Edit Profile\",\"register\":\"Register Page\",\"rforms\":\"Regular Forms\",\"rtables\":\"Regular Tables\",\"rtl\":\"RTL Support\",\"search\":\"Search\",\"settings\":\"Settings\",\"tables\":\"Tables\",\"tabs\":\"Tabs\",\"tim\":\"Creative Tim\",\"timeline\":\"Timeline\",\"typography\":\"Typography\",\"upgrade\":\"Upgrade To PRO\",\"user\":\"User Profile\",\"vforms\":\"Validation Forms\",\"widgets\":\"Widgets\",\"wizard\":\"Wizard\"}");
+module.exports = JSON.parse("{\"avatar\":\"Driving Test\",\"quiz\":\"Quiz List\",\"users\":\"User List\",\"about\":\"About\",\"home\":\"Home\",\"learn\":\"Learn\",\"core\":\"Core\",\"mock\":\"Mock\",\"mock-30\":\"Mock 30\",\"mock-50\":\"Mock 50\",\"behavior\":\"Behavior\",\"parking\":\"Parking\",\"emergencies\":\"Emergencies\",\"position\":\"Road Position\",\"intersection\":\"Intersection\",\"theory\":\"Theory\",\"signs\":\"Signs\",\"profile\":\"Profile\",\"buttons\":\"Buttons\",\"calendar\":\"Calendar\",\"charts\":\"Charts\",\"components\":\"Components\",\"ct\":\"CT\",\"dashboard\":\"Dashboard\",\"visit\":\"Visit Management System\",\"dtables\":\"Data Tables\",\"eforms\":\"Extended Forms\",\"error\":\"Error Page\",\"etables\":\"Extended Tables\",\"example\":\"Example\",\"forms\":\"Forms\",\"fullscreen\":\"Full Screen Map\",\"google\":\"Google Maps\",\"grid\":\"Grid System\",\"icons\":\"Icons\",\"lock\":\"Lock Screen Page\",\"login\":\"Login Page\",\"maps\":\"Maps\",\"multi\":\"Multi Level Collapse\",\"notifications\":\"Notifications\",\"pages\":\"Pages\",\"plan\":\"Choose Plan\",\"pricing\":\"Pricing\",\"my-profile\":\"My Profile\",\"edit-profile\":\"Edit Profile\",\"register\":\"Register Page\",\"rforms\":\"Regular Forms\",\"rtables\":\"Regular Tables\",\"rtl\":\"RTL Support\",\"search\":\"Search\",\"settings\":\"Settings\",\"tables\":\"Tables\",\"tabs\":\"Tabs\",\"tim\":\"Creative Tim\",\"timeline\":\"Timeline\",\"typography\":\"Typography\",\"upgrade\":\"Upgrade To PRO\",\"user\":\"User Profile\",\"vforms\":\"Validation Forms\",\"widgets\":\"Widgets\",\"wizard\":\"Wizard\"}");
 
 /***/ }),
 
@@ -80377,7 +80391,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_user__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/user */ "./resources/js/vuex/modules/user.js");
 /* harmony import */ var _modules_quiz__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/quiz */ "./resources/js/vuex/modules/quiz.js");
 /* harmony import */ var _modules_customer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/customer */ "./resources/js/vuex/modules/customer.js");
-/* harmony import */ var _modules_notice__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/notice */ "./resources/js/vuex/modules/notice.js");
+/* harmony import */ var _modules_mock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/mock */ "./resources/js/vuex/modules/mock.js");
+/* harmony import */ var _modules_notice__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/notice */ "./resources/js/vuex/modules/notice.js");
+
 
 
 
@@ -80392,7 +80408,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
     config: _modules_config__WEBPACK_IMPORTED_MODULE_2__["default"],
     quiz: _modules_quiz__WEBPACK_IMPORTED_MODULE_4__["default"],
     customer: _modules_customer__WEBPACK_IMPORTED_MODULE_5__["default"],
-    notice: _modules_notice__WEBPACK_IMPORTED_MODULE_6__["default"]
+    notice: _modules_notice__WEBPACK_IMPORTED_MODULE_7__["default"],
+    mock: _modules_mock__WEBPACK_IMPORTED_MODULE_6__["default"]
   },
   state: {},
   mutations: {},
@@ -80640,6 +80657,100 @@ var mutations = {
   },
   SET_TOTAL: function SET_TOTAL(state, payload) {
     state.total = payload;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/js/vuex/modules/mock.js":
+/*!*******************************************!*\
+  !*** ./resources/js/vuex/modules/mock.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _a_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! _a/admin */ "./resources/js/api/admin.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+var state = {
+  mockItems: [],
+  index: 0,
+  // current index of mockItems
+  userAnswers: [],
+  type: "",
+  // current type of quiz
+  length: 30 // how many quizzes will be got. only works on mock model.
+
+}; // getters
+
+var getters = {}; // actions
+
+var actions = {
+  getMockItems: function getMockItems(_ref, payload) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var state, commit, _yield$getMockList, data, status;
+
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              state = _ref.state, commit = _ref.commit;
+
+              if (!(state.mockItems.length === 0)) {
+                _context.next = 8;
+                break;
+              }
+
+              _context.next = 4;
+              return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getMockList"])(payload);
+
+            case 4:
+              _yield$getMockList = _context.sent;
+              data = _yield$getMockList.data;
+              status = _yield$getMockList.status;
+
+              if (status === 200 && data.data.length > 0) {
+                commit('SET_MOCK_ITEMS', data.data);
+              }
+
+            case 8:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  }
+}; // mutations
+
+var mutations = {
+  SET_MOCK_ITEMS: function SET_MOCK_ITEMS(state, payload) {
+    state.mockItems = payload;
+  },
+  SET_INDEX: function SET_INDEX(state, payload) {
+    state.index = payload;
+  },
+  SET_TYPE: function SET_TYPE(state, payload) {
+    state.type = payload;
+  },
+  SET_LENGTH: function SET_LENGTH(state, payload) {
+    state.length = payload;
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({

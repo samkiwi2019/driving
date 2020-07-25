@@ -158,3 +158,19 @@ export const deleteQuiz = (id) => {
         method: 'delete'
     })
 }
+
+/*
+* Get mock list
+* @param {object} data
+* @param {string} data.type   mock = {type:'all', length: 30 or 50} learn = {type: '1-8'}
+* @param {int} data.length
+* */
+export const getMockList = (data) => {
+    return axios.request({
+        url: '/api/v1/mock',
+        params: data,
+        method: 'get'
+    })
+}
+
+
