@@ -4,7 +4,9 @@
             <base-material-card
                 color="success"
                 icon="mdi-car"
-                title="Registration">
+                title="Registration"
+                class="px-5"
+            >
 
                 <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
                     <form>
@@ -13,6 +15,7 @@
                                 v-model="access.name"
                                 :error-messages="errors"
                                 label="Name"
+                                prepend-icon="mdi-face"
                                 required
                             ></v-text-field>
                         </ValidationProvider>
@@ -21,6 +24,7 @@
                                 v-model="access.email"
                                 :error-messages="errors"
                                 label="E-mail"
+                                prepend-icon="mdi-email"
                                 required
                             ></v-text-field>
                         </ValidationProvider>
@@ -29,6 +33,7 @@
                                 v-model="access.nickname"
                                 :error-messages="errors"
                                 label="Nickname"
+                                prepend-icon="mdi-account-outline"
                                 required
                             ></v-text-field>
                         </ValidationProvider>
@@ -38,6 +43,7 @@
                                 :error-messages="errors"
                                 label="Password"
                                 type="password"
+                                prepend-icon="mdi-lock-outline"
                                 required
                             ></v-text-field>
                         </ValidationProvider>
@@ -47,6 +53,7 @@
                                 :error-messages="errors"
                                 label="Password confirmation"
                                 type="password"
+                                prepend-icon="mdi-lock-outline"
                                 required
                             ></v-text-field>
                         </ValidationProvider>

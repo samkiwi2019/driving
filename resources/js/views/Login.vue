@@ -4,7 +4,9 @@
         <base-material-card
             color="success"
             icon="mdi-login"
-            title="Welcome, Driving Test">
+            title="Welcome, Driving Test"
+            class="px-5"
+        >
 
             <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
                 <form>
@@ -13,6 +15,7 @@
                             v-model="access.email"
                             :error-messages="errors"
                             label="E-mail"
+                            prepend-icon="mdi-email"
                             required
                         ></v-text-field>
                     </ValidationProvider>
@@ -22,6 +25,7 @@
                             :error-messages="errors"
                             label="Password"
                             type="password"
+                            prepend-icon="mdi-lock-outline"
                             required
                         ></v-text-field>
                     </ValidationProvider>

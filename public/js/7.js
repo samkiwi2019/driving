@@ -82,6 +82,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Register",
@@ -187,6 +194,7 @@ var render = function() {
         _c(
           "base-material-card",
           {
+            staticClass: "px-5",
             attrs: { color: "success", icon: "mdi-car", title: "Registration" }
           },
           [
@@ -215,6 +223,7 @@ var render = function() {
                                         attrs: {
                                           "error-messages": errors,
                                           label: "Name",
+                                          "prepend-icon": "mdi-face",
                                           required: ""
                                         },
                                         model: {
@@ -247,6 +256,7 @@ var render = function() {
                                         attrs: {
                                           "error-messages": errors,
                                           label: "E-mail",
+                                          "prepend-icon": "mdi-email",
                                           required: ""
                                         },
                                         model: {
@@ -279,6 +289,7 @@ var render = function() {
                                         attrs: {
                                           "error-messages": errors,
                                           label: "Nickname",
+                                          "prepend-icon": "mdi-account-outline",
                                           required: ""
                                         },
                                         model: {
@@ -319,6 +330,7 @@ var render = function() {
                                           "error-messages": errors,
                                           label: "Password",
                                           type: "password",
+                                          "prepend-icon": "mdi-lock-outline",
                                           required: ""
                                         },
                                         model: {
@@ -359,6 +371,7 @@ var render = function() {
                                           "error-messages": errors,
                                           label: "Password confirmation",
                                           type: "password",
+                                          "prepend-icon": "mdi-lock-outline",
                                           required: ""
                                         },
                                         model: {

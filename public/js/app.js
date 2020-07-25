@@ -3144,6 +3144,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -19109,6 +19113,7 @@ var render = function() {
         _c(
           "base-material-card",
           {
+            staticClass: "px-5",
             attrs: {
               color: "success",
               icon: "mdi-login",
@@ -19141,6 +19146,7 @@ var render = function() {
                                         attrs: {
                                           "error-messages": errors,
                                           label: "E-mail",
+                                          "prepend-icon": "mdi-email",
                                           required: ""
                                         },
                                         model: {
@@ -19177,6 +19183,7 @@ var render = function() {
                                           "error-messages": errors,
                                           label: "Password",
                                           type: "password",
+                                          "prepend-icon": "mdi-lock-outline",
                                           required: ""
                                         },
                                         model: {
