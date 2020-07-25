@@ -23,6 +23,11 @@ __webpack_require__.r(__webpack_exports__);
     DashboardCoreFooter: function DashboardCoreFooter() {
       return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! _v/admin/components/core/Footer */ "./resources/js/views/admin/components/core/Footer.vue"));
     }
+  },
+  computed: {
+    showFooter: function showFooter() {
+      return !['login', 'register'].includes(this.$route.name);
+    }
   }
 });
 
@@ -46,7 +51,11 @@ var render = function() {
   return _c(
     "v-main",
     { staticStyle: { "padding-top": "0" } },
-    [_c("router-view"), _vm._v(" "), _c("dashboard-core-footer")],
+    [
+      _c("router-view"),
+      _vm._v(" "),
+      _vm.showFooter ? _c("dashboard-core-footer") : _vm._e()
+    ],
     1
   )
 }

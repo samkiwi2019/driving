@@ -1,15 +1,14 @@
 <template>
     <div class="container-main">
-        <mock />
+        <mock-test :type="$route.params.id" />
     </div>
 </template>
 
 <script>
-    import Mock from '_c/Mock'
+    import MockTest from '_c/MockTest'
     export default {
         name: "learn",
-        components:{Mock},
-
+        components:{MockTest},
     }
 </script>
 

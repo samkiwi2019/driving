@@ -1,83 +1,53 @@
 <template>
     <div class="container-main">
-        <v-container
-            id="user-profile"
-            fluid
-            tag="section"
-            justify="center"
-        >
-            <v-row justify="center">
-                <v-col
-                    cols="12"
-                    md="4"
-                >
-                    <base-material-card
-                        color="success"
-                        dark
-                        icon="mdi-login"
-                        style="opacity: 0.8"
-                        title="Welcome, Driving Test">
+        <div class="login-card">
+        <base-material-card
+            color="success"
+            icon="mdi-login"
+            title="Welcome, Driving Test">
 
-                        <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
-                            <form>
-                                <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
-                                    <v-text-field
-                                        v-model="access.email"
-                                        :error-messages="errors"
-                                        label="E-mail"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors }" name="Password" rules="required|max:10">
-                                    <v-text-field
-                                        v-model="access.password"
-                                        :error-messages="errors"
-                                        label="Password"
-                                        type="password"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <br>
-                                <v-btn
-                                    :class="`mr-4 ${!valid || 'success'}`"
-                                    @click="handleSubmit(signIn)"
-                                    :loading="loading"
-                                    :disabled="loading"
-                                >Login
-                                </v-btn>
-                            </form>
-                        </ValidationObserver>
-                    </base-material-card>
-                </v-col>
-            </v-row>
-            <v-snackbar
-                v-model="snackbar"
-                :timeout="timeout"
-                top
-            >
-                {{ text }}
-
-                <template v-slot:action="{ attrs }">
-                    <v-btn
-                        color="red"
-                        text
-                        v-bind="attrs"
-                        @click="snackbar = false"
-                    >
-                        Close
-                    </v-btn>
-                </template>
-            </v-snackbar>
-        </v-container>
+            <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
+                <form>
+                    <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
+                        <v-text-field
+                            v-model="access.email"
+                            :error-messages="errors"
+                            label="E-mail"
+                            required
+                        ></v-text-field>
+                    </ValidationProvider>
+                    <ValidationProvider v-slot="{ errors }" name="Password" rules="required|max:10">
+                        <v-text-field
+                            v-model="access.password"
+                            :error-messages="errors"
+                            label="Password"
+                            type="password"
+                            required
+                        ></v-text-field>
+                    </ValidationProvider>
+                    <br>
+                    <div class="d-flex justify-center">
+                        <v-btn
+                            :class="`mr-4 ${!valid || 'success'}`"
+                            @click="handleSubmit(signIn)"
+                            :loading="loading"
+                            :disabled="loading"
+                            text
+                            rounded
+                            color="success"
+                        >Let's go
+                        </v-btn>
+                    </div>
+                </form>
+            </ValidationObserver>
+        </base-material-card>
+        </div>
     </div>
 </template>
 
 <script>
     import HeaderImg from "_c/HeaderImg";
-    // Utilities
-    import {createNamespacedHelpers} from 'vuex'
-
-    const {mapActions} = createNamespacedHelpers('user');
+    import {mapActions} from 'vuex'
 
     export default {
         name: 'login',
@@ -88,24 +58,17 @@
                 password: '',
             },
             loading: false,
-            timeout: 3000,
-            snackbar: false,
-            text: 'I\'m a snackbar.',
         }),
         methods: {
             ...mapActions({
-                login: 'loginAction'
+                login: 'user/loginAction',
             }),
-            message(text) {
-                this.text = text
-                this.snackbar = true
-            },
             signIn() {
                 this.loading = true;
                 const params = this.access;
                 !params.remember && delete params.remember;
                 this.login(params).then(text => {
-                    this.message(text)
+                    this.$store.dispatch('notice/show', text);
                     this.loading = false;
                 });
             },
@@ -116,12 +79,16 @@
 </script>
 <style lang="scss" scoped>
     .container-main {
-        padding-top: 200px;
-        background-image: url("https://www.wearemarmalade.co.uk/driver-hub/app/uploads/2019/09/driving-ready.jpg");
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg"); background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -100px center;
-        min-height: calc(100vh - 93px);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-card{
+            width: 400px;
+        }
     }
 
 </style>

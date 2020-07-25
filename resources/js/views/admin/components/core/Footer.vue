@@ -51,7 +51,7 @@
                 },
                 {
                     href: '/about',
-                    text: 'About Me',
+                    text: 'About',
                 },
             ],
         }),

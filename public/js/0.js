@@ -59,7 +59,7 @@ __webpack_require__.r(__webpack_exports__);
         text: 'Home'
       }, {
         href: '/about',
-        text: 'About Me'
+        text: 'About'
       }]
     };
   }

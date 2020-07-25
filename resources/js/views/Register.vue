@@ -1,96 +1,72 @@
 <template>
     <div class="container-main">
-        <v-container
-            fluid
-            tag="section"
-        >
-            <v-row justify="center">
-                <v-col
-                    cols="12"
-                    md="4"
-                >
-                    <base-material-card
-                        color="success"
-                        dark
-                        icon="mdi-car"
-                        style="opacity: 0.8"
-                        title="Registration">
+        <div class="login-card">
+            <base-material-card
+                color="success"
+                icon="mdi-car"
+                title="Registration">
 
-                        <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
-                            <form>
-                                <ValidationProvider v-slot="{ errors }" name="name" rules="required">
-                                    <v-text-field
-                                        v-model="access.name"
-                                        :error-messages="errors"
-                                        label="Name"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
-                                    <v-text-field
-                                        v-model="access.email"
-                                        :error-messages="errors"
-                                        label="E-mail"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors }" name="nickname" rules="required">
-                                    <v-text-field
-                                        v-model="access.nickname"
-                                        :error-messages="errors"
-                                        label="Nickname"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors }" name="password" rules="required|min:8">
-                                    <v-text-field
-                                        v-model="access.password"
-                                        :error-messages="errors"
-                                        label="Password"
-                                        type="password"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <ValidationProvider v-slot="{ errors }" name="password_confirmation" rules="required|min:8">
-                                    <v-text-field
-                                        v-model="access.password_confirmation"
-                                        :error-messages="errors"
-                                        label="Password confirmation"
-                                        type="password"
-                                        required
-                                    ></v-text-field>
-                                </ValidationProvider>
-                                <br>
-                                <v-btn
-                                    :class="`mr-4 ${!valid || 'success'}`"
-                                    @click="handleSubmit(register)"
-                                    :loading="loading"
-                                    :disabled="loading"
-                                >Submit</v-btn>
-                            </form>
-                        </ValidationObserver>
-                    </base-material-card>
-                </v-col>
-            </v-row>
-            <v-snackbar
-                v-model="snackbar"
-                :timeout="timeout"
-                top
-            >
-                {{ text }}
-
-                <template v-slot:action="{ attrs }">
-                    <v-btn
-                        color="red"
-                        text
-                        v-bind="attrs"
-                        @click="snackbar = false"
-                    >
-                        Close
-                    </v-btn>
-                </template>
-            </v-snackbar>
-        </v-container>
+                <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
+                    <form>
+                        <ValidationProvider v-slot="{ errors }" name="name" rules="required">
+                            <v-text-field
+                                v-model="access.name"
+                                :error-messages="errors"
+                                label="Name"
+                                required
+                            ></v-text-field>
+                        </ValidationProvider>
+                        <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
+                            <v-text-field
+                                v-model="access.email"
+                                :error-messages="errors"
+                                label="E-mail"
+                                required
+                            ></v-text-field>
+                        </ValidationProvider>
+                        <ValidationProvider v-slot="{ errors }" name="nickname" rules="required">
+                            <v-text-field
+                                v-model="access.nickname"
+                                :error-messages="errors"
+                                label="Nickname"
+                                required
+                            ></v-text-field>
+                        </ValidationProvider>
+                        <ValidationProvider v-slot="{ errors }" name="password" rules="required|min:8">
+                            <v-text-field
+                                v-model="access.password"
+                                :error-messages="errors"
+                                label="Password"
+                                type="password"
+                                required
+                            ></v-text-field>
+                        </ValidationProvider>
+                        <ValidationProvider v-slot="{ errors }" name="password_confirmation" rules="required|min:8">
+                            <v-text-field
+                                v-model="access.password_confirmation"
+                                :error-messages="errors"
+                                label="Password confirmation"
+                                type="password"
+                                required
+                            ></v-text-field>
+                        </ValidationProvider>
+                        <br>
+                        <div class="d-flex justify-center">
+                            <v-btn
+                                :class="`mr-4 ${!valid || 'success'}`"
+                                @click="handleSubmit(register)"
+                                :loading="loading"
+                                :disabled="loading"
+                                text
+                                rounded
+                                color="success"
+                            >GET STARTED
+                            </v-btn>
+                        </div>
+                    </form>
+                </ValidationObserver>
+            </base-material-card>
+        </div>
     </div>
 </template>
 
@@ -100,28 +76,21 @@
     export default {
         name: "Register",
         components: {HeaderImg},
-        data: () =>({
+        data: () => ({
             access: {
-                name:'',
-                email:'',
-                nickname:'',
+                name: '',
+                email: '',
+                nickname: '',
                 password: '',
                 password_confirmation: '',
             },
             loading: false,
-            timeout: 3000,
-            snackbar: false,
-            text: 'I\'m a snackbar.',
         }),
-        methods:{
-            message(text){
-                this.text = text;
-                this.snackbar = true
-            },
-            register(){
+        methods: {
+            register() {
                 this.loading = true;
                 this.$store.dispatch('user/registerAction', this.access).then(text => {
-                    this.message(text);
+                    this.$store.dispatch('notice/show', text);
                     this.loading = false;
                 })
             }
@@ -131,10 +100,16 @@
 
 <style lang="scss" scoped>
     .container-main {
-        padding-top:  200px;
-        background-image: url("https://www.racq.com.au/-/media/racqgroupmvc/feature/article/featuredimages/road-trip/woman-smiling-while-driving-a-female-passenger.jpg?h=609&w=1000&hash=50F3A448B13F0DD9719A36C04AEA1F826A4C30C2");
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/register.85b37874.jpg");
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: calc(100vh - 93px);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-card{
+            width: 400px;
+        }
     }
 </style>

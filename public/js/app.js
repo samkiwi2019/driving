@@ -3144,39 +3144,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
- // Utilities
 
-
-
-var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_1__["createNamespacedHelpers"])('user'),
-    mapActions = _createNamespacedHelp.mapActions;
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'login',
@@ -3189,19 +3157,12 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_1__["createName
         email: '',
         password: ''
       },
-      loading: false,
-      timeout: 3000,
-      snackbar: false,
-      text: 'I\'m a snackbar.'
+      loading: false
     };
   },
-  methods: _objectSpread(_objectSpread({}, mapActions({
-    login: 'loginAction'
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapActions"])({
+    login: 'user/loginAction'
   })), {}, {
-    message: function message(text) {
-      this.text = text;
-      this.snackbar = true;
-    },
     signIn: function signIn() {
       var _this = this;
 
@@ -3209,7 +3170,7 @@ var _createNamespacedHelp = Object(vuex__WEBPACK_IMPORTED_MODULE_1__["createName
       var params = this.access;
       !params.remember && delete params.remember;
       this.login(params).then(function (text) {
-        _this.message(text);
+        _this.$store.dispatch('notice/show', text);
 
         _this.loading = false;
       });
@@ -9655,7 +9616,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container-main[data-v-12f5395a] {\n  padding-top: 200px;\n  background-image: url(\"https://www.wearemarmalade.co.uk/driver-hub/app/uploads/2019/09/driving-ready.jpg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: -100px center;\n  min-height: calc(100vh - 93px);\n}", ""]);
+exports.push([module.i, ".container-main[data-v-12f5395a] {\n  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg\");\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.container-main .login-card[data-v-12f5395a] {\n  width: 400px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -19140,224 +19101,148 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container-main" },
-    [
-      _c(
-        "v-container",
-        {
-          attrs: {
-            id: "user-profile",
-            fluid: "",
-            tag: "section",
-            justify: "center"
-          }
-        },
-        [
-          _c(
-            "v-row",
-            { attrs: { justify: "center" } },
-            [
-              _c(
-                "v-col",
-                { attrs: { cols: "12", md: "4" } },
-                [
-                  _c(
-                    "base-material-card",
-                    {
-                      staticStyle: { opacity: "0.8" },
-                      attrs: {
-                        color: "success",
-                        dark: "",
-                        icon: "mdi-login",
-                        title: "Welcome, Driving Test"
-                      }
-                    },
-                    [
-                      _c("ValidationObserver", {
-                        ref: "observer",
-                        scopedSlots: _vm._u([
-                          {
-                            key: "default",
-                            fn: function(ref) {
-                              var handleSubmit = ref.handleSubmit
-                              var valid = ref.valid
-                              return [
-                                _c(
-                                  "form",
-                                  [
-                                    _c("ValidationProvider", {
-                                      attrs: {
-                                        name: "email",
-                                        rules: "required|email"
-                                      },
-                                      scopedSlots: _vm._u(
-                                        [
-                                          {
-                                            key: "default",
-                                            fn: function(ref) {
-                                              var errors = ref.errors
-                                              return [
-                                                _c("v-text-field", {
-                                                  attrs: {
-                                                    "error-messages": errors,
-                                                    label: "E-mail",
-                                                    required: ""
-                                                  },
-                                                  model: {
-                                                    value: _vm.access.email,
-                                                    callback: function($$v) {
-                                                      _vm.$set(
-                                                        _vm.access,
-                                                        "email",
-                                                        $$v
-                                                      )
-                                                    },
-                                                    expression: "access.email"
-                                                  }
-                                                })
-                                              ]
-                                            }
-                                          }
-                                        ],
-                                        null,
-                                        true
-                                      )
-                                    }),
-                                    _vm._v(" "),
-                                    _c("ValidationProvider", {
-                                      attrs: {
-                                        name: "Password",
-                                        rules: "required|max:10"
-                                      },
-                                      scopedSlots: _vm._u(
-                                        [
-                                          {
-                                            key: "default",
-                                            fn: function(ref) {
-                                              var errors = ref.errors
-                                              return [
-                                                _c("v-text-field", {
-                                                  attrs: {
-                                                    "error-messages": errors,
-                                                    label: "Password",
-                                                    type: "password",
-                                                    required: ""
-                                                  },
-                                                  model: {
-                                                    value: _vm.access.password,
-                                                    callback: function($$v) {
-                                                      _vm.$set(
-                                                        _vm.access,
-                                                        "password",
-                                                        $$v
-                                                      )
-                                                    },
-                                                    expression:
-                                                      "access.password"
-                                                  }
-                                                })
-                                              ]
-                                            }
-                                          }
-                                        ],
-                                        null,
-                                        true
-                                      )
-                                    }),
-                                    _vm._v(" "),
-                                    _c("br"),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-btn",
-                                      {
-                                        class: "mr-4 " + (!valid || "success"),
-                                        attrs: {
-                                          loading: _vm.loading,
-                                          disabled: _vm.loading
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return handleSubmit(_vm.signIn)
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Login\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            }
-                          }
-                        ])
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-snackbar",
-            {
-              attrs: { timeout: _vm.timeout, top: "" },
+  return _c("div", { staticClass: "container-main" }, [
+    _c(
+      "div",
+      { staticClass: "login-card" },
+      [
+        _c(
+          "base-material-card",
+          {
+            attrs: {
+              color: "success",
+              icon: "mdi-login",
+              title: "Welcome, Driving Test"
+            }
+          },
+          [
+            _c("ValidationObserver", {
+              ref: "observer",
               scopedSlots: _vm._u([
                 {
-                  key: "action",
+                  key: "default",
                   fn: function(ref) {
-                    var attrs = ref.attrs
+                    var handleSubmit = ref.handleSubmit
+                    var valid = ref.valid
                     return [
                       _c(
-                        "v-btn",
-                        _vm._b(
-                          {
-                            attrs: { color: "red", text: "" },
-                            on: {
-                              click: function($event) {
-                                _vm.snackbar = false
-                              }
-                            }
-                          },
-                          "v-btn",
-                          attrs,
-                          false
-                        ),
+                        "form",
                         [
-                          _vm._v(
-                            "\n                    Close\n                "
+                          _c("ValidationProvider", {
+                            attrs: { name: "email", rules: "required|email" },
+                            scopedSlots: _vm._u(
+                              [
+                                {
+                                  key: "default",
+                                  fn: function(ref) {
+                                    var errors = ref.errors
+                                    return [
+                                      _c("v-text-field", {
+                                        attrs: {
+                                          "error-messages": errors,
+                                          label: "E-mail",
+                                          required: ""
+                                        },
+                                        model: {
+                                          value: _vm.access.email,
+                                          callback: function($$v) {
+                                            _vm.$set(_vm.access, "email", $$v)
+                                          },
+                                          expression: "access.email"
+                                        }
+                                      })
+                                    ]
+                                  }
+                                }
+                              ],
+                              null,
+                              true
+                            )
+                          }),
+                          _vm._v(" "),
+                          _c("ValidationProvider", {
+                            attrs: {
+                              name: "Password",
+                              rules: "required|max:10"
+                            },
+                            scopedSlots: _vm._u(
+                              [
+                                {
+                                  key: "default",
+                                  fn: function(ref) {
+                                    var errors = ref.errors
+                                    return [
+                                      _c("v-text-field", {
+                                        attrs: {
+                                          "error-messages": errors,
+                                          label: "Password",
+                                          type: "password",
+                                          required: ""
+                                        },
+                                        model: {
+                                          value: _vm.access.password,
+                                          callback: function($$v) {
+                                            _vm.$set(
+                                              _vm.access,
+                                              "password",
+                                              $$v
+                                            )
+                                          },
+                                          expression: "access.password"
+                                        }
+                                      })
+                                    ]
+                                  }
+                                }
+                              ],
+                              null,
+                              true
+                            )
+                          }),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "d-flex justify-center" },
+                            [
+                              _c(
+                                "v-btn",
+                                {
+                                  class: "mr-4 " + (!valid || "success"),
+                                  attrs: {
+                                    loading: _vm.loading,
+                                    disabled: _vm.loading,
+                                    text: "",
+                                    rounded: "",
+                                    color: "success"
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      return handleSubmit(_vm.signIn)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Let's go\n                    ")]
+                              )
+                            ],
+                            1
                           )
-                        ]
+                        ],
+                        1
                       )
                     ]
                   }
                 }
-              ]),
-              model: {
-                value: _vm.snackbar,
-                callback: function($$v) {
-                  _vm.snackbar = $$v
-                },
-                expression: "snackbar"
-              }
-            },
-            [_vm._v("\n            " + _vm._s(_vm.text) + "\n\n            ")]
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
+              ])
+            })
+          ],
+          1
+        )
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -80287,9 +80172,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VSnackbar */ "./node_modules/vuetify/lib/components/VSnackbar/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -80313,11 +80196,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-
-
-
-
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"],VSnackbar: vuetify_lib_components_VSnackbar__WEBPACK_IMPORTED_MODULE_7__["VSnackbar"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_8__["VTextField"]})
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__["VTextField"]})
 
 
 /* hot reload */
