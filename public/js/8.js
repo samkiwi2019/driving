@@ -874,9 +874,11 @@ var render = function() {
                     fn: function(ref) {
                       var item = ref.item
                       return [
-                        _c("v-img", {
-                          attrs: { "aspect-ratio": "1", src: item.image }
-                        })
+                        item.image
+                          ? _c("v-img", {
+                              attrs: { "aspect-ratio": "1", src: item.image }
+                            })
+                          : _vm._e()
                       ]
                     }
                   },

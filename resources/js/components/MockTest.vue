@@ -46,7 +46,8 @@
                                                 ></v-checkbox>
                                             </v-list-item-action>
                                             <v-list-item-content>
-                                                {{item.description}}
+                                                    <div>{{item.description}}</div>
+                                                    <v-img v-if="item.image" :src="item.image" aspect-ratio="6" contain></v-img>
                                             </v-list-item-content>
                                             <v-list-item-action>
                                                 <v-scroll-x-transition>
@@ -75,7 +76,7 @@
                                 </div>
                                 <v-btn v-if="isLastOne" color="primary" dark @click="finished">Finished</v-btn>
                                 <v-btn v-else :rounded="!status" color="primary" dark @click="toggleStatus()">{{ !status ?
-                                    'Confirm' : 'Next Question'}}
+                                    'Confirm' : 'Next'}}
                                 </v-btn>
                             </div>
                             <v-divider></v-divider>
@@ -95,7 +96,7 @@
                             <v-slide-y-reverse-transition>
                                 <div v-if="status">
                                     <v-subheader >Description</v-subheader>
-                                    <div class="mt-2 font-weight-light" v-html="currentItem.description"></div>
+                                    <div class="mt-2 font-weight-light d-flex flex-wrap" v-html="currentItem.description || 'No Explanation'"></div>
                                 </div>
                             </v-slide-y-reverse-transition>
                         </base-material-card>

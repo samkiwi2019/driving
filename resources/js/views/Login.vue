@@ -44,7 +44,7 @@
                 </ValidationObserver>
                 <v-divider></v-divider>
                 <p class="subtitle-1 font-weight-light mt-5">
-                    Don't have an account? <a href="/register" class="text-decoration-underline">Sign up</a>
+                    Don't have an account? <v-btn text to="/register" color="primary">Sign up</v-btn>
                 </p>
             </base-material-card>
         </div>

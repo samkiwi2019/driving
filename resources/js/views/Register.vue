@@ -73,7 +73,7 @@
                 </ValidationObserver>
                 <v-divider></v-divider>
                 <p class="subtitle-1 font-weight-light mt-5">
-                    Already have an account? <a href="/login" class="text-decoration-underline">Login</a>
+                    Already have an account? <v-btn text to="/login" color="primary">Login</v-btn>
                 </p>
             </base-material-card>
         </div>

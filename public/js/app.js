@@ -2999,9 +2999,6 @@ __webpack_require__.r(__webpack_exports__);
     return {
       expandOnHover: false
     };
-  },
-  created: function created() {
-    this.$store.dispatch('user/getUserAction', this.$route);
   }
 });
 
@@ -19246,17 +19243,19 @@ var render = function() {
             _vm._v(" "),
             _c("v-divider"),
             _vm._v(" "),
-            _c("p", { staticClass: "subtitle-1 font-weight-light mt-5" }, [
-              _vm._v("\n                Don't have an account? "),
-              _c(
-                "a",
-                {
-                  staticClass: "text-decoration-underline",
-                  attrs: { href: "/register" }
-                },
-                [_vm._v("Sign up")]
-              )
-            ])
+            _c(
+              "p",
+              { staticClass: "subtitle-1 font-weight-light mt-5" },
+              [
+                _vm._v("\n                Don't have an account? "),
+                _c(
+                  "v-btn",
+                  { attrs: { text: "", to: "/register", color: "primary" } },
+                  [_vm._v("Sign up")]
+                )
+              ],
+              1
+            )
           ],
           1
         )
@@ -80598,11 +80597,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var state = {
   mockItems: [],
-  index: 0,
-  // current index of mockItems
-  type: "",
-  // current type of quiz
-  length: 30 // how many quizzes will be got. only works on mock model.
+  index: 0 // current index of mockItems
 
 }; // getters
 
@@ -80636,6 +80631,8 @@ var actions = {
                     });
                   });
                   commit('SET_MOCK_ITEMS', items);
+                  commit('SET_INDEX', 0); // init index
+
                   resolve('finished');
                 }
 
@@ -80662,12 +80659,6 @@ var mutations = {
   },
   SET_INDEX: function SET_INDEX(state, payload) {
     state.index = payload;
-  },
-  SET_TYPE: function SET_TYPE(state, payload) {
-    state.type = payload;
-  },
-  SET_LENGTH: function SET_LENGTH(state, payload) {
-    state.length = payload;
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({

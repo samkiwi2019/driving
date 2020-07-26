@@ -136,6 +136,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "mockTest",
@@ -503,15 +504,30 @@ var render = function() {
                                                     1
                                                   ),
                                                   _vm._v(" "),
-                                                  _c("v-list-item-content", [
-                                                    _vm._v(
-                                                      "\n                                            " +
-                                                        _vm._s(
-                                                          item.description
-                                                        ) +
-                                                        "\n                                        "
-                                                    )
-                                                  ]),
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("div", [
+                                                        _vm._v(
+                                                          _vm._s(
+                                                            item.description
+                                                          )
+                                                        )
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      item.image
+                                                        ? _c("v-img", {
+                                                            attrs: {
+                                                              src: item.image,
+                                                              "aspect-ratio":
+                                                                "6",
+                                                              contain: ""
+                                                            }
+                                                          })
+                                                        : _vm._e()
+                                                    ],
+                                                    1
+                                                  ),
                                                   _vm._v(" "),
                                                   _c(
                                                     "v-list-item-action",
@@ -651,9 +667,7 @@ var render = function() {
                                         [
                                           _vm._v(
                                             _vm._s(
-                                              !_vm.status
-                                                ? "Confirm"
-                                                : "Next Question"
+                                              !_vm.status ? "Confirm" : "Next"
                                             ) + "\n                            "
                                           )
                                         ]
@@ -708,10 +722,12 @@ var render = function() {
                                         ]),
                                         _vm._v(" "),
                                         _c("div", {
-                                          staticClass: "mt-2 font-weight-light",
+                                          staticClass:
+                                            "mt-2 font-weight-light d-flex flex-wrap",
                                           domProps: {
                                             innerHTML: _vm._s(
-                                              _vm.currentItem.description
+                                              _vm.currentItem.description ||
+                                                "No Explanation"
                                             )
                                           }
                                         })

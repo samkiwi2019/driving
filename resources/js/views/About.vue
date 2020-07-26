@@ -29,6 +29,9 @@
                                 <br>
                                 <br>
                                 For logged users, their answers will be recorded on their record pages.
+                                <br>
+                                <br>
+                                Site author: <strong :style="`color:${$vuetify.theme.themes['light'].primary}`">sam.kiwi2019@gmail.com</strong>
                             </p>
 
                         </v-card-text>

@@ -122,7 +122,7 @@
                         </v-icon>
                     </template>
                     <template v-slot:item.image="{ item }">
-                        <v-img aspect-ratio="1" :src="item.image"></v-img>
+                        <v-img aspect-ratio="1" :src="item.image" v-if="item.image"></v-img>
                     </template>
                     <template v-slot:item.type="{ item }">
                         <v-chip dark>{{getTypeOfQuiz(item.type)}}</v-chip>

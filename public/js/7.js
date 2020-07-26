@@ -445,17 +445,19 @@ var render = function() {
             _vm._v(" "),
             _c("v-divider"),
             _vm._v(" "),
-            _c("p", { staticClass: "subtitle-1 font-weight-light mt-5" }, [
-              _vm._v("\n                Already have an account? "),
-              _c(
-                "a",
-                {
-                  staticClass: "text-decoration-underline",
-                  attrs: { href: "/login" }
-                },
-                [_vm._v("Login")]
-              )
-            ])
+            _c(
+              "p",
+              { staticClass: "subtitle-1 font-weight-light mt-5" },
+              [
+                _vm._v("\n                Already have an account? "),
+                _c(
+                  "v-btn",
+                  { attrs: { text: "", to: "/login", color: "primary" } },
+                  [_vm._v("Login")]
+                )
+              ],
+              1
+            )
           ],
           1
         )

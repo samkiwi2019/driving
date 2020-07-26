@@ -50,6 +50,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About"
 });
@@ -165,7 +168,20 @@ var render = function() {
                           _vm._v(" "),
                           _c("br"),
                           _vm._v(
-                            "\n                            For logged users, their answers will be recorded on their record pages.\n                        "
+                            "\n                            For logged users, their answers will be recorded on their record pages.\n                            "
+                          ),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v("\n                            Site author: "),
+                          _c(
+                            "strong",
+                            {
+                              style:
+                                "color:" +
+                                _vm.$vuetify.theme.themes["light"].primary
+                            },
+                            [_vm._v("sam.kiwi2019@gmail.com")]
                           )
                         ])
                       ])

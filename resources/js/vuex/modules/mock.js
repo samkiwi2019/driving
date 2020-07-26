@@ -3,8 +3,6 @@ import {getMockList} from "_a/admin";
 const state = {
     mockItems: [],
     index: 0, // current index of mockItems
-    type: "", // current type of quiz
-    length: 30, // how many quizzes will be got. only works on mock model.
 }
 
 // getters
@@ -21,7 +19,8 @@ const actions = {
                     ...item,
                     marked: null, // save users' answer if it is correct.
                 }))
-                commit('SET_MOCK_ITEMS', items)
+                commit('SET_MOCK_ITEMS', items);
+                commit('SET_INDEX', 0); // init index
                 resolve('finished')
             }
             resolve('finished')
@@ -37,12 +36,6 @@ const mutations = {
     },
     SET_INDEX(state, payload) {
         state.index = payload
-    },
-    SET_TYPE(state, payload) {
-        state.type = payload
-    },
-    SET_LENGTH(state, payload) {
-        state.length = payload
     },
 }
 
