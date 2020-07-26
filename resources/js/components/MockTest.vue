@@ -142,6 +142,7 @@
             ...mapState({
                 mockItems: state => state.mock.mockItems,
                 index: state => state.mock.index,
+                user: state => state.user.user,
             }),
             currentItem() {
                 const items = [...this.mockItems];
@@ -189,6 +190,7 @@
         methods: {
             ...mapActions({
                 getMockItems: "mock/getMockItems",
+                createRecordItem: "record/createRecordItem",
             }),
             ...mapMutations({
                 setIndex: "mock/SET_INDEX",
@@ -213,6 +215,9 @@
                 const arr = [...this.currentItem.options]
                 const usersAnswers = items.map(n => this.currentItem.options[n].id).sort((a,b) => b - a);
                 const corrects = arr.filter(item => item.is_correct).map(item => item.id).sort((a,b) => b - a)
+                if(this.$route.name === 'mock'){
+                    this.createRecordItem({user_id:this.user.id, quiz_id:this.currentItem.id, my_answers:usersAnswers.join(',')})
+                }
                 return JSON.stringify(usersAnswers) === JSON.stringify(corrects)
             },
             toggleStatus() {
@@ -228,7 +233,7 @@
                     }, 500)
                 }else{
                     const items = [...this.mockItems]
-                    items[this.index].marked =  this.checkUsersAnswers()
+                    items[this.index].marked =  this.checkUsersAnswers();
                     this.setMockItems(items)
                 }
                 this.status = !this.status

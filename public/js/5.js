@@ -165,6 +165,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     index: function index(state) {
       return state.mock.index;
+    },
+    user: function user(state) {
+      return state.user.user;
     }
   })), {}, {
     currentItem: function currentItem() {
@@ -219,7 +222,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   },
   methods: _objectSpread(_objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])({
-    getMockItems: "mock/getMockItems"
+    getMockItems: "mock/getMockItems",
+    createRecordItem: "record/createRecordItem"
   })), Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])({
     setIndex: "mock/SET_INDEX",
     setMockItems: "mock/SET_MOCK_ITEMS"
@@ -260,6 +264,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }).sort(function (a, b) {
         return b - a;
       });
+
+      if (this.$route.name === 'mock') {
+        this.createRecordItem({
+          user_id: this.user.id,
+          quiz_id: this.currentItem.id,
+          my_answers: usersAnswers.join(',')
+        });
+      }
+
       return JSON.stringify(usersAnswers) === JSON.stringify(corrects);
     },
     toggleStatus: function toggleStatus() {

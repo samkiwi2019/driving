@@ -48,6 +48,12 @@ export const getUser = () => {
         method: 'post'
     })
 }
+export const getVisitors = () => {
+    return axios.request({
+        url: '/api/v1/visitors',
+        method: 'get'
+    })
+}
 
 /**
  * Get all quizzes (require: Authorization)
@@ -172,5 +178,36 @@ export const getMockList = (data) => {
         method: 'get'
     })
 }
+
+
+/**
+ * Create a Record (require: Authorization and security level 11)
+ * @param {object} data
+ * @param {int} data.quiz_id required
+ * @param {int} data.user_id required
+ * @param {string} data.user_answers  1,2,3,4,5
+ * @returns {Promise}
+ * */
+export const createRecord = (data) => {
+    return axios.request({
+        url: '/api/v1/record',
+        data: data,
+        method: 'post'
+    })
+}
+export const getRecords = (data) => {
+    return axios.request({
+        url: '/api/v1/record',
+        params: data,
+        method: 'get'
+    })
+}
+export const deleteRecord = (id) => {
+    return axios.request({
+        url: `/api/v1/record/${id}`,
+        method: 'delete'
+    })
+}
+
 
 

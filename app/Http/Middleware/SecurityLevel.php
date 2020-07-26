@@ -22,9 +22,16 @@ class SecurityLevel extends BaseMiddleware
         try {
             $user = JWTAuth::parseToken()->authenticate();
 
-            if($user->role < $role){
-                return response(["message" => "Your security level is not enough!"],200);
+            if($role == 'owner'){
+                if(!$user->hasRecord($request->route('id'))){
+                    return response(["message" => "This is not your item!"],200);
+                }
+            }else{
+                if($user->role < $role){
+                    return response(["message" => "Your security level is not enough!"],200);
+                }
             }
+
 
         } catch (Exception $e) {
             if ($e instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException){

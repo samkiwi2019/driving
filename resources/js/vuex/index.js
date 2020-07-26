@@ -6,6 +6,7 @@ import quiz from './modules/quiz'
 import customer from './modules/customer'
 import mock from './modules/mock'
 import notice from './modules/notice'
+import record from './modules/record'
 
 Vue.use(Vuex);
 
@@ -16,7 +17,8 @@ export default new Vuex.Store({
         quiz,
         customer,
         notice,
-        mock
+        mock,
+        record
     },
     state: {
 

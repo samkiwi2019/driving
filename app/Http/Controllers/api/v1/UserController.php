@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
+use App\Quiz;
+use App\Record;
 use App\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -161,5 +163,15 @@ class UserController extends Controller
         User::find($id)
             ->delete();
         return response(["message" => "successful"], 200);
+    }
+
+    public function visitors()
+    {
+        $all = User::all();
+        $times = $all->sum('login_times');
+        $user_total = $all->count();
+        $quiz_total= Quiz::all()->count();
+        $record_total= Record::all()->count();
+        return response(["visitors_count" => $times, "users_count" => $user_total, 'quizzes_count' => $quiz_total, 'records_count' => $record_total], 200);
     }
 }

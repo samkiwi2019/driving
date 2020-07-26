@@ -51,7 +51,7 @@ class HttpRequest {
             }
             if(errorInfo.status === 401){
                 localStorage.removeItem('access_token');
-                window.location.reload();
+                window.location.href = '/login'
             }
             return Promise.reject(errorInfo)
         })

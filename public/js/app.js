@@ -77958,7 +77958,7 @@ module.exports = g;
 /*!***********************************!*\
   !*** ./resources/js/api/admin.js ***!
   \***********************************/
-/*! exports provided: register, login, logout, getUser, getCustomers, createUser, updateUser, deleteUserById, getQuizList, addQuiz, updateQuiz, deleteQuiz, getMockList */
+/*! exports provided: register, login, logout, getUser, getVisitors, getCustomers, createUser, updateUser, deleteUserById, getQuizList, addQuiz, updateQuiz, deleteQuiz, getMockList, createRecord, getRecords, deleteRecord */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77967,6 +77967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getVisitors", function() { return getVisitors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCustomers", function() { return getCustomers; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUser", function() { return createUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
@@ -77976,6 +77977,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateQuiz", function() { return updateQuiz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteQuiz", function() { return deleteQuiz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMockList", function() { return getMockList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createRecord", function() { return createRecord; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRecords", function() { return getRecords; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteRecord", function() { return deleteRecord; });
 /* harmony import */ var _api_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.request */ "./resources/js/api/api.request.js");
 
 /**
@@ -78026,6 +78030,12 @@ var getUser = function getUser() {
   return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
     url: '/api/v1/me',
     method: 'post'
+  });
+};
+var getVisitors = function getVisitors() {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/visitors',
+    method: 'get'
   });
 };
 /**
@@ -78144,6 +78154,35 @@ var getMockList = function getMockList(data) {
     url: '/api/v1/mock',
     params: data,
     method: 'get'
+  });
+};
+/**
+ * Create a Record (require: Authorization and security level 11)
+ * @param {object} data
+ * @param {int} data.quiz_id required
+ * @param {int} data.user_id required
+ * @param {string} data.user_answers  1,2,3,4,5
+ * @returns {Promise}
+ * */
+
+var createRecord = function createRecord(data) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/record',
+    data: data,
+    method: 'post'
+  });
+};
+var getRecords = function getRecords(data) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: '/api/v1/record',
+    params: data,
+    method: 'get'
+  });
+};
+var deleteRecord = function deleteRecord(id) {
+  return _api_request__WEBPACK_IMPORTED_MODULE_0__["default"].request({
+    url: "/api/v1/record/".concat(id),
+    method: 'delete'
   });
 };
 
@@ -78270,7 +78309,7 @@ var HttpRequest = /*#__PURE__*/function () {
 
         if (errorInfo.status === 401) {
           localStorage.removeItem('access_token');
-          window.location.reload();
+          window.location.href = '/login';
         }
 
         return Promise.reject(errorInfo);
@@ -80294,6 +80333,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_customer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/customer */ "./resources/js/vuex/modules/customer.js");
 /* harmony import */ var _modules_mock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/mock */ "./resources/js/vuex/modules/mock.js");
 /* harmony import */ var _modules_notice__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/notice */ "./resources/js/vuex/modules/notice.js");
+/* harmony import */ var _modules_record__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/record */ "./resources/js/vuex/modules/record.js");
+
 
 
 
@@ -80310,7 +80351,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
     quiz: _modules_quiz__WEBPACK_IMPORTED_MODULE_4__["default"],
     customer: _modules_customer__WEBPACK_IMPORTED_MODULE_5__["default"],
     notice: _modules_notice__WEBPACK_IMPORTED_MODULE_7__["default"],
-    mock: _modules_mock__WEBPACK_IMPORTED_MODULE_6__["default"]
+    mock: _modules_mock__WEBPACK_IMPORTED_MODULE_6__["default"],
+    record: _modules_record__WEBPACK_IMPORTED_MODULE_8__["default"]
   },
   state: {},
   mutations: {},
@@ -80906,6 +80948,170 @@ var actions = {
 var mutations = {
   SET_QUIZ_ITEMS: function SET_QUIZ_ITEMS(state, payload) {
     state.quizItems = payload;
+  },
+  SET_PAGE: function SET_PAGE(state, payload) {
+    state.page = payload;
+  },
+  SET_SIZE: function SET_SIZE(state, payload) {
+    state.size = payload;
+  },
+  SET_TOTAL: function SET_TOTAL(state, payload) {
+    state.total = payload;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/js/vuex/modules/record.js":
+/*!*********************************************!*\
+  !*** ./resources/js/vuex/modules/record.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _a_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! _a/admin */ "./resources/js/api/admin.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+var state = {
+  recordItems: [],
+  size: 10,
+  page: 0,
+  total: 0
+}; // getters
+
+var getters = {}; // actions
+
+var actions = {
+  createRecordItem: function createRecordItem(_ref, payload) {
+    var commit = _ref.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve) {
+        var _yield$createRecord, data, status;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["createRecord"])(payload);
+
+              case 2:
+                _yield$createRecord = _context.sent;
+                data = _yield$createRecord.data;
+                status = _yield$createRecord.status;
+
+                if (status === 200) {
+                  resolve(data);
+                }
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref2.apply(this, arguments);
+      };
+    }());
+  },
+  getRecordItems: function getRecordItems(_ref3, payload) {
+    var commit = _ref3.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref4 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(resolve) {
+        var _yield$getRecords, data, status;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getRecords"])(payload);
+
+              case 2:
+                _yield$getRecords = _context2.sent;
+                data = _yield$getRecords.data;
+                status = _yield$getRecords.status;
+
+                if (status === 200) {
+                  commit('SET_RECORD_ITEMS', data.data.items);
+                  commit('SET_PAGE', data.data.page);
+                  commit('SET_TOTAL', data.data.total);
+                }
+
+                resolve("finished");
+
+              case 7:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+
+      return function (_x2) {
+        return _ref4.apply(this, arguments);
+      };
+    }());
+  },
+  deleteRecordById: function deleteRecordById(_ref5, id) {
+    var commit = _ref5.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref6 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(resolve) {
+        var _yield$deleteRecord, data, status;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["deleteRecord"])(id);
+
+              case 2:
+                _yield$deleteRecord = _context3.sent;
+                data = _yield$deleteRecord.data;
+                status = _yield$deleteRecord.status;
+
+                if (status === 200) {
+                  resolve(data);
+                }
+
+              case 6:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x3) {
+        return _ref6.apply(this, arguments);
+      };
+    }());
+  }
+}; // mutations
+
+var mutations = {
+  SET_RECORD_ITEMS: function SET_RECORD_ITEMS(state, payload) {
+    state.recordItems = payload;
   },
   SET_PAGE: function SET_PAGE(state, payload) {
     state.page = payload;

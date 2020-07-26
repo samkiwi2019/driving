@@ -46,6 +46,7 @@ Route::group([
     Route::post('/user', 'api\v1\UserController@create')->name("user.create")->middleware('security:11');
     Route::put('/user/{id}', 'api\v1\UserController@update')->name("user.update")->middleware('security:11');
     Route::delete('/user/{id}', 'api\v1\UserController@destroy')->name('user.destroy')->middleware('security:11');
+    Route::get('/visitors', 'api\v1\UserController@visitors')->name("user.visitors");
 
     // quiz-related
     Route::get('/quiz', 'api\v1\QuizController@index')->name("quiz.index");
@@ -53,4 +54,8 @@ Route::group([
     Route::put('/quiz/{id}', 'api\v1\QuizController@update')->name("quiz.update")->middleware('security:11');
     Route::delete('/quiz/{id}', 'api\v1\QuizController@destroy')->name("quiz.destroy")->middleware('security:11');
 
+    // record-related
+    Route::get('/record', 'api\v1\RecordController@index')->name("record.index");
+    Route::post('/record', 'api\v1\RecordController@create')->name("record.create");
+    Route::delete('/record/{id}', 'api\v1\RecordController@destroy')->name("record.destroy")->middleware('security:owner');
 });

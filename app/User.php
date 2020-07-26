@@ -62,4 +62,8 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasMany(record::class)->orderBy('created_at', 'DESC');
     }
+
+    public function hasRecord($id){
+        return !!($this->hasMany(record::class)->where('id',$id)->count());
+    }
 }
