@@ -15,10 +15,11 @@ class CreateOptionsTable extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('quiz_id');
+            $table->foreignId('quiz_id')->constrained();
             $table->string("description", 255);
-            $table->string("language");
-            $table->integer("is_true");
+            $table->string("image")->nullable();
+            $table->string("i18n");
+            $table->boolean("is_correct");
             $table->timestamps();
 
             $table->index('quiz_id');

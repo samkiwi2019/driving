@@ -7,13 +7,18 @@
         <v-row justify="center">
             <v-col
                 cols="12"
-                lg="11"
             >
                 <v-data-table
                     :headers="headers"
-                    :items="desserts"
+                    :items="quizItems"
                     sort-by="correct_rate"
                     class="elevation-4"
+                    :server-items-length="total"
+                    :options.sync="options"
+                    :loading="loading"
+                    hide-default-footer
+                    :page.sync="page"
+                    @page-count="pageCount = $event"
                 >
                     <template v-slot:top>
                         <v-toolbar flat color="dark">
@@ -49,24 +54,44 @@
                                         <v-container>
                                             <v-row>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.name"
-                                                                  label="Dessert name"></v-text-field>
+                                                    <v-text-field v-model="editedItem.question"
+                                                                  label="Question"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.calories"
-                                                                  label="Calories"></v-text-field>
+                                                    <v-text-field v-model="editedItem.audio"
+                                                                  label="Audio"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.fat"
-                                                                  label="Fat (g)"></v-text-field>
+                                                    <v-select
+                                                        v-model="editedItem.i18n"
+                                                        :items="i18ns"
+                                                        label="i18n"
+                                                    ></v-select>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.carbs"
-                                                                  label="Carbs (g)"></v-text-field>
+                                                    <v-text-field v-model="editedItem.image"
+                                                                  label="Image"></v-text-field>
                                                 </v-col>
                                                 <v-col cols="12" sm="6" md="4">
-                                                    <v-text-field v-model="editedItem.protein"
-                                                                  label="Protein (g)"></v-text-field>
+                                                    <v-select
+                                                        v-model="editedItem.type"
+                                                        :items="types"
+                                                        label="Type"
+                                                    ></v-select>
+                                                </v-col>
+                                                <v-col cols="12" sm="6" md="4">
+                                                    <v-select
+                                                        v-model="editedItem.input"
+                                                        :items="inputs"
+                                                        label="Role"
+                                                    ></v-select>
+                                                </v-col>
+                                                <v-col cols="12">
+                                                    <v-textarea
+                                                        v-model="editedItem.description"
+                                                        label="Description"
+                                                        hint="Description"
+                                                    ></v-textarea>
                                                 </v-col>
                                             </v-row>
                                         </v-container>
@@ -96,53 +121,89 @@
                             mdi-delete
                         </v-icon>
                     </template>
-                    <template v-slot:no-data>
-                        <v-btn color="primary" @click="initialize">Reset</v-btn>
+                    <template v-slot:item.image="{ item }">
+                        <v-img aspect-ratio="1" :src="item.image" v-if="item.image"></v-img>
+                    </template>
+                    <template v-slot:item.type="{ item }">
+                        <v-chip dark>{{getTypeOfQuiz(item.type)}}</v-chip>
+                    </template>
+                    <template v-slot:footer>
+                           <p class="pl-4 pt-4 pb-4">Total records: {{total}} </p>
                     </template>
                 </v-data-table>
+            </v-col>
+            <v-col cols="12" v-if="pageCount">
+                <v-pagination v-model="page" :length="pageCount" :total-visible="7"></v-pagination>
             </v-col>
         </v-row>
     </v-container>
 </template>
 
 <script>
+    import {mapState, mapActions} from 'vuex'
+
     export default {
         data: () => ({
             dialog: false,
+            pageCount:0,
+            options:{},
+            loading:false,
+            i18ns:['en'],
+            inputs:['Radio', 'Checkbox'],
+            types:['1','2','3','4','5','6','7','8'],
             headers: [
                 {
-                    text: 'Dessert (100g serving)',
+                    text: 'ID',
                     align: 'start',
                     sortable: false,
-                    value: 'name',
+                    value: 'id',
                 },
-                {text: 'Calories', value: 'calories'},
-                {text: 'Fat (g)', value: 'fat'},
-                {text: 'Carbs (g)', value: 'carbs'},
-                {text: 'Protein (g)', value: 'protein'},
+                {text: 'Question', sortable: false, value: 'question'},
+                {text: 'i18n', sortable: false, value: 'i18n'},
+                {text: 'Image', sortable: false, value: 'image'},
+                {text: 'Type', sortable: false, value: 'type'},
+                {text: 'Input', sortable: false, value: 'input'},
                 {text: 'Actions', value: 'actions', sortable: false},
             ],
             desserts: [],
             editedIndex: -1,
             editedItem: {
-                name: '',
-                calories: 0,
-                fat: 0,
-                carbs: 0,
-                protein: 0,
+                question: '',
+                audio:'',
+                description: '',
+                i18n: 'en',
+                image: '',
+                type: '',
+                input: '',
             },
             defaultItem: {
-                name: '',
-                calories: 0,
-                fat: 0,
-                carbs: 0,
-                protein: 0,
+                question: '',
+                audio:'',
+                description: '',
+                i18n: 'en',
+                image: '',
+                type: '',
+                input: '',
             },
         }),
 
         computed: {
+            ...mapState({
+                size: state => state.quiz.size,
+                type: state => state.quiz.type,
+                total: state => state.quiz.total,
+                quizItems: state => state.quiz.quizItems,
+            }),
             formTitle() {
                 return this.editedIndex === -1 ? 'New Item' : 'Edit Item'
+            },
+            page: {
+                get() {
+                    return this.$store.state.quiz.page;
+                },
+                set(val) {
+                    return this.$store.commit("quiz/SET_PAGE", val);
+                }
             },
         },
 
@@ -150,97 +211,49 @@
             dialog(val) {
                 val || this.close()
             },
-        },
-
-        created() {
-            this.initialize()
+            options:{
+                deep: true,
+                handler (val) {
+                    let page = this.options.page;
+                    let itemsPerPage = this.options.itemsPerPage;
+                    if(this.options.itemsPerPage === -1){
+                        itemsPerPage = this.total
+                    }
+                    this.getQuizItems(page, itemsPerPage)
+                },
+            }
         },
 
         methods: {
-            initialize() {
-                this.desserts = [
-                    {
-                        name: 'Frozen Yogurt',
-                        calories: 159,
-                        fat: 6.0,
-                        carbs: 24,
-                        protein: 4.0,
-                    },
-                    {
-                        name: 'Ice cream sandwich',
-                        calories: 237,
-                        fat: 9.0,
-                        carbs: 37,
-                        protein: 4.3,
-                    },
-                    {
-                        name: 'Eclair',
-                        calories: 262,
-                        fat: 16.0,
-                        carbs: 23,
-                        protein: 6.0,
-                    },
-                    {
-                        name: 'Cupcake',
-                        calories: 305,
-                        fat: 3.7,
-                        carbs: 67,
-                        protein: 4.3,
-                    },
-                    {
-                        name: 'Gingerbread',
-                        calories: 356,
-                        fat: 16.0,
-                        carbs: 49,
-                        protein: 3.9,
-                    },
-                    {
-                        name: 'Jelly bean',
-                        calories: 375,
-                        fat: 0.0,
-                        carbs: 94,
-                        protein: 0.0,
-                    },
-                    {
-                        name: 'Lollipop',
-                        calories: 392,
-                        fat: 0.2,
-                        carbs: 98,
-                        protein: 0,
-                    },
-                    {
-                        name: 'Honeycomb',
-                        calories: 408,
-                        fat: 3.2,
-                        carbs: 87,
-                        protein: 6.5,
-                    },
-                    {
-                        name: 'Donut',
-                        calories: 452,
-                        fat: 25.0,
-                        carbs: 51,
-                        protein: 4.9,
-                    },
-                    {
-                        name: 'KitKat',
-                        calories: 518,
-                        fat: 26.0,
-                        carbs: 65,
-                        protein: 7,
-                    },
-                ]
+            ...mapActions({
+                addQuiz : 'quiz/addQuiz',
+                getQuizList : 'quiz/getQuizList',
+                updateQuizById : 'quiz/updateQuizById',
+                deleteQuizById : 'quiz/deleteQuizById',
+            }),
+            getQuizItems(page = this.page, size = this.size){
+                this.loading = true;
+                this.getQuizList({page: page, size: size, type: this.type}).then(() => {
+                    this.loading = false;
+                })
             },
-
+            getTypeOfQuiz(index) {
+                const items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"]
+                return items[index -1]
+            },
             editItem(item) {
-                this.editedIndex = this.desserts.indexOf(item)
+                this.editedIndex = this.quizItems.indexOf(item)
                 this.editedItem = Object.assign({}, item)
                 this.dialog = true
             },
 
             deleteItem(item) {
-                const index = this.desserts.indexOf(item)
-                confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1)
+                if (confirm('Are you sure you want to delete this item?')) {
+                    this.deleteQuizById(item.id).then((data) => {
+                        this.getQuizItems()
+                        this.$store.dispatch('notice/show', data.message)
+                    })
+                }
             },
 
             close() {
@@ -253,9 +266,16 @@
 
             save() {
                 if (this.editedIndex > -1) {
-                    Object.assign(this.desserts[this.editedIndex], this.editedItem)
+                    this.updateQuizById(this.editedItem).then((data) => {
+                        this.getQuizItems()
+                        this.$store.dispatch('notice/show', data.message)
+                    });
                 } else {
-                    this.desserts.push(this.editedItem)
+                    // New a quiz
+                    this.addQuiz(this.editedItem).then((data) => {
+                        this.getQuizItems()
+                        this.$store.dispatch('notice/show', data.message)
+                    });
                 }
                 this.close()
             },
@@ -263,7 +283,7 @@
     }
 </script>
 <style lang="scss" scoped>
-    .v-card--material-heading{
+    .v-card--material-heading {
         transform: translateY(-10px);
         border-radius: 4px;
     }

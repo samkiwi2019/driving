@@ -1,8 +1,11 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
+import Vuetify from 'vuetify/lib'
 import '../../sass/app.scss'
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+    components: {},
+    directives: {},
+})
 
 const theme = {
     primary: '#9C27b0',

@@ -34,13 +34,13 @@
                 </v-list-item-content>
             </v-list-item>
             <v-divider class="mb-1"/>
-            <v-subheader>User info</v-subheader>
+            <v-subheader>Administrator</v-subheader>
             <v-list-group>
                 <template v-slot:activator>
                     <v-list-item-avatar>
                         <img src="https://demos.creative-tim.com/material-dashboard-pro/assets/img/faces/avatar.jpg">
                     </v-list-item-avatar>
-                    <v-list-item-title>Jane Smith</v-list-item-title>
+                    <v-list-item-title>{{ user.nickname }}</v-list-item-title>
                 </template>
                 <v-list-item
                     link
@@ -50,6 +50,15 @@
                         <v-icon v-text="'mdi-face-profile-woman'"></v-icon>
                     </v-list-item-icon>
                     <v-list-item-title v-text="'My Profile'"></v-list-item-title>
+                </v-list-item>
+                <v-list-item
+                    link
+                    @click="logout"
+                >
+                    <v-list-item-icon>
+                        <v-icon v-text="'mdi-logout'"></v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title v-text="'Logout'"></v-list-item-title>
                 </v-list-item>
             </v-list-group>
         </v-list>
@@ -80,28 +89,13 @@
             <div/>
         </v-list>
 
-        <template v-slot:append>
-            <div class="pa-3">
-                <v-btn
-                    color="error"
-                    class="white--text"
-                    block
-                    @click="logout"
-                >
-                    Logout
-                    <v-icon right dark>mdi-logout</v-icon>
-                </v-btn>
-            </div>
-        </template>
     </v-navigation-drawer>
 </template>
 
 <script>
     // Utilities
 
-    import {createNamespacedHelpers} from 'vuex'
-
-    const {mapState} = createNamespacedHelpers('config');
+    import {mapState,mapActions} from 'vuex'
 
     export default {
         name: 'DashboardCoreDrawer',
@@ -127,15 +121,24 @@
                     to: '/admin/list',
                 },
                 {
-                    icon: 'mdi-account',
-                    title: 'about',
-                    to: '/admin/about',
+                    icon: 'mdi-account-group',
+                    title: 'users',
+                    to: '/admin/users',
                 },
+                // {
+                //     icon: 'mdi-account',
+                //     title: 'about',
+                //     to: '/admin/about',
+                // },
             ],
         }),
 
         computed: {
-            ...mapState(['barColor', 'barImage']),
+            ...mapState({
+                barColor: state => state.config.barColor,
+                barImage: state => state.config.barImage,
+                user: state => state.user.user
+            }),
             drawer: {
                 get() {
                     return this.$store.state.config.drawer
@@ -156,6 +159,9 @@
         },
 
         methods: {
+            ...mapActions({
+                logoutAction: 'user/logoutAction'
+            }),
             mapItem(item) {
                 return {
                     ...item,
@@ -164,13 +170,14 @@
                 }
             },
             logout(){
-                document.getElementById('logout-form').submit();
+                this.logoutAction();
+                // document.getElementById('logout-form').submit();
             }
         },
     }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     @import '../../../../../../node_modules/vuetify/src/styles/tools/rtl'
 
     #core-navigation-drawer

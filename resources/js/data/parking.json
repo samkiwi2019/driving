@@ -1,0 +1,1885 @@
+{
+    "data": {
+        "log_id": 17470501,
+        "questions": [
+            {
+                "id": 55,
+                "title": "What should you do when parking your vehicle next to the kerb when facing down a steep hill? Select all that apply.",
+                "description": "\u003Ch1\u003EParking on a hill\u003C\/h1\u003E\r\n\u003Cp\u003EThis section of the Road Code has been around for years. The reason you would do all of this is that older style handbrakes (which are the first line of resistance, and hold the rear wheels) have a tendency to slightly loosen after being pulled on if the mechanism was hot and then cools, so if you didn\u0027t have the handbrake on hard enough, the vehicle could roll forward in a car with a manual gearbox.\u003C\/p\u003E\r\n\u003Cp\u003EIn a manual car, putting the car into reverse is the second line of defence because it provides a lot of resistance because the engine will not want to turn over backwards, which is what will happen if the car starts to roll forwards. The opposite is true if you park uphill.\u003C\/p\u003E\r\n\u003Cp\u003EIn an automatic car, P (park) prevents the car from rolling forward.\u003C\/p\u003E\r\n\u003Cp\u003EThis video shows how a mechanical\u0026nbsp;hand brake (or \u0027parking brake\u0027) works.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ciframe src=\u0022https:\/\/www.youtube.com\/embed\/MqzD5-IRVQQ?rel=0\u0022 width=\u0022640\u0022 height=\u0022360\u0022 frameborder=\u00220\u0022 allowfullscreen=\u0022allowfullscreen\u0022\u003E\u003C\/iframe\u003E\u003C\/p\u003E\r\n\u003Cp\u003EModern cars have hydraulic hand brakes which provide the optimal amount of force.\u003C\/p\u003E\r\n\u003Cp\u003EIf the car does roll forward, pointing the wheels towards the kerb means that the car will roll into the kerb and, as long as it doesn\u0027t have too much speed, the kerb will stop it. If the wheels are angled outwards the car will turn towards\u0026nbsp;the traffic lanes creating a risk to other road users.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "55.mp3",
+                "video": null,
+                "permalink": "what-should-you-do-when-parking-your-veh",
+                "canonical": "roadcode-questions\/car\/parking\/when-parking-downhill-on-a-steep-road-wh\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 197,
+                        "isCorrect": true,
+                        "title": "Apply the handbrake",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 198,
+                        "isCorrect": true,
+                        "title": "Put the car into reverse gear if it has manual transmission",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 199,
+                        "isCorrect": true,
+                        "title": "Turn the wheels towards the kerb",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 200,
+                        "title": "Run the front and back wheels against the kerb",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 201,
+                        "title": "Turn the wheels away from the kerb",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 55,
+                    "correct_text": "Correct. Turning the wheels towards the kerb means if the handbrake\/parking brake fails the car will come to rest against the kerb and won\u0027t roll any further. If you have an automatic car, put it in Park.",
+                    "incorrect_text": "Turning the wheels towards the kerb means if the handbrake\/parking brake fails the car will come to rest against the kerb and won\u0027t roll any further. Putting it in reverse will provide a lot of engine braking.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 45,
+                "title": "When may you park your vehicle on a loading zone?",
+                "description": "\u003Ch1\u003EParking rules for loading zones\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYou can park your vehicle in a loading zone\u0026nbsp;at any time for the purposes of unloading, but you must not leave your vehicle for longer than the time displayed on the sign.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThere are various types of loading zones. They are created for vehicles that will need short term parking to pick up or drop off goods or passengers. Time limits vary but are usually 5 minutes.\u003C\/p\u003E\r\n\u003Cp\u003EThey are almost always situated with one end of them free to allow for easy unloading out of the back of vehicles like trucks and vans. They also tend to be located in areas where they will be the most use to goods vehicles, such as near hotels or near a cluster of restaurants or businesses that would receive regular deliveries.\u003C\/p\u003E\r\n\u003Cp\u003EA simple sign might advise that the area is a 5-minute loading zone. This means that any vehicle can use this loading zone for as long as they require to unload or load goods or passengers as long as the vehicle isn\u0027t left unattended for more than 5 minutes.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg style=\u0022float: left;\u0022 src=\u0022..\/..\/..\/..\/..\/..\/..\/media\/question-images\/5-min-maximum-goods-vehicles-only-loading-zone.png\u0022 alt=\u00225 minute maximum goods vehicles only loading zone\u0022 width=\u0022120\u0022 height=\u002250\u0022 \/\u003EThe loading zone sign might also have additional instructions on a supplementary plate indicating vehicle class and time restrictions. Examples could include \u0027Goods vehicles only\u0027 (which would restrict it to only commercial vehicles), \u00275 min MAXIMUM\u0027 (which means that the total time you are allowed to park in this loading zone is 5 minutes whether you remain with the vehicle or not) or \u00278am-6pm\u0027 (which defines the time the loading zone is a loading zone and not a regular car parking space.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "p5-sign.gif",
+                "audioName": "45.mp3",
+                "video": null,
+                "permalink": "when-may-you-may-park-your-vehicle-on-a-",
+                "canonical": "roadcode-questions\/car\/parking\/when-may-you-may-park-your-vehicle-on-a-\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 159,
+                        "title": "Never - they\u0027re only for commercial vehicles",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-07-17 15:32:06.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 160,
+                        "title": "You can park a car there after business hours and on weekends",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-07-17 15:32:06.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 161,
+                        "isCorrect": true,
+                        "title": "You can park at any time for the purposes of unloading, but you must not leave your vehicle for more than the time displayed on the sign",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-07-17 15:32:06.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 162,
+                        "title": "It\u0027s between midnight and 6am",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-07-17 15:32:06.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 163,
+                        "title": "At all times during business hours (8am to 6pm)",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-07-17 15:32:06.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 45,
+                    "correct_text": "However, if there\u0027s an additional sign underneath that specifically says the loading zone is for commercial vehicles only, you must not park a non-commercial vehicle there.",
+                    "incorrect_text": "You can park any vehicle in a loading zone for the purposes of unloading, but if there\u0027s an additional sign underneath that specifically only allows goods vehicles, then you must not park a private vehicle there.",
+                    "correct_image_name": "p5-goods-vehicles-sign.gif",
+                    "incorrect_image_name": "p5-goods-vehicles-sign.gif",
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 44,
+                "title": "What is the closest distance your vehicle may be parked to a vehicle entrance?",
+                "description": "\u003Ch1\u003EMinimum parking distances at intersections, pedestrian crossings, railways and driveways\u003C\/h1\u003E\r\n\u003Cp\u003EPermitted parking distances vary with the type of accessway or object. For example, while you can park 1m away from a driveway, you have to be at least 6m away from an intersection unless there are marked bays or signage saying you can park closer. \u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EParking any closer than six metres starts to significantly restrict visibility especially if the vehicle is an SUV or van which is taller than a car. As vehicles exit the intersection they will have to nose out further to see up the road and this puts them in danger. While some expensive cars have cameras that look up the road, most people will have to get their bonnet into the lane to be able to see, and that means that other vehicles have to swerve around it.\u003C\/p\u003E\r\n\u003Cp\u003ESix metres is a good compromise between using all the available parking and not restricting road users\u0027 visibility. On some intersections this isn\u0027t an issue and you might find marked bays or a parking line closer than six metres to the intersection.\u003C\/p\u003E\r\n\u003Ch3\u003EPedestrian crossings\u003C\/h3\u003E\r\n\u003Cp\u003EYou also must park at least 6m away from a pedestrian crossing - 6m is about 1.5 times the length of a medium-sized car. This is because your vehicle will obscure the view of pedestrians up the road, and obscure the view of the pedestrians from drivers driving towards the crossing.\u003C\/p\u003E\r\n\u003Cp\u003EThis is especially important for pedestrians who are visually impaired because drivers need to be able to see them as early as possible, and the pedestrians won\u0027t know that there\u0027s a vehicle blocking the view of the crossing.\u003C\/p\u003E\r\n\u003Cp\u003ERead our \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/pedestrian-crossings-and-refuges-sharing-the-roads-with-pedestrians\/\u0022\u003Ecomprehensive guide to pedestrian crossings by clicking here\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch3\u003EBus stops\u003C\/h3\u003E\r\n\u003Cp\u003EYou must also park at least 6m from a bus stop marked only by a sign so that the bus will have enough room to pull in and move out again.\u003C\/p\u003E\r\n\u003Ch3\u003EFire hydrants\u003C\/h3\u003E\r\n\u003Cp\u003EIf it\u0027s a fire hydrant, you mustn\u0027t park closer than 500mm (0.5m) unless someone who can move it stays with the vehicle. Read more about \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/parking\/when-may-you-park-your-vehicle-over-a-fi\/\u0022\u003Eparking where there is a fire hydrant\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch3\u003EDriveways and vehicle entrances\u003C\/h3\u003E\r\n\u003Cp\u003EParking closer than 1m to a vehicle entrance makes it more difficult for a vehicle to see up the road when they exit (thus risking an accident), and more difficult for a vehicle to turn into the exit, particularly a long vehicle that might need to \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/core\/when-mustnt-you-pass-a-vehicle-on-the-le\/\u0022\u003Eswing out wide\u003C\/a\u003E\u0026nbsp;to get in. You could be towed or ticketed. If a person cannot get into their driveway they can call the council and have your vehicle removed at your expense.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "44.mp3",
+                "video": null,
+                "permalink": "what-is-the-closest-distance-your-vehicl",
+                "canonical": "roadcode-questions\/car\/parking\/what-is-the-closest-distance-your-vehicl",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 155,
+                        "isCorrect": true,
+                        "title": "One metre",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 156,
+                        "title": "Two metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 157,
+                        "title": "Three metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 158,
+                        "title": "Four metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 44,
+                    "correct_text": "Correct. This gives vehicles space to turn out of and in to the entrance.",
+                    "incorrect_text": "You must park one metre or more away from a vehicle entrance.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 57,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EParking sign examples\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EThis sign is a parking sign.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EParking signs are usually blue with white writing. Apart from 5-minute parking, they are in increments of 10 minutes up to 60 minutes, then in 60-minute intervals up to 240 minutes.\u003C\/p\u003E\r\n\u003Cp\u003EAt the edge of each parking area will be a sign with a time and an arrow pointing in the direction of the parking.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_RP-4_P120_right.svg_.png\u0022 alt=\u0022120-minute parking sign\u0022 width=\u0022120\u0022 height=\u0022120\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003ERepeater signs will be placed not more than 100m apart. The sign above indicates that any vehicle can park for 120 minutes. There could be supplementary plates giving time or vehicle restrictions, or the sign itself might indicate a parking restriction, such as this for shuttle buses.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_-_Shuttle_Parking_No_Limit_right.svg_.png\u0022 alt=\u0022shuttle bus parking sign\u0022 width=\u0022100\u0022 height=\u0022120\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Ch2\u003EWhat times are parking signs valid for?\u003C\/h2\u003E\r\n\u003Cp\u003EIf a P parking sign has no time limit specified then it is valid from 8am to 6pm every day except public holidays. I.e. if it says P120 then you are allowed to park as long as you want between 6pm and 8am, and on public holidays; at all other times the restriction is 120 minutes.\u003C\/p\u003E\r\n\u003Cp\u003EIf it says pay and display then you must purchase a ticket from the pay and display machine for up to the maximum time allowed. In some pay and display areas a certain number of minutes\u0027 grace is given before you have to buy a ticket. Check on the meter, though.\u003C\/p\u003E\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "30-min-parking.jpg",
+                "audioName": "57.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean4",
+                "canonical": "roadcode-questions\/car\/parking\/what-does-this-sign-mean4\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 207,
+                        "title": "Commercial vehicles can park for 30 minutes to the right of the sign",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:43:15.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 208,
+                        "isCorrect": true,
+                        "title": "Any vehicle can park for 30 minutes to the right of the sign",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:43:15.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 209,
+                        "title": "There\u0027s no parking for any vehicle to the right of the sign, but to the left you can park for 30 minutes",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:43:15.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 57,
+                    "correct_text": "The number on the sign indicates how long you can park there in minutes, and the arrow indicates the direction you can park in.",
+                    "incorrect_text": "The number on the sign indicates how long you can park there in minutes, and the arrow indicates the direction you can park in.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:43:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 51,
+                "title": "Can you stop on a bus stop in a private vehicle?",
+                "description": "\u003Ch1\u003EParking in a bus stop\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYou must not stop in a bus stop in a private vehicle.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EBus stops are marked with one or more bus stop signs such as the ones shown below.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_RP-5.1_left.svg_.png\u0022 alt=\u0022bus stop to the left\u0022 width=\u002272\u0022 height=\u0022119\u0022 \/\u003E\u0026nbsp;\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_RP-5.svg_.png\u0022 alt=\u0022bus stop sign\u0022 width=\u002282\u0022 height=\u0022120\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EIn busier streets, and where parking restrictions apply such as pay parking or a \u003Ca href=\u0022..\/..\/..\/..\/..\/..\/..\/roadcode-questions\/car\/parking\/what-does-this-sign-mean7\/\u0022 target=\u0022_blank\u0022\u003Eclearway\u003C\/a\u003E, a marked box made with dashed yellow lines parallel to the kerb and two solid end lines defines the bus stop.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/bus-stop-college-hill.jpg\u0022 alt=\u0022Bus stop on College Hill Auckland\u0022 width=\u0022550\u0022 height=\u0022355\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EIf there is no marked box and only a sign, then you can\u0027t park any closer than 6 metres from the sign. Six metres gives a bus some room to pull in, and also when the bus has left and has dropped off pedestrians, the pedestrians\u0027 view up and down the road isn\u0027t compromised so much by parked vehicles.\u003C\/p\u003E\r\n\u003Cp\u003ESometimes bus stops are only in operation for certain hours or days, as per this sign\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/bus-stop-sign-with-time.jpg\u0022 alt=\u0022Bus stop with time limit\u0022 width=\u0022550\u0022 height=\u0022357\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EBuses can\u0027t park in a bus stop, either. They are for the temporary stopping of buses. Buses can wait in a stop to adjust to their posted schedule if they are early, but the driver must not leave the bus unattended.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "51.mp3",
+                "video": null,
+                "permalink": "can-you-stop-on-a-bus-stop-in-a-private-",
+                "canonical": "roadcode-questions\/car\/parking\/can-you-stop-on-a-bus-stop-in-a-private-\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 184,
+                        "title": "Yes, if that vehicle has seven or more seats",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:42:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 185,
+                        "title": "Yes, if it\u0027s outside of normal bus working hours",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:42:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 186,
+                        "isCorrect": true,
+                        "title": "No, only buses can stop here",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:42:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 187,
+                        "title": "Yes, if it\u0027s a van",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:42:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 188,
+                        "title": "Yes, when dropping off passengers",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:42:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 51,
+                    "correct_text": "Only buses can stop in a bus stop. You may be fined if you stop in a bus stop.",
+                    "incorrect_text": "Only buses can stop in a bus stop. You may be fined if you stop in a bus stop.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:42:35.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 53,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EEnd of no stopping or clearway zone\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EThe end of a no stopping zone or clearway zone marks the point after which you are allowed to stop.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003ENo stopping zones will be marked with a sign showing the red and blue circle and a direction. The sign could be permanent, or it could be because there are some kind of road works or event.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_RP-2_left.svg_.png\u0022 alt=\u0022clearway\u0022 width=\u0022100\u0022 height=\u0022120\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003ESigns might be put up the night before a road is due to be resurfaced. If this is the case, your vehicle will be courtesy towed and you will need to contact your local council to find out which towing company has been contracted to take it.\u0026nbsp;\u003C\/p\u003E\r\n\u003Ch2\u003EClearways\u003C\/h2\u003E\r\n\u003Cp\u003EIf they are in areas where traffic needs to flow smoothly at certain times, for example, rush hour, the red and blue circle and the word \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/parking\/what-does-this-sign-mean7\/\u0022 target=\u0022_blank\u0022\u003ECLEARWAY\u003C\/a\u003E\u0026nbsp;with a time limit with be displayed. You are not allowed to park on a no stopping zone or clearway when it\u0027s in operation. If you park in a clearway during its times of operation then your car will be towed and you\u0027ll have to pay a towing fee to reclaim it. Call your local council to find out how much this will be and where your vehicle has been towed to. You will need to provide the licence plate number. For example, \u003Ca href=\u0022https:\/\/at.govt.nz\/driving-parking\/towing\/\u0022 target=\u0022_blank\u0022\u003Ethese are the towing details for Auckland Transport\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003EClearways are often enforced on arterial routes during rush hour. The sign below shows that it is in operation between 4pm and 6pm Monday to Friday. Beneath this sign (not in the photo) is a parking sign, i.e. when the area is not a clearway, it is a time-limited parking zone.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/clearway-sign.jpg\u0022 alt=\u0022clearway sign\u0022 width=\u0022550\u0022 height=\u0022346\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "no-stop-4k-sign.gif",
+                "audioName": "53.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean3",
+                "canonical": "roadcode-questions\/car\/parking\/what-does-this-sign-mean2\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 193,
+                        "title": "You can stop anywhere in the next 4km",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 194,
+                        "isCorrect": true,
+                        "title": "You must not stop anywhere in the next 4km",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 53,
+                    "correct_text": "That\u0027s right - you must not stop for the distance shown on the sign. No stopping signs can be for 1, 2, 3, 4 or 5km. They can also be time-restricted, e.g. Monday to Friday.",
+                    "incorrect_text": "You must not stop for the distance shown under the sign. ",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 59,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EMotorbike parking\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EThis is a vehicle-specific parking sign specifically for motorbikes\u003C\/strong\u003E - it creates what\u0027s called a \u0027reserved parking area\u0027. Other vehicle-specific parking signs could be for buses, heavy vehicles, or disabled road users.\u003C\/p\u003E\r\n\u003Cp\u003EThis particular sign doesn\u0027t display a time limit (i.e. doesn\u0027t show P60, or day restrictions such as Mon-Fri), so it is in force 24\/7. If it did display a time, all vehicles must comply with the time restriction.\u003C\/p\u003E\r\n\u003Cp\u003EMotorbike parking is likely to be in a short strip and you won\u0027t find it in many places because motorbikes can also use regular parking spots. Park your motorbike perpendicular (at right angles) to the kerb, not parallel to the kerb. Parking parallel to the kerb uses space that could be used for other vehicles.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2016\/03\/motorbike-parking-1.jpg\u0022 alt=\u0022Motorbike parking\u0022 width=\u0022650\u0022 height=\u0022417\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EMotorbikes can\u0026nbsp;find it difficult in pay-and-display ticketed areas with no dedicated motorbike parking because there is often nowhere to securely fasten a parking ticket. The best options are to use a rubber band to attach it to the handgrip, a small bulldog clip to attach it to the windscreen, or under the seat strap (if you have one).\u003C\/p\u003E\r\n\u003Cp\u003EIf there are coin-operated meters, motorbike users must pay for these and can use the bays with two motorbikes per bay. Check your local council rules, though.\u003C\/p\u003E\r\n\u003Cp\u003EHowever, there are usually areas you can find where you can park your motorbike out of the way of pedestrians and other vehicles for free (but not on footpaths, by pedestrian crossings or at the end of parallel parks).\u003C\/p\u003E\r\n\u003Cp\u003ESome authorities, such as Auckland Transport, offer free motorbike parking\u0026nbsp;in all of their parking buildings. Wellington City Council provides a map of its \u003Ca href=\u0022http:\/\/wellington.govt.nz\/services\/parking-and-roads\/motorcycle-safety-and-parking\/motorcycle-and-scooter-parking\u0022 target=\u0022_blank\u0022\u003Emotorbike and scooter parking areas\u003C\/a\u003E.\u0026nbsp;Note that some councils (such as Wellington) do not permit motorbikes to park in pay-and-display ticketing areas at all because of the problems of attaching a ticket. Some councils, \u003Ca href=\u0022https:\/\/www.dunedin.govt.nz\/services\/parking\/where-you-can-park\/motorcycle-parking\u0022 target=\u0022_blank\u0022\u003Esuch as Dunedin\u003C\/a\u003E, require you to pay for a ticket, but you don\u0027t have to display it. This means you need to keep the ticket in case you are issued an infringement notice. In some areas, \u003Ca href=\u0022http:\/\/nelson.govt.nz\/services\/transport\/parking\/carparks\/\u0022 target=\u0022_blank\u0022\u003Esuch as Nelson\u003C\/a\u003E, motorbikes require a parking permit.\u003C\/p\u003E\r\n\u003Cp\u003EIndividual motorbike space lengths are 2.5m long by 1.2m wide as opposed to 5.4x2.5 for a car.\u003C\/p\u003E\r\n\u003Cp\u003EMotorcycle parking is always marked in yellow paint in a \u003Ca href=\u0022..\/..\/..\/..\/..\/..\/..\/roadcode-questions\/car\/parking\/can-you-stop-on-a-bus-stop-in-a-private-\/\u0022\u003Esimilar pattern to a bus stop\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "motorbike-parking.gif",
+                "audioName": "59.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean6",
+                "canonical": "roadcode-questions\/car\/parking\/what-does-this-sign-mean6\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2019-01-14 08:20:59.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 214,
+                        "title": "Motorcycles are allowed to park to the left of this sign, along with any other private vehicles",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2019-01-14 08:20:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 215,
+                        "isCorrect": true,
+                        "title": "Only motorcycles are allowed to park to the left of this sign",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2019-01-14 08:20:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 216,
+                        "title": "Motorcycles aren\u0027t allowed to park to the left of this sign, but are to the right",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2019-01-14 08:20:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 59,
+                    "correct_text": "If you park a car or truck there you may be ticketed; only motorcycles can park here, to the left of the sign.",
+                    "incorrect_text": "Only motorcycles can park here, to the left of the sign.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:43:45.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 56,
+                "title": "When can you park on the right hand side of the road?",
+                "description": "\u003Ch1\u003EParking on a one-way street\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYou may\u0026nbsp;only park on the right on a one-way street.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EVehicles have \u003Ca href=\u0022https:\/\/vehicleinspection.nzta.govt.nz\/virms\/in-service-wof-and-cof\/motorcycles\/lighting\/rear-reflectors\u0022 target=\u0022_blank\u0022\u003Ered reflectors\u003C\/a\u003E\u0026nbsp;on the back of the car to make them visible to other road users approaching from behind. They don\u0027t have the same reflectors on the front, and therefore if a vehicle is facing oncoming traffic it is less visible. In fact, it could confuse drivers coming towards the vehicle because they would be used to seeing the vehicle facing them on the other side of the road.\u003C\/p\u003E\r\n\u003Cp\u003ERegarding marked bays, if there are perpendicular bays, i.e. the parking bays are at a right angle to the kerb, then they don\u0027t face the traffic in either direction.\u003C\/p\u003E\r\n\u003Cp\u003EIf you are parking on the right in a one-way street be aware that you will have a blind spot over your left shoulder, and that it could be difficult to see traffic approaching when you want to pull out.\u0026nbsp;\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "56.mp3",
+                "video": null,
+                "permalink": "when-can-you-park-on-the-right-hand-side",
+                "canonical": "roadcode-questions\/car\/parking\/when-can-you-park-on-the-right-hand-side\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 202,
+                        "isCorrect": true,
+                        "title": "Only on a one-way street",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2018-11-16 08:54:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 203,
+                        "title": "If there are marked bays",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2018-11-16 08:54:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 204,
+                        "title": "At any time if you leave your park lights on",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2018-11-16 08:54:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 205,
+                        "title": "If you are delivering packages",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2018-11-16 08:54:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 206,
+                        "title": "In the countryside",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2018-11-16 08:54:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 56,
+                    "correct_text": "The side of the road you are on is based on which direction you are facing in relation to which lane you are in. You must never park on the right so that you are facing traffic.",
+                    "incorrect_text": "The side of the road you are on is based on which direction you are facing in relation to which lane you are in. You must never park on the right so that you are facing traffic.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2018-11-16 08:54:25.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 60,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EWhat is a clearway?\u003C\/h1\u003E\r\n\u003Cp\u003EClearways are areas where vehicles are not allowed to park during certain times. NZTA defines them as \u0022A length of roadway over which a no-stopping parking restriction applies for the purpose of increasing the number of through traffic lanes or providing increased space to allow for the free movement of traffic during the period for which the clearway restriction applies.\u0022\u003C\/p\u003E\r\n\u003Cp\u003EThey are commonly used to keep an arterial road clear during rush hour which could, for example, mean that two lanes are available instead of one, or where there could be vehicle that need to turn right from the lane and by restricting the road\u0027s width, traffic would be held up unduly waiting for that vehicle to turn.\u003C\/p\u003E\r\n\u003Cp\u003EA clearway could be valid twice a day, as shown in this sign:\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_RP-3.1.svg_.png\u0022 alt=\u0022clearway sign - two time periods\u0022 width=\u0022120\u0022 height=\u0022103\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EA supplementary plate will show where the clearway begins or ends.\u003C\/p\u003E\r\n\u003Cp\u003ESigns on signposts are installed in priority order. A clearway takes precedence over a P60 sign, for example, therefore the clearway sign is installed above the P60 sign.\u003C\/p\u003E\r\n\u003Cp\u003EClearway repeater signs are installed not more than every 100m along a road, unless there\u0027s another restriction or intersection present.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EIf you park in a clearway during its hours of operation you will be towed.\u003C\/strong\u003E\u0026nbsp;Council wardens monitor clearways and will ticket you and call a tow truck if you are in the clearway zone when the time starts. To find out where you have been towed to, call the local council and they will give you the name of the towing company. You will need to pay any fines and towing fees to release your vehicle.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "clearway-sign-7-9.gif",
+                "audioName": "60.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean7",
+                "canonical": "roadcode-questions\/car\/parking\/what-does-this-sign-mean7\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 217,
+                        "title": "You can only stop to drop people off between 7 and 9am",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:43:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 218,
+                        "title": "You can park here, but only between 7 and 9am",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:43:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 219,
+                        "isCorrect": true,
+                        "title": "You can\u0027t park here between 7 and 9am",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 08:43:53.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 60,
+                    "correct_text": "You must not stop here between the times shown on the sign. If you do, your car may be towed away. You will have to pay a tow fee to get your car back.",
+                    "incorrect_text": "You must not stop here between the times shown on the sign. If you do, your car may be towed away. You will have to pay a tow fee to get your car back.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 08:43:53.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 47,
+                "title": "When may you park your vehicle over a fire hydrant?",
+                "description": "\u003Ch1\u003EParking where there is a fire hydrant\u003C\/h1\u003E\r\n\u003Cp\u003EA fire hydrant is a place where the \u003Ca href=\u0022http:\/\/fire.org.nz\/\u0022 target=\u0022_blank\u0022\u003Efire service\u003C\/a\u003E\u0026nbsp;can draw water from the city supply to fight a fire. They are most commonly a rectangular yellow plate in the ground under which a hose can be connected. In the diagram above the yellow rectangle represents the yellow plate, or lid, and the circle is painted with an outside diameter of 1.2m and a line width of 100mm.\u003C\/p\u003E\r\n\u003Cp\u003EFire hydrants are often marked with a blue road stud or cat\u0027s eye, and fire officers know to look out for these. The cat\u0027s eye might not be on the road; it could be on the pavement or edge of the road.\u003C\/p\u003E\r\n\u003Cp\u003ELook also for a yellow arrow (600mm on the long side and 450mm on the base) painted on the road pointing to the fire hydrant.\u003C\/p\u003E\r\n\u003Cp\u003EYou can also frequently see fire hydrants on pavements and grass verges, for example, the one shown below.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/fire-hydrant.jpg\u0022 alt=\u0022fire hydrant lid\u0022 width=\u0022550\u0022 height=\u0022304\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYou can park your vehicle up to 500mm (50cm) from a fire hydrant as long as there are no other parking restrictions. However, if you want to park closer than that, or over the hydrant, then someone who can move the vehicle will have to stay with it otherwise it could be towed away.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg style=\u0022float: left;\u0022 src=\u0022..\/..\/..\/..\/..\/..\/..\/media\/question-images\/hydrant.gif\u0022 alt=\u0022fire hydrant marking\u0022 width=\u0022116\u0022 height=\u0022116\u0022 \/\u003EA fire hydrant on the road is marked by a 1.2m diameter yellow circle which contains the rectangular hydrant lid. There might also be a yellow \u003Ca href=\u0022http:\/\/mathworld.wolfram.com\/IsoscelesTriangle.html\u0022 target=\u0022_blank\u0022\u003Eisosceles triangle\u003C\/a\u003E\u0026nbsp;pointing to the hydrant.\u003C\/p\u003E\r\n\u003Cp\u003EHydrants are where the fire service can get water from the mains supply. It helps when fighting a larger fire as there\u0027s only a limited amount of water a fire engine can carry.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "hydrant.gif",
+                "audioName": "47.mp3",
+                "video": null,
+                "permalink": "when-may-you-park-your-vehicle-over-a-fi",
+                "canonical": "roadcode-questions\/car\/parking\/when-may-you-park-your-vehicle-over-a-fi\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 169,
+                        "title": "Never",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:23:48.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 170,
+                        "title": "At any time",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:23:48.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 171,
+                        "isCorrect": true,
+                        "title": "Only if someone who can move the vehicle stays with it",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:23:48.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 47,
+                    "correct_text": "If someone can move the vehicle immediately you may park on or closer than 50cm to a fire hydrant.",
+                    "incorrect_text": "You can only park on or within 50cm of a fire hydrant if someone who can move the vehicle stays with it.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-03-06 08:23:48.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 48,
+                "title": "How close can you park your vehicle to the approach side of a pedestrian crossing where no broken yellow lines have been marked?",
+                "description": "\u003Ch1\u003EMinimum parking distances at intersections, pedestrian crossings, railways and driveways\u003C\/h1\u003E\r\n\u003Cp\u003EPermitted parking distances vary with the type of accessway or object. For example, while you can park 1m away from a driveway, you have to be at least 6m away from an intersection unless there are marked bays or signage saying you can park closer. \u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EParking any closer than six metres starts to significantly restrict visibility especially if the vehicle is an SUV or van which is taller than a car. As vehicles exit the intersection they will have to nose out further to see up the road and this puts them in danger. While some expensive cars have cameras that look up the road, most people will have to get their bonnet into the lane to be able to see, and that means that other vehicles have to swerve around it.\u003C\/p\u003E\r\n\u003Cp\u003ESix metres is a good compromise between using all the available parking and not restricting road users\u0027 visibility. On some intersections this isn\u0027t an issue and you might find marked bays or a parking line closer than six metres to the intersection.\u003C\/p\u003E\r\n\u003Ch3\u003EPedestrian crossings\u003C\/h3\u003E\r\n\u003Cp\u003EYou also must park at least 6m away from a pedestrian crossing - 6m is about 1.5 times the length of a medium-sized car. This is because your vehicle will obscure the view of pedestrians up the road, and obscure the view of the pedestrians from drivers driving towards the crossing.\u003C\/p\u003E\r\n\u003Cp\u003EThis is especially important for pedestrians who are visually impaired because drivers need to be able to see them as early as possible, and the pedestrians won\u0027t know that there\u0027s a vehicle blocking the view of the crossing.\u003C\/p\u003E\r\n\u003Cp\u003ERead our \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/pedestrian-crossings-and-refuges-sharing-the-roads-with-pedestrians\/\u0022\u003Ecomprehensive guide to pedestrian crossings by clicking here\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch3\u003EBus stops\u003C\/h3\u003E\r\n\u003Cp\u003EYou must also park at least 6m from a bus stop marked only by a sign so that the bus will have enough room to pull in and move out again.\u003C\/p\u003E\r\n\u003Ch3\u003EFire hydrants\u003C\/h3\u003E\r\n\u003Cp\u003EIf it\u0027s a fire hydrant, you mustn\u0027t park closer than 500mm (0.5m) unless someone who can move it stays with the vehicle. Read more about \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/parking\/when-may-you-park-your-vehicle-over-a-fi\/\u0022\u003Eparking where there is a fire hydrant\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch3\u003EDriveways and vehicle entrances\u003C\/h3\u003E\r\n\u003Cp\u003EParking closer than 1m to a vehicle entrance makes it more difficult for a vehicle to see up the road when they exit (thus risking an accident), and more difficult for a vehicle to turn into the exit, particularly a long vehicle that might need to \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/core\/when-mustnt-you-pass-a-vehicle-on-the-le\/\u0022\u003Eswing out wide\u003C\/a\u003E\u0026nbsp;to get in. You could be towed or ticketed. If a person cannot get into their driveway they can call the council and have your vehicle removed at your expense.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "48.mp3",
+                "video": null,
+                "permalink": "how-close-can-you-park-your-vehicle-to-t",
+                "canonical": "roadcode-questions\/car\/parking\/what-is-the-closest-distance-your-vehicl",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 172,
+                        "title": "10 metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 173,
+                        "isCorrect": true,
+                        "title": "Six metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 174,
+                        "title": "Three metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 175,
+                        "title": "One metre",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 48,
+                    "correct_text": "You must park six metres or more away from the approach side of a crossing if there are no broken yellow lines.",
+                    "incorrect_text": "You must park six metres or more away from the approach side of a crossing if there are no broken yellow lines.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 462,
+                "title": "You are driving the orange car. There are no other cars around. Do you have to indicate to pull into this angled parking space?",
+                "description": "\u003Ch1\u003EWhy do we need to indicate?\u003C\/h1\u003E\r\n\u003Cp\u003EThere are two reasons why you must indicate every time you make a manoeuvre, even if you think there\u0027s no one around.\u003C\/p\u003E\r\n\u003Col\u003E\r\n\u003Cli\u003EYou might not have seen every road user\u003C\/li\u003E\r\n\u003Cli\u003EIt maintains the habit of indicating\u003C\/li\u003E\r\n\u003C\/ol\u003E\r\n\u003Cp\u003EThe Road Code says that you must indicate for three seconds before making a manoeuvre such as changing lanes, turning into a driveway, turning into a parking space, turning at an intersection or overtaking another road user.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "parking-in-angled-park.jpg",
+                "audioName": "462.mp3",
+                "video": null,
+                "permalink": "parking-in-angled-park",
+                "canonical": "roadcode-questions\/car\/parking\/parking-in-angled-park\/",
+                "created": {
+                    "date": "2016-10-28 13:59:17.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 1669,
+                        "isCorrect": true,
+                        "title": "Yes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 1670,
+                        "title": "No",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:17.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 462,
+                    "correct_text": "Correct. You must always indicate when parking, changing lanes, turning at an intersection or roundabout, overtaking, or turning into a driveway. ",
+                    "incorrect_text": "You must always indicate when parking, changing lanes, turning at an intersection or roundabout, overtaking, or turning into a driveway. ",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:17.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 58,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EParking rules for loading zones\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EYou can park your vehicle in a loading zone\u0026nbsp;at any time for the purposes of unloading, but only for the amount of time shown on the sign.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThere are various types of loading zones. They are created for vehicles that will need short term parking to pick up or drop off goods or passengers. Time limits vary but are usually 5 minutes.\u003C\/p\u003E\r\n\u003Cp\u003EThey are almost always situated with one end of them free to allow for easy unloading out of the back of vehicles like trucks and vans. They also tend to be located in areas where they will be the most use to goods vehicles, such as near hotels or near a cluster of restaurants or businesses that would receive regular deliveries.\u003C\/p\u003E\r\n\u003Cp\u003EA simple sign might advise that the area is a 5-minute loading zone. This means that any vehicle can use this loading zone for as long as they require to unload or load goods or passengers as long as the vehicle isn\u0027t left unattended for more than 5 minutes.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg style=\u0022float: left;\u0022 src=\u0022https:\/\/www.drivingtests.co.nz\/media\/question-images\/5-min-maximum-goods-vehicles-only-loading-zone.png\u0022 alt=\u00225 minute maximum goods vehicles only loading zone\u0022 width=\u0022120\u0022 height=\u002250\u0022 \/\u003EThe loading zone sign might also have additional instructions on a supplementary plate indicating vehicle class and time restrictions. Examples could include \u0027Goods vehicles only\u0027 (which would restrict it to only commercial vehicles), \u00275 min MAXIMUM\u0027 (which means that the total time you are allowed to park in this loading zone is 5 minutes whether you remain with the vehicle or not) or \u00278am-6pm\u0027 (which defines the time the loading zone is a loading zone and not a regular car parking space.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "p5-sign.gif",
+                "audioName": "58.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean5",
+                "canonical": "roadcode-questions\/car\/parking\/when-may-you-may-park-your-vehicle-on-a-\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 210,
+                        "title": "Only commercial vehicles can park here, and only for five minutes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 211,
+                        "title": "Any vehicle can park here, but it must not be left unattended for more than five minutes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 212,
+                        "title": "Any vehicle can park here to unload goods or people, but only for five minutes and then it has to be moved",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 213,
+                        "isCorrect": true,
+                        "title": "Any vehicle can park here to unload goods or people, but it must not be left unattended for more than five minutes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 58,
+                    "correct_text": "Correct. This sign doesn\u0027t specify it\u0027s only commercial goods vehicles that can use the space. It is for quick unloading rather than longer term parking and as long as the loading is continuing and the vehicle is attended it can remain in the car park for more than 5 minutes. If the sign said \u00275 MIN MAXIMUM\u0027 then the vehicle would have to be moved within 5 minutes.",
+                    "incorrect_text": "Any vehicle can stop here to unload goods or people, but it must not be left unattended for more than five minutes. As long as the loading is continuing and the vehicle is attended it can remain in the car park for more than 5 minutes. If the sign said \u00275 MIN MAXIMUM\u0027 then the vehicle would have to be moved within 5 minutes.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 54,
+                "title": "Can you stop or park your vehicle over a fire hydrant if someone stays with the vehicle who can move it?",
+                "description": "\u003Ch1\u003EParking where there is a fire hydrant\u003C\/h1\u003E\r\n\u003Cp\u003EA fire hydrant is a place where the \u003Ca href=\u0022http:\/\/fire.org.nz\/\u0022 target=\u0022_blank\u0022\u003Efire service\u003C\/a\u003E\u0026nbsp;can draw water from the city supply to fight a fire. They are most commonly a rectangular yellow plate in the ground under which a hose can be connected. In the diagram above the yellow rectangle represents the yellow plate, or lid, and the circle is painted with an outside diameter of 1.2m and a line width of 100mm.\u003C\/p\u003E\r\n\u003Cp\u003EFire hydrants are often marked with a blue road stud or cat\u0027s eye, and fire officers know to look out for these. The cat\u0027s eye might not be on the road; it could be on the pavement or edge of the road.\u003C\/p\u003E\r\n\u003Cp\u003ELook also for a yellow arrow (600mm on the long side and 450mm on the base) painted on the road pointing to the fire hydrant.\u003C\/p\u003E\r\n\u003Cp\u003EYou can also frequently see fire hydrants on pavements and grass verges, for example, the one shown below.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/fire-hydrant.jpg\u0022 alt=\u0022fire hydrant lid\u0022 width=\u0022550\u0022 height=\u0022304\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYou can park your vehicle up to 500mm (50cm) from a fire hydrant as long as there are no other parking restrictions. However, if you want to park closer than that, or over the hydrant, then someone who can move the vehicle will have to stay with it otherwise it could be towed away.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg style=\u0022float: left;\u0022 src=\u0022https:\/\/www.drivingtests.co.nz\/media\/question-images\/hydrant.gif\u0022 alt=\u0022fire hydrant marking\u0022 width=\u0022116\u0022 height=\u0022116\u0022 \/\u003EA fire hydrant on the road is marked by a 1.2m diameter yellow circle which contains the rectangular hydrant lid. There might also be a yellow \u003Ca href=\u0022http:\/\/mathworld.wolfram.com\/IsoscelesTriangle.html\u0022 target=\u0022_blank\u0022\u003Eisosceles triangle\u003C\/a\u003E\u0026nbsp;pointing to the hydrant.\u003C\/p\u003E\r\n\u003Cp\u003EHydrants are where the fire service can get water from the mains supply. It helps when fighting a larger fire as there\u0027s only a limited amount of water a fire engine can carry.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "hydrant.gif",
+                "audioName": "54.mp3",
+                "video": null,
+                "permalink": "can-you-stop-or-park-your-vehicle-over-a",
+                "canonical": "roadcode-questions\/car\/parking\/when-may-you-park-your-vehicle-over-a-fi\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 195,
+                        "isCorrect": true,
+                        "title": "Yes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 196,
+                        "title": "No",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 54,
+                    "correct_text": "Correct. If you can move the vehicle immediately it\u0027s OK to park over a hydrant",
+                    "incorrect_text": "You can park there as long as someone who can move the vehicle stays with it.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 52,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EEnd of no stopping or clearway zone\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EThe end of a no stopping zone or clearway zone marks the point after which you are allowed to stop.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003ENo stopping zones will be marked with a sign showing the red and blue circle and a direction. The sign could be permanent, or it could be because there are some kind of road works or event.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_RP-2_left.svg_.png\u0022 alt=\u0022clearway\u0022 width=\u0022100\u0022 height=\u0022120\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003ESigns might be put up the night before a road is due to be resurfaced. If this is the case, your vehicle will be courtesy towed and you will need to contact your local council to find out which towing company has been contracted to take it.\u0026nbsp;\u003C\/p\u003E\r\n\u003Ch2\u003EClearways\u003C\/h2\u003E\r\n\u003Cp\u003EIf they are in areas where traffic needs to flow smoothly at certain times, for example, rush hour, the red and blue circle and the word \u003Ca href=\u0022..\/..\/..\/..\/..\/..\/..\/roadcode-questions\/car\/parking\/what-does-this-sign-mean7\/\u0022 target=\u0022_blank\u0022\u003ECLEARWAY\u003C\/a\u003E\u0026nbsp;with a time limit with be displayed. You are not allowed to park on a no stopping zone or clearway when it\u0027s in operation. If you park in a clearway during its times of operation then your car will be towed and you\u0027ll have to pay a towing fee to reclaim it. Call your local council to find out how much this will be and where your vehicle has been towed to. You will need to provide the licence plate number. For example, \u003Ca href=\u0022https:\/\/at.govt.nz\/driving-parking\/towing\/\u0022 target=\u0022_blank\u0022\u003Ethese are the towing details for Auckland Transport\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003EClearways are often enforced on arterial routes during rush hour. The sign below shows that it is in operation between 4pm and 6pm Monday to Friday. Beneath this sign (not in the photo) is a parking sign, i.e. when the area is not a clearway, it is a time-limited parking zone.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022..\/..\/..\/..\/..\/..\/..\/resources\/wp-content\/uploads\/2014\/07\/clearway-sign.jpg\u0022 alt=\u0022clearway sign\u0022 width=\u0022550\u0022 height=\u0022346\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "no-stopping-ends.gif",
+                "audioName": "52.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean2",
+                "canonical": "roadcode-questions\/car\/parking\/what-does-this-sign-mean2\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 189,
+                        "isCorrect": true,
+                        "title": "You can stop after you pass this sign",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 190,
+                        "title": "You can stop before this sign, but not after",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 191,
+                        "title": "You can only park within 20 metres of this sign",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 192,
+                        "title": "You must not stop at all until parking permission is given",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 52,
+                    "correct_text": "This sign marks the end of a no-stopping zone, or clearway.",
+                    "incorrect_text": "This sign marks the end of a no-stopping zone or clearway.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 49,
+                "title": "How close can you park your vehicle to an intersection where no broken yellow lines have been marked?",
+                "description": "\u003Ch1\u003EMinimum parking distances at intersections, pedestrian crossings, railways and driveways\u003C\/h1\u003E\r\n\u003Cp\u003EPermitted parking distances vary with the type of accessway or object. For example, while you can park 1m away from a driveway, you have to be at least 6m away from an intersection unless there are marked bays or signage saying you can park closer. \u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EParking any closer than six metres starts to significantly restrict visibility especially if the vehicle is an SUV or van which is taller than a car. As vehicles exit the intersection they will have to nose out further to see up the road and this puts them in danger. While some expensive cars have cameras that look up the road, most people will have to get their bonnet into the lane to be able to see, and that means that other vehicles have to swerve around it.\u003C\/p\u003E\r\n\u003Cp\u003ESix metres is a good compromise between using all the available parking and not restricting road users\u0027 visibility. On some intersections this isn\u0027t an issue and you might find marked bays or a parking line closer than six metres to the intersection.\u003C\/p\u003E\r\n\u003Ch3\u003EPedestrian crossings\u003C\/h3\u003E\r\n\u003Cp\u003EYou also must park at least 6m away from a pedestrian crossing - 6m is about 1.5 times the length of a medium-sized car. This is because your vehicle will obscure the view of pedestrians up the road, and obscure the view of the pedestrians from drivers driving towards the crossing.\u003C\/p\u003E\r\n\u003Cp\u003EThis is especially important for pedestrians who are visually impaired because drivers need to be able to see them as early as possible, and the pedestrians won\u0027t know that there\u0027s a vehicle blocking the view of the crossing.\u003C\/p\u003E\r\n\u003Cp\u003ERead our \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/pedestrian-crossings-and-refuges-sharing-the-roads-with-pedestrians\/\u0022\u003Ecomprehensive guide to pedestrian crossings by clicking here\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch3\u003EBus stops\u003C\/h3\u003E\r\n\u003Cp\u003EYou must also park at least 6m from a bus stop marked only by a sign so that the bus will have enough room to pull in and move out again.\u003C\/p\u003E\r\n\u003Ch3\u003EFire hydrants\u003C\/h3\u003E\r\n\u003Cp\u003EIf it\u0027s a fire hydrant, you mustn\u0027t park closer than 500mm (0.5m) unless someone who can move it stays with the vehicle. Read more about \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/parking\/when-may-you-park-your-vehicle-over-a-fi\/\u0022\u003Eparking where there is a fire hydrant\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Ch3\u003EDriveways and vehicle entrances\u003C\/h3\u003E\r\n\u003Cp\u003EParking closer than 1m to a vehicle entrance makes it more difficult for a vehicle to see up the road when they exit (thus risking an accident), and more difficult for a vehicle to turn into the exit, particularly a long vehicle that might need to \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/roadcode-questions\/car\/core\/when-mustnt-you-pass-a-vehicle-on-the-le\/\u0022\u003Eswing out wide\u003C\/a\u003E\u0026nbsp;to get in. You could be towed or ticketed. If a person cannot get into their driveway they can call the council and have your vehicle removed at your expense.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "49.mp3",
+                "video": null,
+                "permalink": "how-close-can-you-park-your-vehicle-to-a",
+                "canonical": "roadcode-questions\/car\/parking\/what-is-the-closest-distance-your-vehicl",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 03:30:09.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 176,
+                        "title": "10 metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 177,
+                        "isCorrect": true,
+                        "title": "Six metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 178,
+                        "title": "Three metres",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 179,
+                        "title": "One metre",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 49,
+                    "correct_text": "Six metres or more is the distance you should park from an intersection unless there are parking bays marked.",
+                    "incorrect_text": "Six metres or more is the distance you should park from an intersection unless there are parking bays marked.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 76,
+                "title": "A broken yellow line painted close to the edge of the road means you may stop or park your vehicle there at any time.",
+                "description": "\u003Ch1\u003EWhat do broken yellow lines on the road mean?\u003C\/h1\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EA broken yellow line means no stopping or parking.\u003C\/strong\u003E\u003C\/p\u003E\r\n\u003Cp\u003EBroken yellow lines are placed in areas where parking would cause an obstruction or danger to other road users, and around bus stops, taxi stands, motorcycle parking and loading zones.\u003C\/p\u003E\r\n\u003Cp\u003EThe lines are 100mm wide and reflectorised. They have a 1m stripe then a 1m gap between them, but there are situations where the gap can be widened to up to 2m.\u003C\/p\u003E\r\n\u003Cp\u003EThe lines are sometimes placed around corners on intersections where the public may think that the curve is OK to park on.\u0026nbsp;\u003C\/p\u003E\r\n\u003Cp\u003EYellow lines can often be found near busier intersections\u0026nbsp;preventing people from parking too close.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/junction-traffic-calming-measures-road-table.jpg\u0022 alt=\u0022yellow lines around an intersection\u0022 width=\u0022550\u0022 height=\u0022364\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYellow lines can be found on the approach to \u003Ca href=\u0022https:\/\/www.drivingtests.co.nz\/resources\/pedestrian-crossings-and-refuges-sharing-the-roads-with-pedestrians\/\u0022 target=\u0022_blank\u0022\u003Epedestrian crossings\u003C\/a\u003E, or where parking ends and there\u0027s a choker or other road width restriction.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/choker.jpg\u0022 alt=\u0022Parking choker with yellow lines\u0022 width=\u0022550\u0022 height=\u0022369\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYellow no parking lines can be found on sections of busy single-lane arterial road like here on Rosebank Road in Avondale\u0027s industrial area where many large trucks use the road. A white line is painted in slightly to give room for cyclists who don\u0027t (as yet) have a dedicated cycle lane.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/broken-yellow-lines.jpg\u0022 alt=\u0022broken yellow line on the side of the road\u0022 width=\u0022550\u0022 height=\u0022744\u0022 \/\u003E\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": null,
+                "audioName": "76.mp3",
+                "video": null,
+                "permalink": "a-broken-yellow-line-painted-close-to-th",
+                "canonical": "roadcode-questions\/car\/parking\/a-broken-yellow-line-painted-close-to-th\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2019-05-14 21:10:49.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 283,
+                        "title": "True",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2019-05-14 21:10:49.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 284,
+                        "isCorrect": true,
+                        "title": "False",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2019-05-14 21:10:49.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 76,
+                    "correct_text": "Correct. You\u0027re not allowed to park on a broken yellow line",
+                    "incorrect_text": "You can\u0027t park on a broken yellow line.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2019-05-14 21:10:49.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 50,
+                "title": "What does this sign mean?",
+                "description": "\u003Ch1\u003EMobility parking areas\u003C\/h1\u003E\r\n\u003Cp\u003EMobility parking areas are placed to give mobility card holders easy access to places\u0026nbsp;such as supermarkets, libraries, community centres, and other public amenities such as museums.\u003C\/p\u003E\r\n\u003Cp\u003EThey are marked with blue signs showing the direction in which the mobility parking is valid, and the time period if applicable.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_-_Disabled_Parking_Time_Limit.svg_.png\u0022 alt=\u0022mobility parking time limit\u0022 width=\u002290\u0022 height=\u0022120\u0022 \/\u003E\u0026nbsp;\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2013\/10\/New_Zealand_-_Disabled_Parking_No_Limit_right.svg_.png\u0022 alt=\u0022mobility parking sign direction\u0022 width=\u0022100\u0022 height=\u0022120\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Ch2\u003EMobility parking permits\u003C\/h2\u003E\r\n\u003Cp\u003EA permit will look similar to this:\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022https:\/\/www.drivingtests.co.nz\/resources\/wp-content\/uploads\/2014\/07\/mobililty-parking-permit.png\u0022 alt=\u0022mobility parking permit\u0022 width=\u0022152\u0022 height=\u0022234\u0022 \/\u003E\u003C\/p\u003E\r\n\u003Cp\u003EYou can apply for a long- or short-term permit by contacting CCS Disability Action \u003Ca title=\u0022CCS Disability Action\u0022 href=\u0022http:\/\/www.ccsdisabilityaction.org.nz\/\u0022 target=\u0022_blank\u0022\u003Ehere\u003C\/a\u003E. Long-term permits are valid for five years. Short-term permits are valid for 3-12 months and are for temporary medical conditions. A medical condition doesn\u0027t necessarily entitle you to a permit, though. There are criteria for eligibility such as the inability to walk distances without severe pain or breathlessness, or you have to use a mobility aid; the complete inability to walk; or for some conditions where you require physical contact or close supervision to safely get around.\u003C\/p\u003E",
+                "input_type": "Radio",
+                "image_name": "parking.jpg",
+                "audioName": "50.mp3",
+                "video": null,
+                "permalink": "what-does-this-sign-mean1",
+                "canonical": "roadcode-questions\/car\/parking\/what-does-this-sign-mean1\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 180,
+                        "title": "You can stop here at any time for less than five minutes",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 181,
+                        "title": "You can stop here at any time as long as a person remains with the car to move it",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 182,
+                        "title": "You can stop here at any time if you have a broken or fractured leg in a cast",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 183,
+                        "isCorrect": true,
+                        "title": "You can stop here only if you have a mobility parking permit",
+                        "image_name": "",
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-12-01 03:30:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 50,
+                    "correct_text": "To park here you must display a mobility parking permit on your front window, otherwise you may be fined or have your vehicle towed away.",
+                    "incorrect_text": "To park here you must display a mobility parking permit on your front window, otherwise you may be fined or have your vehicle towed away.",
+                    "correct_image_name": "",
+                    "incorrect_image_name": "",
+                    "correct_video": "",
+                    "incorrect_video": "",
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-12-01 03:32:15.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            },
+            {
+                "id": 46,
+                "title": "When parking downhill on a steep road, what does the Road Code suggest that you should do? Select all that apply.",
+                "description": "\u003Ch1\u003EParking on a hill\u003C\/h1\u003E\r\n\u003Cp\u003EThis section of the Road Code has been around for years. The reason you would do all of this is that older style handbrakes (which are the first line of resistance, and hold the rear wheels) have a tendency to slightly loosen after being pulled on if the mechanism was hot and then cools, so if you didn\u0027t have the handbrake on hard enough, the vehicle could roll forward in a car with a manual gearbox.\u003C\/p\u003E\r\n\u003Cp\u003EIn a manual car, putting the car into reverse is the second line of defence because it provides a lot of resistance because the engine will not want to turn over backwards, which is what will happen if the car starts to roll forwards. The opposite is true if you park uphill.\u003C\/p\u003E\r\n\u003Cp\u003EIn an automatic car, P (park) prevents the car from rolling forward.\u003C\/p\u003E\r\n\u003Cp\u003EThis video shows how a mechanical\u0026nbsp;hand brake (or \u0027parking brake\u0027) works.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ciframe src=\u0022https:\/\/www.youtube.com\/embed\/MqzD5-IRVQQ?rel=0\u0022 width=\u0022640\u0022 height=\u0022360\u0022 frameborder=\u00220\u0022 allowfullscreen=\u0022allowfullscreen\u0022\u003E\u003C\/iframe\u003E\u003C\/p\u003E\r\n\u003Cp\u003EModern cars have hydraulic hand brakes which provide the optimal amount of force.\u003C\/p\u003E\r\n\u003Cp\u003EIf the car does roll forward, pointing the wheels towards the kerb means that the car will roll into the kerb and, as long as it doesn\u0027t have too much speed, the kerb will stop it. If the wheels are angled outwards the car will turn towards\u0026nbsp;the traffic lanes creating a risk to other road users.\u003C\/p\u003E",
+                "input_type": "Checkbox",
+                "image_name": null,
+                "audioName": "46.mp3",
+                "video": null,
+                "permalink": "when-parking-downhill-on-a-steep-road-wh",
+                "canonical": "roadcode-questions\/car\/parking\/when-parking-downhill-on-a-steep-road-wh\/",
+                "created": {
+                    "date": "2016-10-28 13:59:16.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "updated": {
+                    "date": "2017-12-01 00:49:23.000000",
+                    "timezone_type": 3,
+                    "timezone": "Pacific\/Auckland"
+                },
+                "answers": [
+                    {
+                        "id": 164,
+                        "isCorrect": true,
+                        "title": "Turn the wheels towards the kerb",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:24:46.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 165,
+                        "title": "Turn your wheels away from the kerb",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:24:46.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 166,
+                        "isCorrect": true,
+                        "title": "Put your car in reverse gear if it has manual transmission, or in park if it has automatic transmission",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:24:46.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 167,
+                        "title": "Leave your hazard lights on",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:24:46.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    },
+                    {
+                        "id": 168,
+                        "isCorrect": true,
+                        "title": "Put your handbrake on",
+                        "image_name": null,
+                        "created": {
+                            "date": "2016-10-28 13:59:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        },
+                        "updated": {
+                            "date": "2017-03-06 08:24:46.000000",
+                            "timezone_type": 3,
+                            "timezone": "Pacific\/Auckland"
+                        }
+                    }
+                ],
+                "question_hint": {
+                    "id": 46,
+                    "correct_text": "The Road Code doesn\u0027t specifically say to put your handbrake on, but a manual car will roll forwards if you don\u0027t, and an automatic car\u0027s park brake may be damaged.",
+                    "incorrect_text": "The road code says you should turn your wheels towards the kerb and leave it in reverse or park. If the park brake fails then the car will run forwards only slightly before hitting the kerb, where it will hopefully stop. You should have your handbrake on while parked as well, although the Road Code doesn\u0027t specifically say this.",
+                    "correct_image_name": null,
+                    "incorrect_image_name": null,
+                    "correct_video": null,
+                    "incorrect_video": null,
+                    "created": {
+                        "date": "2016-10-28 13:59:16.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    },
+                    "updated": {
+                        "date": "2017-03-06 08:24:46.000000",
+                        "timezone_type": 3,
+                        "timezone": "Pacific\/Auckland"
+                    }
+                },
+                "section": "car"
+            }
+        ]
+    },
+    "shouldDisplayAds": true,
+    "userCanPlayAudioQuestion": false,
+    "userIsProspect": false
+}

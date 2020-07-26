@@ -17,8 +17,8 @@
             <v-sheet
                 v-else
                 :class="{
-          'pa-7': !$slots.image
-        }"
+                    'pa-7': !$slots.image
+                }"
                 :color="color"
                 :max-height="icon ? 90 : undefined"
                 :width="icon ? 'auto' : '100%'"
@@ -57,7 +57,7 @@
             <div v-if="$slots['after-heading']" class="ml6">
                 <slot name="after-heading"/>
             </div>
-            <div v-else-if="$slots['reveal-actions']" class="text-center py-0 mt-n10 col col-12">
+            <div v-else-if="$slots['reveal-actions']" class="text-center py-0 mt-n12 col col-12">
                 <slot name="reveal-actions"/>
             </div>
             <div v-else-if="icon&&title" class="ml-4">
@@ -111,20 +111,20 @@
             classes() {
                 return {
                     'v-card--material--has-heading': this.hasHeading,
-                    'v-card--material--hover-reveal': this.hasAltHeading,
+                    // 'v-card--material--hover-reveal': this.hasAltHeading,
                 }
             },
             hasHeading() {
                 return Boolean(this.$slots.heading || this.title || this.icon)
             },
             hasAltHeading() {
-                return Boolean(this.$slots.heading || (this.title && this.icon))
+                return Boolean(this.$slots.heading || (this.title && this.icon)) // reveal-actions
             },
         },
     }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     .v-card--material
         &__avatar
             position: relative
@@ -136,9 +136,10 @@
             top: -40px
             transition: .3s ease
             z-index: 1
+
         &--hover-reveal:hover
             .v-card--material__heading
                 transform: translateY(-40px)
-
-
+    .v-sheet
+        border-radius: 4px
 </style>

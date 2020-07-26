@@ -13,20 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home.index');
-Route::get('/profile', 'ProfileController@index')->name('profile.index');
-
-/*
- * back-end management pages.
- * To be proxy by vue router
- */
-Route::prefix('admin')->group(function () {
-    $routes = ['/', 'dashboard', 'list', 'profile', 'about'];
-    Route::combine( $routes, "AdminController@index");
-});
+$routes = ['/','/login','/register','/learn/{id}','/mock/{id}', '/records','/about', '/admin','/admin/dashboard', '/admin/list','/admin/users', '/admin/profile', '/admin/about'];
+Route::combine($routes, 'HomeController@index');

@@ -21,7 +21,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = '/';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -33,7 +33,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::macro('combine', function(array $uris, $action)
         {
             foreach ($uris as $uri) {
-                Route::any($uri, $action);
+                Route::get($uri, $action); // Method get means that response will return app.blade.php
             }
         });
 

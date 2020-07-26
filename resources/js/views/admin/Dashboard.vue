@@ -221,9 +221,9 @@
             >
                 <base-material-stats-card
                     color="info"
-                    icon="mdi-twitter"
-                    title="Followers"
-                    value="+245"
+                    icon="mdi-account-multiple-plus"
+                    title="Users"
+                    :value="count.users_count"
                     sub-icon="mdi-clock"
                     sub-text="Just Updated"
                 />
@@ -238,9 +238,9 @@
                     color="primary"
                     icon="mdi-poll"
                     title="Website Visits"
-                    value="75.521"
+                    :value="count.visitors_count"
                     sub-icon="mdi-tag"
-                    sub-text="Tracked from Google Analytics"
+                    sub-text="Only logged users"
                 />
             </v-col>
 
@@ -252,10 +252,10 @@
                 <base-material-stats-card
                     color="success"
                     icon="mdi-store"
-                    title="Revenue"
-                    value="$ 34,245"
+                    title="Quizzes"
+                    :value="count.quizzes_count"
                     sub-icon="mdi-calendar"
-                    sub-text="Last 24 Hours"
+                    sub-text="Since July 2020"
                 />
             </v-col>
 
@@ -267,17 +267,18 @@
                 <base-material-stats-card
                     color="orange"
                     icon="mdi-sofa"
-                    title="Bookings"
-                    value="184"
+                    title="Records"
+                    :value="count.records_count"
                     sub-icon="mdi-alert"
                     sub-icon-color="red"
-                    sub-text="Get More Space..."
+                    sub-text="Just Updated"
                 />
             </v-col>
 
             <v-col
                 cols="12"
                 md="6"
+                v-if="false"
             >
                 <base-material-card
                     color="warning"
@@ -339,6 +340,7 @@
             <v-col
                 cols="12"
                 md="6"
+                v-if="false"
             >
                 <base-material-card class="px-5 py-3">
                     <template v-slot:heading>
@@ -462,11 +464,13 @@
 </template>
 
 <script>
+    import {getVisitors} from '_a/admin'
     export default {
         name: 'DashboardDashboard',
 
         data () {
             return {
+                count:{},
                 dailySalesChart: {
                     data: {
                         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -665,6 +669,19 @@
             complete (index) {
                 this.list[index] = !this.list[index]
             },
+            async init(){
+                const {data} = await getVisitors();
+                Object.keys(data).forEach(item => data[item] = data[item].toString())
+                this.count = data
+            }
         },
+        created() {
+            this.init()
+        }
     }
 </script>
+<style scoped lang="scss">
+    #dashboard{
+        min-height: calc(100vh - 168px);
+    }
+</style>

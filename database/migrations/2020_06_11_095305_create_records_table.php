@@ -15,13 +15,13 @@ class CreateRecordsTable extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("user_id");
-            $table->integer("total");
-            $table->integer("correct");
-            $table->string("type");
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId("quiz_id");
+            $table->string("my_answers");
             $table->timestamps();
 
             $table->index("user_id");
+            $table->index("quiz_id");
         });
     }
 

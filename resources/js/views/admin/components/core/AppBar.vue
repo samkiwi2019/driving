@@ -14,7 +14,7 @@
             small
             @click="setDrawer(!drawer)"
         >
-            <v-icon v-if="value">
+            <v-icon v-if="!drawer">
                 mdi-view-quilt
             </v-icon>
 
@@ -52,6 +52,14 @@
         </v-text-field>
 
         <div class="mx-3"/>
+        <v-btn
+            class="ml-2"
+            min-width="0"
+            text
+            to="/"
+        >
+            <v-icon>mdi-home</v-icon>
+        </v-btn>
 
         <v-btn
             class="ml-2"
@@ -105,15 +113,41 @@
                 </div>
             </v-list>
         </v-menu>
-
-        <v-btn
-            class="ml-2"
-            min-width="0"
-            text
-            to="/admin/profile"
+        <v-menu
+            bottom
+            left
+            offset-y
+            origin="top right"
+            transition="scale-transition"
         >
-            <v-icon>mdi-account</v-icon>
-        </v-btn>
+            <template v-slot:activator="{ attrs, on }">
+                <v-btn
+                    class="ml-2"
+                    min-width="0"
+                    text
+                    v-bind="attrs"
+                    v-on="on"
+                >
+                    <v-icon>mdi-account</v-icon>
+                </v-btn>
+            </template>
+
+            <v-list
+                :tile="false"
+                nav
+                min-width="200"
+            >
+                <div>
+                    <app-bar-item to="/admin/profile">
+                        <v-list-item-title v-text="'Profile'"/>
+                    </app-bar-item>
+                    <v-divider></v-divider>
+                    <app-bar-item @click.native="logoutAction">
+                        <v-list-item-title v-text="'Logout'"/>
+                    </app-bar-item>
+                </div>
+            </v-list>
+        </v-menu>
     </v-app-bar>
 </template>
 
@@ -124,6 +158,7 @@
     // Utilities
     import {createNamespacedHelpers} from 'vuex'
     const {mapState, mapMutations} = createNamespacedHelpers('config');
+    const {mapActions} = createNamespacedHelpers('user');
 
     export default {
         name: 'DashboardCoreAppBar',
@@ -154,13 +189,6 @@
             },
         },
 
-        props: {
-            value: {
-                type: Boolean,
-                default: false,
-            },
-        },
-
         data: () => ({
             notifications: [
                 'Sorry.',
@@ -176,6 +204,9 @@
         },
 
         methods: {
+            ...mapActions({
+               logoutAction: 'logoutAction'
+            }),
             ...mapMutations({
                 setDrawer: 'SET_DRAWER',
             }),
