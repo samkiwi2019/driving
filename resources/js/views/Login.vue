@@ -3,11 +3,10 @@
         <div class="login-card">
             <base-material-card
                 color="success"
-                icon="mdi-login"
+                icon="mdi-fingerprint"
                 title="Welcome, Driving Test"
                 class="px-5"
             >
-
                 <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
                     <form>
                         <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
@@ -29,8 +28,7 @@
                                 required
                             ></v-text-field>
                         </ValidationProvider>
-                        <br>
-                        <div class="d-flex justify-center">
+                        <div class="d-flex justify-center my-3">
                             <v-btn
                                 class="mr-4"
                                 @click="handleSubmit(signIn)"
@@ -44,6 +42,10 @@
                         </div>
                     </form>
                 </ValidationObserver>
+                <v-divider></v-divider>
+                <p class="subtitle-1 font-weight-light mt-5">
+                    Don't have an account? <a href="/register" class="text-decoration-underline">Sign up</a>
+                </p>
             </base-material-card>
         </div>
     </div>

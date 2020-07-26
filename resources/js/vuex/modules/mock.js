@@ -3,7 +3,6 @@ import {getMockList} from "_a/admin";
 const state = {
     mockItems: [],
     index: 0, // current index of mockItems
-    userAnswers: [],
     type: "", // current type of quiz
     length: 30, // how many quizzes will be got. only works on mock model.
 }
@@ -14,13 +13,20 @@ const getters = {};
 // actions
 const actions = {
 
-    async getMockItems({state, commit}, payload) {
-        if (state.mockItems.length === 0) {
+    getMockItems({state, commit}, payload) {
+        return new Promise(async (resolve) => {
             const {data, status} = await getMockList(payload);
             if (status === 200 && data.data.length > 0) {
-                commit('SET_MOCK_ITEMS', data.data)
+                const items = data.data.map(item => ({
+                    ...item,
+                    marked: null, // save users' answer if it is correct.
+                }))
+                commit('SET_MOCK_ITEMS', items)
+                resolve('finished')
             }
-        }
+            resolve('finished')
+        })
+
     }
 };
 

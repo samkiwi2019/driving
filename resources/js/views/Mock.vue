@@ -1,15 +1,11 @@
 <template>
-    <div class="container-main">mock</div>
+    <mock-test type="all" :length="$route.params.id" />
 </template>
 
 <script>
+    import MockTest from '_c/MockTest'
     export default {
-        name: "mock"
+        name: "mock",
+        components:{MockTest},
     }
 </script>
-
-<style scoped>
-    .container-main{
-        padding-top: 64px;
-    }
-</style>

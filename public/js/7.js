@@ -89,6 +89,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Register",
@@ -195,7 +198,11 @@ var render = function() {
           "base-material-card",
           {
             staticClass: "px-5",
-            attrs: { color: "success", icon: "mdi-car", title: "Registration" }
+            attrs: {
+              color: "success",
+              icon: "mdi-account-multiple-plus",
+              title: "Registration"
+            }
           },
           [
             _c("ValidationObserver", {
@@ -397,11 +404,9 @@ var render = function() {
                             )
                           }),
                           _vm._v(" "),
-                          _c("br"),
-                          _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "d-flex justify-center" },
+                            { staticClass: "d-flex justify-center my-3" },
                             [
                               _c(
                                 "v-btn",
@@ -436,7 +441,21 @@ var render = function() {
                   }
                 }
               ])
-            })
+            }),
+            _vm._v(" "),
+            _c("v-divider"),
+            _vm._v(" "),
+            _c("p", { staticClass: "subtitle-1 font-weight-light mt-5" }, [
+              _vm._v("\n                Already have an account? "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-decoration-underline",
+                  attrs: { href: "/login" }
+                },
+                [_vm._v("Login")]
+              )
+            ])
           ],
           1
         )
@@ -468,7 +487,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -492,7 +512,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__["VTextField"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_6__["VDivider"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_7__["VTextField"]})
 
 
 /* hot reload */

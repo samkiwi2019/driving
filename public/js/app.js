@@ -3148,6 +3148,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -7748,7 +7750,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".v-application .v-navigation-drawer .v-navigation-drawer__content .v-list-item .v-list-item__content .v-list-item__title.display-2 {\n  font-size: 18px !important;\n  margin-top: 12px;\n  margin-bottom: 12px;\n}\n\n.v-application .v-navigation-drawer .v-navigation-drawer__content .v-list .v-list-group .v-list-group__header .v-list-item__content .v-list-item__title {\n  font-size: 14px;\n  font-weight: 300;\n}\n\n.v-application--is-ltr .v-list-item__avatar:first-child {\n  margin-right: 11px;\n}\n\n.v-application .v-navigation-drawer .v-navigation-drawer__content .v-list-item__icon.v-list-group__header__append-icon .v-icon {\n  font-size: 19px;\n}\n\n.v-application--is-ltr #core-navigation-drawer div.v-list-item__icon--text,\n.v-application--is-ltr #core-navigation-drawer div.v-list-item__icon:first-child {\n  margin-left: 5px !important;\n  margin-right: 18px;\n  opacity: 0.8;\n}\n\n.v-application--is-ltr .v-list-item__action:last-of-type:not(:only-child),\n.v-application--is-ltr .v-list-item__avatar:last-of-type:not(:only-child),\n.v-application--is-ltr .v-list-item__icon:last-of-type:not(:only-child) {\n  margin-right: 2px;\n}\n\n.v-list--nav.v-list--dense .v-list-item:not(:last-child):not(:only-child),\n.v-list--nav .v-list-item--dense:not(:last-child):not(:only-child),\n.v-list--rounded.v-list--dense .v-list-item:not(:last-child):not(:only-child),\n.v-list--rounded .v-list-item--dense:not(:last-child):not(:only-child) {\n  margin-bottom: 3px;\n}\n\n.v-list-item .v-list-item__title, .v-list-item .v-list-item__subtitle {\n  line-height: 1.2;\n  font-weight: 300;\n  font-size: 14px;\n}\n\n.v-list-group__items .v-list-item {\n  font-size: 13px;\n  margin-bottom: 5px !important;\n}\n.v-list-group__items .v-list-item .v-list-item__title {\n  font-size: 13px;\n}\n.v-list-group__items .v-list-item .v-list-item__icon {\n  margin-top: 14px;\n}\n\n.v-list-group__items .v-list-group--sub-group .v-list-group__header .v-list-item__icon--text {\n  margin-top: 15px !important;\n}\n\n.v-list-item__icon {\n  margin: 12px 0;\n}\n\n.theme--dark.v-list-item--active:hover::before, .theme--dark.v-list-item--active::before {\n  opacity: 0;\n}\n\n.v-navigation-drawer .v-list-item__content {\n  transition: all 0.3s linear 0s;\n}\n\n.v-list--nav {\n  padding-left: 15px;\n  padding-right: 15px;\n}\n\n.theme--dark.v-navigation-drawer .v-divider {\n  background-color: rgba(181, 181, 181, 0.2);\n  border-color: rgba(181, 181, 181, 0.1);\n  width: calc(100% - 30px);\n  margin-left: 15px;\n}\n\n#app-bar .v-badge__badge {\n  font-size: 9px;\n  padding: 5px 6px;\n}\n\n.v-toolbar__content,\n.v-toolbar__extension {\n  padding: 0px 15px 0 31px;\n}\n\n.v-sheet .v-toolbar__content .v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab),\n.v-sheet .v-toolbar__content .v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  margin-bottom: 5px;\n  padding: 10px 15px !important;\n}\n.v-sheet .v-toolbar__content .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  background-color: #fff;\n}\n.v-sheet .v-toolbar__content .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) .v-icon {\n  color: #999;\n}\n\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  background-color: #fff;\n  margin-right: 17px;\n  margin-bottom: 2px;\n}\n\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):hover {\n  background-color: #fff;\n}\n\n.v-toolbar__content {\n  height: 75px;\n}\n\n.v-toolbar__content .v-btn--flat .v-icon {\n  margin-right: 3px;\n}\n\n.theme--light.v-label {\n  color: rgba(0, 0, 0, 0.3);\n}\n\n.v-menu__content .v-list--nav {\n  padding: 0.3125rem 0;\n  border-radius: 4px;\n}\n.v-menu__content .v-list--nav .v-list-item {\n  padding: 10px 20px;\n  margin: 0 0.3125rem;\n  margin-bottom: 0px !important;\n  min-height: 40px;\n  border-radius: 2px;\n}\n.v-menu__content .v-list--nav .v-list-item .v-list-item__title {\n  font-weight: 400;\n  font-size: 13px;\n}\n\n.v-navigation-drawer .v-icon.v-icon {\n  font-size: 24px;\n}\n\n.v-btn.v-size--default {\n  font-size: 0.85rem;\n}\n\n.v-icon.v-icon {\n  font-size: 20px;\n}\n\n.v-btn__content .v-icon--left {\n  margin-right: 4px;\n}\n\n.v-sheet button.v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 12px 30px !important;\n}\n\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  background-color: #999;\n  color: #fff;\n}\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):hover {\n  background-color: #999;\n  color: #fff;\n}\n\n.v-btn.white .v-btn__content {\n  color: #999;\n}\n\n.v-sheet .v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 18px 36px !important;\n}\n\n.v-btn--fab.v-size--small {\n  height: 41px;\n  width: 41px;\n}\n\n.v-btn:not(.v-btn--text):not(.v-btn--outlined):focus:before {\n  opacity: 0;\n}\n\n.v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab),\n.v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 10px 15px !important;\n}\n\n.v-item-group .v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  margin-right: 0;\n}\n\n.v-btn-toggle .v-btn {\n  opacity: 1;\n}\n\n.v-btn-toggle > .v-btn.v-size--default {\n  height: inherit;\n}\n\n.theme--light.v-btn-toggle .v-btn.v-btn {\n  border-color: #999 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.primary {\n  border-color: #e91e63 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.secondary {\n  border-color: #9c27b0 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.success {\n  border-color: #4caf50 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.warning {\n  border-color: #fb8c00 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.error {\n  border-color: #ff5252 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.info {\n  border-color: #00cae3 !important;\n}\n\n.v-pagination .v-pagination__item:focus,\n.v-pagination .v-pagination__navigation:focus {\n  outline: none;\n}\n\n.v-footer {\n  padding: 20px 0 20px 4px;\n  border-top: 1px solid #e7e7e7 !important;\n  position: relative;\n}\n.v-footer a {\n  padding: 15px 18px 15px 16px;\n  font-size: 12px !important;\n}\n.v-footer .body-1 {\n  font-size: 16px !important;\n  padding-right: 18px;\n  letter-spacing: 0px !important;\n}\n.v-footer .body-1 a {\n  color: #9c27b0 !important;\n  padding: 0;\n  text-transform: inherit !important;\n  font-size: 16px !important;\n  font-weight: 300 !important;\n}\n.v-footer .v-icon {\n  margin-top: -3px;\n}\n.v-footer.v-footer--absolute {\n  position: absolute !important;\n}\n\n.theme--light.v-footer {\n  background-color: transparent;\n}\n.theme--light.v-footer .body-1 {\n  color: #3c4858;\n}\n.theme--light.v-footer .v-icon {\n  color: #3c4858;\n}\n\n.v-content__wrap .container--fluid {\n  padding-left: 30px;\n  padding-right: 30px;\n}\n\n.v-application .headline {\n  font-size: 25px !important;\n  padding-bottom: 0;\n}\n\n.v-application .black--text {\n  color: #333 !important;\n}\n\n.v-application .small {\n  font-weight: 300;\n  line-height: 2rem;\n}\n.v-application .small small {\n  font-weight: 400;\n}\n\n@media (max-width: 960px) {\n  .v-content__wrap .container--fluid {\n    padding-left: 15px;\n    padding-right: 15px;\n  }\n}\n#settings {\n  z-index: 200;\n}\n\n.v-settings {\n  border-radius: 10px;\n}\n.v-settings .v-card {\n  margin-top: 0;\n}\n.v-settings .v-card__text strong {\n  height: 30px;\n  line-height: 25px;\n  font-size: 12px;\n  font-weight: 600;\n  text-transform: uppercase;\n  text-align: center;\n}\n.v-settings .v-avatar {\n  border-color: #fff;\n  border-radius: 50% !important;\n  cursor: pointer;\n  display: inline-block;\n  height: 23px;\n  margin-right: 12px;\n  position: relative;\n  width: 23px;\n  padding: 8px;\n}\n.v-settings .v-settings__item {\n  border-radius: 10px;\n}\n.v-settings .v-settings__item .v-image {\n  border-radius: 7px !important;\n}\n.v-settings .v-settings__item:not(.v-settings__item--active) {\n  border-color: #fff !important;\n}\n.v-settings .v-divider.secondary {\n  border-color: #dddddd !important;\n}\n\n.v-card {\n  border-radius: 6px;\n  margin-top: 30px;\n  margin-bottom: 15px;\n}\n.v-card .card-title {\n  font-size: 18px;\n}\n.v-card .v-card--material__heading {\n  top: -30px;\n}\n.v-card .v-card--material__heading .subtitle-1 {\n  color: rgba(255, 255, 255, 0.8);\n}\n.v-card .v-card--material__heading .display-2 {\n  font-size: 18px !important;\n}\n.v-card .caption {\n  font-size: 12px !important;\n  letter-spacing: 0 !important;\n}\n.v-card .v-card__actions {\n  padding-top: 15px;\n}\n.v-card .v-card__actions .display-2 {\n  font-size: 18px !important;\n}\n.v-card .v-divider {\n  border-color: #eee;\n}\n.v-card .ct-label {\n  font-size: 14px;\n}\n\n.v-card--material-chart .v-card--material__heading .ct-label {\n  font-weight: 300;\n}\n\n.v-btn--icon.v-size--default .v-icon,\n.v-btn--fab.v-size--default .v-icon {\n  font-size: 18px;\n}\n\n.v-card--material .v-image .v-image__image {\n  border-radius: 6px;\n}\n\n.v-card__title {\n  font-size: 18px;\n  padding-top: 7px;\n  padding-bottom: 2px;\n}\n\n.theme--light .v-card > .v-card__text {\n  color: #333;\n}\n.theme--light .card-title {\n  color: #3c4858;\n}\n\n.theme--dark .card-title {\n  color: #fff;\n}\n\n.v-timeline-item .v-card {\n  margin-top: 0;\n}\n\n.v-card--wizard .v-tabs-bar {\n  height: 42px;\n}\n.v-card--wizard .v-card__actions .v-btn {\n  margin-right: 0 !important;\n}\n.v-card--wizard .v-tabs .v-tab--active:hover::before, .v-card--wizard .theme--light.v-tabs .v-tab--active::before {\n  opacity: 0;\n}\n.v-card--wizard .v-tabs .v-tab:hover::before {\n  opacity: 0;\n}\n\n.v-card--plan .body-2 {\n  font-weight: 500;\n  letter-spacing: 0 !important;\n  margin-top: 10px;\n  margin-bottom: 8px;\n}\n.v-card--plan .display-2 {\n  margin-top: 30px;\n}\n.v-card--plan .v-card__text {\n  color: #999;\n  margin-bottom: 16px;\n}\n.v-card--plan .v-btn {\n  margin-right: 0 !important;\n}\n.v-card--plan .v-avatar {\n  margin-top: 10px;\n}\n\n.v-card--testimony .v-card__text {\n  color: #999 !important;\n}\n.v-card--testimony .display-2 {\n  font-size: 18px !important;\n}\n.v-card--testimony .body-2 {\n  font-weight: 500;\n  font-size: 12px !important;\n}\n.v-card--testimony .v-avatar {\n  left: calc(50% - 50px);\n}\n\n.ct-square:before {\n  float: none;\n}\n\n.v-data-table td {\n  font-weight: 300;\n  padding: 12px 8px;\n}\n\n.v-data-table table thead tr th {\n  font-weight: 300;\n  font-size: 17px;\n  padding: 0px 8px;\n}\n\n.v-data-table table tbody tr td .v-btn {\n  margin-right: 0px !important;\n}\n\n.v-data-table .v-data-table-header__sort-badge {\n  font-size: 10px;\n}\n\n.v-data-table.theme--dark tr th {\n  color: #fff !important;\n}\n\n.theme--light .v-data-table table thead tr th {\n  color: #333;\n}\n\n.v-card--wizard .v-tabs-bar .v-slide-group__wrapper {\n  overflow: visible;\n  display: -webkit-inline-box;\n  contain: inherit;\n}\n.v-card--wizard .v-tabs-bar .v-slide-group__wrapper .v-slide-group__content {\n  z-index: 2;\n}\n.v-card--wizard .v-tabs-bar .v-tab:not(:first-child) {\n  margin-left: 5px;\n}\n\n.v-alert {\n  padding: 20px 15px;\n}\n.v-alert .v-alert__wrapper .v-alert__icon {\n  height: 38px;\n  min-width: 38px;\n}\n.v-alert .v-alert__wrapper .v-alert__content {\n  font-weight: 300;\n}\n.v-alert .v-alert__wrapper .v-alert__content span {\n  font-size: 12px;\n  font-weight: 500;\n}\n\n.v-dialog .v-card {\n  margin: 0;\n}\n.v-dialog .v-card .v-card__title {\n  font-weight: 300;\n  font-size: 18px;\n  display: inline-block;\n  text-align: center;\n  width: 100%;\n  padding: 24px 24px 0;\n}\n.v-dialog .v-card .v-card__title .v-icon {\n  position: absolute;\n  top: 15px;\n  right: 20px;\n  color: #999;\n  opacity: 0.5;\n  font-size: 16px;\n}\n.v-dialog .v-card .v-card__title .v-icon:hover {\n  opacity: 1;\n}\n\n.v-dialog > .v-card > .v-card__text {\n  padding-top: 24px;\n  font-weight: 300;\n  line-height: 1.75em;\n  letter-spacing: 0;\n}\n\n.mapouter {\n  position: relative !important;\n  height: 100vh !important;\n}\n\n.v-chip.v-size--small {\n  height: 20px;\n}\n\n.v-chip__content {\n  font-size: 10px;\n  font-weight: 500;\n}\n.v-chip__content .v-chip__close {\n  font-size: 15px;\n  margin-top: -1px;\n}\n\n.v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab),\n.v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 0 30px !important;\n}\n\n.theme--light.v-list-item .v-list-item__action-text,\n.theme--light.v-list-item .v-list-item__subtitle {\n  color: #999;\n}\n\n.theme--light.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: #d2d2d2;\n}\n\n.v-label.v-label,\n.v-alert.v-alert {\n  font-size: 14px;\n}\n\n.theme--light .v-content {\n  background-color: #eee;\n}\n\nbody {\n  margin-bottom: 0 !important;\n}\n\n.container-main {\n  min-height: calc(100vh - 94px);\n}", ""]);
+exports.push([module.i, ".v-application .v-navigation-drawer .v-navigation-drawer__content .v-list-item .v-list-item__content .v-list-item__title.display-2 {\n  font-size: 18px !important;\n  margin-top: 12px;\n  margin-bottom: 12px;\n}\n\n.v-application .v-navigation-drawer .v-navigation-drawer__content .v-list .v-list-group .v-list-group__header .v-list-item__content .v-list-item__title {\n  font-size: 14px;\n  font-weight: 300;\n}\n\n.v-application--is-ltr .v-list-item__avatar:first-child {\n  margin-right: 11px;\n}\n\n.v-application .v-navigation-drawer .v-navigation-drawer__content .v-list-item__icon.v-list-group__header__append-icon .v-icon {\n  font-size: 19px;\n}\n\n.v-application--is-ltr #core-navigation-drawer div.v-list-item__icon--text,\n.v-application--is-ltr #core-navigation-drawer div.v-list-item__icon:first-child {\n  margin-left: 5px !important;\n  margin-right: 18px;\n  opacity: 0.8;\n}\n\n.v-application--is-ltr .v-list-item__action:last-of-type:not(:only-child),\n.v-application--is-ltr .v-list-item__avatar:last-of-type:not(:only-child),\n.v-application--is-ltr .v-list-item__icon:last-of-type:not(:only-child) {\n  margin-right: 2px;\n}\n\n.v-list--nav.v-list--dense .v-list-item:not(:last-child):not(:only-child),\n.v-list--nav .v-list-item--dense:not(:last-child):not(:only-child),\n.v-list--rounded.v-list--dense .v-list-item:not(:last-child):not(:only-child),\n.v-list--rounded .v-list-item--dense:not(:last-child):not(:only-child) {\n  margin-bottom: 3px;\n}\n\n.v-list-item .v-list-item__title, .v-list-item .v-list-item__subtitle {\n  line-height: 1.2;\n  font-weight: 300;\n  font-size: 14px;\n}\n\n.v-list-group__items .v-list-item {\n  font-size: 13px;\n  margin-bottom: 5px !important;\n}\n.v-list-group__items .v-list-item .v-list-item__title {\n  font-size: 13px;\n}\n.v-list-group__items .v-list-item .v-list-item__icon {\n  margin-top: 14px;\n}\n\n.v-list-group__items .v-list-group--sub-group .v-list-group__header .v-list-item__icon--text {\n  margin-top: 15px !important;\n}\n\n.v-list-item__icon {\n  margin: 12px 0;\n}\n\n.theme--dark.v-list-item--active:hover::before, .theme--dark.v-list-item--active::before {\n  opacity: 0;\n}\n\n.v-navigation-drawer .v-list-item__content {\n  transition: all 0.3s linear 0s;\n}\n\n.v-list--nav {\n  padding-left: 15px;\n  padding-right: 15px;\n}\n\n.theme--dark.v-navigation-drawer .v-divider {\n  background-color: rgba(181, 181, 181, 0.2);\n  border-color: rgba(181, 181, 181, 0.1);\n  width: calc(100% - 30px);\n  margin-left: 15px;\n}\n\n#app-bar .v-badge__badge {\n  font-size: 9px;\n  padding: 5px 6px;\n}\n\n.v-toolbar__content,\n.v-toolbar__extension {\n  padding: 0px 15px 0 31px;\n}\n\n.v-sheet .v-toolbar__content .v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab),\n.v-sheet .v-toolbar__content .v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  margin-bottom: 5px;\n  padding: 10px 15px !important;\n}\n.v-sheet .v-toolbar__content .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  background-color: #fff;\n}\n.v-sheet .v-toolbar__content .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) .v-icon {\n  color: #999;\n}\n\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  background-color: #fff;\n  margin-right: 17px;\n  margin-bottom: 2px;\n}\n\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):hover {\n  background-color: #fff;\n}\n\n.v-toolbar__content {\n  height: 75px;\n}\n\n.v-toolbar__content .v-btn--flat .v-icon {\n  margin-right: 3px;\n}\n\n.theme--light.v-label {\n  color: rgba(0, 0, 0, 0.3);\n}\n\n.v-menu__content .v-list--nav {\n  padding: 0.3125rem 0;\n  border-radius: 4px;\n}\n.v-menu__content .v-list--nav .v-list-item {\n  padding: 10px 20px;\n  margin: 0 0.3125rem;\n  margin-bottom: 0px !important;\n  min-height: 40px;\n  border-radius: 2px;\n}\n.v-menu__content .v-list--nav .v-list-item .v-list-item__title {\n  font-weight: 400;\n  font-size: 13px;\n}\n\n.v-navigation-drawer .v-icon.v-icon {\n  font-size: 24px;\n}\n\n.v-btn.v-size--default {\n  font-size: 0.85rem;\n}\n\n.v-icon.v-icon {\n  font-size: 20px;\n}\n\n.v-btn__content .v-icon--left {\n  margin-right: 4px;\n}\n\n.v-sheet button.v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 12px 30px !important;\n}\n\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  background-color: #999;\n  color: #fff;\n}\n.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):hover {\n  background-color: #999;\n  color: #fff;\n}\n\n.v-btn.white .v-btn__content {\n  color: #999;\n}\n\n.v-sheet .v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 18px 36px !important;\n}\n\n.v-btn--fab.v-size--small {\n  height: 41px;\n  width: 41px;\n}\n\n.v-btn:not(.v-btn--text):not(.v-btn--outlined):focus:before {\n  opacity: 0;\n}\n\n.v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab),\n.v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 10px 15px !important;\n}\n\n.v-item-group .v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {\n  margin-right: 0;\n}\n\n.v-btn-toggle .v-btn {\n  opacity: 1;\n}\n\n.v-btn-toggle > .v-btn.v-size--default {\n  height: inherit;\n}\n\n.theme--light.v-btn-toggle .v-btn.v-btn {\n  border-color: #999 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.primary {\n  border-color: #e91e63 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.secondary {\n  border-color: #9c27b0 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.success {\n  border-color: #4caf50 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.warning {\n  border-color: #fb8c00 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.error {\n  border-color: #ff5252 !important;\n}\n.theme--light.v-btn-toggle .v-btn.v-btn.info {\n  border-color: #00cae3 !important;\n}\n\n.v-pagination .v-pagination__item:focus,\n.v-pagination .v-pagination__navigation:focus {\n  outline: none;\n}\n\n.v-footer {\n  padding: 20px 0 20px 4px;\n  border-top: 1px solid #e7e7e7 !important;\n  position: relative;\n}\n.v-footer a {\n  padding: 15px 18px 15px 16px;\n  font-size: 12px !important;\n}\n.v-footer .body-1 {\n  font-size: 16px !important;\n  padding-right: 18px;\n  letter-spacing: 0px !important;\n}\n.v-footer .body-1 a {\n  color: #9c27b0 !important;\n  padding: 0;\n  text-transform: inherit !important;\n  font-size: 16px !important;\n  font-weight: 300 !important;\n}\n.v-footer .v-icon {\n  margin-top: -3px;\n}\n.v-footer.v-footer--absolute {\n  position: absolute !important;\n}\n\n.theme--light.v-footer {\n  background-color: transparent;\n}\n.theme--light.v-footer .body-1 {\n  color: #3c4858;\n}\n.theme--light.v-footer .v-icon {\n  color: #3c4858;\n}\n\n.v-content__wrap .container--fluid {\n  padding-left: 30px;\n  padding-right: 30px;\n}\n\n.v-application .headline {\n  font-size: 25px !important;\n  padding-bottom: 0;\n}\n\n.v-application .black--text {\n  color: #333 !important;\n}\n\n.v-application .small {\n  font-weight: 300;\n  line-height: 2rem;\n}\n.v-application .small small {\n  font-weight: 400;\n}\n\n@media (max-width: 960px) {\n  .v-content__wrap .container--fluid {\n    padding-left: 15px;\n    padding-right: 15px;\n  }\n}\n#settings {\n  z-index: 200;\n}\n\n.v-settings {\n  border-radius: 10px;\n}\n.v-settings .v-card {\n  margin-top: 0;\n}\n.v-settings .v-card__text strong {\n  height: 30px;\n  line-height: 25px;\n  font-size: 12px;\n  font-weight: 600;\n  text-transform: uppercase;\n  text-align: center;\n}\n.v-settings .v-avatar {\n  border-color: #fff;\n  border-radius: 50% !important;\n  cursor: pointer;\n  display: inline-block;\n  height: 23px;\n  margin-right: 12px;\n  position: relative;\n  width: 23px;\n  padding: 8px;\n}\n.v-settings .v-settings__item {\n  border-radius: 10px;\n}\n.v-settings .v-settings__item .v-image {\n  border-radius: 7px !important;\n}\n.v-settings .v-settings__item:not(.v-settings__item--active) {\n  border-color: #fff !important;\n}\n.v-settings .v-divider.secondary {\n  border-color: #dddddd !important;\n}\n\n.v-card {\n  border-radius: 6px;\n  margin-top: 30px;\n  margin-bottom: 15px;\n}\n.v-card .card-title {\n  font-size: 18px;\n}\n.v-card .v-card--material__heading {\n  top: -30px;\n}\n.v-card .v-card--material__heading .subtitle-1 {\n  color: rgba(255, 255, 255, 0.8);\n}\n.v-card .v-card--material__heading .display-2 {\n  font-size: 18px !important;\n}\n.v-card .caption {\n  font-size: 12px !important;\n  letter-spacing: 0 !important;\n}\n.v-card .v-card__actions {\n  padding-top: 15px;\n}\n.v-card .v-card__actions .display-2 {\n  font-size: 18px !important;\n}\n.v-card .v-divider {\n  border-color: #eee;\n}\n.v-card .ct-label {\n  font-size: 14px;\n}\n\n.v-card--material-chart .v-card--material__heading .ct-label {\n  font-weight: 300;\n}\n\n.v-btn--icon.v-size--default .v-icon,\n.v-btn--fab.v-size--default .v-icon {\n  font-size: 18px;\n}\n\n.v-card--material .v-image .v-image__image {\n  border-radius: 6px;\n}\n\n.v-card__title {\n  font-size: 18px;\n  padding-top: 7px;\n  padding-bottom: 2px;\n}\n\n.theme--light .v-card > .v-card__text {\n  color: #333;\n}\n.theme--light .card-title {\n  color: #3c4858;\n}\n\n.theme--dark .card-title {\n  color: #fff;\n}\n\n.v-timeline-item .v-card {\n  margin-top: 0;\n}\n\n.v-card--wizard .v-tabs-bar {\n  height: 42px;\n}\n.v-card--wizard .v-card__actions .v-btn {\n  margin-right: 0 !important;\n}\n.v-card--wizard .v-tabs .v-tab--active:hover::before, .v-card--wizard .theme--light.v-tabs .v-tab--active::before {\n  opacity: 0;\n}\n.v-card--wizard .v-tabs .v-tab:hover::before {\n  opacity: 0;\n}\n\n.v-card--plan .body-2 {\n  font-weight: 500;\n  letter-spacing: 0 !important;\n  margin-top: 10px;\n  margin-bottom: 8px;\n}\n.v-card--plan .display-2 {\n  margin-top: 30px;\n}\n.v-card--plan .v-card__text {\n  color: #999;\n  margin-bottom: 16px;\n}\n.v-card--plan .v-btn {\n  margin-right: 0 !important;\n}\n.v-card--plan .v-avatar {\n  margin-top: 10px;\n}\n\n.v-card--testimony .v-card__text {\n  color: #999 !important;\n}\n.v-card--testimony .display-2 {\n  font-size: 18px !important;\n}\n.v-card--testimony .body-2 {\n  font-weight: 500;\n  font-size: 12px !important;\n}\n.v-card--testimony .v-avatar {\n  left: calc(50% - 50px);\n}\n\n.ct-square:before {\n  float: none;\n}\n\n.v-data-table td {\n  font-weight: 300;\n  padding: 12px 8px;\n}\n\n.v-data-table table thead tr th {\n  font-weight: 300;\n  font-size: 17px;\n  padding: 0px 8px;\n}\n\n.v-data-table table tbody tr td .v-btn {\n  margin-right: 0px !important;\n}\n\n.v-data-table .v-data-table-header__sort-badge {\n  font-size: 10px;\n}\n\n.v-data-table.theme--dark tr th {\n  color: #fff !important;\n}\n\n.theme--light .v-data-table table thead tr th {\n  color: #333;\n}\n\n.v-card--wizard .v-tabs-bar .v-slide-group__wrapper {\n  overflow: visible;\n  display: -webkit-inline-box;\n  contain: inherit;\n}\n.v-card--wizard .v-tabs-bar .v-slide-group__wrapper .v-slide-group__content {\n  z-index: 2;\n}\n.v-card--wizard .v-tabs-bar .v-tab:not(:first-child) {\n  margin-left: 5px;\n}\n\n.v-alert {\n  padding: 20px 15px;\n}\n.v-alert .v-alert__wrapper .v-alert__icon {\n  height: 38px;\n  min-width: 38px;\n}\n.v-alert .v-alert__wrapper .v-alert__content {\n  font-weight: 300;\n}\n.v-alert .v-alert__wrapper .v-alert__content span {\n  font-size: 12px;\n  font-weight: 500;\n}\n\n.v-dialog .v-card {\n  margin: 0;\n}\n.v-dialog .v-card .v-card__title {\n  font-weight: 300;\n  font-size: 18px;\n  display: inline-block;\n  text-align: center;\n  width: 100%;\n  padding: 24px 24px 0;\n}\n.v-dialog .v-card .v-card__title .v-icon {\n  position: absolute;\n  top: 15px;\n  right: 20px;\n  color: #999;\n  opacity: 0.5;\n  font-size: 16px;\n}\n.v-dialog .v-card .v-card__title .v-icon:hover {\n  opacity: 1;\n}\n\n.v-dialog > .v-card > .v-card__text {\n  padding-top: 24px;\n  font-weight: 300;\n  line-height: 1.75em;\n  letter-spacing: 0;\n}\n\n.mapouter {\n  position: relative !important;\n  height: 100vh !important;\n}\n\n.v-chip.v-size--small {\n  height: 20px;\n}\n\n.v-chip__content {\n  font-size: 10px;\n  font-weight: 500;\n}\n.v-chip__content .v-chip__close {\n  font-size: 15px;\n  margin-top: -1px;\n}\n\n.v-btn.v-size--default:not(.v-btn--icon):not(.v-btn--fab),\n.v-btn.v-size--large:not(.v-btn--icon):not(.v-btn--fab) {\n  padding: 0 30px !important;\n}\n\n.theme--light.v-list-item .v-list-item__action-text,\n.theme--light.v-list-item .v-list-item__subtitle {\n  color: #999;\n}\n\n.theme--light.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: #d2d2d2;\n}\n\n.v-label.v-label,\n.v-alert.v-alert {\n  font-size: 14px;\n}\n\n.theme--light .v-content {\n  background-color: #eee;\n}\n\nbody {\n  margin-bottom: 0 !important;\n}\n\n.container-main {\n  min-height: calc(100vh - 94px);\n}\n\n.v-application .display-2 {\n  font-size: 1.5625rem !important;\n  letter-spacing: normal !important;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -19116,7 +19118,7 @@ var render = function() {
             staticClass: "px-5",
             attrs: {
               color: "success",
-              icon: "mdi-login",
+              icon: "mdi-fingerprint",
               title: "Welcome, Driving Test"
             }
           },
@@ -19207,11 +19209,9 @@ var render = function() {
                             )
                           }),
                           _vm._v(" "),
-                          _c("br"),
-                          _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "d-flex justify-center" },
+                            { staticClass: "d-flex justify-center my-3" },
                             [
                               _c(
                                 "v-btn",
@@ -19242,7 +19242,21 @@ var render = function() {
                   }
                 }
               ])
-            })
+            }),
+            _vm._v(" "),
+            _c("v-divider"),
+            _vm._v(" "),
+            _c("p", { staticClass: "subtitle-1 font-weight-light mt-5" }, [
+              _vm._v("\n                Don't have an account? "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-decoration-underline",
+                  attrs: { href: "/register" }
+                },
+                [_vm._v("Sign up")]
+              )
+            ])
           ],
           1
         )
@@ -80020,13 +80034,13 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/learn/:id',
     name: 'learn',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../views/Learn */ "./resources/js/views/Learn.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(5), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! ../views/Learn */ "./resources/js/views/Learn.vue"));
     }
   }, {
     path: '/mock/:id',
     name: "mock",
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../views/Mock */ "./resources/js/views/Mock.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(5), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! ../views/Mock */ "./resources/js/views/Mock.vue"));
     }
   }, {
     path: '/about',
@@ -80179,7 +80193,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -80203,7 +80218,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__["VTextField"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_6__["VDivider"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_7__["VTextField"]})
 
 
 /* hot reload */
@@ -80569,6 +80585,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _a_admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! _a/admin */ "./resources/js/api/admin.js");
 
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -80578,7 +80600,6 @@ var state = {
   mockItems: [],
   index: 0,
   // current index of mockItems
-  userAnswers: [],
   type: "",
   // current type of quiz
   length: 30 // how many quizzes will be got. only works on mock model.
@@ -80589,39 +80610,49 @@ var getters = {}; // actions
 
 var actions = {
   getMockItems: function getMockItems(_ref, payload) {
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-      var state, commit, _yield$getMockList, data, status;
+    var state = _ref.state,
+        commit = _ref.commit;
+    return new Promise( /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve) {
+        var _yield$getMockList, data, status, items;
 
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              state = _ref.state, commit = _ref.commit;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getMockList"])(payload);
 
-              if (!(state.mockItems.length === 0)) {
-                _context.next = 8;
-                break;
-              }
+              case 2:
+                _yield$getMockList = _context.sent;
+                data = _yield$getMockList.data;
+                status = _yield$getMockList.status;
 
-              _context.next = 4;
-              return Object(_a_admin__WEBPACK_IMPORTED_MODULE_1__["getMockList"])(payload);
+                if (status === 200 && data.data.length > 0) {
+                  items = data.data.map(function (item) {
+                    return _objectSpread(_objectSpread({}, item), {}, {
+                      marked: null // save users' answer if it is correct.
 
-            case 4:
-              _yield$getMockList = _context.sent;
-              data = _yield$getMockList.data;
-              status = _yield$getMockList.status;
+                    });
+                  });
+                  commit('SET_MOCK_ITEMS', items);
+                  resolve('finished');
+                }
 
-              if (status === 200 && data.data.length > 0) {
-                commit('SET_MOCK_ITEMS', data.data);
-              }
+                resolve('finished');
 
-            case 8:
-            case "end":
-              return _context.stop();
+              case 7:
+              case "end":
+                return _context.stop();
+            }
           }
-        }
-      }, _callee);
-    }))();
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref2.apply(this, arguments);
+      };
+    }());
   }
 }; // mutations
 

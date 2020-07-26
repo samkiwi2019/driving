@@ -288,9 +288,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"];
       return items[index - 1];
     },
-    getImageOfQuiz: function getImageOfQuiz(image) {
-      return image ? image.replace('module-images', 'question-images') : '';
-    },
     editItem: function editItem(item) {
       this.editedIndex = this.quizItems.indexOf(item);
       this.editedItem = Object.assign({}, item);
@@ -878,10 +875,7 @@ var render = function() {
                       var item = ref.item
                       return [
                         _c("v-img", {
-                          attrs: {
-                            "aspect-ratio": "1",
-                            src: _vm.getImageOfQuiz(item.image)
-                          }
+                          attrs: { "aspect-ratio": "1", src: item.image }
                         })
                       ]
                     }

@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[21],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/Mock.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************************************************************!*\
@@ -47,70 +47,6 @@ var staticRenderFns = []
 render._withStripped = true
 
 
-
-/***/ }),
-
-/***/ "./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MockTest.vue?vue&type=custom&index=0&blockType=div":
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vuetify-loader/lib/loader.js??ref--12-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MockTest.vue?vue&type=custom&index=0&blockType=div ***!
-  \*********************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: Unexpected token (2:4)\nFile was processed with these loaders:\n * ./node_modules/vuetify-loader/lib/loader.js\n * ./node_modules/vue-loader/lib/index.js\nYou may need an additional loader to handle the result of these loaders.\n| \n>     <div class=\"container-main pt-16\">\n|         <v-container\n|             id=\"mock-test\"");
-
-/***/ }),
-
-/***/ "./resources/js/components/MockTest.vue":
-/*!**********************************************!*\
-  !*** ./resources/js/components/MockTest.vue ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MockTest.vue?vue&type=custom&index=0&blockType=div */ "./resources/js/components/MockTest.vue?vue&type=custom&index=0&blockType=div");
-var render, staticRenderFns
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
-  script,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* custom blocks */
-
-if (typeof _MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_1__["default"] === 'function') Object(_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_1__["default"])(component)
-
-component.options.__file = "resources/js/components/MockTest.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/MockTest.vue?vue&type=custom&index=0&blockType=div":
-/*!************************************************************************************!*\
-  !*** ./resources/js/components/MockTest.vue?vue&type=custom&index=0&blockType=div ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vuetify-loader/lib/loader.js??ref--12-0!../../../node_modules/vue-loader/lib??vue-loader-options!./MockTest.vue?vue&type=custom&index=0&blockType=div */ "./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MockTest.vue?vue&type=custom&index=0&blockType=div");
-/* harmony import */ var _node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vuetify_loader_lib_loader_js_ref_12_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MockTest_vue_vue_type_custom_index_0_blockType_div__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

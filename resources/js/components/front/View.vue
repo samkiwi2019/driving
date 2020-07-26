@@ -1,6 +1,6 @@
 <template>
     <v-main style="padding-top: 0">
-        <router-view />
+        <router-view :key="$route.fullPath" />
 
         <dashboard-core-footer v-if="showFooter" />
     </v-main>
@@ -14,7 +14,7 @@
         },
         computed:{
             showFooter(){
-                return !(['login','register', 'about'].includes(this.$route.name))
+                return !(['login','register', 'about', 'learn', 'mock'].includes(this.$route.name))
             }
         },
     }

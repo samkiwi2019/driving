@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     showFooter: function showFooter() {
-      return !['login', 'register', 'about'].includes(this.$route.name);
+      return !['login', 'register', 'about', 'learn', 'mock'].includes(this.$route.name);
     }
   }
 });
@@ -52,7 +52,7 @@ var render = function() {
     "v-main",
     { staticStyle: { "padding-top": "0" } },
     [
-      _c("router-view"),
+      _c("router-view", { key: _vm.$route.fullPath }),
       _vm._v(" "),
       _vm.showFooter ? _c("dashboard-core-footer") : _vm._e()
     ],

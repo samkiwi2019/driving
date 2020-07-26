@@ -122,7 +122,7 @@
                         </v-icon>
                     </template>
                     <template v-slot:item.image="{ item }">
-                        <v-img aspect-ratio="1" :src="getImageOfQuiz(item.image)"></v-img>
+                        <v-img aspect-ratio="1" :src="item.image"></v-img>
                     </template>
                     <template v-slot:item.type="{ item }">
                         <v-chip dark>{{getTypeOfQuiz(item.type)}}</v-chip>
@@ -240,9 +240,6 @@
             getTypeOfQuiz(index) {
                 const items = ["Core", "Behavior", "Parking", "Emergencies", "Road Position", "Intersection", "Theory", "Signs"]
                 return items[index -1]
-            },
-            getImageOfQuiz(image){
-                return image ? image.replace('module-images', 'question-images') : '';
             },
             editItem(item) {
                 this.editedIndex = this.quizItems.indexOf(item)

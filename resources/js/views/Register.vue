@@ -3,7 +3,7 @@
         <div class="login-card">
             <base-material-card
                 color="success"
-                icon="mdi-car"
+                icon="mdi-account-multiple-plus"
                 title="Registration"
                 class="px-5"
             >
@@ -57,8 +57,7 @@
                                 required
                             ></v-text-field>
                         </ValidationProvider>
-                        <br>
-                        <div class="d-flex justify-center">
+                        <div class="d-flex justify-center my-3">
                             <v-btn
                                 class="mr-4"
                                 @click="handleSubmit(register)"
@@ -72,6 +71,10 @@
                         </div>
                     </form>
                 </ValidationObserver>
+                <v-divider></v-divider>
+                <p class="subtitle-1 font-weight-light mt-5">
+                    Already have an account? <a href="/login" class="text-decoration-underline">Login</a>
+                </p>
             </base-material-card>
         </div>
     </div>
