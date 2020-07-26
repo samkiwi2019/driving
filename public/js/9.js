@@ -135,11 +135,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         icon: 'mdi-account-group',
         title: 'users',
         to: '/admin/users'
-      }, {
-        icon: 'mdi-account',
-        title: 'about',
-        to: '/admin/about'
-      }]
+      } // {
+      //     icon: 'mdi-account',
+      //     title: 'about',
+      //     to: '/admin/about',
+      // },
+      ]
     };
   },
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({

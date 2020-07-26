@@ -7,15 +7,11 @@
                 md="10"
                 sm="12"
             >
-
-
                 <section class="mb-12 text-center">
                     <h1 class="font-weight-light mb-2 headline">My work experiences</h1>
                     <span class="font-weight-light subtitle-1">
-                I am finding for a job opportunity in New zealand now.
-                <br>
-                My Email: sam.kiwi2019@gmail.com
-            </span>
+                        My Email: sam.kiwi2019@gmail.com
+                    </span>
                 </section>
 
                 <v-timeline :dense="$vuetify.breakpoint.smAndDown">

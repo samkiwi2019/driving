@@ -189,10 +189,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About"
 });
@@ -236,11 +232,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("span", { staticClass: "font-weight-light subtitle-1" }, [
                   _vm._v(
-                    "\n            I am finding for a job opportunity in New zealand now.\n            "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    "\n            My Email: sam.kiwi2019@gmail.com\n        "
+                    "\n                    My Email: sam.kiwi2019@gmail.com\n                "
                   )
                 ])
               ]),

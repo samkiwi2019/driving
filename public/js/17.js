@@ -125,7 +125,11 @@ var render = function() {
                       _vm._v(" "),
                       _c("p", { staticClass: "font-weight-light grey--text" }, [
                         _vm._v(
-                          "\n                        Hi,guys. I am Sam. I am a web developer with 5+ years of experience.\n                        I like React in the front-end and Laravel technology stack in the back-end. I am finding for\n                        a job opportunity in New zealand now.\n                        "
+                          "\n                        Hi, I am Sam. I am a web developer with 5+ years of experience.\n                        "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                        I like React in the front-end and Laravel technology stack in the back-end.\n                        "
                         ),
                         _c("br"),
                         _vm._v("\n                        My Email: "),

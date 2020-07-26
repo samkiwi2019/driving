@@ -25,9 +25,9 @@
                         </h4>
 
                         <p class="font-weight-light grey--text">
-                            Hi,guys. I am Sam. I am a web developer with 5+ years of experience.
-                            I like React in the front-end and Laravel technology stack in the back-end. I am finding for
-                            a job opportunity in New zealand now.
+                            Hi, I am Sam. I am a web developer with 5+ years of experience.
+                            <br>
+                            I like React in the front-end and Laravel technology stack in the back-end.
                             <br>
                             My Email: <strong :style="`color:${$vuetify.theme.themes['light'].primary}`">sam.kiwi2019@gmail.com</strong>
                         </p>
