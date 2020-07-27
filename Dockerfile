@@ -33,7 +33,7 @@ COPY --chown=www:www . /var/www
 # Change current user to www
 USER www
 
-RUN curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.35.3/install.sh -o install_nvm.sh
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh -o install_nvm.sh
 RUN bash install_nvm.sh && source ~/.profile
 RUN nvm install 12.14.0
 RUN nvm alias default 12.14.0 && nvm use default
