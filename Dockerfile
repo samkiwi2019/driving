@@ -1,7 +1,5 @@
-FROM php:7.2-fpm
+FROM composer:1.10.9
 
-# Copy composer.lock and composer.json
-COPY composer.lock composer.json /var/www/
 
 # Set working directory
 WORKDIR /var/www
