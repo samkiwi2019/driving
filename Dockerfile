@@ -1,4 +1,4 @@
-FROM composer:1.10.9
+FROM php:fpm
 
 
 # Set working directory
