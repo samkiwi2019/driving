@@ -34,7 +34,7 @@ COPY --chown=www:www . /var/www
 USER www
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-RUN source ~/.profile
+RUN /bin/sh -c source ~/.profile
 RUN nvm install 12.14.0
 RUN nvm alias default 12.14.0 && nvm use default
 RUN composer install
