@@ -33,10 +33,9 @@ COPY --chown=www:www . /var/www
 # Change current user to www
 USER www
 
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-RUN /bin/sh -c source ~/.profile
-RUN nvm install 12.14.0
-RUN nvm alias default 12.14.0 && nvm use default
+RUN cd /opt && wget https://nodejs.org/dist/latest-v12.x/node-v12.18.3-linux-x64.tar.gz
+RUN cd /opt && tar -zxf node-v12.18.3-linux-x64.tar.gz && mv node-v12.18.3-linux-x64 node && rm -rf node-v12.18.3-linux-x64.tar.gz
+RUN ln -s /opt/node/bin/node /usr/bin/node && ln -s /opt/node/bin/npm /usr/bin/npm
 RUN composer install
 RUN npm run install && npm run prod
 RUN php artisan key:generate
