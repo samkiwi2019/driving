@@ -80138,7 +80138,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       requiresAuth: true
     },
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ../views/admin/profile */ "./resources/js/views/admin/profile.vue"));
+      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ../views/admin/Profile */ "./resources/js/views/admin/Profile.vue"));
     }
   }]
 });

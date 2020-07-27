@@ -91,7 +91,7 @@ const router = new VueRouter({
             path: '/admin/profile',
             name: 'Profile',
             meta: {requiresAuth: true},
-            component: () => import("../views/admin/profile"),
+            component: () => import("../views/admin/Profile"),
         }
     ]
 })
