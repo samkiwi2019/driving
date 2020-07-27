@@ -16,7 +16,6 @@ RUN apt-get update && apt-get install -y \
     unzip \
     git \
     curl \
-    wget \
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -34,6 +33,7 @@ COPY --chown=www:www . /var/www
 # Change current user to www
 USER www
 
+RUN apt-get update && apt-get install -y wget
 RUN cd /opt && wget https://nodejs.org/dist/latest-v12.x/node-v12.18.3-linux-x64.tar.gz
 RUN cd /opt && tar -zxf node-v12.18.3-linux-x64.tar.gz && mv node-v12.18.3-linux-x64 node && rm -rf node-v12.18.3-linux-x64.tar.gz
 RUN ln -s /opt/node/bin/node /usr/bin/node && ln -s /opt/node/bin/npm /usr/bin/npm
