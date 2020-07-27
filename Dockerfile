@@ -44,7 +44,7 @@ COPY --chown=www:www . /var/www
 # Change current user to www
 USER www
 
-RUN compose install
+RUN composer install
 RUN npm run install && npm run prod
 RUN php artisan key:generate
 RUN php artisan jwt:secret
