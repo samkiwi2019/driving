@@ -3,7 +3,7 @@ import {getRecords, createRecord, deleteRecord} from "_a/admin";
 const state = {
     recordItems: [],
     size: 10,
-    page: 0,
+    page: 1,
     total: 0,
 }
 

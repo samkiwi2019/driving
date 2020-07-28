@@ -49,12 +49,12 @@ const router = new VueRouter({
         },
         {
             path: '/mock/:id',
-            name:"mock",
+            name: "mock",
             component: () => import("../views/Mock"),
         },
         {
             path: '/about',
-            name:"about",
+            name: "about",
             component: () => import("../views/About"),
         },
         {

@@ -3,7 +3,7 @@ import {getQuizList, addQuiz, updateQuiz, deleteQuiz} from "_a/admin";
 const state = {
     quizItems: [],
     size: 10,
-    page: 0,
+    page: 1,
     type: 0, // 所有类型：0,  1-8 对应8种题库类型
     total: 0,
 }
