@@ -10,7 +10,7 @@
                 <v-row justify="center">
                     <v-col
                         cols="12"
-                        md="8"
+                        md="6"
                     >
                         <base-material-card
                             color="success"
@@ -108,7 +108,7 @@
 </template>
 
 <script>
-    import {mapActions, mapState, mapMutations} from 'vuex'
+    import {mapActions, mapState, mapMutations, mapGetters} from 'vuex'
 
     export default {
         name: "mockTest",
@@ -139,6 +139,9 @@
             ]
         }),
         computed: {
+            ...mapGetters({
+                isLogin: 'user/isLogin'
+            }),
             ...mapState({
                 mockItems: state => state.mock.mockItems,
                 index: state => state.mock.index,
@@ -215,7 +218,7 @@
                 const arr = [...this.currentItem.options]
                 const usersAnswers = items.map(n => this.currentItem.options[n].id).sort((a,b) => b - a);
                 const corrects = arr.filter(item => item.is_correct).map(item => item.id).sort((a,b) => b - a)
-                if(this.$route.name === 'mock'){
+                if(this.$route.name === 'mock' && this.isLogin){
                     this.createRecordItem({user_id:this.user.id, quiz_id:this.currentItem.id, my_answers:usersAnswers.join(',')})
                 }
                 return JSON.stringify(usersAnswers) === JSON.stringify(corrects)

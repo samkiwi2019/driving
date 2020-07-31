@@ -2980,7 +2980,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'DashboardIndex',
   components: {
     DashboardCoreAppBar: function DashboardCoreAppBar() {
-      return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
+      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/AppBar */ "./resources/js/views/admin/components/core/AppBar.vue"));
     },
     DashboardCoreDrawer: function DashboardCoreDrawer() {
       return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Drawer */ "./resources/js/views/admin/components/core/Drawer.vue"));
@@ -2989,7 +2989,7 @@ __webpack_require__.r(__webpack_exports__);
       return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/Settings */ "./resources/js/views/admin/components/core/Settings.vue"));
     },
     DashboardCoreView: function DashboardCoreView() {
-      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/View */ "./resources/js/views/admin/components/core/View.vue"));
+      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ../../views/admin/components/core/View */ "./resources/js/views/admin/components/core/View.vue"));
     },
     AppNotice: function AppNotice() {
       return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! _c/layout/AppNotice */ "./resources/js/components/layout/AppNotice.vue"));
@@ -80138,7 +80138,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       requiresAuth: true
     },
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ../views/admin/Profile */ "./resources/js/views/admin/Profile.vue"));
+      return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ../views/admin/Profile */ "./resources/js/views/admin/Profile.vue"));
     }
   }]
 });
@@ -80790,7 +80790,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var state = {
   quizItems: [],
   size: 10,
-  page: 0,
+  page: 1,
   type: 0,
   // 所有类型：0,  1-8 对应8种题库类型
   total: 0
@@ -80991,7 +80991,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var state = {
   recordItems: [],
   size: 10,
-  page: 0,
+  page: 1,
   total: 0
 }; // getters
 

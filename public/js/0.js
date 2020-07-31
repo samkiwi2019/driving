@@ -159,7 +159,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       categories: ['All', 'Core', 'Behavior', 'Parking', 'Emergencies', 'Road Position', 'Intersection', 'Theory', 'Signs']
     };
   },
-  computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+  computed: _objectSpread(_objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])({
+    isLogin: 'user/isLogin'
+  })), Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
     mockItems: function mockItems(state) {
       return state.mock.mockItems;
     },
@@ -265,7 +267,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         return b - a;
       });
 
-      if (this.$route.name === 'mock') {
+      if (this.$route.name === 'mock' && this.isLogin) {
         this.createRecordItem({
           user_id: this.user.id,
           quiz_id: this.currentItem.id,
@@ -401,7 +403,7 @@ var render = function() {
                     [
                       _c(
                         "v-col",
-                        { attrs: { cols: "12", md: "8" } },
+                        { attrs: { cols: "12", md: "6" } },
                         [
                           _c(
                             "base-material-card",
