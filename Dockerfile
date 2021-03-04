@@ -5,8 +5,7 @@ RUN apt-get update -yqq && \
     pecl channel-update pecl.php.net && \
     apt-get install -y git && \
     curl -sS https://getcomposer.org/installer | php && \
-    mv composer.phar /usr/bin/composer && \
-    composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+    mv composer.phar /usr/bin/composer
 
 # Install the zip mysqli pdo_mysql extension
 RUN apt-get install libzip-dev zip unzip -y && \
@@ -21,11 +20,6 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) iconv \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install -j$(nproc) gd
-
-# Install redis extension
-RUN pecl install redis \
-    &&  rm -rf /tmp/pear \
-    &&  docker-php-ext-enable redis
 
 # Install imagick
 RUN apt-get install -y libmagickwand-dev imagemagick && \
@@ -54,8 +48,7 @@ RUN apt-get update &&\
     curl -sL https://deb.nodesource.com/setup_10.x | bash - &&\
     apt-get update &&\
     apt-get install -y --no-install-recommends nodejs &&\
-    npm config set registry https://registry.npm.taobao.org --global &&\
-    npm install --global gulp-cli
+    npm install
 
 # Clean up
 RUN apt-get clean && \

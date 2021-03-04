@@ -11,7 +11,8 @@ services:
             dockerfile: ./Dockerfile
         volumes:
             - .:/var/www/html
-            - ./phpconf:/usr/local/etc/php
+            - ./dockerConf/php:/usr/local/etc/php
+            - ./dockerConf/supervisor:/etc/supervisor/conf.d
         ports:
             - '9000:9000'
         networks:
