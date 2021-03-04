@@ -7,9 +7,16 @@
                 title="Welcome, Driving Test"
                 class="px-5"
             >
-                <ValidationObserver ref="observer" v-slot="{ handleSubmit ,valid}">
+                <ValidationObserver
+                    ref="observer"
+                    v-slot="{ handleSubmit, valid }"
+                >
                     <form>
-                        <ValidationProvider v-slot="{ errors }" name="email" rules="required|email">
+                        <ValidationProvider
+                            v-slot="{ errors }"
+                            name="email"
+                            rules="required|email"
+                        >
                             <v-text-field
                                 v-model="access.email"
                                 :error-messages="errors"
@@ -18,7 +25,11 @@
                                 required
                             ></v-text-field>
                         </ValidationProvider>
-                        <ValidationProvider v-slot="{ errors }" name="Password" rules="required|max:10">
+                        <ValidationProvider
+                            v-slot="{ errors }"
+                            name="Password"
+                            rules="required|max:10"
+                        >
                             <v-text-field
                                 v-model="access.password"
                                 :error-messages="errors"
@@ -37,14 +48,15 @@
                                 text
                                 rounded
                                 color="success"
-                            >Let's go
+                                >Let's go
                             </v-btn>
                         </div>
                     </form>
                 </ValidationObserver>
                 <v-divider></v-divider>
                 <p class="subtitle-1 font-weight-light mt-5">
-                    Don't have an account? <v-btn text to="/register" color="primary">Sign up</v-btn>
+                    Don't have an account?
+                    <v-btn text to="/register" color="primary">Sign up</v-btn>
                 </p>
             </base-material-card>
         </div>
@@ -52,50 +64,53 @@
 </template>
 
 <script>
-    import HeaderImg from "_c/HeaderImg";
-    import {mapActions} from 'vuex'
+import HeaderImg from '_c/HeaderImg';
+import { mapActions } from 'vuex';
 
-    export default {
-        name: 'login',
-        components: {HeaderImg},
-        data: () => ({
-            access: {
-                email: '',
-                password: '',
-            },
-            loading: false,
-        }),
-        methods: {
-            ...mapActions({
-                login: 'user/loginAction',
-            }),
-            signIn() {
-                this.loading = true;
-                const params = this.access;
-                !params.remember && delete params.remember;
-                this.login(params).then(text => {
-                    this.$store.dispatch('notice/show', text);
-                    this.loading = false;
-                });
-            },
+export default {
+    name: 'login',
+    components: { HeaderImg },
+    data: () => ({
+        access: {
+            email: 'test@test.com',
+            password: '123123123',
         },
-        created() {
-        }
-    }
+        loading: false,
+    }),
+    methods: {
+        ...mapActions({
+            login: 'user/loginAction',
+        }),
+        signIn() {
+            this.loading = true;
+            const params = this.access;
+            !params.remember && delete params.remember;
+            this.login(params).then((text) => {
+                this.$store.dispatch('notice/show', text);
+                this.loading = false;
+            });
+        },
+    },
+    created() {},
+};
 </script>
 <style lang="scss" scoped>
-    .container-main {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .login-card {
-            width: 400px;
-        }
+.container-main {
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-card {
+        width: 400px;
     }
-
+}
 </style>
