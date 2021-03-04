@@ -44,9 +44,9 @@ COPY . /var/www/driving/
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www/driving/
 
-RUN chown -R www:www ./storage
+RUN chown -R www:www ./
 
-RUN chmod -R 775 ./storage
+RUN chmod -R 775 ./
 # Change current user to www
 USER www
 
