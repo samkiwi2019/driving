@@ -1,60 +1,52 @@
 FROM php:7.3-fpm
 
-RUN apt-get update -yqq && \
-    apt-get install -y apt-utils openssl libssl-dev && \
-    pecl channel-update pecl.php.net && \
-    apt-get install -y git && \
-    curl -sS https://getcomposer.org/installer | php && \
-    mv composer.phar /usr/bin/composer
+# Copy composer.lock and composer.json
+COPY composer.lock composer.json /var/www/
 
-# Install the zip mysqli pdo_mysql extension
-RUN apt-get install libzip-dev zip unzip -y && \
-    docker-php-ext-configure zip --with-libzip && \
-    docker-php-ext-install zip mysqli pdo_mysql
+# Set working directory
+WORKDIR /var/www
 
-# Install gd iconv extension
+# Install dependencies
 RUN apt-get update && apt-get install -y \
-      libfreetype6-dev \
-      libjpeg62-turbo-dev \
-      libpng-dev \
-    && docker-php-ext-install -j$(nproc) iconv \
-    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install -j$(nproc) gd
+    build-essential \
+    mariadb-client \
+    libpng-dev \
+    libjpeg62-turbo-dev \
+    libfreetype6-dev \
+    locales \
+    zip \
+    jpegoptim optipng pngquant gifsicle \
+    vim \
+    unzip \
+    libzip-dev \
+    git \
+    nano \
+    curl
 
-# Install imagick
-RUN apt-get install -y libmagickwand-dev imagemagick && \
-    pecl install imagick && \
-    docker-php-ext-enable imagick
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install pcntl
-RUN docker-php-ext-install pcntl;
+# Install extensions
+RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
+RUN docker-php-ext-configure gd --with-gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/
+RUN docker-php-ext-install gd
 
-# Install opcache
-# RUN docker-php-ext-install opcache
+# Install composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install swoole
-# RUN pecl install swoole && docker-php-ext-enable swoole
+# Add user for laravel application
+RUN groupadd -g 1000 www
+RUN useradd -u 1000 -ms /bin/bash -g www www
 
-# Install supervisor
-RUN apt-get update &&\
-    apt-get install -y supervisor &&\
-    touch /var/run/supervisor.sock &&\
-    chmod 777 /var/run/supervisor.sock &&\
-    unlink /var/run/supervisor.sock
+# Copy existing application directory contents
+COPY . /var/www
 
-# Install Node
-RUN apt-get update &&\
-    apt-get install -y --no-install-recommends gnupg &&\
-    curl -sL https://deb.nodesource.com/setup_10.x | bash - &&\
-    apt-get update &&\
-    apt-get install -y --no-install-recommends nodejs &&\
-    npm install
+# Copy existing application directory permissions
+COPY --chown=www:www . /var/www
 
-# Clean up
-RUN apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    rm /var/log/lastlog /var/log/faillog
+# Change current user to www
+USER www
 
-CMD ["php-fpm"]
-
+# Expose port 9000 and start php-fpm server
 EXPOSE 9000
+CMD ["php-fpm"]

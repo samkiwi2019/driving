@@ -1,19 +1,37 @@
-version: '3.8'
-
-networks:
-    prod:
-        name: prod
-
+version: '3'
 services:
-    php-fpm73:
+    #PHP Service
+    app:
         build:
             context: .
-            dockerfile: ./Dockerfile
+            dockerfile: Dockerfile
+        image: digitalocean.com/php
+        container_name: app
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: app
+            SERVICE_TAGS: dev
+        working_dir: /var/www
         volumes:
-            - ./:/var/www/html
-            - ./dockerConf/php:/usr/local/etc/php
-            - ./dockerConf/supervisor:/etc/supervisor/conf.d
-        ports:
-            - '9000:9000'
+            - ./:/var/www
+            - ./dockerConf/php/php.ini:/usr/local/etc/php/conf.d/local.ini
         networks:
-            - prod
+            - app-network
+    #Nginx Service
+    webserver:
+        image: nginx:alpine
+        container_name: webserver
+        restart: unless-stopped
+        tty: true
+        ports:
+            - '9001:80'
+        volumes:
+            - ./:/var/www
+            - ./dockerConf/nginx/conf.d/:/etc/nginx/conf.d/
+        networks:
+            - app-network
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
