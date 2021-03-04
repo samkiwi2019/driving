@@ -1,10 +1,10 @@
 FROM php:7.3-fpm
 
 # Copy composer.lock and composer.json
-COPY composer.lock composer.json /var/www/driving
+COPY composer.lock composer.json /var/www/driving/
 
 # Set working directory
-WORKDIR /var/www/driving
+WORKDIR /var/www/driving/
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -39,10 +39,10 @@ RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy existing application directory contents
-COPY . /var/www/driving
+COPY . /var/www/driving/
 
 # Copy existing application directory permissions
-COPY --chown=www:www . /var/www/driving
+COPY --chown=www:www . /var/www/driving/
 
 # Change current user to www
 USER www
