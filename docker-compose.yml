@@ -20,19 +20,7 @@ services:
             - ./dockerConf/php/php.ini:/usr/local/etc/php/conf.d/local.ini
         networks:
             - app-network
-    #Nginx Service
-    webserver:
-        image: nginx:alpine
-        container_name: webserver
-        restart: unless-stopped
-        tty: true
-        ports:
-            - '9001:80'
-        volumes:
-            - ./:/var/www
-            - ./dockerConf/nginx/conf.d/:/etc/nginx/conf.d/
-        networks:
-            - app-network
+
 #Docker Networks
 networks:
     app-network:
