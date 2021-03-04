@@ -3,8 +3,12 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+
     RewriteEngine On
     Options +FollowSymLinks
+
+    RewriteCond %{REQUEST_URI} !^public
+    RewriteRule ^(.*)$ public/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
