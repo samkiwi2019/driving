@@ -46,7 +46,7 @@ COPY --chown=www:www . /var/www/driving/
 
 RUN chown -R www:www ./
 
-RUN chmod -R 775 ./
+RUN chmod -R 777 ./
 # Change current user to www
 USER www
 
