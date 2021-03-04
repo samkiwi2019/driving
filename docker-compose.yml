@@ -1,8 +1,8 @@
 version: '3.8'
 
 networks:
-    localdev:
-        name: localdev
+    prod:
+        name: prod
 
 services:
     php-fpm73:
@@ -10,10 +10,10 @@ services:
             context: .
             dockerfile: ./Dockerfile
         volumes:
-            - .:/var/www/html
+            - ./:/var/www/html
             - ./dockerConf/php:/usr/local/etc/php
             - ./dockerConf/supervisor:/etc/supervisor/conf.d
         ports:
             - '9000:9000'
         networks:
-            - localdev
+            - prod
